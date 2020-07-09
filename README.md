@@ -4,7 +4,7 @@
 #                             ![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png#align=left&display=inline&height=177&margin=%5Bobject%20Object%5D&name=image.png&originHeight=512&originWidth=512&size=119707&status=done&style=none&width=177)
 <a name="4OMtJ"></a>
 # 前言
-因公司发展需要，本人19年中旬开始从事iOS马甲包业务，前期也使用过目前市面上其他得马甲包工具，均失败了。经过大量实践，开发出一款功能齐全的马甲包工具（支持OC、Lua、C++）。工具的主要功能OC已封装成Mac应用，其他功能还在封装中，敬请期待。（目前公测阶段**：****免费**）
+因公司发展需要，本人19年中旬开始从事iOS马甲包业务，前期也使用过目前市面上其他得马甲包工具，均失败了。经过大量实践，开发出一款功能齐全的马甲包工具（支持OC、Lua、C++）。工具的主要功能OC已封装成Mac应用，其他功能还在封装中，敬请期待。（目前公测阶段: **<font color=red>免费</font>**）
 <a name="iji4j"></a>
 # 实践
 涉及保密不便透露太多，以下是简要统计
@@ -27,7 +27,7 @@ confuse是一款马甲包工具，侧重于**游戏马甲包**，尽最大可能
 1. 修改图片，图片质量修改、大小偏移、颜色微调、透明度设置、RGB偏移、模式修改等
 1. 修改Log输出，智能替换
 1. 修改URL，模拟人工近似替换
-1. 重命名属性名，支持xib、storyborad、@property的对象、常量、block，可设置不参与混淆的属性名后缀、文件夹过滤，**支持近似替换**
+1. 重命名属性名，支持@property的对象、常量、block，可设置属性名后缀过滤、**支持近似替换**
 1. 重命名方法名，支持**多参修改**，**支持近似替换**，可选是否过滤危险方法名，默认打开
 1. 重命名图片名
 1. UI布局偏移，支持SDAutoLayout、Masonry、Frame
