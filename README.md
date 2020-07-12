@@ -50,9 +50,11 @@ confuse是一款马甲包工具，侧重于**游戏马甲包**，尽最大可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/ub899f/fko3ma/gimugk)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1593757056981-f8ac7de4-27b8-49e9-a0ce-9850b5cfbafa.png#align=left&display=inline&height=540&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&size=230689&status=done&style=shadow&width=960)
 <a name="WtuYs"></a>
 # 更新日志
-**v1.0.1更新内容：**
+**v1.1.0更新内容：**
 
-- 修复未安装指定工具导致的环境检查bug
+1. 优化设置界面，独立各模块混淆功能，细化黑名单配置
+2. 优化部分UI
+3. 优化pch识别
 
 
 <br />[查看更多历史更新记录](https://www.yuque.com/ub899f/fko3ma/op31mp)
