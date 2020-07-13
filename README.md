@@ -47,15 +47,16 @@ confuse是一款马甲包工具，侧重于**游戏马甲包**，尽最大可能
 以上所有功能均支持黑名单过滤，对指定的内容进行屏蔽，忽略混淆。各个模块的随机单词个数可自定义调整
 <a name="vlfzY"></a>
 # 图文介绍
-运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/ub899f/fko3ma/gimugk)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1593757056981-f8ac7de4-27b8-49e9-a0ce-9850b5cfbafa.png#align=left&display=inline&height=540&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&size=230689&status=done&style=shadow&width=960)
+运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/ub899f/fko3ma/gimugk)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1594644980313-b3ee8604-9652-4bba-bb18-3d06399593e9.png?x-oss-process=image%2Fresize%2Cw_1326)
 <a name="WtuYs"></a>
 # 更新日志
-**v1.1.0更新内容：**
+**v1.1.1更新内容：**
 
-1. 优化设置界面，独立各模块混淆功能，细化黑名单配置
-2. 优化部分UI
-3. 优化pch识别
-
+1. 新增插入JSON文件
+2. 优化配置界面
+3. 新增版本更新提示
+4. 新增全局变量前缀控制
+5. 新增插入属性个数控制
 
 <br />[查看更多历史更新记录](https://www.yuque.com/ub899f/fko3ma/op31mp)
 <a name="2uJ0e"></a>
