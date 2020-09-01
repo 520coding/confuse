@@ -49,7 +49,7 @@ confuse是一款马甲包工具，侧重于**游戏马甲包**，尽最大可能
 以上所有功能均支持黑名单过滤，对指定的内容进行屏蔽，忽略混淆。各个模块的随机单词个数可自定义调整
 <a name="vlfzY"></a>
 # 图文介绍
-运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/ub899f/fko3ma/gimugk)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1594644980313-b3ee8604-9652-4bba-bb18-3d06399593e9.png#align=left&display=inline&height=540&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&size=537018&status=done&style=none&width=960)
+运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1594644980313-b3ee8604-9652-4bba-bb18-3d06399593e9.png#align=left&display=inline&height=540&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&size=537018&status=done&style=none&width=960)
 <a name="WtuYs"></a>
 # 更新日志
 <a name="DZQQV"></a>
@@ -59,8 +59,8 @@ confuse是一款马甲包工具，侧重于**游戏马甲包**，尽最大可能
 1. 强化字符串混淆（新增宏的识别，支持复杂字符串混淆）
 
 
-<br />[查看更多历史更新记录](https://www.yuque.com/ub899f/fko3ma/op31mp)
+<br />[查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="2uJ0e"></a>
 # 链接导航
 
-1. [马甲包简介](https://www.yuque.com/ub899f/fko3ma/pv9mc8)
+1. [马甲包简介](https://www.yuque.com/docs/share/7e70244c-5dea-4035-b634-65cc082097da?#《马甲包简介》)
