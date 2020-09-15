@@ -1,6 +1,6 @@
 # confuse(iOS马甲包，上架神器)
 
-<a name="a47Bl"></a>
+<a name="X50Qx"></a>
 #                             ![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png#align=left&display=inline&height=177&margin=%5Bobject%20Object%5D&name=image.png&originHeight=512&originWidth=512&size=119707&status=done&style=none&width=177)
 <a name="4OMtJ"></a>
 # 前言
@@ -28,7 +28,7 @@ confuse是一款马甲包工具，侧重于**游戏马甲包**，尽最大可能
 1. 修改Log输出，智能替换
 1. 修改URL，模拟人工近似替换
 1. 重命名方法名，支持**多参修改**，近似Xcode的Rename功能，方法名混淆和类名及类型关联，同名方法不同类、同类同名方法不同类型（类方法、对象方法）混淆后将不一致
-1. 重命名属性名，支持@property的对象、常量、block，可设置属性名后缀过滤、**支持近似替换**
+1. 重命名属性名，支持@property的对象、常量、block等所有类型，可设置属性名后缀过滤、**支持近似替换**
 1. 重命名图片名
 1. UI布局偏移，支持SDAutoLayout、Masonry、Frame
 1. 垃圾垃圾，支持自动插入项目中，无需手动导入
@@ -53,20 +53,10 @@ confuse是一款马甲包工具，侧重于**游戏马甲包**，尽最大可能
 <a name="WtuYs"></a>
 # 更新日志
 <a name="DZQQV"></a>
-#### v1.3.0更新内容：
+#### v1.4.0更新内容
 
-1. 修复字符串混淆bug
-   1. 字符串内嵌引号问题
-   1. 调用系统宏NSParameterAssert、NSAssert导致异常
-   1. 修复在Category类型中，命名中会出现‘+’的bug
-2. 重构方法名混淆
-   1. 方法名混淆和类名及类型关联，同名方法不同类、同类同名方法不同类型（类方法、对象方法）混淆后将不一致
-   1. 提高识别精度，优化方法中block无限套娃情况
-   1. 提高混淆率，方法名将识别继承链，不再是简单与系统方法同名比较过滤
-   1. 方法名自动提取原始方法名的最后一个单词作为后缀
-   1. 移除非必须的子选项
-      1. 方法名单词个数
-      1. 过滤危险方法名（已优化），但是通过反射调用的方法需要自己留意
+1. 修复方法名<br />a. 识别问题，例如：- (NSString *)userName; 使用self.userName点语法调用混淆失败问题<br />b. 提高混淆速度<br />c. 修复路径访问不存在出现的问题<br />d. 修复协议被不同类型继承，继承后的类方法名不一致问题<br />e. 修复属性的setter、getter自定义导致的bug<br />f. 实现协议的时候记得遵守协议（例如：MyClass: NSObject），不要只写实现方法，因为没有上下文关系，混淆的时候会当成自己的类，可能导致运行时错误，YYModel已做特殊处理
+1. 重构属性名混淆<br />a. 属性名混淆和类名关联，同名属性不同类混淆后将不一致<br />b. 新增预检查危险属性名（主要针对kvc、kvo）<br />c. 移除非必须的子选项<br />ⅰ. 方法名单词个数
 
 
 <br />[查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
