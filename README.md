@@ -3,7 +3,6 @@
 <a name="X50Qx"></a>
 #                             ![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png#align=left&display=inline&height=177&margin=%5Bobject%20Object%5D&name=image.png&originHeight=512&originWidth=512&size=119707&status=done&style=none&width=177)
 <a name="4OMtJ"></a>
-# 特殊宏展开有Bug（受影响版本1.2.0以后），修复中。。。，请见谅
 # 前言
 因公司发展需要，本人19年中旬开始从事iOS马甲包业务，前期也使用过目前市面上其他得马甲包工具，均失败了。经过大量实践，开发出一款功能齐全的马甲包工具（支持OC、Lua、C++）。工具的主要功能OC已封装成Mac应用，其他功能还在封装中，敬请期待。（目前公测阶段: _**免费**_）
 <a name="iji4j"></a>
