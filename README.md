@@ -53,13 +53,12 @@ confuse是一款马甲包工具，侧重于**游戏马甲包**，尽最大可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1594644980313-b3ee8604-9652-4bba-bb18-3d06399593e9.png#align=left&display=inline&height=540&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&size=537018&status=done&style=none&width=960)
 <a name="WtuYs"></a>
 # 更新日志
-<a name="DZQQV"></a>
-#### v1.7.0更新:
+<a name="91bff055"></a>
+#### v1.7.1（2020.09.26）
 
-1. 重构插入方法
-   1. ~~移除：项目中插入固定的文件并在每个方法中随机调用固定文件内的方法，原因：混淆太明显~~
-   1. ~~移除：插入简单的随机代码块，原因：混淆太明显~~
-   1. **新增**：每个类中创建分类（Category）,并插入随机方法，后期将进一步升级
+1. 修复宏展开bug，导致混淆失败，原因：头文件识别太局限
+1. 优化混淆，调整混淆顺序，提升混淆速度约40%
+1. 修复混淆日志某些地方时间显示乱码
 
 
 <br />[查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
