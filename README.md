@@ -3,6 +3,12 @@
 <a name="X50Qx"></a>
 #                             ![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png#align=left&display=inline&height=177&margin=%5Bobject%20Object%5D&name=image.png&originHeight=512&originWidth=512&size=119707&status=done&style=none&width=177)
 <a name="4OMtJ"></a>
+# BUG
+
+1. 经用户反馈，发现《修改方法名》存在bug，正在修复中...
+   1. 问题描述：多参方法名如果同时存在NSArray、NSDictionary及子类，混淆后将会同时插入两个同名局部变量bug
+   1. 临时解决方案：加入黑名单、手动修改方法
+<a name="KQtMH"></a>
 # 前言
 因公司发展需要，本人19年中旬开始从事iOS马甲包业务，前期也使用过目前市面上其他得马甲包工具，均失败了。经过大量实践，开发出一款功能齐全的马甲包工具（支持OC、Lua、C++）。工具的主要功能OC已封装成Mac应用，其他功能还在封装中，敬请期待。（目前公测阶段: _**免费**_）
 <a name="iji4j"></a>
@@ -21,6 +27,8 @@
 <a name="8cWfW"></a>
 # 功能
 confuse是一款马甲包工具，侧重于**游戏马甲包**，尽最大可能模拟人工手动混淆，避免机器审核4.3、2.1、2.3.1、账号调查等，功能如下：
+<a name="MQHkR"></a>
+### 已完成
 
 1. 混淆前资源替换，指定需要替换的资源文件夹，自动进行同名文件替换，方便快捷
 1. 删注释
@@ -49,6 +57,27 @@ confuse是一款马甲包工具，侧重于**游戏马甲包**，尽最大可能
 
 
 以上所有功能均支持黑名单过滤，对指定的内容进行屏蔽，忽略混淆。各个模块的随机单词个数可自定义调整
+<a name="OEesy"></a>
+### 规划中
+更新迭代将按照以下顺序依次进行
+
+1. Objective-C，重构的目的是为了提高工具的通用性和稳定性
+   1. 重构《修改颜色》
+   1. 重构《UI布局偏移》
+   1. 重构《多语言》
+2. C++，现有功能还不具备通用性，暂时不开放，准备重构中...
+   1. 字符串加密混淆
+   1. 方法
+      1. 重命名
+      1. 插入
+      1. 修改
+   3. 属性
+      1. 重命名
+      1. 修改
+      1. 插入
+3. Cocos2d-x，现有功能不具备通用性，准备整合至C++中
+3. Lua的针对性太强了，暂时不开放，暂时不打算重构有需要在说吧
+3. Swift，本人实际项目使用不多，故排在最后，看用户需求再决定
 <a name="vlfzY"></a>
 # 图文介绍
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1594644980313-b3ee8604-9652-4bba-bb18-3d06399593e9.png#align=left&display=inline&height=540&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&size=537018&status=done&style=none&width=960)
@@ -72,7 +101,7 @@ confuse是一款马甲包工具，侧重于**游戏马甲包**，尽最大可能
 <a name="63ca6131"></a>
 # 感谢反馈
 [shizu2014](https://github.com/shizu2014)
-<a name="2uJ0e"></a>
+<a name="BUG"></a>
 # 链接导航
 
 1. [马甲包简介](https://www.yuque.com/docs/share/7e70244c-5dea-4035-b634-65cc082097da?#《马甲包简介》)
