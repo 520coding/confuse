@@ -2,12 +2,6 @@
 
 <a name="X50Qx"></a>
 #                             ![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png#align=left&display=inline&height=177&margin=%5Bobject%20Object%5D&name=image.png&originHeight=512&originWidth=512&size=119707&status=done&style=none&width=177)
-<a name="4OMtJ"></a>
-# BUG
-
-1. 经用户反馈，发现《修改方法名》存在bug，正在修复中...
-   1. 问题描述：多参方法名如果同时存在NSArray、NSDictionary及子类，混淆后将会同时插入两个同名局部变量bug
-   1. 临时解决方案：加入黑名单、手动修改方法
 <a name="KQtMH"></a>
 # 前言
 因公司发展需要，本人19年中旬开始从事iOS马甲包业务，前期也使用过目前市面上其他得马甲包工具，均失败了。经过大量实践，开发出一款功能齐全的马甲包工具（支持OC、Lua、C++）。工具的主要功能OC已封装成Mac应用，其他功能还在封装中，敬请期待。（目前公测阶段: _**免费**_）
@@ -33,12 +27,12 @@ confuse是一款马甲包工具，侧重于**游戏马甲包**，尽最大可能
 1. 混淆前资源替换，指定需要替换的资源文件夹，自动进行同名文件替换，方便快捷
 1. 删注释
 1. 魔改颜色，对项目中UI颜色随机偏移，可自定义宏
-1. 微调字体，对项目中使用的字体随机微调，可自定义宏
+1. 微调字体，对项目中使用的字体随机微调
 1. 修改全局变量，替换全局变量名、混淆字符串变量值
 1. 修改图片，图片质量修改、大小偏移、颜色微调、透明度设置、RGB偏移、模式修改等
 1. 重命名方法名，支持**多参修改**，近似Xcode的Rename功能，方法名混淆和类名及类型关联，同名方法不同类、同类同名方法不同类型（类方法、对象方法）混淆后将不一致
-1. 重命名属性名，支持@property的对象、常量、block等所有类型，可设置属性名后缀过滤、**支持近似替换**
-1. **修改方法**：拆分方法，对原方法进行封装并根据参数不同进行局部调整，然后调用
+1. 重命名属性名，支持@property的所有类型，可设置属性名后缀过滤
+1. **修改方法**：对原方法进行**拆分调用并根据参数类型（支持继承）局部调整**，[详情见参数类型汇总表](https://www.yuque.com/docs/share/315b72d9-28f9-4fa6-bf20-c40d94f2253a?#《修改方法-支持参数类型汇总表》)
 1. 重命名图片名
 1. UI布局偏移，支持SDAutoLayout、Masonry、Frame
 1. 垃圾垃圾，支持自动插入项目中，无需手动导入
@@ -83,24 +77,19 @@ confuse是一款马甲包工具，侧重于**游戏马甲包**，尽最大可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1594644980313-b3ee8604-9652-4bba-bb18-3d06399593e9.png#align=left&display=inline&height=540&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&size=537018&status=done&style=none&width=960)
 <a name="WtuYs"></a>
 # 更新日志
-<a name="91bff055"></a>
-#### v1.8.0（2020.09.27）
+<a name="Suc2D"></a>
+### v1.8.1（2020.10.09）
 
-1. 修复特殊情况下混淆方法名的时候，引起空指针bug
-1. 修复重构《重命名方法名》之后引起个别@selector识别出错问题
-1. 重构《全局变量》<br />a. 移除全局变量格式限制要求，优化为自动识别<br />b. 移除手动前缀，改为通用小写'k'开头<br />c. 新增《修改全局变量》，全局变量转化为全局函数
-1. 移除《修改Log》，整合至《修改字符串》
-1. 移除《修改Ur》，整合至《修改字符串》
-1. 移除强制插入pch文件
-1. 重构《修改字体》
-   1. ~~移除大小偏移设置，改为自动~~
-   1. ~~移除宏设置，优化为自动识别~~
+1. 新增导出、导入配置、出厂设置，target名称校验
+1. 修复多参方法名如果同时存在NSArray、NSDictionary及子类，混淆后将会同时插入两个同名局部变量bug
+1. 优化《修改方法》<br />a. 支持继承类型判断<br />b. 新增7种参数类型识别
+1. 新增计划说明
+1. 适配Xcode12
 
-
-<br />[查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
+[查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="63ca6131"></a>
 # 感谢反馈
-[shizu2014](https://github.com/shizu2014)
+[shizu2014](https://github.com/shizu2014)、[myhonior](https://github.com/myhonior)
 <a name="BUG"></a>
 # 链接导航
 

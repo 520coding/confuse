@@ -13,6 +13,8 @@
 		710338CD250A12C70061F6BE /* TestFunctionXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 710338CB250A12C70061F6BE /* TestFunctionXibViewController.m */; };
 		710338CE250A12C70061F6BE /* TestFunctionXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 710338CC250A12C70061F6BE /* TestFunctionXibViewController.xib */; };
 		710F33CF2514731F00AEE75E /* TestPropertyXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 710F33CE2514731F00AEE75E /* TestPropertyXibView.xib */; };
+		7121E173252EB4D900F19EE0 /* TestFunctionTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7121E172252EB4D900F19EE0 /* TestFunctionTemplate.m */; };
+		7121E179252F6B5F00F19EE0 /* TestFunctionOtherTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7121E178252F6B5F00F19EE0 /* TestFunctionOtherTemplate.m */; };
 		71290BEA251EE2AF00B3229A /* TestSuperMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 71290BE9251EE2AF00B3229A /* TestSuperMacro.m */; };
 		71290BED251EE38D00B3229A /* TestOtherMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 71290BEC251EE38D00B3229A /* TestOtherMacro.m */; };
 		718B95042508930900C1DB77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95032508930900C1DB77 /* AppDelegate.m */; };
@@ -59,6 +61,10 @@
 		710338CB250A12C70061F6BE /* TestFunctionXibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFunctionXibViewController.m; sourceTree = "<group>"; };
 		710338CC250A12C70061F6BE /* TestFunctionXibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestFunctionXibViewController.xib; sourceTree = "<group>"; };
 		710F33CE2514731F00AEE75E /* TestPropertyXibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestPropertyXibView.xib; sourceTree = "<group>"; };
+		7121E171252EB4D900F19EE0 /* TestFunctionTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFunctionTemplate.h; sourceTree = "<group>"; };
+		7121E172252EB4D900F19EE0 /* TestFunctionTemplate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFunctionTemplate.m; sourceTree = "<group>"; };
+		7121E177252F6B5F00F19EE0 /* TestFunctionOtherTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFunctionOtherTemplate.h; sourceTree = "<group>"; };
+		7121E178252F6B5F00F19EE0 /* TestFunctionOtherTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFunctionOtherTemplate.m; sourceTree = "<group>"; };
 		71290BE8251EE2AF00B3229A /* TestSuperMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSuperMacro.h; sourceTree = "<group>"; };
 		71290BE9251EE2AF00B3229A /* TestSuperMacro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSuperMacro.m; sourceTree = "<group>"; };
 		71290BEB251EE38D00B3229A /* TestOtherMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestOtherMacro.h; sourceTree = "<group>"; };
@@ -143,6 +149,10 @@
 				710338C5250A0BE20061F6BE /* TestFunctionSuper.m */,
 				710338C7250A12AF0061F6BE /* TestFunctionViewController.h */,
 				710338C8250A12AF0061F6BE /* TestFunctionViewController.m */,
+				7121E171252EB4D900F19EE0 /* TestFunctionTemplate.h */,
+				7121E172252EB4D900F19EE0 /* TestFunctionTemplate.m */,
+				7121E177252F6B5F00F19EE0 /* TestFunctionOtherTemplate.h */,
+				7121E178252F6B5F00F19EE0 /* TestFunctionOtherTemplate.m */,
 				710338CA250A12C70061F6BE /* TestFunctionXibViewController.h */,
 				710338CB250A12C70061F6BE /* TestFunctionXibViewController.m */,
 				710338CC250A12C70061F6BE /* TestFunctionXibViewController.xib */,
@@ -439,6 +449,7 @@
 				71290BEA251EE2AF00B3229A /* TestSuperMacro.m in Sources */,
 				718B95202508982700C1DB77 /* TestPropertySuper.m in Sources */,
 				718B95282508AA2000C1DB77 /* TestPropertyViewContorller.m in Sources */,
+				7121E173252EB4D900F19EE0 /* TestFunctionTemplate.m in Sources */,
 				718B95152508930A00C1DB77 /* main.m in Sources */,
 				71ABC645252028AB006BB37E /* TestOtherGlobalVariable.m in Sources */,
 				98BEEE1C2521FED700D085DF /* TestColor.m in Sources */,
@@ -457,6 +468,7 @@
 				718B95402508D3A500C1DB77 /* SCSelectModel.m in Sources */,
 				718B95432508D3E200C1DB77 /* SCOrder.m in Sources */,
 				718B951F2508982700C1DB77 /* TestProperty.m in Sources */,
+				7121E179252F6B5F00F19EE0 /* TestFunctionOtherTemplate.m in Sources */,
 				71ABC64825203222006BB37E /* TestGlobalVariableTableViewController.m in Sources */,
 				718B95242508988D00C1DB77 /* Base.m in Sources */,
 				98742DE8252073B9003B608D /* TestFont.m in Sources */,

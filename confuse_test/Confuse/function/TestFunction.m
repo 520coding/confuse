@@ -184,6 +184,14 @@
     return (UIView *)[[NSArray alloc] init];
 }
 
+- (NSDictionary *)f10:(NSDictionary *)f1 f2:(NSDictionary *)f2 {
+    return [NSMutableDictionary dictionaryWithDictionary:f1];
+}
+
+- (NSArray *)f11:(NSMutableArray *)f1 f2:(NSArray *)f2 {
+    return [NSMutableArray arrayWithArray:f2];
+}
+
 + (void)loadImageFinished:(UIImage *)image
 {
     UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), (__bridge void *)self);
