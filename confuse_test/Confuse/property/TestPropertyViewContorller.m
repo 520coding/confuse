@@ -27,6 +27,10 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)testKvcKvo:(id)sender {
+    [[[TestProperty alloc] init] testKvcKvo];
+}
+
 - (IBAction)click:(id)sender {
     NSLog(@"%@", sender);
 }

@@ -192,6 +192,9 @@
     return [NSMutableArray arrayWithArray:f2];
 }
 
+- (void)f12:(UISwitch *)f1 {
+}
+
 + (void)loadImageFinished:(UIImage *)image
 {
     UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), (__bridge void *)self);

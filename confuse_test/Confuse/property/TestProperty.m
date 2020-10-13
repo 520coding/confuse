@@ -25,6 +25,12 @@
     __p4 = [NSMutableArray array];
     self.sp1 = @"_s1";
     self.sp2 = @"_s2";
+    
+}
+
+- (void)testKvcKvo {
+    NSLog(@"以下代码混淆后记得手动修复，或者注释，否则运行会报错。");
+    NSLog(@"原因：属性混淆只保证编译层面准确性，运行时错误（kvc、kvo属性混淆暂不考虑），需要用户依据工具《预检查结果》自行调整");
     [self valueForKey:@"p1"];
     NSDictionary *dic = @{
         @"p1": @{
