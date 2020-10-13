@@ -40,9 +40,13 @@
 		71ABC6422520288A006BB37E /* TestSuperGlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABC6412520288A006BB37E /* TestSuperGlobalVariable.m */; };
 		71ABC645252028AB006BB37E /* TestOtherGlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABC644252028AB006BB37E /* TestOtherGlobalVariable.m */; };
 		71ABC64825203222006BB37E /* TestGlobalVariableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABC64725203222006BB37E /* TestGlobalVariableTableViewController.m */; };
+		71D8A39325316E60001A4920 /* TestLocalVariableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D8A39225316E60001A4920 /* TestLocalVariableTableViewController.m */; };
+		71D8A39625316E84001A4920 /* TestLocalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D8A39525316E84001A4920 /* TestLocalVariable.m */; };
+		71D8A3992531BC6C001A4920 /* TestLocalVariableTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D8A3982531BC6C001A4920 /* TestLocalVariableTemplate.m */; };
 		71E3340B251D97A700FB695A /* TestMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E3340A251D97A700FB695A /* TestMacro.m */; };
 		98742DE8252073B9003B608D /* TestFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 98742DE7252073B9003B608D /* TestFont.m */; };
 		98BEEE1C2521FED700D085DF /* TestColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BEEE1B2521FED700D085DF /* TestColor.m */; };
+		98C382AB253439EF004FA4D5 /* TestFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C382AA253439EF004FA4D5 /* TestFrame.m */; };
 		98D4D86A2510B98500E3B9AB /* TestXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D4D8682510B98500E3B9AB /* TestXibViewController.m */; };
 		98D4D86B2510B98500E3B9AB /* TestXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98D4D8692510B98500E3B9AB /* TestXibViewController.xib */; };
 		98D4D86E2510B9A500E3B9AB /* TestXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D4D86D2510B9A500E3B9AB /* TestXibView.m */; };
@@ -113,12 +117,20 @@
 		71ABC644252028AB006BB37E /* TestOtherGlobalVariable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOtherGlobalVariable.m; sourceTree = "<group>"; };
 		71ABC64625203222006BB37E /* TestGlobalVariableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestGlobalVariableTableViewController.h; sourceTree = "<group>"; };
 		71ABC64725203222006BB37E /* TestGlobalVariableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGlobalVariableTableViewController.m; sourceTree = "<group>"; };
+		71D8A39125316E60001A4920 /* TestLocalVariableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLocalVariableTableViewController.h; sourceTree = "<group>"; };
+		71D8A39225316E60001A4920 /* TestLocalVariableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLocalVariableTableViewController.m; sourceTree = "<group>"; };
+		71D8A39425316E84001A4920 /* TestLocalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLocalVariable.h; sourceTree = "<group>"; };
+		71D8A39525316E84001A4920 /* TestLocalVariable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLocalVariable.m; sourceTree = "<group>"; };
+		71D8A3972531BC6C001A4920 /* TestLocalVariableTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLocalVariableTemplate.h; sourceTree = "<group>"; };
+		71D8A3982531BC6C001A4920 /* TestLocalVariableTemplate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLocalVariableTemplate.m; sourceTree = "<group>"; };
 		71E33409251D97A700FB695A /* TestMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMacro.h; sourceTree = "<group>"; };
 		71E3340A251D97A700FB695A /* TestMacro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMacro.m; sourceTree = "<group>"; };
 		98742DE6252073B9003B608D /* TestFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFont.h; sourceTree = "<group>"; };
 		98742DE7252073B9003B608D /* TestFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFont.m; sourceTree = "<group>"; };
 		98BEEE1A2521FED700D085DF /* TestColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestColor.h; sourceTree = "<group>"; };
 		98BEEE1B2521FED700D085DF /* TestColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestColor.m; sourceTree = "<group>"; };
+		98C382A9253439EF004FA4D5 /* TestFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFrame.h; sourceTree = "<group>"; };
+		98C382AA253439EF004FA4D5 /* TestFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFrame.m; sourceTree = "<group>"; };
 		98D4D8672510B98500E3B9AB /* TestXibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestXibViewController.h; sourceTree = "<group>"; };
 		98D4D8682510B98500E3B9AB /* TestXibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestXibViewController.m; sourceTree = "<group>"; };
 		98D4D8692510B98500E3B9AB /* TestXibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestXibViewController.xib; sourceTree = "<group>"; };
@@ -182,6 +194,8 @@
 		718B95012508930900C1DB77 /* Confuse */ = {
 			isa = PBXGroup;
 			children = (
+				71D8A39025316E03001A4920 /* local */,
+				98C382A8253439DB004FA4D5 /* frame */,
 				98BEEE192521FEC600D085DF /* color */,
 				71ABC63C2520284C006BB37E /* global */,
 				98742DE525207388003B608D /* font */,
@@ -282,6 +296,19 @@
 			path = global;
 			sourceTree = "<group>";
 		};
+		71D8A39025316E03001A4920 /* local */ = {
+			isa = PBXGroup;
+			children = (
+				71D8A39425316E84001A4920 /* TestLocalVariable.h */,
+				71D8A39525316E84001A4920 /* TestLocalVariable.m */,
+				71D8A3972531BC6C001A4920 /* TestLocalVariableTemplate.h */,
+				71D8A3982531BC6C001A4920 /* TestLocalVariableTemplate.m */,
+				71D8A39125316E60001A4920 /* TestLocalVariableTableViewController.h */,
+				71D8A39225316E60001A4920 /* TestLocalVariableTableViewController.m */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
 		71E33408251D978500FB695A /* macro */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +346,15 @@
 				98BEEE1B2521FED700D085DF /* TestColor.m */,
 			);
 			path = color;
+			sourceTree = "<group>";
+		};
+		98C382A8253439DB004FA4D5 /* frame */ = {
+			isa = PBXGroup;
+			children = (
+				98C382A9253439EF004FA4D5 /* TestFrame.h */,
+				98C382AA253439EF004FA4D5 /* TestFrame.m */,
+			);
+			path = frame;
 			sourceTree = "<group>";
 		};
 		98D4D8662510B96000E3B9AB /* xib */ = {
@@ -442,11 +478,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98C382AB253439EF004FA4D5 /* TestFrame.m in Sources */,
 				71ABC6422520288A006BB37E /* TestSuperGlobalVariable.m in Sources */,
 				718B950A2508930900C1DB77 /* ViewController.m in Sources */,
 				718B952C2508AA6B00C1DB77 /* TestPropertyXibViewController.m in Sources */,
 				718B95042508930900C1DB77 /* AppDelegate.m in Sources */,
 				71290BEA251EE2AF00B3229A /* TestSuperMacro.m in Sources */,
+				71D8A3992531BC6C001A4920 /* TestLocalVariableTemplate.m in Sources */,
 				718B95202508982700C1DB77 /* TestPropertySuper.m in Sources */,
 				718B95282508AA2000C1DB77 /* TestPropertyViewContorller.m in Sources */,
 				7121E173252EB4D900F19EE0 /* TestFunctionTemplate.m in Sources */,
@@ -455,6 +493,7 @@
 				98BEEE1C2521FED700D085DF /* TestColor.m in Sources */,
 				71E3340B251D97A700FB695A /* TestMacro.m in Sources */,
 				98D4D86E2510B9A500E3B9AB /* TestXibView.m in Sources */,
+				71D8A39625316E84001A4920 /* TestLocalVariable.m in Sources */,
 				710338C9250A12AF0061F6BE /* TestFunctionViewController.m in Sources */,
 				71ABC63F2520286D006BB37E /* TestGlobalVariable.m in Sources */,
 				718B95462508D43900C1DB77 /* User_M.m in Sources */,
@@ -468,6 +507,7 @@
 				718B95402508D3A500C1DB77 /* SCSelectModel.m in Sources */,
 				718B95432508D3E200C1DB77 /* SCOrder.m in Sources */,
 				718B951F2508982700C1DB77 /* TestProperty.m in Sources */,
+				71D8A39325316E60001A4920 /* TestLocalVariableTableViewController.m in Sources */,
 				7121E179252F6B5F00F19EE0 /* TestFunctionOtherTemplate.m in Sources */,
 				71ABC64825203222006BB37E /* TestGlobalVariableTableViewController.m in Sources */,
 				718B95242508988D00C1DB77 /* Base.m in Sources */,

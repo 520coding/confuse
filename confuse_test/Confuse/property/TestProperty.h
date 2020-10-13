@@ -40,6 +40,8 @@ typedef NSArray<NSString *> *_Nullable (^Block1)(NSString *name, NSString *title
 - (void)setP5:(NSString *)p5;
 - (NSString *)p5;
 
+- (void)testKvcKvo;
+
 @end
 
 @interface TestProperty1 : UILabel<TestPropertySuper>

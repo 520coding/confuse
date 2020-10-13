@@ -1,98 +1,116 @@
 {
   "images" : [
     {
+      "size" : "20x20",
       "idiom" : "iphone",
-      "scale" : "2x",
-      "size" : "20x20"
+      "filename" : "ChinaiPhoneNotification_20pt@2x.png",
+      "scale" : "2x"
     },
     {
+      "size" : "20x20",
       "idiom" : "iphone",
-      "scale" : "3x",
-      "size" : "20x20"
+      "filename" : "ChinaiPhoneNotification_20pt@3x.png",
+      "scale" : "3x"
     },
     {
+      "size" : "29x29",
       "idiom" : "iphone",
-      "scale" : "2x",
-      "size" : "29x29"
+      "filename" : "ChinaiPhoneSpootlight5_29pt@2x.png",
+      "scale" : "2x"
     },
     {
+      "size" : "29x29",
       "idiom" : "iphone",
-      "scale" : "3x",
-      "size" : "29x29"
+      "filename" : "ChinaiPhoneSpootlight5_29pt@3x.png",
+      "scale" : "3x"
     },
     {
+      "size" : "40x40",
       "idiom" : "iphone",
-      "scale" : "2x",
-      "size" : "40x40"
+      "filename" : "ChinaiPhoneSpootlight7_40pt@2x.png",
+      "scale" : "2x"
     },
     {
+      "size" : "40x40",
       "idiom" : "iphone",
-      "scale" : "3x",
-      "size" : "40x40"
+      "filename" : "ChinaiPhoneSpootlight7_40pt@3x.png",
+      "scale" : "3x"
     },
     {
+      "size" : "60x60",
       "idiom" : "iphone",
-      "scale" : "2x",
-      "size" : "60x60"
+      "filename" : "ChinaiPhoneApp_60pt@2x.png",
+      "scale" : "2x"
     },
     {
+      "size" : "60x60",
       "idiom" : "iphone",
-      "scale" : "3x",
-      "size" : "60x60"
+      "filename" : "ChinaiPhoneApp_60pt@3x.png",
+      "scale" : "3x"
     },
     {
+      "size" : "20x20",
       "idiom" : "ipad",
-      "scale" : "1x",
-      "size" : "20x20"
+      "filename" : "ChinaiPadNotifications_20pt.png",
+      "scale" : "1x"
     },
     {
+      "size" : "20x20",
       "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "20x20"
+      "filename" : "ChinaiPadNotifications_20pt@2x.png",
+      "scale" : "2x"
     },
     {
+      "size" : "29x29",
       "idiom" : "ipad",
-      "scale" : "1x",
-      "size" : "29x29"
+      "filename" : "ChinaiPadSpootlight5_29pt.png",
+      "scale" : "1x"
     },
     {
+      "size" : "29x29",
       "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "29x29"
+      "filename" : "ChinaiPadSpootlight5_29pt@2x.png",
+      "scale" : "2x"
     },
     {
+      "size" : "40x40",
       "idiom" : "ipad",
-      "scale" : "1x",
-      "size" : "40x40"
+      "filename" : "ChinaiPadSpootlight7_40pt.png",
+      "scale" : "1x"
     },
     {
+      "size" : "40x40",
       "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "40x40"
+      "filename" : "ChinaiPadSpootlight7_40pt@2x.png",
+      "scale" : "2x"
     },
     {
+      "size" : "76x76",
       "idiom" : "ipad",
-      "scale" : "1x",
-      "size" : "76x76"
+      "filename" : "ChinaiPadApp_76pt.png",
+      "scale" : "1x"
     },
     {
+      "size" : "76x76",
       "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "76x76"
+      "filename" : "ChinaiPadApp_76pt@2x.png",
+      "scale" : "2x"
     },
     {
+      "size" : "83.5x83.5",
       "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "83.5x83.5"
+      "filename" : "ChinaiPadProApp_83.5pt@2x.png",
+      "scale" : "2x"
     },
     {
+      "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "scale" : "1x",
-      "size" : "1024x1024"
+      "filename" : "Chinastore_1024pt.png",
+      "scale" : "1x"
     }
   ],
   "info" : {
-    "author" : "xcode",
-    "version" : 1
+    "version" : 1,
+    "author" : "xcode"
   }
 }
