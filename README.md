@@ -4,9 +4,6 @@
 #                             ![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png#align=left&display=inline&height=177&margin=%5Bobject%20Object%5D&name=image.png&originHeight=512&originWidth=512&size=119707&status=done&style=none&width=177)
 <a name="KQtMH"></a>
 # 警告⚠️
-<a name="kXsJg"></a>
-#### Bug
-问题：项目中使用到pch，并且Precompile Prefix Header为YES的用户，将导致混淆无效<br />解决：请暂时先手动设置为NO，即可正常使用<br />修复：下一个版本修复
 <a name="XgcaI"></a>
 #### 使用注意
 有用户反馈插入垃圾很容易被账号调查，建议暂时先不用（[插入方法]、[插入文件]、[插入文本]）这几个功能，该功能优化中，目标逼近正常开发，让插入的垃圾不在是垃圾，告别所谓的垃圾
@@ -44,7 +41,7 @@ confuse是一款[马甲包工具](https://github.com/520coding/confuse)，尽可
 1. [修改字符串]，加密处理（随机创建一个全局变量并调用，字符串将变成Byte数组）
 1. [修改xib、storyboard]，**插入垃圾视图，并修改内部结构属性**
 1. [修改字体]，对项目中使用的字体随机微调，**识别宏**
-1. [UI布局偏移]，支持SDAutoLayout、Masonry、Frame
+1. [UI布局偏移]，支持Frame
 1. 优化中...~~[插入文件]，插入ViewController类文件，相互调用及源文件调用，支持自动、收入导入项目~~
 1. [插入属性]，类中自动初始化、调用及销毁
 1. [插入图片]，类中自动初始化、调用及销毁
@@ -58,7 +55,7 @@ _以上所有功能均支持黑名单过滤，对指定的内容进行屏蔽，�
 更新迭代将按照以下顺序依次进行
 
 1. Objective-C，重构的目的是为了提高工具的通用性和稳定性
-   1. 重构《UI布局偏移》
+   1. 优化《UI布局偏移》，（支持SDAutoLayout、Masonry）
    1. 优化插入垃圾，目标逼近正常开发，让插入的垃圾不在是垃圾，告别所谓的垃圾
       - [插入方法]，为每个类的创建分类并根据原方法参数类型创建近似方法，同时在类中原方法中根据返回值类型调用
       - [插入文件]，提取项目原有信息，进行合理组合并创建类，然后在源文件调用，支持自动、收入导入项目
@@ -84,11 +81,11 @@ _以上所有功能均支持黑名单过滤，对指定的内容进行屏蔽，�
 <a name="WtuYs"></a>
 # 更新日志
 <a name="8571732e"></a>
-### v1.9.0（2020.10.13）
+### v2.0.0（2020.10.15）
 
-1. 新增《修改局部变量》，支持类型详见[《修改局部变量-支持类型汇总表》](https://www.yuque.com/docs/share/90444065-4f4e-49c8-9e1a-5bd3d3b4f84d?#《修改局部变量-支持类型汇总表》)
-1. 优化《修改方法》，参数类型混淆支持系统类的继承链识别，例如UISwitch没有备选混淆，将采用父类UIView备选混淆，详见[《修改方法-支持参数类型汇总表》](https://www.yuque.com/docs/share/315b72d9-28f9-4fa6-bf20-c40d94f2253a?#《修改方法-支持参数类型汇总表》)
-1. 修复APP重启后配置重置问题，出现情况：版本不是最新的时候
+1. 重构《UI布局偏移》,重构Frame子功能，暂时关闭Masonry、SDAutoLayout修改，
+1. 修复项目中使用到pch，并且Precompile Prefix Header为YES的用户，将导致混淆无效
+1. 修复《修改局部变量》hidden变量判断搞反了，运行时可能改到某些局部变量的真实值
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="63ca6131"></a>

@@ -15,9 +15,9 @@
     view.layer.borderWidth = 1.0    ;
     view.layer.shadowRadius =
         2.0;
-    view.layer.cornerRadius = 3.0; view.layer.cornerRadius  = 4.0;
+    view.layer.cornerRadius = 3.0; view.layer.cornerRadius  = view.layer.borderWidth;
 
-    [view.layer setBorderWidth:1.0];
+    [view.layer setBorderWidth: view.layer.borderWidth];
     [view.layer setShadowRadius:2.0];
     [view.layer setCornerRadius:3.0];
 

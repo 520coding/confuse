@@ -35,6 +35,15 @@
     [self.navigationController pushViewController:xibvc animated:YES];
 }
 
+- (void)f1 {
+}
+
+- (void)f2:(NSString *)p1 {
+}
+
+- (void)f3:(NSString *)p1 f2:(int)p2 {
+}
+
 /*
 #pragma mark - Navigation
 

@@ -444,7 +444,7 @@
         UIView4.frame =  CGRectMake(UIView4.frame.origin.x, UIView4.frame.origin.y - (0.0 + 0.1 + 1 + 0.0), UIView4.frame.size.width, UIView4.frame.size.height);
     }
     UIView *UIView5 = [[UIView alloc] initWithFrame:CGRectZero];
-    if (!UIView5.hidden) {
+    if (UIView5.hidden) {
         UIView5.frame =  CGRectZero;
     }
 
@@ -457,12 +457,12 @@
         UILabel2.text = @"";
     }
     UILabel *UILabel3 = [[UILabel alloc] initWithFrame:CGRectZero];
-    if (!UILabel3.hidden) {
+    if (UILabel3.hidden) {
         UILabel3.textColor = [UIColor whiteColor];
     }
 
     UIImageView *UIImageView1 = [[UIImageView alloc] initWithFrame:CGRectZero];
-    if (!UIImageView1.hidden) {
+    if (UIImageView1.hidden) {
         UIImageView1.image = [UIImage imageNamed:@"random_str"];
     }
 
