@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TestDiscardSuper.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TestFunctionViewController : UIViewController
+@interface TestFunctionViewController : UIViewController<TestDiscardSuperProtocol>
 
 @end
 
