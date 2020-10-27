@@ -22,7 +22,7 @@ typedef NSString *(^Block)(int *num);
         NSLog(@"%ld", i);
     }
 
-    NSInteger NSInteger1 = 0    ;
+    NSInteger NSInteger1 = 0;
     NSLog(@"%ld", NSInteger1);
     NSInteger *NSInteger2 = &NSInteger1;
     NSLog(@"%ld", *NSInteger2);
@@ -45,15 +45,22 @@ typedef NSString *(^Block)(int *num);
         NSLog(@"%@", view3);
     }];
     NSLog(@"%@", view2);
-    
+
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
         NSLog(@"%@", label);
     });
 
     UISwitch *switch1 = [[UISwitch alloc] initWithFrame:CGRectZero];
-    switch1.left=0;
+    switch1.left = 0;
     NSLog(@"%@", switch1);
+    
+    NSData *data = @"{\"k\":\"v\"}".dataValue;
+    NSDictionary *result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+    NSLog(@"%@", result);
+    
+    id test = @"";
+    NSLog(@"%@", test);
 }
 
 + (UIView *)view:(void (^)(void))block {

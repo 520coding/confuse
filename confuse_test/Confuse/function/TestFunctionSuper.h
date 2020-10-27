@@ -21,6 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TestFunctionSuper : NSObject
 
+@property (nonatomic, assign) NSInteger section;
+@property (nonatomic, copy) NSString *title;
+
 + (void)init;
 + (void)func;
 - (void)func;
