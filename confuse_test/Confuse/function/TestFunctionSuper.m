@@ -26,12 +26,19 @@
     [self category_func_1];
 }
 
+- (NSString *)test1 {
+    return self.title;
+}
+
+- (NSInteger)test2 {
+    return self.section;
+}
+
 @end
 
-@implementation TestFunctionSuper(YJS)
+@implementation TestFunctionSuper (YJS)
 
 - (void)category_func_1 {
-    
 }
 
 @end

@@ -8,6 +8,9 @@
 
 #import "TestGlobalVariable.h"
 
+NSString * const HWDownloadProgressNotification = @"HWDownloadProgressNotification";
+NSString * const HWDownloadStateChangeNotification = @"HWDownloadStateChangeNotification";
+
 static NSArray *kGlobalVariable1;
 NSString *kGlobalVariable2 = nil;
 NSInteger kGlobalVariable3 = 300;
@@ -30,6 +33,10 @@ NSInteger kGlobalVariable3 = 300;
     NSLog(@"%@", kSuperGlobalVariable1);
     NSLog(@"%ld", (long)kSuperGlobalVariable2);
     NSLog(@"%@", kSuperGlobalVariable3);
+    NSLog(@"%@", HWDownloadProgressNotification);
+    NSLog(@"%@", HWDownloadStateChangeNotification);
+    NSLog(@"%@", HWDownloadMaxConcurrentCountKey);
+    NSLog(@"%@", HWDownloadMaxConcurrentCountChangeNotification);
 }
 
 @end

@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+UIKIT_EXTERN NSString * const HWDownloadMaxConcurrentCountKey;
+UIKIT_EXTERN NSString * const HWDownloadMaxConcurrentCountChangeNotification;
+
 extern NSString* const kSuperGlobalVariable1;
 extern NSString* const kSuperGlobalVariable1_1;
 extern NSString* const kSuperGlobalVariable1_2;

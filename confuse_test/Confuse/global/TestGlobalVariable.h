@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "TestSuperGlobalVariable.h"
 
+UIKIT_EXTERN NSString * const HWDownloadProgressNotification;
+UIKIT_EXTERN NSString * const HWDownloadStateChangeNotification;
+
 extern NSString *kGlobalVariable2;
 extern NSInteger kGlobalVariable3;
 

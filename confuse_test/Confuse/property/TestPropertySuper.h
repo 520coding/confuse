@@ -21,6 +21,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TestPropertySuper : NSObject<UICollectionViewDelegate>
 
 @property (nonatomic, strong) NSObject *sp1;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *Age;
+@property (nonatomic, strong) NSString *NICK;
+@property (nonatomic, strong) NSString *nICK;
 
 @end
 

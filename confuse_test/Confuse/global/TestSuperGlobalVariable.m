@@ -10,6 +10,9 @@
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
 
+NSString * const HWDownloadMaxConcurrentCountKey = @"HWDownloadMaxConcurrentCountKey";
+NSString * const HWDownloadMaxConcurrentCountChangeNotification = @"HWDownloadMaxConcurrentCountKey";
+
 NSString* const kSuperGlobalVariable1 = @"kSuperGlobalVariable1";
 NSString* const kSuperGlobalVariable1_1 = kSuperGlobalVariable1;
 NSString* const kSuperGlobalVariable1_2 = nil;
