@@ -25,7 +25,6 @@
     __p4 = [NSMutableArray array];
     self.sp1 = @"_s1";
     self.sp2 = @"_s2";
-    
 }
 
 - (void)testKvcKvo {
@@ -145,6 +144,22 @@
     return @"_11";
 }
 
+- (void)setMore:(NSObject *)more {
+}
+
+- (void)setDataSource:(NSArray *)dataSource {
+}
+
+- (void)setView:(UIView *)view {
+}
+
+- (void)setIsRight:(Boolean)isRight {
+}
+
+- (NSString *)help {
+    return self.hasP10;
+}
+
 @synthesize sp2;
 
 @end
@@ -228,6 +243,26 @@
 }
 
 - (void)setSp2:(NSString *)sp2 {
+}
+
+@end
+
+@implementation TestProperty3
+
+- (void)setSp1:(NSObject *)sp1 {
+    [super setSp1:sp1];
+}
+
+- (void)setSp2:(NSString *)sp2 {
+    [super setSp2:sp2];
+}
+
+- (void)setSp3:(NSString *)sp3 {
+    [super setSp3:sp3];
+}
+
+- (void)setMore:(NSObject *)more {
+    [super setMore:more];
 }
 
 @end

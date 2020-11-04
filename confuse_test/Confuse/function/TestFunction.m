@@ -45,6 +45,7 @@
 }
 
 + (void)init {
+    [super init];
 }
 
 + (void)func {
@@ -206,3 +207,42 @@
 }
 
 @end
+
+@implementation TestFunction3
+
++ (void)init {
+    [super init];
+}
+
++ (void)func {
+    [super func];
+}
+
+- (void)func {
+    [super func];
+}
+
+@end
+
+@implementation TestFunction4
+
+- (void)setSp1:(NSString *)sp1 {
+    
+}
+
+- (void)sfunc {
+    
+}
+
++ (void)sfunc {
+    
+}
+
+- (void)begin {
+    
+}
+
+@synthesize sp1;
+
+@end
+
