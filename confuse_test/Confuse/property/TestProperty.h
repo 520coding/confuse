@@ -34,8 +34,13 @@ typedef NSArray<NSString *> *_Nullable (^Block1)(NSString *name, NSString *title
 @property (nonatomic, strong) Block1 tbp;
 @property (nonatomic, strong) id id_p7;
 @property (nonatomic, strong) NSString *p8_1, *p8_2;
-@property (nonatomic, strong, getter = hasP9, setter = updateP9:) NSString *p9;//libclang 暂时没有这个节点的位置信息，故忽略处理
-@property (nonatomic, strong, getter = hasP10, setter = updateP10:) NSString *p10;//libclang 暂时没有这个节点的位置信息，故忽略处理
+@property (nonatomic, strong, getter = hasP9, setter = updateP9:) NSString *p9;// 自定义set、get，暂时忽略处理
+@property (nonatomic, strong, getter = hasP10, setter = updateP10:) NSString *p10;// 自定义set、get，暂时忽略处理
+@property (nonatomic, strong) NSArray *dataSource;
+@property (nonatomic, strong) UIView *view;
+@property (nonatomic, assign) Boolean isRight;
+@property (nonatomic, strong) NSString *help;
+
 
 - (void)setP5:(NSString *)p5;
 - (NSString *)p5;
@@ -57,6 +62,10 @@ typedef NSArray<NSString *> *_Nullable (^Block1)(NSString *name, NSString *title
 @property (nonatomic, strong) NSString *p21;
 @property (nonatomic, strong) NSObject *sp1;
 @property (nonatomic, strong) NSString *sp2;
+
+@end
+
+@interface TestProperty3 : TestPropertySuper
 
 @end
 

@@ -38,4 +38,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface TestFunction3 : TestFunctionSuper
+
+@end
+
+@interface TestFunction4 : NSObject<TestFunctionSuper>
+
+@end
+
 NS_ASSUME_NONNULL_END

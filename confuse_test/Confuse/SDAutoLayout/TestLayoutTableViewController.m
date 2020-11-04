@@ -1,5 +1,5 @@
 //
-//  TestLayoutTableViewControler.m
+//  TestLayoutTableViewController.m
 //  SDAutoLayout 测试 Demo
 //
 //  Created by gsd on 15/10/12.
@@ -21,7 +21,7 @@
  
  */
 
-#import "TestLayoutTableViewControler.h"
+#import "TestLayoutTableViewController.h"
 
 #import "UITableView+SDAutoTableViewCellHeight.h"
 
@@ -43,7 +43,7 @@ NSString * const demo12Description = @"scroll任意布局内容自适应";
 NSString * const demo13Description = @"scroll任意布局内容自适应自动布局";
 NSString * const demo14Description = @"xib的cell高度自适应";
 
-@implementation TestLayoutTableViewControler
+@implementation TestLayoutTableViewController
 {
     NSArray *_contenArray;
 }

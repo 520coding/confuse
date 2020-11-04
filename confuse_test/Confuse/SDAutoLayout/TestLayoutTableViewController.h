@@ -1,5 +1,5 @@
 //
-//  TestLayoutTableViewControler.h
+//  TestLayoutTableViewController.h
 //  SDAutoLayout 测试 Demo
 //
 //  Created by gsd on 15/10/12.
@@ -23,6 +23,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TestLayoutTableViewControler : UITableViewController
+@interface TestLayoutTableViewController : UITableViewController
 
 @end

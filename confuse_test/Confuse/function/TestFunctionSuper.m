@@ -34,6 +34,16 @@
     return self.section;
 }
 
+- (NSDictionary *)func:(NSDictionary *)f1 f2:(NSString * (^)(NSString *name, int count))name {
+    return [NSMutableDictionary dictionaryWithDictionary:f1];
+}
+
+- (NSString * (^)(NSString *name, int count))func:(NSString *)name {
+    return ^NSString *(NSString *name1, int count2) {
+               return @"";
+    };
+}
+
 @end
 
 @implementation TestFunctionSuper (YJS)
