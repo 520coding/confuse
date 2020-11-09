@@ -1,4 +1,4 @@
-# confuse(iOS马甲包，上架神器)
+# confuse(iOS马甲包混淆，上架神器)
 
 <a name="X50Qx"></a>
 #                             ![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png#align=left&display=inline&height=177&margin=%5Bobject%20Object%5D&name=image.png&originHeight=512&originWidth=512&size=119707&status=done&style=none&width=177)
@@ -68,7 +68,7 @@ confuse是一款[马甲包工具](https://github.com/520coding/confuse)，尽可
 13. [插入属性]，类中自动初始化、调用及销毁
 13. [插入图片]，类中自动初始化、调用及销毁
 13. 优化中...~~[插入文本]，文件（json、txt、doc）~~
-13. [重命名类]，类名及对应的文件名一起修改，**支持近似替换**，可指定添加前缀
+13. [重命名类]，类名及对应的文件名一起修改，准备‘智能名词替换’重构，可指定添加前缀
 13. [修改项目]，基本配置信息，例如：版本号、SDK的BundleID
 
 _以上所有功能均支持黑名单过滤，对指定的内容进行屏蔽，忽略混淆。_
@@ -104,13 +104,15 @@ _以上所有功能均支持黑名单过滤，对指定的内容进行屏蔽，�
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1594644980313-b3ee8604-9652-4bba-bb18-3d06399593e9.png#align=left&display=inline&height=540&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&size=537018&status=done&style=none&width=960)
 <a name="WtuYs"></a>
 # 更新日志
-<a name="oPw7P"></a>
-### v2.2.1（2020.11.04）
+<a name="sEHpd"></a>
+# v2.2.2（2020.11.09）
 
-1. 优化[修改字符串]，新增过滤static静态变量是字符串（需用户手动修改源码）,并在预检查中显示扫描结果
-1. 优化所有重命名规则(类名除外，下周重构)，移除随机拼接单词，使用（项目中同类型的词汇+相近替换+类型+部分旧词汇组合）
-1. 修复父类被多个子类继承且同时重写父类方法，有可能导致的修改不一致问题
-1. 移除[重命名图片]需要同时开启[修改图片]的限制
+1. 修复混淆后有可能出现数字开头的非法名字
+1. 修复[插入方法]非Foundation和UIKit的类型，没有引用类型问题
+1. 修复[修改局部变量]URL可能包含中文导致的运行时错误
+1. 修复YYModel不是用cocoapods方式导入导致Model的相关方法被改了
+1. 修复重构重命名系列，未设置前缀时导致名称有可能重复冲突的问题，原因：当初一直开着前缀测试导致没有发现问题
+1. 新增[修改方法]、[插入方法]，百分比控制设置
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="63ca6131"></a>

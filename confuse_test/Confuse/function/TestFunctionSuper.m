@@ -7,6 +7,9 @@
 //
 
 #import "TestFunctionSuper.h"
+#import <MJExtension/MJPropertyKey.h>
+#import <WebKit/WebKit.h>
+#import "Template.h"
 
 @implementation TestFunctionSuper
 
@@ -40,6 +43,43 @@
 
 - (NSString * (^)(NSString *name, int count))func:(NSString *)name {
     return ^NSString *(NSString *name1, int count2) {
+               return @"";
+    };
+}
+
+- (NSInteger *)from:(NSInteger *)from to:(NSInteger *)to {
+    *from = *to + 1;
+    return from;
+}
+
+- (NSInteger *)count {
+    return 0;
+}
+
+- (NSInteger *)count1 {
+    return [self count];
+}
+
+- (MJPropertyKey *)pods {
+    return [[MJPropertyKey alloc] init];
+}
+
+- (WKWebView *)webView {
+    return [[WKWebView alloc] init];
+}
+
+- (TemplateView *)templateView {
+    return [[TemplateView alloc] init];
+}
+
+- (NSString * (^)(NSString *name, TemplateView *view))black:(NSString *)name {
+    return ^NSString *(NSString *name1, TemplateView *view) {
+               return @"";
+    };
+}
+
+- (NSString * (^)(NSString *name, TemplateButton *btn))black2:(NSString *)name {
+    return ^NSString *(NSString *name1, TemplateButton *btn) {
                return @"";
     };
 }
