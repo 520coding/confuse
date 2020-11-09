@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Base.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -23,6 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) NSInteger section;
 @property (nonatomic, copy) NSString *title;
+@property (nonatomic, assign) NSInteger *count;
 
 + (void)init;
 + (void)func;

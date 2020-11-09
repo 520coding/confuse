@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "Base.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol TestPropertySuper <NSObject,Base>
+@protocol TestPropertySuper <NSObject, Base>
 
 @property (nonatomic, strong) NSString *sp2;//测试 1.继承、多个类型继承是否统一
 @property (nonatomic, strong) NSString *sp3;

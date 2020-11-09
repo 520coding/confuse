@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TestXibView : UIView
 
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *home;
+
 @end
 
 NS_ASSUME_NONNULL_END
