@@ -19,6 +19,7 @@
 		71290BEA251EE2AF00B3229A /* TestSuperMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 71290BE9251EE2AF00B3229A /* TestSuperMacro.m */; };
 		71290BED251EE38D00B3229A /* TestOtherMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 71290BEC251EE38D00B3229A /* TestOtherMacro.m */; };
 		713619522546A46A00124111 /* TestPropertyOther_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 713619512546A46A00124111 /* TestPropertyOther_VC.m */; };
+		71555B932553E8AE00DD8246 /* CppStudent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71555B912553E8AD00DD8246 /* CppStudent.cpp */; };
 		718B95042508930900C1DB77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95032508930900C1DB77 /* AppDelegate.m */; };
 		718B950A2508930900C1DB77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95092508930900C1DB77 /* ViewController.m */; };
 		718B950D2508930900C1DB77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 718B950B2508930900C1DB77 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		718B95432508D3E200C1DB77 /* SCOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95422508D3E200C1DB77 /* SCOrder.m */; };
 		718B95462508D43900C1DB77 /* User_M.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95452508D43900C1DB77 /* User_M.m */; };
 		718B954C2508D66E00C1DB77 /* Dog_M.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B954B2508D66E00C1DB77 /* Dog_M.m */; };
+		719313E0255A786A004A7802 /* CppFunctionViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 719313DF255A786A004A7802 /* CppFunctionViewController.mm */; };
 		71A6578C2541274A00A307B5 /* TemplateFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A657812541274900A307B5 /* TemplateFunction.m */; };
 		71A6578D2541274A00A307B5 /* TemplateCodeEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A657842541274900A307B5 /* TemplateCodeEqual.m */; };
 		71A6578E2541274A00A307B5 /* TemplateClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A657862541274900A307B5 /* TemplateClass.m */; };
@@ -49,6 +51,10 @@
 		71ABC645252028AB006BB37E /* TestOtherGlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABC644252028AB006BB37E /* TestOtherGlobalVariable.m */; };
 		71ABC64825203222006BB37E /* TestGlobalVariableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABC64725203222006BB37E /* TestGlobalVariableTableViewController.m */; };
 		71CC72EA253841BC0094F702 /* TestDiscardSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CC72E9253841BC0094F702 /* TestDiscardSuper.m */; };
+		71D708D1255A38E4002CCDA8 /* Cpp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D708D0255A38E3002CCDA8 /* Cpp.storyboard */; };
+		71D708D6255A4679002CCDA8 /* Oc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D708D4255A3DCD002CCDA8 /* Oc.storyboard */; };
+		71D708DB255A726B002CCDA8 /* CppFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71D708D9255A726B002CCDA8 /* CppFunction.cpp */; };
+		71D708DE255A7333002CCDA8 /* CppBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71D708DC255A7333002CCDA8 /* CppBase.cpp */; };
 		71D8A39325316E60001A4920 /* TestLocalVariableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D8A39225316E60001A4920 /* TestLocalVariableTableViewController.m */; };
 		71D8A39625316E84001A4920 /* TestLocalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D8A39525316E84001A4920 /* TestLocalVariable.m */; };
 		71E3340B251D97A700FB695A /* TestMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E3340A251D97A700FB695A /* TestMacro.m */; };
@@ -89,6 +95,9 @@
 		71290BEC251EE38D00B3229A /* TestOtherMacro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOtherMacro.m; sourceTree = "<group>"; };
 		713619502546A46A00124111 /* TestPropertyOther_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPropertyOther_VC.h; sourceTree = "<group>"; };
 		713619512546A46A00124111 /* TestPropertyOther_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPropertyOther_VC.m; sourceTree = "<group>"; };
+		71555B912553E8AD00DD8246 /* CppStudent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CppStudent.cpp; sourceTree = "<group>"; };
+		71555B922553E8AE00DD8246 /* CppStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppStudent.h; sourceTree = "<group>"; };
+		71555B942553E90F00DD8246 /* CppHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppHeader.h; sourceTree = "<group>"; };
 		718B94FF2508930900C1DB77 /* confuse_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = confuse_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718B95022508930900C1DB77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		718B95032508930900C1DB77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -125,6 +134,8 @@
 		718B95452508D43900C1DB77 /* User_M.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User_M.m; sourceTree = "<group>"; };
 		718B954A2508D66E00C1DB77 /* Dog_M.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog_M.h; sourceTree = "<group>"; };
 		718B954B2508D66E00C1DB77 /* Dog_M.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog_M.m; sourceTree = "<group>"; };
+		719313DE255A786A004A7802 /* CppFunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CppFunctionViewController.h; sourceTree = "<group>"; };
+		719313DF255A786A004A7802 /* CppFunctionViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CppFunctionViewController.mm; sourceTree = "<group>"; };
 		71A657802541274800A307B5 /* TemplateFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateFunction.h; sourceTree = "<group>"; };
 		71A657812541274900A307B5 /* TemplateFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateFunction.m; sourceTree = "<group>"; };
 		71A657822541274900A307B5 /* TemplateCodeModify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateCodeModify.h; sourceTree = "<group>"; };
@@ -147,6 +158,12 @@
 		71ABC64725203222006BB37E /* TestGlobalVariableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGlobalVariableTableViewController.m; sourceTree = "<group>"; };
 		71CC72E8253841BC0094F702 /* TestDiscardSuper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDiscardSuper.h; sourceTree = "<group>"; };
 		71CC72E9253841BC0094F702 /* TestDiscardSuper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDiscardSuper.m; sourceTree = "<group>"; };
+		71D708D0255A38E3002CCDA8 /* Cpp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cpp.storyboard; sourceTree = "<group>"; };
+		71D708D5255A3DCD002CCDA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Oc.storyboard; sourceTree = "<group>"; };
+		71D708D9255A726B002CCDA8 /* CppFunction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CppFunction.cpp; sourceTree = "<group>"; };
+		71D708DA255A726B002CCDA8 /* CppFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CppFunction.h; sourceTree = "<group>"; };
+		71D708DC255A7333002CCDA8 /* CppBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CppBase.cpp; sourceTree = "<group>"; };
+		71D708DD255A7333002CCDA8 /* CppBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CppBase.h; sourceTree = "<group>"; };
 		71D8A39125316E60001A4920 /* TestLocalVariableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLocalVariableTableViewController.h; sourceTree = "<group>"; };
 		71D8A39225316E60001A4920 /* TestLocalVariableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLocalVariableTableViewController.m; sourceTree = "<group>"; };
 		71D8A39425316E84001A4920 /* TestLocalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLocalVariable.h; sourceTree = "<group>"; };
@@ -225,11 +242,69 @@
 			path = image;
 			sourceTree = "<group>";
 		};
-		71624FEC2541919A00879092 /* New Group */ = {
+		71555B102553D57300DD8246 /* oc */ = {
 			isa = PBXGroup;
 			children = (
+				71D708D4255A3DCD002CCDA8 /* Oc.storyboard */,
+				718B95332508AF2A00C1DB77 /* base */,
+				718B952F2508AEEC00C1DB77 /* third */,
+				718DED9A25400A790059EB39 /* template */,
+				718B95212508982E00C1DB77 /* property */,
+				710338C0250A0B7F0061F6BE /* function */,
+				71555B122553D89F00DD8246 /* variable */,
+				98D4D8662510B96000E3B9AB /* xib */,
+				98742DE525207388003B608D /* font */,
+				98BEEE192521FEC600D085DF /* color */,
+				71555B112553D87F00DD8246 /* layout */,
+				7105718C25500949003FFB3C /* source */,
+				71E33408251D978500FB695A /* macro */,
+				718B953A2508D09B00C1DB77 /* Model */,
 			);
-			name = "New Group";
+			path = oc;
+			sourceTree = "<group>";
+		};
+		71555B112553D87F00DD8246 /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				989FAFE22546A4EB009D0BB5 /* SDAutoLayout */,
+				98C382B225358ACA004FA4D5 /* mansonry */,
+				98C382A8253439DB004FA4D5 /* frame */,
+			);
+			path = layout;
+			sourceTree = "<group>";
+		};
+		71555B122553D89F00DD8246 /* variable */ = {
+			isa = PBXGroup;
+			children = (
+				71D8A39025316E03001A4920 /* local */,
+				71ABC63C2520284C006BB37E /* global */,
+			);
+			path = variable;
+			sourceTree = "<group>";
+		};
+		71555B132553D91200DD8246 /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+				71D708D0255A38E3002CCDA8 /* Cpp.storyboard */,
+				71555B942553E90F00DD8246 /* CppHeader.h */,
+				71D708DD255A7333002CCDA8 /* CppBase.h */,
+				71D708DC255A7333002CCDA8 /* CppBase.cpp */,
+				71555B872553E1FA00DD8246 /* function */,
+			);
+			path = cpp;
+			sourceTree = "<group>";
+		};
+		71555B872553E1FA00DD8246 /* function */ = {
+			isa = PBXGroup;
+			children = (
+				71D708DA255A726B002CCDA8 /* CppFunction.h */,
+				71D708D9255A726B002CCDA8 /* CppFunction.cpp */,
+				71555B922553E8AE00DD8246 /* CppStudent.h */,
+				71555B912553E8AD00DD8246 /* CppStudent.cpp */,
+				719313DE255A786A004A7802 /* CppFunctionViewController.h */,
+				719313DF255A786A004A7802 /* CppFunctionViewController.mm */,
+			);
+			path = function;
 			sourceTree = "<group>";
 		};
 		718B94F62508930800C1DB77 = {
@@ -254,22 +329,8 @@
 		718B95012508930900C1DB77 /* Confuse */ = {
 			isa = PBXGroup;
 			children = (
-				7105718C25500949003FFB3C /* source */,
-				989FAFE22546A4EB009D0BB5 /* SDAutoLayout */,
-				98C382B225358ACA004FA4D5 /* mansonry */,
-				98C382A8253439DB004FA4D5 /* frame */,
-				718DED9A25400A790059EB39 /* template */,
-				71D8A39025316E03001A4920 /* local */,
-				98BEEE192521FEC600D085DF /* color */,
-				71ABC63C2520284C006BB37E /* global */,
-				98742DE525207388003B608D /* font */,
-				71E33408251D978500FB695A /* macro */,
-				98D4D8662510B96000E3B9AB /* xib */,
-				718B95332508AF2A00C1DB77 /* base */,
-				718B952F2508AEEC00C1DB77 /* third */,
-				710338C0250A0B7F0061F6BE /* function */,
-				718B95212508982E00C1DB77 /* property */,
-				718B953A2508D09B00C1DB77 /* Model */,
+				71555B132553D91200DD8246 /* cpp */,
+				71555B102553D57300DD8246 /* oc */,
 				718B95252508992300C1DB77 /* confuse_test.pch */,
 				718B95022508930900C1DB77 /* AppDelegate.h */,
 				718B95032508930900C1DB77 /* AppDelegate.m */,
@@ -402,7 +463,6 @@
 				71290BE8251EE2AF00B3229A /* TestSuperMacro.h */,
 				71290BE9251EE2AF00B3229A /* TestSuperMacro.m */,
 				71290BEB251EE38D00B3229A /* TestOtherMacro.h */,
-				71624FEC2541919A00879092 /* New Group */,
 				71290BEC251EE38D00B3229A /* TestOtherMacro.m */,
 			);
 			path = macro;
@@ -544,9 +604,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71D708D1255A38E4002CCDA8 /* Cpp.storyboard in Resources */,
 				718B95122508930A00C1DB77 /* LaunchScreen.storyboard in Resources */,
 				718B950F2508930A00C1DB77 /* Assets.xcassets in Resources */,
 				98D4D86B2510B98500E3B9AB /* TestXibViewController.xib in Resources */,
+				71D708D6255A4679002CCDA8 /* Oc.storyboard in Resources */,
 				718B950D2508930900C1DB77 /* Main.storyboard in Resources */,
 				718B952D2508AA6B00C1DB77 /* TestPropertyXibViewController.xib in Resources */,
 				710F33CF2514731F00AEE75E /* TestPropertyXibView.xib in Resources */,
@@ -597,6 +659,7 @@
 				71CC72EA253841BC0094F702 /* TestDiscardSuper.m in Sources */,
 				718B95282508AA2000C1DB77 /* TestPropertyViewContorller.m in Sources */,
 				71A657912541274A00A307B5 /* TemplateCodeModify.m in Sources */,
+				71D708DB255A726B002CCDA8 /* CppFunction.cpp in Sources */,
 				718B95152508930A00C1DB77 /* main.m in Sources */,
 				71A657902541274A00A307B5 /* TemplateViewController.m in Sources */,
 				71ABC645252028AB006BB37E /* TestOtherGlobalVariable.m in Sources */,
@@ -607,10 +670,12 @@
 				710338C9250A12AF0061F6BE /* TestFunctionViewController.m in Sources */,
 				71A6578C2541274A00A307B5 /* TemplateFunction.m in Sources */,
 				71A6578F2541274A00A307B5 /* Template.m in Sources */,
+				71D708DE255A7333002CCDA8 /* CppBase.cpp in Sources */,
 				713619522546A46A00124111 /* TestPropertyOther_VC.m in Sources */,
 				71ABC63F2520286D006BB37E /* TestGlobalVariable.m in Sources */,
 				718B95462508D43900C1DB77 /* User_M.m in Sources */,
 				710338C6250A0BE20061F6BE /* TestFunctionSuper.m in Sources */,
+				71555B932553E8AE00DD8246 /* CppStudent.cpp in Sources */,
 				710571902550097F003FFB3C /* TestImageViewController.m in Sources */,
 				71A6578D2541274A00A307B5 /* TemplateCodeEqual.m in Sources */,
 				718B953D2508D29700C1DB77 /* UserInfoModel.m in Sources */,
@@ -633,6 +698,7 @@
 				718B95242508988D00C1DB77 /* Base.m in Sources */,
 				98742DE8252073B9003B608D /* TestFont.m in Sources */,
 				710338CD250A12C70061F6BE /* TestFunctionXibViewController.m in Sources */,
+				719313E0255A786A004A7802 /* CppFunctionViewController.mm in Sources */,
 				710338C3250A0BD40061F6BE /* TestFunction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -654,6 +720,14 @@
 				718B95112508930A00C1DB77 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		71D708D4255A3DCD002CCDA8 /* Oc.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71D708D5255A3DCD002CCDA8 /* Base */,
+			);
+			name = Oc.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -777,12 +851,41 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = Confuse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"MJExtension\"",
+					"-l\"Masonry\"",
+					"-l\"SDAutoLayout\"",
+					"-l\"YYCategories\"",
+					"-l\"YYModel\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -796,12 +899,41 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = Confuse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"MJExtension\"",
+					"-l\"Masonry\"",
+					"-l\"SDAutoLayout\"",
+					"-l\"YYCategories\"",
+					"-l\"YYModel\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
