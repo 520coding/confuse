@@ -1,14 +1,15 @@
 # confuse(iOS马甲包混淆，上架神器)
 
-<a name="X50Qx"></a>
 #                             ![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png#align=left&display=inline&height=177&margin=%5Bobject%20Object%5D&name=image.png&originHeight=512&originWidth=512&size=119707&status=done&style=none&width=177)
-<a name="KQtMH"></a>
 # 警告⚠️
-建议暂时先不用（[插入文件]、[插入文本]），该功能优化中，目标逼近正常开发，让插入的垃圾不在是垃圾，告别所谓的垃圾
-<a name="GZrkm"></a>
+
+1. 建议暂时先不用（[插入文件]、[插入文本]），该功能优化中，目标逼近正常开发，让插入的垃圾不在是垃圾，告别所谓的垃圾
+1. [重命名多语言]存在bug，某些情况下会导致项目编译出错，建议先不使用
+
+
+
 # 前言
 因公司发展需要，本人19年中旬开始从事iOS[马甲包业务](https://www.yuque.com/docs/share/7e70244c-5dea-4035-b634-65cc082097da?#《马甲包简介》)，前期也使用过目前市面上其他得工具，实际效果不太理想。经过大量实践，开发出一款功能齐全的[马甲包工具](https://github.com/520coding/confuse)（支持OC、Lua、C++）。工具的主要功能OC已封装成Mac应用，其他功能还在封装中，敬请期待。（目前公测阶段: _**免费**_）
-<a name="qPY4i"></a>
 # 提示
 为了提高通用性，近期不断重构(>=v1.2.0)之前老版本的功能，为此新建测试工程【[**confuse_test**](https://github.com/520coding/confuse/tree/master/confuse_test)**】**，大家在实际使用过程中如果遇到问题，欢迎扩展测试工程（在工程中请注明bug细节）。
 > 1.2.0之前的老版本说明：
@@ -16,16 +17,16 @@
 > 适用项目：C++、Swift、RN等还未适配的混合项目。
 > 使用条件：目前能用1.1.3，其他过期了
 
-<a name="ddChF"></a>
 # 自述
-其实识别一个工具的优劣，只需看看它能否修改方法名的所有参数名（极少）、带block的参数的方法（极少），偏移元素（较少）。更别说“还有谁...”能识别宏、区分继承链等上下文关联内容。也欢迎大家使用不同工具混淆测试工程【[**confuse_test**](https://github.com/520coding/confuse/tree/master/confuse_test)**】**，对比效果。<br />马甲包的本质：
+其实识别一个工具的优劣，只需看看它能否修改方法名的所有参数名（极少）、带block的参数的方法（极少），偏移元素（较少）。更别说“还有谁...”能识别宏、区分继承链等上下文关联内容。也欢迎大家使用不同工具混淆测试工程【[**confuse_test**](https://github.com/520coding/confuse/tree/master/confuse_test)**】**，对比效果。
+马甲包的本质：
 
 1. 阶段一减低重复率 ，本人开发初期的版本和目前市面上的其它工具基本相似，主要是‘名称’全局替换这一个基本的功能
 1. 阶段二减少相似度（相同元素的正态分布），目前该工具经过优化已经有了很大的改善，已经在慢慢往这方面靠近，详情见以下功能介绍。事物都有两面性，功能越强大混淆耗时越长，如果你的项目很大，混淆几个小时也是有可能的，请不要见怪，后续持续优化中。
-<a name="ICzWQ"></a>
 # 功能
-confuse是一款[马甲包工具](https://github.com/520coding/confuse)，尽可能模拟人工混淆，避免机核4.3、2.1、2.3.1、账号调查等。<br />目标：**模拟人工修改一切能改的地方**，这也是为什么本工具只有黑名单没有白名单的原因<br />详细功能如下：
-<a name="MQHkR"></a>
+confuse是一款[马甲包工具](https://github.com/520coding/confuse)，尽可能模拟人工混淆，避免机核4.3、2.1、2.3.1、账号调查等。
+目标：**模拟人工修改一切能改的地方**，这也是为什么本工具只有黑名单没有白名单的原因
+详细功能如下：
 ### 已完成
 
 1. [资源替换]，混淆前指定需要替换的资源文件夹，自动进行同名文件替换，方便快捷
@@ -69,14 +70,13 @@ confuse是一款[马甲包工具](https://github.com/520coding/confuse)，尽可
 13. [插入图片]，类中自动初始化、调用及销毁
 13. 优化中...~~[插入文本]，文件（json、txt、doc）~~
 13. [重命名类]，类名及对应的文件名一起修改，准备‘智能名词替换’重构，可指定添加前缀
+13. [修改文件属性]，如创建时间、访问时间、修改时间
 13. [修改项目]，基本配置信息，例如：版本号、SDK的BundleID
 
 _以上所有功能均支持黑名单过滤，对指定的内容进行屏蔽，忽略混淆。_
-<a name="r8lqr"></a>
 #### 名词解释
 
 - 智能名词替换:重命名时使用关联类型已有信息+相近语义+类型+部分旧词汇等组合，~~弃用‘随机单词无脑组合’~~
-<a name="OEesy"></a>
 ### 规划中
 更新迭代将按照以下顺序依次进行
 
@@ -99,26 +99,18 @@ _以上所有功能均支持黑名单过滤，对指定的内容进行屏蔽，�
 3. Cocos2d-x，现有功能不具备通用性，准备整合至C++中
 3. Lua的针对性太强了，暂时不开放，暂时不打算重构有需要在说吧
 3. Swift，本人实际项目使用不多，故排在最后，看用户需求再决定
-<a name="vlfzY"></a>
 # 图文介绍
-运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1594644980313-b3ee8604-9652-4bba-bb18-3d06399593e9.png#align=left&display=inline&height=540&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&size=537018&status=done&style=none&width=960)
-<a name="WtuYs"></a>
+运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)
+![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1594644980313-b3ee8604-9652-4bba-bb18-3d06399593e9.png#align=left&display=inline&height=540&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&size=537018&status=done&style=none&width=960)
 # 更新日志
-<a name="sEHpd"></a>
-# v2.2.2（2020.11.09）
+# v2.3.0（2020.11.11）
 
-1. 修复混淆后有可能出现数字开头的非法名字
-1. 修复[插入方法]非Foundation和UIKit的类型，没有引用类型问题
-1. 修复[修改局部变量]URL可能包含中文导致的运行时错误
-1. 修复YYModel不是用cocoapods方式导入导致Model的相关方法被改了
-1. 修复重构重命名系列，未设置前缀时导致名称有可能重复冲突的问题，原因：当初一直开着前缀测试导致没有发现问题
-1. 新增[修改方法]、[插入方法]，百分比控制设置
+1. 新增[修改文件属性]，如创建时间、访问时间、修改时间
+1. 新增混淆前后文件对比功能，比较混淆前后名称变化以及文件相似度
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
-<a name="63ca6131"></a>
 # 感谢反馈
 [shizu2014](https://github.com/shizu2014)、[myhonior](https://github.com/myhonior)、[imbahong](https://github.com/imbahong)
-<a name="BUG"></a>
 # 链接导航
 
 1. [工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)

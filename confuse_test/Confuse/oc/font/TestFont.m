@@ -15,7 +15,7 @@
 
 @implementation TestFont
 
-- (void)testChange {
+- (IBAction)testFont:(id)sender {
     [UIFont systemFontOfSize:11 weight:2];
     [UIFont systemFontOfSize:14];
     [UIFont systemFontOfSize:-1 + 14];
@@ -28,6 +28,7 @@
         // Fallback on earlier versions
     }
     [UIFont monospacedDigitSystemFontOfSize:14 weight:2];
+    [self setWord];
 }
 
 - (void)setWord {

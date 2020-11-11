@@ -21,9 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TestColor : UIView
 
-- (void)testChangeColor;
-- (void)setColor;
-
 @end
 
 NS_ASSUME_NONNULL_END

@@ -9,9 +9,13 @@
 #ifndef confuse_test_pch
 #define confuse_test_pch
 
+#ifdef __OBJC__
+
 #import <Masonry.h>
 //#import <YYCategories.h>
 
+
+#endif
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

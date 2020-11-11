@@ -10,7 +10,7 @@
 
 @implementation TestColor
 
-- (void)testChangeColor{
+- (IBAction)testColor:(id)sender {
     self.backgroundColor = [UIColor colorWithRed:234
                                            green:112
                                             blue:1
@@ -23,6 +23,7 @@
     self.backgroundColor = [[UIColor alloc] initWithWhite:7 alpha:1];
     self.backgroundColor = [[UIColor alloc] initWithRed:43 green:98 blue:21 alpha:1];
     self.backgroundColor = [[UIColor alloc] initWithDisplayP3Red:87 green:34 blue:32 alpha:1];
+    [self setColor];
 }
 
 - (void)setColor{

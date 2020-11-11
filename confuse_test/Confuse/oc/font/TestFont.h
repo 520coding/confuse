@@ -22,9 +22,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TestFont : NSObject
 
-- (void)testChange;
-- (void)setWord;
-
 @end
 
 NS_ASSUME_NONNULL_END
