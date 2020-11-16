@@ -1,5 +1,5 @@
 //
-//  TestMansonry.h
+//  TestMasonry.h
 //  confuse_test
 //
 //  Created by ymac on 13/10/2020.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TestMansonry : NSObject
+@interface TestMasonry : NSObject
 
 @end
 

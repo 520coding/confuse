@@ -1,8 +1,8 @@
 //
-//  CppFunctionViewController.h
+//  TestClassCell.h
 //  confuse_test
 //
-//  Created by yjs on 2020/11/10.
+//  Created by yjs on 2020/11/14.
 //  Copyright © 2020 coding520. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CppFunctionViewController : UIViewController
+@interface TestClassCell : UITableViewCell
 
 @end
 

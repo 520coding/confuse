@@ -1,16 +1,16 @@
 //
-//  TestPropertyViewContorller.m
+//  TestPropertyViewController.m
 //  confuse_test
 //
 //  Created by yjs on 2020/9/9.
 //  Copyright © 2020 coding520. All rights reserved.
 //
 
-#import "TestPropertyViewContorller.h"
+#import "TestPropertyViewController.h"
 #import "TestProperty.h"
 #import "TestPropertyXibViewController.h"
 
-@interface TestPropertyViewContorller ()
+@interface TestPropertyViewController ()
 
 @property (strong, nonatomic) IBOutletCollection(UISwitch) NSArray *collections;
 
@@ -19,7 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *label2;
 @end
 
-@implementation TestPropertyViewContorller
+@implementation TestPropertyViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

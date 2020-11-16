@@ -1,5 +1,5 @@
 //
-//  TestPropertyViewContorller.h
+//  TestPropertyViewController.h
 //  confuse_test
 //
 //  Created by yjs on 2020/9/9.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TestPropertyViewContorller : UIViewController
+@interface TestPropertyViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *label1;
 @property (weak, nonatomic) IBOutlet TestPropertyXibView *propertyXibView;
 

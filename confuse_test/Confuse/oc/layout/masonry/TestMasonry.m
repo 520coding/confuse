@@ -1,14 +1,14 @@
 //
-//  TestMansonry.m
+//  TestMasonry.m
 //  confuse_test
 //
 //  Created by ymac on 13/10/2020.
 //  Copyright © 2020 coding520. All rights reserved.
 //
 
-#import "TestMansonry.h"
+#import "TestMasonry.h"
 
-@implementation TestMansonry
+@implementation TestMasonry
 
 -(void)initView{
     UIView *view = [[UIView alloc] initWithFrame:CGRectZero];
