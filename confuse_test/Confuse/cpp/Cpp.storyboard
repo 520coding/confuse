@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="smX-LX-NHg">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,21 +11,21 @@
             <objects>
                 <tableViewController id="Fox-Z2-UM3" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jp0-er-drY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <sections>
                             <tableViewSection id="V2K-GJ-dns">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="HiB-Fu-3op" style="IBUITableViewCellStyleDefault" id="eQr-lP-1my">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="600" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eQr-lP-1my" id="THQ-Rb-cGz">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="function" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HiB-Fu-3op">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="560" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -53,22 +51,22 @@
             </objects>
             <point key="canvasLocation" x="-875" y="821"/>
         </scene>
-        <!--Cpp Function View Controller-->
+        <!--Cpp View Controller-->
         <scene sceneID="eHY-Q6-nai">
             <objects>
-                <viewController id="vsq-VK-j8r" customClass="CppFunctionViewController" sceneMemberID="viewController">
+                <viewController id="vsq-VK-j8r" customClass="CppViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nwE-U1-5mA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meh-W3-YWD">
-                                <rect key="frame" x="186" y="108" width="42" height="21"/>
+                                <rect key="frame" x="279" y="64" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iCm-gH-Ddo">
-                                <rect key="frame" x="0.0" y="149" width="414" height="150"/>
+                                <rect key="frame" x="0.0" y="105" width="600" height="150"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="oRt-mH-dqq"/>
@@ -79,7 +77,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YY2-gU-iu9">
-                                <rect key="frame" x="192" y="319" width="30" height="30"/>
+                                <rect key="frame" x="285" y="275" width="30" height="30"/>
                                 <state key="normal" title="test"/>
                                 <connections>
                                     <action selector="test:" destination="vsq-VK-j8r" eventType="touchUpInside" id="TrB-sF-9xy"/>
@@ -104,12 +102,11 @@
             </objects>
             <point key="canvasLocation" x="110" y="821"/>
         </scene>
-        <!--Cpp-->
+        <!--Navigation Controller-->
         <scene sceneID="q6B-jT-W1Y">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UcD-J6-CdO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="smX-LX-NHg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Cpp" id="y8g-9C-Phf"/>
+                    <tabBarItem key="tabBarItem" title="" image="cpp" id="y8g-9C-Phf"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="o7G-yr-eMk">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -119,8 +116,12 @@
                         <segue destination="Fox-Z2-UM3" kind="relationship" relationship="rootViewController" id="pJ5-la-IwW"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UcD-J6-CdO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-874" y="84"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cpp" width="32" height="32"/>
+    </resources>
 </document>

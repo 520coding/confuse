@@ -20,6 +20,8 @@
 		71290BED251EE38D00B3229A /* TestOtherMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 71290BEC251EE38D00B3229A /* TestOtherMacro.m */; };
 		713619522546A46A00124111 /* TestPropertyOther_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 713619512546A46A00124111 /* TestPropertyOther_VC.m */; };
 		71555B932553E8AE00DD8246 /* CppStudent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71555B912553E8AD00DD8246 /* CppStudent.cpp */; };
+		716A28F4255F80D800187F30 /* TestClassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A28F2255F80D800187F30 /* TestClassCell.m */; };
+		716A28F5255F80D800187F30 /* TestClassCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 716A28F3255F80D800187F30 /* TestClassCell.xib */; };
 		718B95042508930900C1DB77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95032508930900C1DB77 /* AppDelegate.m */; };
 		718B950A2508930900C1DB77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95092508930900C1DB77 /* ViewController.m */; };
 		718B950D2508930900C1DB77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 718B950B2508930900C1DB77 /* Main.storyboard */; };
@@ -29,7 +31,7 @@
 		718B951F2508982700C1DB77 /* TestProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B951D2508982700C1DB77 /* TestProperty.m */; };
 		718B95202508982700C1DB77 /* TestPropertySuper.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B951B2508982600C1DB77 /* TestPropertySuper.m */; };
 		718B95242508988D00C1DB77 /* Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95232508988D00C1DB77 /* Base.m */; };
-		718B95282508AA2000C1DB77 /* TestPropertyViewContorller.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95272508AA2000C1DB77 /* TestPropertyViewContorller.m */; };
+		718B95282508AA2000C1DB77 /* TestPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95272508AA2000C1DB77 /* TestPropertyViewController.m */; };
 		718B952C2508AA6B00C1DB77 /* TestPropertyXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B952A2508AA6B00C1DB77 /* TestPropertyXibViewController.m */; };
 		718B952D2508AA6B00C1DB77 /* TestPropertyXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 718B952B2508AA6B00C1DB77 /* TestPropertyXibViewController.xib */; };
 		718B95322508AF0C00C1DB77 /* MBHudDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95312508AF0B00C1DB77 /* MBHudDemoViewController.m */; };
@@ -39,7 +41,7 @@
 		718B95432508D3E200C1DB77 /* SCOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95422508D3E200C1DB77 /* SCOrder.m */; };
 		718B95462508D43900C1DB77 /* User_M.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95452508D43900C1DB77 /* User_M.m */; };
 		718B954C2508D66E00C1DB77 /* Dog_M.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B954B2508D66E00C1DB77 /* Dog_M.m */; };
-		719313E0255A786A004A7802 /* CppFunctionViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 719313DF255A786A004A7802 /* CppFunctionViewController.mm */; };
+		719313E0255A786A004A7802 /* CppViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 719313DF255A786A004A7802 /* CppViewController.mm */; };
 		71A6578C2541274A00A307B5 /* TemplateFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A657812541274900A307B5 /* TemplateFunction.m */; };
 		71A6578D2541274A00A307B5 /* TemplateCodeEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A657842541274900A307B5 /* TemplateCodeEqual.m */; };
 		71A6578E2541274A00A307B5 /* TemplateClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A657862541274900A307B5 /* TemplateClass.m */; };
@@ -58,13 +60,15 @@
 		71D8A39325316E60001A4920 /* TestLocalVariableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D8A39225316E60001A4920 /* TestLocalVariableTableViewController.m */; };
 		71D8A39625316E84001A4920 /* TestLocalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D8A39525316E84001A4920 /* TestLocalVariable.m */; };
 		71E3340B251D97A700FB695A /* TestMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E3340A251D97A700FB695A /* TestMacro.m */; };
+		980BB6CD255D1B3400404641 /* TestClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980BB6CA255D1B3400404641 /* TestClassController.m */; };
+		980BB6CE255D1B3400404641 /* TestClassController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980BB6CB255D1B3400404641 /* TestClassController.xib */; };
 		98742DE8252073B9003B608D /* TestFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 98742DE7252073B9003B608D /* TestFont.m */; };
 		989FAFE92546A4EB009D0BB5 /* TestLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 989FAFE32546A4EB009D0BB5 /* TestLayoutCell.m */; };
 		989FAFEA2546A4EB009D0BB5 /* TestLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989FAFE52546A4EB009D0BB5 /* TestLayoutViewController.m */; };
 		989FAFEB2546A4EB009D0BB5 /* TestLayoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989FAFE62546A4EB009D0BB5 /* TestLayoutTableViewController.m */; };
 		98BEEE1C2521FED700D085DF /* TestColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BEEE1B2521FED700D085DF /* TestColor.m */; };
 		98C382AB253439EF004FA4D5 /* TestFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C382AA253439EF004FA4D5 /* TestFrame.m */; };
-		98C382B525358AE6004FA4D5 /* TestMansonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C382B425358AE6004FA4D5 /* TestMansonry.m */; };
+		98C382B525358AE6004FA4D5 /* TestMasonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C382B425358AE6004FA4D5 /* TestMasonry.m */; };
 		98D4D86A2510B98500E3B9AB /* TestXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D4D8682510B98500E3B9AB /* TestXibViewController.m */; };
 		98D4D86B2510B98500E3B9AB /* TestXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98D4D8692510B98500E3B9AB /* TestXibViewController.xib */; };
 		98D4D86E2510B9A500E3B9AB /* TestXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D4D86D2510B9A500E3B9AB /* TestXibView.m */; };
@@ -86,6 +90,7 @@
 		7105718F2550097F003FFB3C /* TestImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestImageViewController.m; sourceTree = "<group>"; };
 		7105719125500A06003FFB3C /* TestImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestImageModel.h; sourceTree = "<group>"; };
 		7105719225500A06003FFB3C /* TestImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestImageModel.m; sourceTree = "<group>"; };
+		710751CB255D40F100D7F0B7 /* CppNamespace.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CppNamespace.hpp; sourceTree = "<group>"; };
 		710F33CE2514731F00AEE75E /* TestPropertyXibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestPropertyXibView.xib; sourceTree = "<group>"; };
 		7121E177252F6B5F00F19EE0 /* TestFunctionOtherTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFunctionOtherTemplate.h; sourceTree = "<group>"; };
 		7121E178252F6B5F00F19EE0 /* TestFunctionOtherTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFunctionOtherTemplate.m; sourceTree = "<group>"; };
@@ -98,6 +103,9 @@
 		71555B912553E8AD00DD8246 /* CppStudent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CppStudent.cpp; sourceTree = "<group>"; };
 		71555B922553E8AE00DD8246 /* CppStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppStudent.h; sourceTree = "<group>"; };
 		71555B942553E90F00DD8246 /* CppHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppHeader.h; sourceTree = "<group>"; };
+		716A28F1255F80D800187F30 /* TestClassCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestClassCell.h; sourceTree = "<group>"; };
+		716A28F2255F80D800187F30 /* TestClassCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestClassCell.m; sourceTree = "<group>"; };
+		716A28F3255F80D800187F30 /* TestClassCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestClassCell.xib; sourceTree = "<group>"; };
 		718B94FF2508930900C1DB77 /* confuse_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = confuse_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718B95022508930900C1DB77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		718B95032508930900C1DB77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,8 +123,8 @@
 		718B95222508988D00C1DB77 /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
 		718B95232508988D00C1DB77 /* Base.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Base.m; sourceTree = "<group>"; };
 		718B95252508992300C1DB77 /* confuse_test.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = confuse_test.pch; sourceTree = "<group>"; };
-		718B95262508AA2000C1DB77 /* TestPropertyViewContorller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPropertyViewContorller.h; sourceTree = "<group>"; };
-		718B95272508AA2000C1DB77 /* TestPropertyViewContorller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPropertyViewContorller.m; sourceTree = "<group>"; };
+		718B95262508AA2000C1DB77 /* TestPropertyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPropertyViewController.h; sourceTree = "<group>"; };
+		718B95272508AA2000C1DB77 /* TestPropertyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPropertyViewController.m; sourceTree = "<group>"; };
 		718B95292508AA6B00C1DB77 /* TestPropertyXibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPropertyXibViewController.h; sourceTree = "<group>"; };
 		718B952A2508AA6B00C1DB77 /* TestPropertyXibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPropertyXibViewController.m; sourceTree = "<group>"; };
 		718B952B2508AA6B00C1DB77 /* TestPropertyXibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestPropertyXibViewController.xib; sourceTree = "<group>"; };
@@ -134,8 +142,8 @@
 		718B95452508D43900C1DB77 /* User_M.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User_M.m; sourceTree = "<group>"; };
 		718B954A2508D66E00C1DB77 /* Dog_M.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog_M.h; sourceTree = "<group>"; };
 		718B954B2508D66E00C1DB77 /* Dog_M.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog_M.m; sourceTree = "<group>"; };
-		719313DE255A786A004A7802 /* CppFunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CppFunctionViewController.h; sourceTree = "<group>"; };
-		719313DF255A786A004A7802 /* CppFunctionViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CppFunctionViewController.mm; sourceTree = "<group>"; };
+		719313DE255A786A004A7802 /* CppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CppViewController.h; sourceTree = "<group>"; };
+		719313DF255A786A004A7802 /* CppViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CppViewController.mm; sourceTree = "<group>"; };
 		71A657802541274800A307B5 /* TemplateFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateFunction.h; sourceTree = "<group>"; };
 		71A657812541274900A307B5 /* TemplateFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateFunction.m; sourceTree = "<group>"; };
 		71A657822541274900A307B5 /* TemplateCodeModify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateCodeModify.h; sourceTree = "<group>"; };
@@ -170,6 +178,9 @@
 		71D8A39525316E84001A4920 /* TestLocalVariable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLocalVariable.m; sourceTree = "<group>"; };
 		71E33409251D97A700FB695A /* TestMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMacro.h; sourceTree = "<group>"; };
 		71E3340A251D97A700FB695A /* TestMacro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMacro.m; sourceTree = "<group>"; };
+		980BB6CA255D1B3400404641 /* TestClassController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClassController.m; sourceTree = "<group>"; };
+		980BB6CB255D1B3400404641 /* TestClassController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestClassController.xib; sourceTree = "<group>"; };
+		980BB6CC255D1B3400404641 /* TestClassController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClassController.h; sourceTree = "<group>"; };
 		98742DE6252073B9003B608D /* TestFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFont.h; sourceTree = "<group>"; };
 		98742DE7252073B9003B608D /* TestFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFont.m; sourceTree = "<group>"; };
 		989FAFE32546A4EB009D0BB5 /* TestLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLayoutCell.m; sourceTree = "<group>"; };
@@ -182,8 +193,8 @@
 		98BEEE1B2521FED700D085DF /* TestColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestColor.m; sourceTree = "<group>"; };
 		98C382A9253439EF004FA4D5 /* TestFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFrame.h; sourceTree = "<group>"; };
 		98C382AA253439EF004FA4D5 /* TestFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFrame.m; sourceTree = "<group>"; };
-		98C382B325358AE6004FA4D5 /* TestMansonry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMansonry.h; sourceTree = "<group>"; };
-		98C382B425358AE6004FA4D5 /* TestMansonry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMansonry.m; sourceTree = "<group>"; };
+		98C382B325358AE6004FA4D5 /* TestMasonry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMasonry.h; sourceTree = "<group>"; };
+		98C382B425358AE6004FA4D5 /* TestMasonry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMasonry.m; sourceTree = "<group>"; };
 		98D4D8672510B98500E3B9AB /* TestXibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestXibViewController.h; sourceTree = "<group>"; };
 		98D4D8682510B98500E3B9AB /* TestXibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestXibViewController.m; sourceTree = "<group>"; };
 		98D4D8692510B98500E3B9AB /* TestXibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestXibViewController.xib; sourceTree = "<group>"; };
@@ -242,6 +253,14 @@
 			path = image;
 			sourceTree = "<group>";
 		};
+		710751C7255D3FE000D7F0B7 /* namespace */ = {
+			isa = PBXGroup;
+			children = (
+				710751CB255D40F100D7F0B7 /* CppNamespace.hpp */,
+			);
+			path = namespace;
+			sourceTree = "<group>";
+		};
 		71555B102553D57300DD8246 /* oc */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +268,7 @@
 				718B95332508AF2A00C1DB77 /* base */,
 				718B952F2508AEEC00C1DB77 /* third */,
 				718DED9A25400A790059EB39 /* template */,
+				980BB6C9255D1B3400404641 /* class */,
 				718B95212508982E00C1DB77 /* property */,
 				710338C0250A0B7F0061F6BE /* function */,
 				71555B122553D89F00DD8246 /* variable */,
@@ -267,7 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				989FAFE22546A4EB009D0BB5 /* SDAutoLayout */,
-				98C382B225358ACA004FA4D5 /* mansonry */,
+				98C382B225358ACA004FA4D5 /* masonry */,
 				98C382A8253439DB004FA4D5 /* frame */,
 			);
 			path = layout;
@@ -285,10 +305,13 @@
 		71555B132553D91200DD8246 /* cpp */ = {
 			isa = PBXGroup;
 			children = (
+				710751C7255D3FE000D7F0B7 /* namespace */,
 				71D708D0255A38E3002CCDA8 /* Cpp.storyboard */,
 				71555B942553E90F00DD8246 /* CppHeader.h */,
 				71D708DD255A7333002CCDA8 /* CppBase.h */,
 				71D708DC255A7333002CCDA8 /* CppBase.cpp */,
+				719313DE255A786A004A7802 /* CppViewController.h */,
+				719313DF255A786A004A7802 /* CppViewController.mm */,
 				71555B872553E1FA00DD8246 /* function */,
 			);
 			path = cpp;
@@ -301,8 +324,6 @@
 				71D708D9255A726B002CCDA8 /* CppFunction.cpp */,
 				71555B922553E8AE00DD8246 /* CppStudent.h */,
 				71555B912553E8AD00DD8246 /* CppStudent.cpp */,
-				719313DE255A786A004A7802 /* CppFunctionViewController.h */,
-				719313DF255A786A004A7802 /* CppFunctionViewController.mm */,
 			);
 			path = function;
 			sourceTree = "<group>";
@@ -352,8 +373,8 @@
 				718B951D2508982700C1DB77 /* TestProperty.m */,
 				718B951C2508982600C1DB77 /* TestPropertySuper.h */,
 				718B951B2508982600C1DB77 /* TestPropertySuper.m */,
-				718B95262508AA2000C1DB77 /* TestPropertyViewContorller.h */,
-				718B95272508AA2000C1DB77 /* TestPropertyViewContorller.m */,
+				718B95262508AA2000C1DB77 /* TestPropertyViewController.h */,
+				718B95272508AA2000C1DB77 /* TestPropertyViewController.m */,
 				713619502546A46A00124111 /* TestPropertyOther_VC.h */,
 				713619512546A46A00124111 /* TestPropertyOther_VC.m */,
 				718B95292508AA6B00C1DB77 /* TestPropertyXibViewController.h */,
@@ -476,6 +497,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		980BB6C9255D1B3400404641 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				716A28F1255F80D800187F30 /* TestClassCell.h */,
+				716A28F2255F80D800187F30 /* TestClassCell.m */,
+				716A28F3255F80D800187F30 /* TestClassCell.xib */,
+				980BB6CC255D1B3400404641 /* TestClassController.h */,
+				980BB6CA255D1B3400404641 /* TestClassController.m */,
+				980BB6CB255D1B3400404641 /* TestClassController.xib */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
 		98742DE525207388003B608D /* font */ = {
 			isa = PBXGroup;
 			children = (
@@ -516,13 +550,13 @@
 			path = frame;
 			sourceTree = "<group>";
 		};
-		98C382B225358ACA004FA4D5 /* mansonry */ = {
+		98C382B225358ACA004FA4D5 /* masonry */ = {
 			isa = PBXGroup;
 			children = (
-				98C382B325358AE6004FA4D5 /* TestMansonry.h */,
-				98C382B425358AE6004FA4D5 /* TestMansonry.m */,
+				98C382B325358AE6004FA4D5 /* TestMasonry.h */,
+				98C382B425358AE6004FA4D5 /* TestMasonry.m */,
 			);
-			path = mansonry;
+			path = masonry;
 			sourceTree = "<group>";
 		};
 		98D4D8662510B96000E3B9AB /* xib */ = {
@@ -604,10 +638,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980BB6CE255D1B3400404641 /* TestClassController.xib in Resources */,
 				71D708D1255A38E4002CCDA8 /* Cpp.storyboard in Resources */,
 				718B95122508930A00C1DB77 /* LaunchScreen.storyboard in Resources */,
 				718B950F2508930A00C1DB77 /* Assets.xcassets in Resources */,
 				98D4D86B2510B98500E3B9AB /* TestXibViewController.xib in Resources */,
+				716A28F5255F80D800187F30 /* TestClassCell.xib in Resources */,
 				71D708D6255A4679002CCDA8 /* Oc.storyboard in Resources */,
 				718B950D2508930900C1DB77 /* Main.storyboard in Resources */,
 				718B952D2508AA6B00C1DB77 /* TestPropertyXibViewController.xib in Resources */,
@@ -657,7 +693,7 @@
 				71290BEA251EE2AF00B3229A /* TestSuperMacro.m in Sources */,
 				718B95202508982700C1DB77 /* TestPropertySuper.m in Sources */,
 				71CC72EA253841BC0094F702 /* TestDiscardSuper.m in Sources */,
-				718B95282508AA2000C1DB77 /* TestPropertyViewContorller.m in Sources */,
+				718B95282508AA2000C1DB77 /* TestPropertyViewController.m in Sources */,
 				71A657912541274A00A307B5 /* TemplateCodeModify.m in Sources */,
 				71D708DB255A726B002CCDA8 /* CppFunction.cpp in Sources */,
 				718B95152508930A00C1DB77 /* main.m in Sources */,
@@ -673,11 +709,13 @@
 				71D708DE255A7333002CCDA8 /* CppBase.cpp in Sources */,
 				713619522546A46A00124111 /* TestPropertyOther_VC.m in Sources */,
 				71ABC63F2520286D006BB37E /* TestGlobalVariable.m in Sources */,
+				716A28F4255F80D800187F30 /* TestClassCell.m in Sources */,
 				718B95462508D43900C1DB77 /* User_M.m in Sources */,
 				710338C6250A0BE20061F6BE /* TestFunctionSuper.m in Sources */,
 				71555B932553E8AE00DD8246 /* CppStudent.cpp in Sources */,
 				710571902550097F003FFB3C /* TestImageViewController.m in Sources */,
 				71A6578D2541274A00A307B5 /* TemplateCodeEqual.m in Sources */,
+				980BB6CD255D1B3400404641 /* TestClassController.m in Sources */,
 				718B953D2508D29700C1DB77 /* UserInfoModel.m in Sources */,
 				718B95322508AF0C00C1DB77 /* MBHudDemoViewController.m in Sources */,
 				989FAFE92546A4EB009D0BB5 /* TestLayoutCell.m in Sources */,
@@ -688,7 +726,7 @@
 				98D4D86A2510B98500E3B9AB /* TestXibViewController.m in Sources */,
 				718B95362508AFD200C1DB77 /* MBProgressHUD.m in Sources */,
 				718B95402508D3A500C1DB77 /* SCSelectModel.m in Sources */,
-				98C382B525358AE6004FA4D5 /* TestMansonry.m in Sources */,
+				98C382B525358AE6004FA4D5 /* TestMasonry.m in Sources */,
 				718B95432508D3E200C1DB77 /* SCOrder.m in Sources */,
 				718B951F2508982700C1DB77 /* TestProperty.m in Sources */,
 				71D8A39325316E60001A4920 /* TestLocalVariableTableViewController.m in Sources */,
@@ -698,7 +736,7 @@
 				718B95242508988D00C1DB77 /* Base.m in Sources */,
 				98742DE8252073B9003B608D /* TestFont.m in Sources */,
 				710338CD250A12C70061F6BE /* TestFunctionXibViewController.m in Sources */,
-				719313E0255A786A004A7802 /* CppFunctionViewController.mm in Sources */,
+				719313E0255A786A004A7802 /* CppViewController.mm in Sources */,
 				710338C3250A0BD40061F6BE /* TestFunction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

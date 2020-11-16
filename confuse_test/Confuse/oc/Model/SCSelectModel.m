@@ -54,9 +54,9 @@
 
 + (NSDictionary *)modelContainerPropertyGenericClass
 {
-    return @{ @"scSelectModels": SCSelectModel.class,
-              @"scOrderInfoModels": SCOrderInfoModel.class,
-              @"scSectionsModels": SCSectionsModel.class };
+    return @{ @"scSelectModels": [SCSelectModel class],
+              @"scOrderInfoModels": [SCOrderInfoModel class],
+              @"scSectionsModels": [SCSectionsModel class]};
 }
 
 @end
