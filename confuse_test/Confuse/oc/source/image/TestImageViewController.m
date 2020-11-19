@@ -24,14 +24,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _imageMiddle.image = [UIImage imageNamed:@"timg-2"];
-    _imageBottom.image = [UIImage imageNamed:[NSString stringWithFormat:@"timg-%d", 3]];
+    [UIImage imageNamed:@"timg-21"];
+    UILabel *label = [[UILabel alloc] init];
+    label.text = @"swift";
+    UIButton *btn = [[UIButton alloc] init];
+    [btn setTitle:@"swift" forState:UIControlStateNormal];
+    [UIImage imageNamed:[NSString stringWithFormat:@"timg-%d", 3]];
+    [UIImage imageNamed:@"oc"];
+    [UIImage imageNamed:@"lua"];
+    [UIImage imageNamed:@"swift"];
+
+    for (NSUInteger i = 1; i<=3; i++) {
+        [UIImage imageNamed:[NSString stringWithFormat:@"number%lu", (unsigned long)i]];
+    }
+    [[NSBundle mainBundle] pathForResource:@"锤石" ofType:@"png"];
+    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"锤石.png" ofType:nil];
+    _imageMiddle.image = [UIImage imageWithContentsOfFile:imagePath];
+    _imageBottom.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Lee Sin" ofType:@"jpg"]];
+//    _imageBottom.image = [UIImage imageNamed:@"Lee Sin.jpg"];
     _dataSource = [NSMutableArray array];
     NSDictionary *data = @{
         @"timg": @"我疯了?呵,很有可能",
         @"zhongguo": @"中国",
         @"dangjianhuodong": @"党",
-        @"bayijianjunjie": @"八一建军节"
+        @"bayijianjunjie": @"八一",
+        @"yjs.png": @"discard file png",
+        @"discard_lajitong": @"discard.xcassets",
+        @"Lee Sin.jpg": @"image file",
     };
     for (NSString *k in data.allKeys) {
         TestImageModel *model = [[TestImageModel alloc] init];

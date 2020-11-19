@@ -59,7 +59,17 @@
 		71D708DE255A7333002CCDA8 /* CppBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71D708DC255A7333002CCDA8 /* CppBase.cpp */; };
 		71D8A39325316E60001A4920 /* TestLocalVariableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D8A39225316E60001A4920 /* TestLocalVariableTableViewController.m */; };
 		71D8A39625316E84001A4920 /* TestLocalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D8A39525316E84001A4920 /* TestLocalVariable.m */; };
+		71DA2CB5256381C1006CD4BE /* 加.png in Resources */ = {isa = PBXBuildFile; fileRef = 71DA2CB3256381C0006CD4BE /* 加.png */; };
+		71DA2CB6256381C1006CD4BE /* 减.png in Resources */ = {isa = PBXBuildFile; fileRef = 71DA2CB4256381C1006CD4BE /* 减.png */; };
+		71DA2CB72563EB22006CD4BE /* number1.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E3607125629739003C3264 /* number1.png */; };
+		71DA2CB82563EB22006CD4BE /* number2.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E3607225629739003C3264 /* number2.png */; };
+		71DA2CB92563EB22006CD4BE /* number3.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E3607025629739003C3264 /* number3.png */; };
 		71E3340B251D97A700FB695A /* TestMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E3340A251D97A700FB695A /* TestMacro.m */; };
+		71E3606725627278003C3264 /* 锤石.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E3606625627278003C3264 /* 锤石.png */; };
+		71E3606925627289003C3264 /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E3606825627289003C3264 /* image.xcassets */; };
+		71E3606B2562851F003C3264 /* Lee Sin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71E3606A25628365003C3264 /* Lee Sin.jpg */; };
+		71E3606D25628A3F003C3264 /* discard.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E3606C25628A3F003C3264 /* discard.xcassets */; };
+		71E3606F25628AD5003C3264 /* yjs.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E3606E25628AD5003C3264 /* yjs.png */; };
 		980BB6CD255D1B3400404641 /* TestClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980BB6CA255D1B3400404641 /* TestClassController.m */; };
 		980BB6CE255D1B3400404641 /* TestClassController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980BB6CB255D1B3400404641 /* TestClassController.xib */; };
 		98742DE8252073B9003B608D /* TestFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 98742DE7252073B9003B608D /* TestFont.m */; };
@@ -176,8 +186,18 @@
 		71D8A39225316E60001A4920 /* TestLocalVariableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLocalVariableTableViewController.m; sourceTree = "<group>"; };
 		71D8A39425316E84001A4920 /* TestLocalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLocalVariable.h; sourceTree = "<group>"; };
 		71D8A39525316E84001A4920 /* TestLocalVariable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLocalVariable.m; sourceTree = "<group>"; };
+		71DA2CB3256381C0006CD4BE /* 加.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "加.png"; sourceTree = "<group>"; };
+		71DA2CB4256381C1006CD4BE /* 减.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "减.png"; sourceTree = "<group>"; };
 		71E33409251D97A700FB695A /* TestMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMacro.h; sourceTree = "<group>"; };
 		71E3340A251D97A700FB695A /* TestMacro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMacro.m; sourceTree = "<group>"; };
+		71E3606625627278003C3264 /* 锤石.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "锤石.png"; sourceTree = "<group>"; };
+		71E3606825627289003C3264 /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
+		71E3606A25628365003C3264 /* Lee Sin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lee Sin.jpg"; sourceTree = "<group>"; };
+		71E3606C25628A3F003C3264 /* discard.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = discard.xcassets; sourceTree = "<group>"; };
+		71E3606E25628AD5003C3264 /* yjs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yjs.png; sourceTree = "<group>"; };
+		71E3607025629739003C3264 /* number3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number3.png; sourceTree = "<group>"; };
+		71E3607125629739003C3264 /* number1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number1.png; sourceTree = "<group>"; };
+		71E3607225629739003C3264 /* number2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number2.png; sourceTree = "<group>"; };
 		980BB6CA255D1B3400404641 /* TestClassController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClassController.m; sourceTree = "<group>"; };
 		980BB6CB255D1B3400404641 /* TestClassController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestClassController.xib; sourceTree = "<group>"; };
 		980BB6CC255D1B3400404641 /* TestClassController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClassController.h; sourceTree = "<group>"; };
@@ -245,6 +265,14 @@
 		7105718D2550095F003FFB3C /* image */ = {
 			isa = PBXGroup;
 			children = (
+				71DA2CB3256381C0006CD4BE /* 加.png */,
+				71DA2CB4256381C1006CD4BE /* 减.png */,
+				71E3607125629739003C3264 /* number1.png */,
+				71E3607225629739003C3264 /* number2.png */,
+				71E3607025629739003C3264 /* number3.png */,
+				71E3606825627289003C3264 /* image.xcassets */,
+				71E3606625627278003C3264 /* 锤石.png */,
+				71E3606A25628365003C3264 /* Lee Sin.jpg */,
 				7105718E2550097F003FFB3C /* TestImageViewController.h */,
 				7105718F2550097F003FFB3C /* TestImageViewController.m */,
 				7105719125500A06003FFB3C /* TestImageModel.h */,
@@ -388,10 +416,12 @@
 		718B952E2508ADA800C1DB77 /* Discard */ = {
 			isa = PBXGroup;
 			children = (
+				71E3606E25628AD5003C3264 /* yjs.png */,
 				71CC72E8253841BC0094F702 /* TestDiscardSuper.h */,
 				71CC72E9253841BC0094F702 /* TestDiscardSuper.m */,
 				718B95342508AFD200C1DB77 /* MBProgressHUD.h */,
 				718B95352508AFD200C1DB77 /* MBProgressHUD.m */,
+				71E3606C25628A3F003C3264 /* discard.xcassets */,
 			);
 			path = Discard;
 			sourceTree = "<group>";
@@ -638,16 +668,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E3606F25628AD5003C3264 /* yjs.png in Resources */,
 				980BB6CE255D1B3400404641 /* TestClassController.xib in Resources */,
 				71D708D1255A38E4002CCDA8 /* Cpp.storyboard in Resources */,
+				71DA2CB72563EB22006CD4BE /* number1.png in Resources */,
+				71DA2CB5256381C1006CD4BE /* 加.png in Resources */,
 				718B95122508930A00C1DB77 /* LaunchScreen.storyboard in Resources */,
 				718B950F2508930A00C1DB77 /* Assets.xcassets in Resources */,
 				98D4D86B2510B98500E3B9AB /* TestXibViewController.xib in Resources */,
 				716A28F5255F80D800187F30 /* TestClassCell.xib in Resources */,
 				71D708D6255A4679002CCDA8 /* Oc.storyboard in Resources */,
+				71DA2CB6256381C1006CD4BE /* 减.png in Resources */,
+				71E3606925627289003C3264 /* image.xcassets in Resources */,
+				71DA2CB92563EB22006CD4BE /* number3.png in Resources */,
 				718B950D2508930900C1DB77 /* Main.storyboard in Resources */,
+				71E3606725627278003C3264 /* 锤石.png in Resources */,
+				71DA2CB82563EB22006CD4BE /* number2.png in Resources */,
+				71E3606D25628A3F003C3264 /* discard.xcassets in Resources */,
 				718B952D2508AA6B00C1DB77 /* TestPropertyXibViewController.xib in Resources */,
 				710F33CF2514731F00AEE75E /* TestPropertyXibView.xib in Resources */,
+				71E3606B2562851F003C3264 /* Lee Sin.jpg in Resources */,
 				710338CE250A12C70061F6BE /* TestFunctionXibViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
