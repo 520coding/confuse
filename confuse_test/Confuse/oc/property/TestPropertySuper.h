@@ -21,12 +21,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TestPropertySuper : NSObject<UICollectionViewDelegate>
 
-@property (nonatomic, strong) NSObject *sp1;
+@property (nonatomic, strong) NSObject *sp1
+        ;
 @property (nonatomic, strong) NSObject *more;//测试 多子类继承是否统一
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *Age;
 @property (nonatomic, strong) NSString *NICK;
 @property (nonatomic, strong) NSString *nICK;
+@property (nonatomic, assign) int height;
 
 @end
 
