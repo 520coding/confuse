@@ -34,7 +34,7 @@
     [UIImage imageNamed:@"lua"];
     [UIImage imageNamed:@"swift"];
 
-    for (NSUInteger i = 1; i<=3; i++) {
+    for (int i = 1; i<=3; i++) {
         [UIImage imageNamed:[NSString stringWithFormat:@"number%lu", (unsigned long)i]];
     }
     [[NSBundle mainBundle] pathForResource:@"锤石" ofType:@"png"];

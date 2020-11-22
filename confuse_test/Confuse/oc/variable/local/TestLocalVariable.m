@@ -18,8 +18,8 @@ typedef NSString *(^Block)(int *num);
     for (NSString *k in @[@"test"]) {
         NSLog(@"%@", k);
     }
-    for (NSUInteger i = 0; i < 2; i++) {
-        NSLog(@"%ld", i);
+    for (int i = 0; i < 2; i++) {
+        NSLog(@"%d", i);
     }
 
     NSInteger NSInteger1 = 0;

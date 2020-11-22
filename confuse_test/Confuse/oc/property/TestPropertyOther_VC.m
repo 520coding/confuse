@@ -26,8 +26,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _dataSource = [NSMutableArray array];
-    for (NSUInteger i = 0; i < 10; i++) {
-        [_dataSource addObject:[NSString stringWithFormat:@"test_%ld", i]];
+    for (int i = 0; i < 10; i++) {
+        [_dataSource addObject:[NSString stringWithFormat:@"test_%d", i]];
     }
     [_tableView reloadData];
 }
