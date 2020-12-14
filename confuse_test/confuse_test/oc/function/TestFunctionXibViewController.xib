@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestFunctionXibViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qUo-hU-ylb">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3I-nK-T6A">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="409"/>
+                            <state key="normal" title="Button1"/>
+                            <connections>
+                                <action selector="action:" destination="-1" eventType="touchUpInside" id="0dX-Zd-1Hm"/>
+                                <action selector="func:" destination="-1" eventType="touchUpInside" id="c6n-EC-nHn"/>
+                                <action selector="func:" destination="-1" eventType="touchUpOutside" id="wQS-5D-gTe"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3e-k3-MEv">
+                            <rect key="frame" x="0.0" y="409" width="414" height="409"/>
+                            <state key="normal" title="Button2"/>
+                            <connections>
+                                <action selector="action:" destination="-1" eventType="touchUpInside" id="eHw-5C-y5t"/>
+                                <action selector="func:" destination="-1" eventType="touchUpInside" id="eCk-FU-6lg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="qUo-hU-ylb" secondAttribute="bottom" id="Cru-q4-6ZA"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="qUo-hU-ylb" secondAttribute="trailing" id="ER6-Mi-XcX"/>
+                <constraint firstItem="qUo-hU-ylb" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="Qgx-r2-R13"/>
+                <constraint firstItem="qUo-hU-ylb" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="xjM-3L-eH2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="132" y="148"/>
+        </view>
+        <tapGestureRecognizer id="vml-yU-IQy">
+            <connections>
+                <action selector="tap:" destination="-1" id="xTC-vS-KSj"/>
+            </connections>
+        </tapGestureRecognizer>
+        <pinchGestureRecognizer id="1Uv-90-lwl">
+            <connections>
+                <action selector="pinch:" destination="-1" id="oJe-fc-jdP"/>
+            </connections>
+        </pinchGestureRecognizer>
+        <tapGestureRecognizer id="4Xq-gt-rG1">
+            <connections>
+                <action selector="tap:" destination="-1" id="pEd-yW-tCL"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>
