@@ -399,8 +399,8 @@
 		718B94F62508930800C1DB77 = {
 			isa = PBXGroup;
 			children = (
-				718B95012508930900C1DB77 /* Confuse */,
-				718B952E2508ADA800C1DB77 /* Discard */,
+				718B95012508930900C1DB77 /* confuse_test */,
+				718B952E2508ADA800C1DB77 /* other */,
 				718DDB9F257F3387002B35AE /* confuse_sdk */,
 				718B95002508930900C1DB77 /* Products */,
 				C93ED7FE990E683212DB2E88 /* Pods */,
@@ -417,7 +417,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		718B95012508930900C1DB77 /* Confuse */ = {
+		718B95012508930900C1DB77 /* confuse_test */ = {
 			isa = PBXGroup;
 			children = (
 				71555B132553D91200DD8246 /* cpp */,
@@ -433,7 +433,7 @@
 				718B95132508930A00C1DB77 /* Info.plist */,
 				718B95142508930A00C1DB77 /* main.m */,
 			);
-			path = Confuse;
+			path = confuse_test;
 			sourceTree = "<group>";
 		};
 		718B95212508982E00C1DB77 /* property */ = {
@@ -455,7 +455,7 @@
 			path = property;
 			sourceTree = "<group>";
 		};
-		718B952E2508ADA800C1DB77 /* Discard */ = {
+		718B952E2508ADA800C1DB77 /* other */ = {
 			isa = PBXGroup;
 			children = (
 				71E3606E25628AD5003C3264 /* yjs.png */,
@@ -465,7 +465,7 @@
 				718B95352508AFD200C1DB77 /* MBProgressHUD.m */,
 				71E3606C25628A3F003C3264 /* discard.xcassets */,
 			);
-			path = Discard;
+			path = other;
 			sourceTree = "<group>";
 		};
 		718B952F2508AEEC00C1DB77 /* third */ = {
@@ -1041,7 +1041,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INFOPLIST_FILE = Confuse/Info.plist;
+				GCC_PREFIX_HEADER = confuse_test/confuse_test.pch;
+				INFOPLIST_FILE = confuse_test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1089,7 +1090,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INFOPLIST_FILE = Confuse/Info.plist;
+				GCC_PREFIX_HEADER = confuse_test/confuse_test.pch;
+				INFOPLIST_FILE = confuse_test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
