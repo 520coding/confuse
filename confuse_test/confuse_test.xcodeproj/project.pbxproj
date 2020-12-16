@@ -76,6 +76,8 @@
 		71E5944B2578C992007739FC /* TestXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71E5944A2578C992007739FC /* TestXibView.xib */; };
 		980BB6CD255D1B3400404641 /* TestClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980BB6CA255D1B3400404641 /* TestClassController.m */; };
 		980BB6CE255D1B3400404641 /* TestClassController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980BB6CB255D1B3400404641 /* TestClassController.xib */; };
+		9841FF2C25875506003CB909 /* TemplateFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9841FF2A25875506003CB909 /* TemplateFileModel.m */; };
+		9841FF2D25875506003CB909 /* TemplateFileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9841FF2B25875506003CB909 /* TemplateFileView.m */; };
 		98742DE8252073B9003B608D /* TestFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 98742DE7252073B9003B608D /* TestFont.m */; };
 		989FAFE92546A4EB009D0BB5 /* TestLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 989FAFE32546A4EB009D0BB5 /* TestLayoutCell.m */; };
 		989FAFEA2546A4EB009D0BB5 /* TestLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989FAFE52546A4EB009D0BB5 /* TestLayoutViewController.m */; };
@@ -233,6 +235,10 @@
 		980BB6CA255D1B3400404641 /* TestClassController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClassController.m; sourceTree = "<group>"; };
 		980BB6CB255D1B3400404641 /* TestClassController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestClassController.xib; sourceTree = "<group>"; };
 		980BB6CC255D1B3400404641 /* TestClassController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClassController.h; sourceTree = "<group>"; };
+		9841FF2825875506003CB909 /* TemplateFileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateFileView.h; sourceTree = "<group>"; };
+		9841FF2925875506003CB909 /* TemplateFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateFileModel.h; sourceTree = "<group>"; };
+		9841FF2A25875506003CB909 /* TemplateFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateFileModel.m; sourceTree = "<group>"; };
+		9841FF2B25875506003CB909 /* TemplateFileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateFileView.m; sourceTree = "<group>"; };
 		98742DE6252073B9003B608D /* TestFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFont.h; sourceTree = "<group>"; };
 		98742DE7252073B9003B608D /* TestFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFont.m; sourceTree = "<group>"; };
 		989FAFE32546A4EB009D0BB5 /* TestLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLayoutCell.m; sourceTree = "<group>"; };
@@ -527,6 +533,10 @@
 				71A657812541274900A307B5 /* TemplateFunction.m */,
 				71A657882541274900A307B5 /* TemplateViewController.h */,
 				71A657892541274900A307B5 /* TemplateViewController.m */,
+				9841FF2925875506003CB909 /* TemplateFileModel.h */,
+				9841FF2A25875506003CB909 /* TemplateFileModel.m */,
+				9841FF2825875506003CB909 /* TemplateFileView.h */,
+				9841FF2B25875506003CB909 /* TemplateFileView.m */,
 			);
 			path = template;
 			sourceTree = "<group>";
@@ -831,6 +841,7 @@
 				718B95282508AA2000C1DB77 /* TestPropertyViewController.m in Sources */,
 				71A657912541274A00A307B5 /* TemplateCodeModify.m in Sources */,
 				71D708DB255A726B002CCDA8 /* CppFunction.cpp in Sources */,
+				9841FF2D25875506003CB909 /* TemplateFileView.m in Sources */,
 				718B95152508930A00C1DB77 /* main.m in Sources */,
 				71A657902541274A00A307B5 /* TemplateViewController.m in Sources */,
 				71ABC645252028AB006BB37E /* TestOtherGlobalVariable.m in Sources */,
@@ -857,6 +868,7 @@
 				718B954C2508D66E00C1DB77 /* Dog_M.m in Sources */,
 				7105719325500A06003FFB3C /* TestImageModel.m in Sources */,
 				71A6578E2541274A00A307B5 /* TemplateClass.m in Sources */,
+				9841FF2C25875506003CB909 /* TemplateFileModel.m in Sources */,
 				71290BED251EE38D00B3229A /* TestOtherMacro.m in Sources */,
 				98D4D86A2510B98500E3B9AB /* TestXibViewController.m in Sources */,
 				718B95362508AFD200C1DB77 /* MBProgressHUD.m in Sources */,
