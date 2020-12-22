@@ -1,13 +1,13 @@
 //
-//  CppStudent.hpp
+//  CppStudent.h
 //  ipa
 //
 //  Created by yjs on 2020/2/6.
 //  Copyright © 2020 yjs. All rights reserved.
 //
 
-#ifndef CppStudent_hpp
-#define CppStudent_hpp
+#ifndef CppStudent_h
+#define CppStudent_h
 
 #include "CppHeader.h"
 
@@ -31,4 +31,4 @@ public:
     static int m_total;          //静态成员变量
 };
 
-#endif /* CppStudent_hpp */
+#endif /* CppStudent_h */

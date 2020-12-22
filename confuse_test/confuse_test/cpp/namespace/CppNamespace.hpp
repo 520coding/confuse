@@ -18,8 +18,7 @@ int a = 5;
 
 namespace A {
     int a = 10;
-    class classA {
-    };
+    class classA {};
     // 命名空间支持嵌套定义
     namespace B {
         class classB {
@@ -27,21 +26,21 @@ namespace A {
         };
         int a = 15;
         int b = 20;
-    }
-    class classB: B::classB {
+    }  // namespace B
+    class classB : B::classB {
         void func();
     };
     // 命名空间可以重复定义，相当于扩充
     namespace B {
         int x = 30;
         int y = 35;
-    }
-}
+    }  // namespace B
+}  // namespace A
 
 namespace C {
     int a = 25;
     // 错误，命名空间不能嵌套声明
-//    namespace D;
-}
+    //    namespace D;
+}  // namespace C
 
 #endif /* CppNamespace_hpp */
