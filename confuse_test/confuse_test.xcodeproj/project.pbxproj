@@ -44,6 +44,7 @@
 		718DDBA2257F3387002B35AE /* confuse_sdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 718DDBA0257F3387002B35AE /* confuse_sdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		718DDBA5257F3387002B35AE /* confuse_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718DDB9E257F3387002B35AE /* confuse_sdk.framework */; };
 		718DDBA6257F3387002B35AE /* confuse_sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 718DDB9E257F3387002B35AE /* confuse_sdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		718F1753258C98210001E6F0 /* CppClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 718F1751258C98210001E6F0 /* CppClass.cpp */; };
 		719313E0255A786A004A7802 /* CppViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 719313DF255A786A004A7802 /* CppViewController.mm */; };
 		71A6578C2541274A00A307B5 /* TemplateFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A657812541274900A307B5 /* TemplateFunction.m */; };
 		71A6578D2541274A00A307B5 /* TemplateCodeEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A657842541274900A307B5 /* TemplateCodeEqual.m */; };
@@ -74,6 +75,7 @@
 		71E3606D25628A3F003C3264 /* discard.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E3606C25628A3F003C3264 /* discard.xcassets */; };
 		71E3606F25628AD5003C3264 /* yjs.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E3606E25628AD5003C3264 /* yjs.png */; };
 		71E5944B2578C992007739FC /* TestXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71E5944A2578C992007739FC /* TestXibView.xib */; };
+		71F526EC25903B6C00650E3A /* CppTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71F526EA25903B6C00650E3A /* CppTemplate.cpp */; };
 		980BB6CD255D1B3400404641 /* TestClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980BB6CA255D1B3400404641 /* TestClassController.m */; };
 		980BB6CE255D1B3400404641 /* TestClassController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980BB6CB255D1B3400404641 /* TestClassController.xib */; };
 		9841FF2C25875506003CB909 /* TemplateFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9841FF2A25875506003CB909 /* TemplateFileModel.m */; };
@@ -185,6 +187,8 @@
 		718DDB9E257F3387002B35AE /* confuse_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = confuse_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		718DDBA0257F3387002B35AE /* confuse_sdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = confuse_sdk.h; sourceTree = "<group>"; };
 		718DDBA1257F3387002B35AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		718F1751258C98210001E6F0 /* CppClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CppClass.cpp; sourceTree = "<group>"; };
+		718F1752258C98210001E6F0 /* CppClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CppClass.hpp; sourceTree = "<group>"; };
 		719313DE255A786A004A7802 /* CppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CppViewController.h; sourceTree = "<group>"; };
 		719313DF255A786A004A7802 /* CppViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CppViewController.mm; sourceTree = "<group>"; };
 		71A657802541274800A307B5 /* TemplateFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateFunction.h; sourceTree = "<group>"; };
@@ -212,7 +216,7 @@
 		71D708D0255A38E3002CCDA8 /* Cpp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cpp.storyboard; sourceTree = "<group>"; };
 		71D708D5255A3DCD002CCDA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Oc.storyboard; sourceTree = "<group>"; };
 		71D708D9255A726B002CCDA8 /* CppFunction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CppFunction.cpp; sourceTree = "<group>"; };
-		71D708DA255A726B002CCDA8 /* CppFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CppFunction.h; sourceTree = "<group>"; };
+		71D708DA255A726B002CCDA8 /* CppFunction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = CppFunction.h; sourceTree = "<group>"; };
 		71D708DC255A7333002CCDA8 /* CppBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CppBase.cpp; sourceTree = "<group>"; };
 		71D708DD255A7333002CCDA8 /* CppBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CppBase.h; sourceTree = "<group>"; };
 		71D8A39125316E60001A4920 /* TestLocalVariableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLocalVariableTableViewController.h; sourceTree = "<group>"; };
@@ -232,6 +236,8 @@
 		71E3607125629739003C3264 /* number1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number1.png; sourceTree = "<group>"; };
 		71E3607225629739003C3264 /* number2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number2.png; sourceTree = "<group>"; };
 		71E5944A2578C992007739FC /* TestXibView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestXibView.xib; sourceTree = "<group>"; };
+		71F526EA25903B6C00650E3A /* CppTemplate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CppTemplate.cpp; sourceTree = "<group>"; };
+		71F526EB25903B6C00650E3A /* CppTemplate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CppTemplate.hpp; sourceTree = "<group>"; };
 		980BB6CA255D1B3400404641 /* TestClassController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClassController.m; sourceTree = "<group>"; };
 		980BB6CB255D1B3400404641 /* TestClassController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestClassController.xib; sourceTree = "<group>"; };
 		980BB6CC255D1B3400404641 /* TestClassController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClassController.h; sourceTree = "<group>"; };
@@ -379,14 +385,16 @@
 		71555B132553D91200DD8246 /* cpp */ = {
 			isa = PBXGroup;
 			children = (
+				718F1748258C97370001E6F0 /* class */,
 				710751C7255D3FE000D7F0B7 /* namespace */,
+				71555B872553E1FA00DD8246 /* function */,
+				71F526E925903B4900650E3A /* template */,
 				71D708D0255A38E3002CCDA8 /* Cpp.storyboard */,
 				71555B942553E90F00DD8246 /* CppHeader.h */,
 				71D708DD255A7333002CCDA8 /* CppBase.h */,
 				71D708DC255A7333002CCDA8 /* CppBase.cpp */,
 				719313DE255A786A004A7802 /* CppViewController.h */,
 				719313DF255A786A004A7802 /* CppViewController.mm */,
-				71555B872553E1FA00DD8246 /* function */,
 			);
 			path = cpp;
 			sourceTree = "<group>";
@@ -541,6 +549,15 @@
 			path = template;
 			sourceTree = "<group>";
 		};
+		718F1748258C97370001E6F0 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				718F1752258C98210001E6F0 /* CppClass.hpp */,
+				718F1751258C98210001E6F0 /* CppClass.cpp */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
 		71ABC63C2520284C006BB37E /* global */ = {
 			isa = PBXGroup;
 			children = (
@@ -578,6 +595,15 @@
 				71290BEC251EE38D00B3229A /* TestOtherMacro.m */,
 			);
 			path = macro;
+			sourceTree = "<group>";
+		};
+		71F526E925903B4900650E3A /* template */ = {
+			isa = PBXGroup;
+			children = (
+				71F526EB25903B6C00650E3A /* CppTemplate.hpp */,
+				71F526EA25903B6C00650E3A /* CppTemplate.cpp */,
+			);
+			path = template;
 			sourceTree = "<group>";
 		};
 		7E64F399B4DC6480364B399C /* Frameworks */ = {
@@ -730,7 +756,7 @@
 		718B94F72508930800C1DB77 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = coding520;
 				TargetAttributes = {
 					718B94FE2508930900C1DB77 = {
@@ -834,6 +860,7 @@
 				71ABC6422520288A006BB37E /* TestSuperGlobalVariable.m in Sources */,
 				718B950A2508930900C1DB77 /* ViewController.m in Sources */,
 				718B952C2508AA6B00C1DB77 /* TestPropertyXibViewController.m in Sources */,
+				71F526EC25903B6C00650E3A /* CppTemplate.cpp in Sources */,
 				718B95042508930900C1DB77 /* AppDelegate.m in Sources */,
 				71290BEA251EE2AF00B3229A /* TestSuperMacro.m in Sources */,
 				718B95202508982700C1DB77 /* TestPropertySuper.m in Sources */,
@@ -865,6 +892,7 @@
 				718B953D2508D29700C1DB77 /* UserInfoModel.m in Sources */,
 				718B95322508AF0C00C1DB77 /* MBHudDemoViewController.m in Sources */,
 				989FAFE92546A4EB009D0BB5 /* TestLayoutCell.m in Sources */,
+				718F1753258C98210001E6F0 /* CppClass.cpp in Sources */,
 				718B954C2508D66E00C1DB77 /* Dog_M.m in Sources */,
 				7105719325500A06003FFB3C /* TestImageModel.m in Sources */,
 				71A6578E2541274A00A307B5 /* TemplateClass.m in Sources */,
@@ -959,6 +987,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1018,6 +1047,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1055,7 +1085,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = confuse_test/confuse_test.pch;
 				INFOPLIST_FILE = confuse_test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1104,7 +1134,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = confuse_test/confuse_test.pch;
 				INFOPLIST_FILE = confuse_test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

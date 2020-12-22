@@ -10,6 +10,7 @@
 #include "CppStudent.h"
 #include "CppFunction.h"
 #include "CppNamespace.hpp"
+#include "CppClass.hpp"
 
 int CppStudent::m_total = 0;
 
@@ -76,6 +77,10 @@ int CppStudent::m_total = 0;
     (new CppStudent("李磊", 16, 80))->show();
     (new CppStudent("张华", 16, 99))->show();
     (new CppStudent("王康", 14, 60))->show();
+}
+
+- (void)testClass {
+    CppClass::test();
 }
 
 /*
