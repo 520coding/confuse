@@ -84,6 +84,14 @@
 		989FAFE92546A4EB009D0BB5 /* TestLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 989FAFE32546A4EB009D0BB5 /* TestLayoutCell.m */; };
 		989FAFEA2546A4EB009D0BB5 /* TestLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989FAFE52546A4EB009D0BB5 /* TestLayoutViewController.m */; };
 		989FAFEB2546A4EB009D0BB5 /* TestLayoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989FAFE62546A4EB009D0BB5 /* TestLayoutTableViewController.m */; };
+		98BE2CAB259995370005A66D /* TemplateLottie3.json in Resources */ = {isa = PBXBuildFile; fileRef = 98BE2CA3259995370005A66D /* TemplateLottie3.json */; };
+		98BE2CAC259995370005A66D /* TemplateLottie2.json in Resources */ = {isa = PBXBuildFile; fileRef = 98BE2CA4259995370005A66D /* TemplateLottie2.json */; };
+		98BE2CAD259995370005A66D /* TemplateLottie5.json in Resources */ = {isa = PBXBuildFile; fileRef = 98BE2CA5259995370005A66D /* TemplateLottie5.json */; };
+		98BE2CAE259995370005A66D /* TemplateLottie8.json in Resources */ = {isa = PBXBuildFile; fileRef = 98BE2CA6259995370005A66D /* TemplateLottie8.json */; };
+		98BE2CAF259995370005A66D /* TemplateLottie4.json in Resources */ = {isa = PBXBuildFile; fileRef = 98BE2CA7259995370005A66D /* TemplateLottie4.json */; };
+		98BE2CB0259995370005A66D /* TemplateLottie7.json in Resources */ = {isa = PBXBuildFile; fileRef = 98BE2CA8259995370005A66D /* TemplateLottie7.json */; };
+		98BE2CB1259995370005A66D /* TemplateLottie6.json in Resources */ = {isa = PBXBuildFile; fileRef = 98BE2CA9259995370005A66D /* TemplateLottie6.json */; };
+		98BE2CB2259995370005A66D /* TemplateLottie1.json in Resources */ = {isa = PBXBuildFile; fileRef = 98BE2CAA259995370005A66D /* TemplateLottie1.json */; };
 		98BEEE1C2521FED700D085DF /* TestColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BEEE1B2521FED700D085DF /* TestColor.m */; };
 		98C382AB253439EF004FA4D5 /* TestFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C382AA253439EF004FA4D5 /* TestFrame.m */; };
 		98C382B525358AE6004FA4D5 /* TestMasonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C382B425358AE6004FA4D5 /* TestMasonry.m */; };
@@ -253,6 +261,14 @@
 		989FAFE62546A4EB009D0BB5 /* TestLayoutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLayoutTableViewController.m; sourceTree = "<group>"; };
 		989FAFE72546A4EB009D0BB5 /* TestLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLayoutCell.h; sourceTree = "<group>"; };
 		989FAFE82546A4EB009D0BB5 /* TestLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLayoutViewController.h; sourceTree = "<group>"; };
+		98BE2CA3259995370005A66D /* TemplateLottie3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TemplateLottie3.json; sourceTree = "<group>"; };
+		98BE2CA4259995370005A66D /* TemplateLottie2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TemplateLottie2.json; sourceTree = "<group>"; };
+		98BE2CA5259995370005A66D /* TemplateLottie5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TemplateLottie5.json; sourceTree = "<group>"; };
+		98BE2CA6259995370005A66D /* TemplateLottie8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TemplateLottie8.json; sourceTree = "<group>"; };
+		98BE2CA7259995370005A66D /* TemplateLottie4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TemplateLottie4.json; sourceTree = "<group>"; };
+		98BE2CA8259995370005A66D /* TemplateLottie7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TemplateLottie7.json; sourceTree = "<group>"; };
+		98BE2CA9259995370005A66D /* TemplateLottie6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TemplateLottie6.json; sourceTree = "<group>"; };
+		98BE2CAA259995370005A66D /* TemplateLottie1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TemplateLottie1.json; sourceTree = "<group>"; };
 		98BEEE1A2521FED700D085DF /* TestColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestColor.h; sourceTree = "<group>"; };
 		98BEEE1B2521FED700D085DF /* TestColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestColor.m; sourceTree = "<group>"; };
 		98C382A9253439EF004FA4D5 /* TestFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFrame.h; sourceTree = "<group>"; };
@@ -529,6 +545,7 @@
 		718DED9A25400A790059EB39 /* template */ = {
 			isa = PBXGroup;
 			children = (
+				98BE2CA2259995370005A66D /* lottie */,
 				71A6578A2541274A00A307B5 /* Template.h */,
 				71A657872541274900A307B5 /* Template.m */,
 				71A657852541274900A307B5 /* TemplateClass.h */,
@@ -647,6 +664,21 @@
 				989FAFE82546A4EB009D0BB5 /* TestLayoutViewController.h */,
 			);
 			path = SDAutoLayout;
+			sourceTree = "<group>";
+		};
+		98BE2CA2259995370005A66D /* lottie */ = {
+			isa = PBXGroup;
+			children = (
+				98BE2CA3259995370005A66D /* TemplateLottie3.json */,
+				98BE2CA4259995370005A66D /* TemplateLottie2.json */,
+				98BE2CA5259995370005A66D /* TemplateLottie5.json */,
+				98BE2CA6259995370005A66D /* TemplateLottie8.json */,
+				98BE2CA7259995370005A66D /* TemplateLottie4.json */,
+				98BE2CA8259995370005A66D /* TemplateLottie7.json */,
+				98BE2CA9259995370005A66D /* TemplateLottie6.json */,
+				98BE2CAA259995370005A66D /* TemplateLottie1.json */,
+			);
+			path = lottie;
 			sourceTree = "<group>";
 		};
 		98BEEE192521FEC600D085DF /* color */ = {
@@ -799,16 +831,24 @@
 				71E5944B2578C992007739FC /* TestXibView.xib in Resources */,
 				718B95122508930A00C1DB77 /* LaunchScreen.storyboard in Resources */,
 				718B950F2508930A00C1DB77 /* Assets.xcassets in Resources */,
+				98BE2CB0259995370005A66D /* TemplateLottie7.json in Resources */,
+				98BE2CAB259995370005A66D /* TemplateLottie3.json in Resources */,
+				98BE2CB2259995370005A66D /* TemplateLottie1.json in Resources */,
 				98D4D86B2510B98500E3B9AB /* TestXibViewController.xib in Resources */,
+				98BE2CAD259995370005A66D /* TemplateLottie5.json in Resources */,
 				716A28F5255F80D800187F30 /* TestClassCell.xib in Resources */,
 				71D708D6255A4679002CCDA8 /* Oc.storyboard in Resources */,
 				71DA2CB6256381C1006CD4BE /* 减.png in Resources */,
+				98BE2CB1259995370005A66D /* TemplateLottie6.json in Resources */,
 				71E3606925627289003C3264 /* image.xcassets in Resources */,
 				71DA2CB92563EB22006CD4BE /* number3.png in Resources */,
+				98BE2CAF259995370005A66D /* TemplateLottie4.json in Resources */,
 				718B950D2508930900C1DB77 /* Main.storyboard in Resources */,
 				71E3606725627278003C3264 /* 锤石.png in Resources */,
 				71DA2CB82563EB22006CD4BE /* number2.png in Resources */,
 				71E3606D25628A3F003C3264 /* discard.xcassets in Resources */,
+				98BE2CAC259995370005A66D /* TemplateLottie2.json in Resources */,
+				98BE2CAE259995370005A66D /* TemplateLottie8.json in Resources */,
 				718B952D2508AA6B00C1DB77 /* TestPropertyXibViewController.xib in Resources */,
 				710F33CF2514731F00AEE75E /* TestPropertyXibView.xib in Resources */,
 				71E3606B2562851F003C3264 /* Lee Sin.jpg in Resources */,
@@ -1081,6 +1121,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2A447ANRKH;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = confuse_test/confuse_test.pch;
@@ -1130,6 +1171,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2A447ANRKH;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = confuse_test/confuse_test.pch;
