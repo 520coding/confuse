@@ -14,9 +14,9 @@
 #include <iostream>
 using namespace std;
 
-template <class T1, class T2> class Point {
+template <class T1, class T2> class CFPoint {
 public:
-    Point(T1 x, T2 y) : m_x(x), m_y(y) {}
+    CFPoint(T1 x, T2 y) : m_x(x), m_y(y) {}
 
 public:
     T1 getX() const {
