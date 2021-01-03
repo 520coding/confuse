@@ -6,7 +6,7 @@
 //  Copyright © 2020 coding520. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 // For text, messages, etc
 #define DEFAULT_FONTSIZE    15

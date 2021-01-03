@@ -8,13 +8,13 @@
 
 #include "CppTemplate.hpp"
 
-template <class T1, class T2> void Point<T1, T2>::display() const {
+template <class T1, class T2> void CFPoint<T1, T2>::display() const {
     cout << "x=" << m_x << ", y=" << m_y << endl;
 }
 
-template <> class Point<char*, char*> {
+template <> class CFPoint<char*, char*> {
 public:
-    Point(char* x, char* y) : m_x(x), m_y(y) {}
+    CFPoint(char* x, char* y) : m_x(x), m_y(y) {}
 
 public:
     char* getX() const {
@@ -40,6 +40,6 @@ private:
     char* m_y;
 };
 
-void Point<char*, char*>::display() const {
+void CFPoint<char*, char*>::display() const {
     cout << "x=" << m_x << " | y=" << m_y << endl;
 }

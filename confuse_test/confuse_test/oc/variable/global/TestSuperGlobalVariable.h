@@ -6,7 +6,7 @@
 //  Copyright © 2020 coding520. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 UIKIT_EXTERN NSString * const HWDownloadMaxConcurrentCountKey;
 UIKIT_EXTERN NSString * const HWDownloadMaxConcurrentCountChangeNotification;
