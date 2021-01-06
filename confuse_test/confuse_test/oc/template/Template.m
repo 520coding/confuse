@@ -13,6 +13,9 @@
 + (void)test {
 }
 
++ (void)random_selector {
+}
+
 @end
 
 @implementation TemplateView

@@ -61,6 +61,9 @@ typedef NSString *(^Block)(int *num);
     
     id test = @"";
     NSLog(@"%@", test);
+    
+    NSDictionary *dic = @{};
+    NSLog(@"%@", dic);
 }
 
 + (UIView *)view:(void (^)(void))block {
