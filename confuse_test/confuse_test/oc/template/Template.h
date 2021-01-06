@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol random_protocol <NSObject>
+@end
+
 #define random_false false
 #define random_bool YES
 #define random_integer 0
@@ -37,6 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Template : NSObject
 
 + (void)test;
++ (void)random_selector;
 
 @end
 

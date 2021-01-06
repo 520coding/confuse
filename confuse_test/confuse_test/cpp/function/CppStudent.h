@@ -23,12 +23,11 @@ public:
     void setage(int age);
     void setscore(float score);
     string show();
-    //成员函数
     void say() {
         cout << "" << endl;
     }
 public:
-    static int m_total;          //静态成员变量
+    static int m_total;
 };
 
 #endif /* CppStudent_h */

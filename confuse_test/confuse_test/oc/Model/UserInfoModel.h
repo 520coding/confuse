@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UserInfoModel*)initWithNetInfo:(NSDictionary*)info andPass:(NSString*)pass;
 
+- (instancetype)initWithNetInfo:(NSDictionary *)info andPass:(NSString *)pass;
+
 @end
 
 NS_ASSUME_NONNULL_END

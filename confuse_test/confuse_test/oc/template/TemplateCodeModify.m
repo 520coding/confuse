@@ -7,8 +7,7 @@
 //
 #import "TemplateCodeModify.h"
 #import "TestFunctionOtherTemplate.h"
-@protocol random_protocol <NSObject>
-@end
+
 @implementation TemplateCodeModify
 
 @end
