@@ -92,6 +92,9 @@
 		98BE2CB0259995370005A66D /* TemplateLottie7.json in Resources */ = {isa = PBXBuildFile; fileRef = 98BE2CA8259995370005A66D /* TemplateLottie7.json */; };
 		98BE2CB1259995370005A66D /* TemplateLottie6.json in Resources */ = {isa = PBXBuildFile; fileRef = 98BE2CA9259995370005A66D /* TemplateLottie6.json */; };
 		98BE2CB2259995370005A66D /* TemplateLottie1.json in Resources */ = {isa = PBXBuildFile; fileRef = 98BE2CAA259995370005A66D /* TemplateLottie1.json */; };
+		98BE2D1B259B19080005A66D /* TestLocalizableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BE2D19259B19080005A66D /* TestLocalizableViewController.m */; };
+		98BE2D23259B19E10005A66D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98BE2D25259B19E10005A66D /* Localizable.strings */; };
+		98BE2D2D259B200E0005A66D /* File.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98BE2D2F259B200E0005A66D /* File.strings */; };
 		98BEEE1C2521FED700D085DF /* TestColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BEEE1B2521FED700D085DF /* TestColor.m */; };
 		98C382AB253439EF004FA4D5 /* TestFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C382AA253439EF004FA4D5 /* TestFrame.m */; };
 		98C382B525358AE6004FA4D5 /* TestMasonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C382B425358AE6004FA4D5 /* TestMasonry.m */; };
@@ -269,6 +272,13 @@
 		98BE2CA8259995370005A66D /* TemplateLottie7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TemplateLottie7.json; sourceTree = "<group>"; };
 		98BE2CA9259995370005A66D /* TemplateLottie6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TemplateLottie6.json; sourceTree = "<group>"; };
 		98BE2CAA259995370005A66D /* TemplateLottie1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TemplateLottie1.json; sourceTree = "<group>"; };
+		98BE2D19259B19080005A66D /* TestLocalizableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLocalizableViewController.m; sourceTree = "<group>"; };
+		98BE2D1A259B19080005A66D /* TestLocalizableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLocalizableViewController.h; sourceTree = "<group>"; };
+		98BE2D1E259B19BE0005A66D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Oc.strings"; sourceTree = "<group>"; };
+		98BE2D24259B19E10005A66D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		98BE2D27259B19E50005A66D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		98BE2D2E259B200E0005A66D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/File.strings"; sourceTree = "<group>"; };
+		98BE2D30259B20120005A66D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/File.strings; sourceTree = "<group>"; };
 		98BEEE1A2521FED700D085DF /* TestColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestColor.h; sourceTree = "<group>"; };
 		98BEEE1B2521FED700D085DF /* TestColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestColor.m; sourceTree = "<group>"; };
 		98C382A9253439EF004FA4D5 /* TestFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFrame.h; sourceTree = "<group>"; };
@@ -361,6 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				71D708D4255A3DCD002CCDA8 /* Oc.storyboard */,
+				98BE2D18259B19080005A66D /* localizable */,
 				718B95332508AF2A00C1DB77 /* base */,
 				718B952F2508AEEC00C1DB77 /* third */,
 				718DED9A25400A790059EB39 /* template */,
@@ -429,6 +440,8 @@
 		718B94F62508930800C1DB77 = {
 			isa = PBXGroup;
 			children = (
+				98BE2D2F259B200E0005A66D /* File.strings */,
+				98BE2D25259B19E10005A66D /* Localizable.strings */,
 				718B95012508930900C1DB77 /* confuse_test */,
 				718B952E2508ADA800C1DB77 /* other */,
 				718DDB9F257F3387002B35AE /* confuse_sdk */,
@@ -681,6 +694,15 @@
 			path = lottie;
 			sourceTree = "<group>";
 		};
+		98BE2D18259B19080005A66D /* localizable */ = {
+			isa = PBXGroup;
+			children = (
+				98BE2D1A259B19080005A66D /* TestLocalizableViewController.h */,
+				98BE2D19259B19080005A66D /* TestLocalizableViewController.m */,
+			);
+			path = localizable;
+			sourceTree = "<group>";
+		};
 		98BEEE192521FEC600D085DF /* color */ = {
 			isa = PBXGroup;
 			children = (
@@ -806,6 +828,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 718B94F62508930800C1DB77;
 			productRefGroup = 718B95002508930900C1DB77 /* Products */;
@@ -827,6 +850,7 @@
 				980BB6CE255D1B3400404641 /* TestClassController.xib in Resources */,
 				71D708D1255A38E4002CCDA8 /* Cpp.storyboard in Resources */,
 				71DA2CB72563EB22006CD4BE /* number1.png in Resources */,
+				98BE2D2D259B200E0005A66D /* File.strings in Resources */,
 				71DA2CB5256381C1006CD4BE /* 加.png in Resources */,
 				71E5944B2578C992007739FC /* TestXibView.xib in Resources */,
 				718B95122508930A00C1DB77 /* LaunchScreen.storyboard in Resources */,
@@ -839,6 +863,7 @@
 				716A28F5255F80D800187F30 /* TestClassCell.xib in Resources */,
 				71D708D6255A4679002CCDA8 /* Oc.storyboard in Resources */,
 				71DA2CB6256381C1006CD4BE /* 减.png in Resources */,
+				98BE2D23259B19E10005A66D /* Localizable.strings in Resources */,
 				98BE2CB1259995370005A66D /* TemplateLottie6.json in Resources */,
 				71E3606925627289003C3264 /* image.xcassets in Resources */,
 				71DA2CB92563EB22006CD4BE /* number3.png in Resources */,
@@ -924,6 +949,7 @@
 				71ABC63F2520286D006BB37E /* TestGlobalVariable.m in Sources */,
 				716A28F4255F80D800187F30 /* TestClassCell.m in Sources */,
 				718B95462508D43900C1DB77 /* User_M.m in Sources */,
+				98BE2D1B259B19080005A66D /* TestLocalizableViewController.m in Sources */,
 				710338C6250A0BE20061F6BE /* TestFunctionSuper.m in Sources */,
 				71555B932553E8AE00DD8246 /* CppStudent.cpp in Sources */,
 				710571902550097F003FFB3C /* TestImageViewController.m in Sources */,
@@ -994,8 +1020,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				71D708D5255A3DCD002CCDA8 /* Base */,
+				98BE2D1E259B19BE0005A66D /* zh-Hans */,
 			);
 			name = Oc.storyboard;
+			sourceTree = "<group>";
+		};
+		98BE2D25259B19E10005A66D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98BE2D24259B19E10005A66D /* en */,
+				98BE2D27259B19E50005A66D /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		98BE2D2F259B200E0005A66D /* File.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98BE2D2E259B200E0005A66D /* zh-Hans */,
+				98BE2D30259B20120005A66D /* en */,
+			);
+			name = File.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1005,6 +1050,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1065,6 +1111,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

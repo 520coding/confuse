@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  confuse_test
+
+  Created by ymac on 29/12/2020.
+  Copyright © 2020 coding520. All rights reserved.
+*/
+"key" = "what is this?";
+"master" = "Are you my master?";
