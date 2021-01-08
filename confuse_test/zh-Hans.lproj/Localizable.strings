@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  confuse_test
+
+  Created by ymac on 29/12/2020.
+  Copyright © 2020 coding520. All rights reserved.
+*/
+"key" = "什么鬼?";
+"master" = "你是我的?";
+"crazy" = "你神经病啊";
