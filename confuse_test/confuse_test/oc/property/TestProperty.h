@@ -34,8 +34,8 @@ typedef NSArray<NSString *> *_Nullable (^Block1)(NSString *name, NSString *title
 @property (nonatomic, strong) Block1 tbp;
 @property (nonatomic, strong) id id_p7;
 @property (nonatomic, strong) NSString *p8_1, *p8_2;
-@property (nonatomic, strong, getter = hasP9, setter = updateP9:) NSString *p9;// 自定义set、get，暂时忽略处理
-@property (nonatomic, strong, getter = hasP10, setter = updateP10:) NSString *p10;// 自定义set、get，暂时忽略处理
+@property (nonatomic, strong, getter = hasP9, setter = updateP9:) NSString *p9;
+@property (nonatomic, strong, getter = hasP10, setter = updateP10:) NSString *p10;
 @property (nonatomic, strong) NSArray *dataSource;
 @property (nonatomic, strong) UIView *view;
 @property (nonatomic, assign) Boolean isRight;
