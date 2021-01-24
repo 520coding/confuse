@@ -95,6 +95,7 @@
 		98BE2D1B259B19080005A66D /* TestLocalizableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BE2D19259B19080005A66D /* TestLocalizableViewController.m */; };
 		98BE2D23259B19E10005A66D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98BE2D25259B19E10005A66D /* Localizable.strings */; };
 		98BE2D2D259B200E0005A66D /* File.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98BE2D2F259B200E0005A66D /* File.strings */; };
+		98BE42C925B57EE600EDE9D4 /* TemplateFileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE42C825B57EE600EDE9D4 /* TemplateFileView.xib */; };
 		98BEEE1C2521FED700D085DF /* TestColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BEEE1B2521FED700D085DF /* TestColor.m */; };
 		98C382AB253439EF004FA4D5 /* TestFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C382AA253439EF004FA4D5 /* TestFrame.m */; };
 		98C382B525358AE6004FA4D5 /* TestMasonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C382B425358AE6004FA4D5 /* TestMasonry.m */; };
@@ -279,6 +280,7 @@
 		98BE2D27259B19E50005A66D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		98BE2D2E259B200E0005A66D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/File.strings"; sourceTree = "<group>"; };
 		98BE2D30259B20120005A66D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/File.strings; sourceTree = "<group>"; };
+		98BE42C825B57EE600EDE9D4 /* TemplateFileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TemplateFileView.xib; sourceTree = "<group>"; };
 		98BEEE1A2521FED700D085DF /* TestColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestColor.h; sourceTree = "<group>"; };
 		98BEEE1B2521FED700D085DF /* TestColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestColor.m; sourceTree = "<group>"; };
 		98C382A9253439EF004FA4D5 /* TestFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFrame.h; sourceTree = "<group>"; };
@@ -575,6 +577,7 @@
 				9841FF2A25875506003CB909 /* TemplateFileModel.m */,
 				9841FF2825875506003CB909 /* TemplateFileView.h */,
 				9841FF2B25875506003CB909 /* TemplateFileView.m */,
+				98BE42C825B57EE600EDE9D4 /* TemplateFileView.xib */,
 			);
 			path = template;
 			sourceTree = "<group>";
@@ -866,6 +869,7 @@
 				98BE2D23259B19E10005A66D /* Localizable.strings in Resources */,
 				98BE2CB1259995370005A66D /* TemplateLottie6.json in Resources */,
 				71E3606925627289003C3264 /* image.xcassets in Resources */,
+				98BE42C925B57EE600EDE9D4 /* TemplateFileView.xib in Resources */,
 				71DA2CB92563EB22006CD4BE /* number3.png in Resources */,
 				98BE2CAF259995370005A66D /* TemplateLottie4.json in Resources */,
 				718B950D2508930900C1DB77 /* Main.storyboard in Resources */,

@@ -135,10 +135,10 @@ void CppFunction4::test() {
 }
 
 // MARK: - CppFunction5
-void CppFunction5::sf1(float v) {
+void CppFunction5::sf1(double v) {
     Function_Log
 }
-int CppFunction5::sf1(int v1, float v2) {
+int CppFunction5::sf1(int v1, double v2) {
     Function_Log return v1;
 }
 
@@ -151,10 +151,10 @@ void CppFunction5::test() {
 
 namespace custom {
     // MARK: - CppFunction5
-    void CppFunction5::sf1(float v) {
+    void CppFunction5::sf1(double v) {
         Function_Log
     }
-    int CppFunction5::sf1(int v1, float v2) {
+    int CppFunction5::sf1(int v1, double v2) {
         Function_Log return v1;
     }
 
@@ -166,11 +166,11 @@ namespace custom {
     }
 }  // namespace custom
 
-void CppFunction6::f1(float v) {
+void CppFunction6::f1(double v) {
     Function_Log
 }
 
-int CppFunction6::f1(int v1, float v2) {
+int CppFunction6::f1(int v1, double v2) {
     Function_Log return v1;
 }
 

@@ -17,6 +17,11 @@
 
 @property (nonatomic, strong) NSMutableArray *random_array;
 
+@property (weak, nonatomic) IBOutlet UILabel *xib_label;
+@property (weak, nonatomic) IBOutlet UIButton *xib_button;
+@property (weak, nonatomic) IBOutlet UIImageView *xib_image;
+@property (weak, nonatomic) IBOutlet UIView *xib_view;
+
 @end
 
 @implementation TemplateFileView

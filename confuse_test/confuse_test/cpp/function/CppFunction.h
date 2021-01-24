@@ -82,24 +82,24 @@ public:
 
 class CppFunction5 : CppBase {
 public:
-    void        sf1(float);
-    int         sf1(int, float);
+    void        sf1(double);
+    int         sf1(int, double);
     static void test();
 };
 
 namespace custom {
     class CppFunction5 : CppBase {
     public:
-        void        sf1(float);
-        int         sf1(int, float);
+        void        sf1(double);
+        int         sf1(int, double);
         static void test();
     };
 }  // namespace custom
 
 class CppFunction6 : string {
 public:
-    void        f1(float);
-    int         f1(int, float);
+    void        f1(double);
+    int         f1(int, double);
     static void test();
 };
 
