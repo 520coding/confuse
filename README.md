@@ -95,8 +95,8 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
    1. 可多次执行，指数x2递增
 12. [重命名多语言]，对直接或间接使用系统方法**NSLocalizedString**、**NSLocalizedStringFromTable**的多语言进行修改
 12. [修改字符串]，支持任意字符串，加密处理（硬编码->内存），原始字符串保留在注释中方便检查
-   1. 设置‘最少长度’过滤
-   1. 也可设置‘有效个数’搭配使用
+    1. 设置‘最少长度’过滤
+    1. 也可设置‘有效个数’搭配使用
 14. [修改xib、storyboard]，自动插入视图，并修改内部结构属性
 14. [修改字体]，对项目中使用的字体随机微调，识别宏
 14. [修改颜色]，对项目中UI控件颜色随机偏移，识别宏
@@ -104,10 +104,10 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 14. [插入文件]，生成其它文件（创建自定义控件，模拟正常开发），项目中自动调用；**注意：目前需要手动导入文件**(在项目根路径下，会生成"**other_xxx_file**"的文件夹，将它拖入工程即可）
 14. [插入文本]，生成json、txt、doc、plist等文本文件，项目中自动调用；**注意：目前需要手动导入文件**(在项目根路径下，会生成"**other_xxx_text**"的文件夹，将它拖入工程即可）
 14. [重命名类]，类名不限制（例如：my、My），可指定添加前缀，优势：
-   1. 智能名词替换
-   1. 可设置‘重命名同名文件’
-   1. 可设置‘重命名相似字符串’，(忽略|相等|包含)三种设置
-   1. 新增‘纠正非标准点语法’，针对非标准的点语法调用（方法当做属性调用）
+    1. 智能名词替换
+    1. 可设置‘重命名同名文件’
+    1. 可设置‘重命名相似字符串’，(忽略|相等|包含)三种设置
+    1. 新增‘纠正非标准点语法’，针对非标准的点语法调用（方法当做属性调用）
 <a name="GTE99"></a>
 ### C++
 
@@ -158,10 +158,13 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#align=left&display=inline&height=540&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&size=489209&status=done&style=none&width=960)
 <a name="WtuYs"></a>
 # 更新日志
-<a name="0SJko"></a>
-### v3.9.0（2021.01.25）
+<a name="3xqxI"></a>
+### v3.9.1（2021.01.27）
 
-1. 优化OC[插入文件]，新增xib文件，通过**model**+**view**+**xib**的模式，文件之间相互关联
+1. 新增APP系统消息通知、用户信息展示、用户重置密码
+1. 优化项目，减少内存占用30%
+1. 修复v3.8.0之后同时勾选OC[重命名属性]、OC[重命名方法]导致修改后的set/get属性被当成方法误改了
+1. 修复其他小问题
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="63ca6131"></a>
