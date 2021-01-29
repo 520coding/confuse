@@ -141,15 +141,15 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 ## 规划中
 更新迭代将按照以下顺序依次进行
 
-1. Objective-C（95%），重构的目的是为了提高工具的通用性和稳定性，及强化功能
+1. Objective-C（95%），主要提高工具的通用性和稳定性，及强化功能
    1. 音频、视频文件使用少，后续添加
 2. C++（60%），开发中...
    1. 方法：插入
    1. 属性：修改
    1. 全局变量：修改
    1. 局部变量：修改
-3. Lua（0%）的针对性太强了，暂时不开放，暂时不打算重构有需要在说吧
 3. Swift（5%），开发中...
+3. Lua（0%）的针对性太强了，暂时不开放，暂时不打算重构有需要在说吧
 3. C#（0%），本人实际项目使用不多，故排在最后，看用户需求再决定
 3. 其他功能：
    1. 快速混淆模式
@@ -158,13 +158,12 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#align=left&display=inline&height=540&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&size=489209&status=done&style=none&width=960)
 <a name="WtuYs"></a>
 # 更新日志
-<a name="3xqxI"></a>
-### v3.9.1（2021.01.27）
+<a name="80fEV"></a>
+### v3.9.2（2021.01.29）
 
-1. 新增APP系统消息通知、用户信息展示、用户重置密码
-1. 优化项目，减少内存占用30%
-1. 修复v3.8.0之后同时勾选OC[重命名属性]、OC[重命名方法]导致修改后的set/get属性被当成方法误改了
-1. 修复其他小问题
+1. 新增文件读取失败log主动提示有问题的文件路径，避开‘.DS_Store’文件
+1. 优化环境检查，移除默认全部检查，改为根据勾选对应的功能检查
+1. 修复OC[修改局部变量]、OC[插入图片]，小概率出现运行时影响源代码运行逻辑
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="63ca6131"></a>
