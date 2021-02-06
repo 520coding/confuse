@@ -1,4 +1,5 @@
 #import "TemplateFileView.h"
+#import "TemplateLastClassView.h"
 
 #import "Template.h"
 #define view_space  (0 + 8 + 12 + 0)

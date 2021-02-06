@@ -78,6 +78,8 @@
 		71F526EC25903B6C00650E3A /* CppTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71F526EA25903B6C00650E3A /* CppTemplate.cpp */; };
 		980BB6CD255D1B3400404641 /* TestClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980BB6CA255D1B3400404641 /* TestClassController.m */; };
 		980BB6CE255D1B3400404641 /* TestClassController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980BB6CB255D1B3400404641 /* TestClassController.xib */; };
+		980BF10E25C2B90100ED0684 /* TemplateLastClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 980BF10D25C2B90100ED0684 /* TemplateLastClassModel.m */; };
+		980BF11225C2B91C00ED0684 /* TemplateLastClassView.m in Sources */ = {isa = PBXBuildFile; fileRef = 980BF11125C2B91C00ED0684 /* TemplateLastClassView.m */; };
 		9841FF2C25875506003CB909 /* TemplateFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9841FF2A25875506003CB909 /* TemplateFileModel.m */; };
 		9841FF2D25875506003CB909 /* TemplateFileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9841FF2B25875506003CB909 /* TemplateFileView.m */; };
 		98742DE8252073B9003B608D /* TestFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 98742DE7252073B9003B608D /* TestFont.m */; };
@@ -253,6 +255,10 @@
 		980BB6CA255D1B3400404641 /* TestClassController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClassController.m; sourceTree = "<group>"; };
 		980BB6CB255D1B3400404641 /* TestClassController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestClassController.xib; sourceTree = "<group>"; };
 		980BB6CC255D1B3400404641 /* TestClassController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClassController.h; sourceTree = "<group>"; };
+		980BF10C25C2B90100ED0684 /* TemplateLastClassModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateLastClassModel.h; sourceTree = "<group>"; };
+		980BF10D25C2B90100ED0684 /* TemplateLastClassModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemplateLastClassModel.m; sourceTree = "<group>"; };
+		980BF11025C2B91C00ED0684 /* TemplateLastClassView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateLastClassView.h; sourceTree = "<group>"; };
+		980BF11125C2B91C00ED0684 /* TemplateLastClassView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemplateLastClassView.m; sourceTree = "<group>"; };
 		9841FF2825875506003CB909 /* TemplateFileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateFileView.h; sourceTree = "<group>"; };
 		9841FF2925875506003CB909 /* TemplateFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateFileModel.h; sourceTree = "<group>"; };
 		9841FF2A25875506003CB909 /* TemplateFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateFileModel.m; sourceTree = "<group>"; };
@@ -575,6 +581,10 @@
 				71A657892541274900A307B5 /* TemplateViewController.m */,
 				9841FF2925875506003CB909 /* TemplateFileModel.h */,
 				9841FF2A25875506003CB909 /* TemplateFileModel.m */,
+				980BF10C25C2B90100ED0684 /* TemplateLastClassModel.h */,
+				980BF10D25C2B90100ED0684 /* TemplateLastClassModel.m */,
+				980BF11025C2B91C00ED0684 /* TemplateLastClassView.h */,
+				980BF11125C2B91C00ED0684 /* TemplateLastClassView.m */,
 				9841FF2825875506003CB909 /* TemplateFileView.h */,
 				9841FF2B25875506003CB909 /* TemplateFileView.m */,
 				98BE42C825B57EE600EDE9D4 /* TemplateFileView.xib */,
@@ -924,12 +934,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980BF11225C2B91C00ED0684 /* TemplateLastClassView.m in Sources */,
 				98C382AB253439EF004FA4D5 /* TestFrame.m in Sources */,
 				989FAFEB2546A4EB009D0BB5 /* TestLayoutTableViewController.m in Sources */,
 				71ABC6422520288A006BB37E /* TestSuperGlobalVariable.m in Sources */,
 				718B950A2508930900C1DB77 /* ViewController.m in Sources */,
 				718B952C2508AA6B00C1DB77 /* TestPropertyXibViewController.m in Sources */,
 				71F526EC25903B6C00650E3A /* CppTemplate.cpp in Sources */,
+				980BF10E25C2B90100ED0684 /* TemplateLastClassModel.m in Sources */,
 				718B95042508930900C1DB77 /* AppDelegate.m in Sources */,
 				71290BEA251EE2AF00B3229A /* TestSuperMacro.m in Sources */,
 				718B95202508982700C1DB77 /* TestPropertySuper.m in Sources */,
