@@ -50,7 +50,9 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 
 1. [项目配置]，只要选择项目路径，自动完成其他默认配置
    1. 全局设置‘忽略路径’，支持正则，配合黑名单使用更佳
+   1. ‘xcodeproj’设置，针对多xcodeproj项目和xx.xcodeproj不在项目根目录的情况
    1. 可以根据‘Scheme’混淆
+   1. ‘参考项目根路径’设置，读取参考项目的单词、UUID
    1. 自定义添加‘敏感词’
    1. 自由选择‘版本迭代混淆’，过审后迭代更新，沿用上一次（也可以任意选择版本）混淆记录增量混淆，保持版本连续性，模拟正常开发。优势：做到开发和混淆同步且各自独立。目前80%的主要功能均支持更新混淆，后续将剩余补上
 2. [资源替换]，混淆前指定需要替换的资源文件夹，自动进行同名文件替换，方便快捷
@@ -58,7 +60,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 2. [修改文件属性]，如创建时间、访问时间、修改时间
 2. [修改项目]，无需删除Cocoapods
    1. 可设置‘修改uuid’，彻底翻新
-   1. ‘修改target’名称，相关联信息同步更新
+   1. 自定义‘修改target’名称，相关联信息同步更新
 6. 自动备份源码
 <a name="uYJj8"></a>
 ### Objective-C
@@ -142,13 +144,14 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 更新迭代将按照以下顺序依次进行
 
 1. Objective-C（95%），主要提高工具的通用性和稳定性，及强化功能
+   1. Xcode的UUID预选，词库预选
    1. 音频、视频文件使用少，后续添加
 2. C++（60%），开发中...
    1. 方法：插入
    1. 属性：修改
    1. 全局变量：修改
    1. 局部变量：修改
-3. Swift（5%），开发中...
+3. Swift（15%），开发中...
 3. Lua（0%）的针对性太强了，暂时不开放，暂时不打算重构有需要在说吧
 3. C#（0%），本人实际项目使用不多，故排在最后，看用户需求再决定
 3. 其他功能：
@@ -158,15 +161,14 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#align=left&display=inline&height=540&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&size=489209&status=done&style=none&width=960)
 <a name="WtuYs"></a>
 # 更新日志
-<a name="80fEV"></a>
-### v3.9.3（2021.02.06）
+<a name="t9Jci"></a>
+### v3.9.4（2021.02.21）
 
-1. 优化OC[插入文件]
-   1. 插入的文件互相调用
-   1. 提高文件在项目中的调用频率，之前仅在controller的viewDidLoad方法中才会调用
-   1. 移除旧版本混淆模式，原因：该模式与版本迭代混淆不兼容
-2. 优化OC[插入文本]，提高文本在项目中的调用频率
-2. 优化[版本迭代混淆]，项目中90%功能均支持更新混淆
+1. 优化[项目配置]
+   1. 新增‘xcodeproj’设置，针对多xcodeproj项目和xx.xcodeproj不在项目根目录的情况，默认第一个xx.xcodeproj
+   1. 新增‘参考项目根路径’设置，读取参考项目的单词、UUID，注意：参考的项目最好是未提交过的
+2. 优化[修改工程]，新增‘自定义target名称’设置
+2. 修复项目名存在空格可能引起的异常
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="63ca6131"></a>
