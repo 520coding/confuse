@@ -9,7 +9,7 @@
 #import "TestFunctionSuper.h"
 #import <MJExtension/MJPropertyKey.h>
 #import <WebKit/WebKit.h>
-#import "Template.h"
+#import "TestFunctionView.h"
 
 @implementation TestFunctionSuper
 
@@ -68,18 +68,18 @@
     return [[WKWebView alloc] init];
 }
 
-- (TemplateView *)templateView {
-    return [[TemplateView alloc] init];
+- (TestFunctionView *)templateView {
+    return [[TestFunctionView alloc] init];
 }
 
-- (NSString * (^)(NSString *name, TemplateView *view))black:(NSString *)name {
-    return ^NSString *(NSString *name1, TemplateView *view) {
+- (NSString * (^)(NSString *name, TestFunctionView *view))black:(NSString *)name {
+    return ^NSString *(NSString *name1, TestFunctionView *view) {
                return @"";
     };
 }
 
-- (NSString * (^)(NSString *name, TemplateButton *btn))black2:(NSString *)name {
-    return ^NSString *(NSString *name1, TemplateButton *btn) {
+- (NSString * (^)(NSString *name, TestFunctionButton *btn))black2:(NSString *)name {
+    return ^NSString *(NSString *name1, TestFunctionButton *btn) {
                return @"";
     };
 }

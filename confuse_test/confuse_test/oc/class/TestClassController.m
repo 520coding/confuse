@@ -9,16 +9,46 @@
 #import "TestClassController.h"
 #import "TestClassCell.h"
 
+typedef void (^YQResponseSuccessBlock)(id response);
+typedef void (^YQResponseFailBlock)(NSError *error);
+
 typedef animal Animal;
 
 @interface TestClassController () <UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
-
+@property (nonatomic, strong) NSMutableArray *sourceArray;
 
 @end
 
 @implementation TestClassController
+
++ (void)getWithUrl:(NSString *)url
+
+            params:(NSDictionary *)params
+
+      successBlock:(YQResponseSuccessBlock)successBlock
+         failBlock:(YQResponseFailBlock)failBlock {
+    
+}
+
+- (void)zjImage {
+    if (self.sourceArray.count != 0) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.6 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self.tableView description];
+        });
+
+        return;
+    }
+    self.sourceArray = @[].mutableCopy;
+    [TestClassController getWithUrl:@"YouyouLists" params:nil successBlock:^(id _Nonnull response) {
+        [self.tableView description];
+        [self.sourceArray addObject:@""];
+        [self.tableView reloadData];
+    } failBlock:^(NSError *_Nonnull error) {
+        [self.tableView description];
+    }];
+}
 
 - (void)viewDidLoad
 {
