@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TestFrame : NSObject
 
+
+@property (nonatomic, assign) CGFloat width;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

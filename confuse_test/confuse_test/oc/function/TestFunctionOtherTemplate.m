@@ -20,11 +20,31 @@
 + (void)testView2:(UIView *)p1 p2:(TestFunctionView *)p2 _p:(NSString *)_p {
 }
 
++ (void)blockSmart:(id)formatStr, ...
+{
+    NSMutableArray *argsArray = [[NSMutableArray alloc]init];
+    if (formatStr) {
+        [argsArray addObject:formatStr];
+        va_list params;
+        va_start(params, formatStr);
+        NSString *arg;
+        while ((arg = va_arg(params, NSString *))) {
+            if (arg) {
+                [argsArray addObject:arg];
+            }
+        }
+        va_end(params);
+    }
+    for (NSString *s in argsArray) {
+        NSLog(@"%@", s);
+    }
+}
+
 @end
 
 @implementation TestFunctionOtherTemplateLabel
 
-- (BOOL)_scanJSONDictionary:(NSDictionary * *)outDictionary sharedKeySet:(id *)ioSharedKeySet error:(NSError * *)outError {
+- (BOOL)_scanJSONDictionary:(NSDictionary **)outDictionary sharedKeySet:(id *)ioSharedKeySet error:(NSError **)outError {
     return YES;
 }
 
@@ -35,5 +55,13 @@
     return(theDictionary);
 }
 
-@end
+- (instancetype)init:(NSString *)clientId
+           channelId:(NSString *)channelId
+           clientKey:(NSString *)clientKey {
+    self = [super init];
+    if (self) {
+    }
+    return self;
+}
 
+@end

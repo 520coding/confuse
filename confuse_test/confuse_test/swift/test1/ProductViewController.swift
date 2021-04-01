@@ -35,7 +35,7 @@ class ProductViewController: UIViewController {
 
     }
 
-    @IBAction func addToCartButtonDidTap(_ sender: AnyObject) {
+    @IBAction func click(_ sender: AnyObject) {
         print("Add to cart successfully")
     }
 }
