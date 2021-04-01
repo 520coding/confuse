@@ -14,6 +14,7 @@
 		710338CE250A12C70061F6BE /* TestFunctionXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 710338CC250A12C70061F6BE /* TestFunctionXibViewController.xib */; };
 		710571902550097F003FFB3C /* TestImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7105718F2550097F003FFB3C /* TestImageViewController.m */; };
 		7105719325500A06003FFB3C /* TestImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7105719225500A06003FFB3C /* TestImageModel.m */; };
+		710C94F225F0954700D57528 /* SwiftSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C94F125F0954700D57528 /* SwiftSelector.swift */; };
 		710F33CF2514731F00AEE75E /* TestPropertyXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 710F33CE2514731F00AEE75E /* TestPropertyXibView.xib */; };
 		71138F3825E8959C0048CF46 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71138F3425E88E9D0048CF46 /* Stopwatch.swift */; };
 		71138F3925E8959C0048CF46 /* Test2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71138F3325E88E9D0048CF46 /* Test2ViewController.swift */; };
@@ -53,6 +54,8 @@
 		718DDBA6257F3387002B35AE /* confuse_sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 718DDB9E257F3387002B35AE /* confuse_sdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		718F1753258C98210001E6F0 /* CppClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 718F1751258C98210001E6F0 /* CppClass.cpp */; };
 		719313E0255A786A004A7802 /* CppViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 719313DF255A786A004A7802 /* CppViewController.mm */; };
+		719F39FD25F10B7F00740D1C /* SwiftDeinitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719F39FC25F10B7F00740D1C /* SwiftDeinitialization.swift */; };
+		719F3A0225F10C9E00740D1C /* SwiftInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719F3A0125F10C9E00740D1C /* SwiftInitialization.swift */; };
 		71ABC63F2520286D006BB37E /* TestGlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABC63E2520286D006BB37E /* TestGlobalVariable.m */; };
 		71ABC6422520288A006BB37E /* TestSuperGlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABC6412520288A006BB37E /* TestSuperGlobalVariable.m */; };
 		71ABC645252028AB006BB37E /* TestOtherGlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABC644252028AB006BB37E /* TestOtherGlobalVariable.m */; };
@@ -143,6 +146,7 @@
 		7105719125500A06003FFB3C /* TestImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestImageModel.h; sourceTree = "<group>"; };
 		7105719225500A06003FFB3C /* TestImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestImageModel.m; sourceTree = "<group>"; };
 		710751CB255D40F100D7F0B7 /* CppNamespace.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CppNamespace.hpp; sourceTree = "<group>"; };
+		710C94F125F0954700D57528 /* SwiftSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSelector.swift; sourceTree = "<group>"; };
 		710F33CE2514731F00AEE75E /* TestPropertyXibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestPropertyXibView.xib; sourceTree = "<group>"; };
 		71138F3325E88E9D0048CF46 /* Test2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2ViewController.swift; sourceTree = "<group>"; };
 		71138F3425E88E9D0048CF46 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
@@ -209,6 +213,8 @@
 		718F1752258C98210001E6F0 /* CppClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CppClass.hpp; sourceTree = "<group>"; };
 		719313DE255A786A004A7802 /* CppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CppViewController.h; sourceTree = "<group>"; };
 		719313DF255A786A004A7802 /* CppViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CppViewController.mm; sourceTree = "<group>"; };
+		719F39FC25F10B7F00740D1C /* SwiftDeinitialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDeinitialization.swift; sourceTree = "<group>"; };
+		719F3A0125F10C9E00740D1C /* SwiftInitialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftInitialization.swift; sourceTree = "<group>"; };
 		71ABC63D2520286D006BB37E /* TestGlobalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestGlobalVariable.h; sourceTree = "<group>"; };
 		71ABC63E2520286D006BB37E /* TestGlobalVariable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGlobalVariable.m; sourceTree = "<group>"; };
 		71ABC6402520288A006BB37E /* TestSuperGlobalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSuperGlobalVariable.h; sourceTree = "<group>"; };
@@ -591,8 +597,11 @@
 				71D1870425C28D99003D3115 /* SwiftTableViewController.swift */,
 				7187FF2025DF6E3800DA13BE /* SwiftProperty.swift */,
 				718D2A2125D2E10B003BC9B1 /* SwiftFunction.swift */,
+				710C94F125F0954700D57528 /* SwiftSelector.swift */,
 				7187FF2625DF711200DA13BE /* SwiftProtocol.swift */,
 				71E3993725E7935F000570F6 /* SwiftNestedTypes.swift */,
+				719F3A0125F10C9E00740D1C /* SwiftInitialization.swift */,
+				719F39FC25F10B7F00740D1C /* SwiftDeinitialization.swift */,
 				71D1870325C28D98003D3115 /* confuse_test-Bridging-Header.h */,
 			);
 			path = swift;
@@ -877,7 +886,7 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */	
+/* Begin PBXShellScriptBuildPhase section */
 		017C6F975BCA5CBDFD04A9AB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -935,6 +944,7 @@
 				7187FF2425DF6F5A00DA13BE /* SwiftBase.swift in Sources */,
 				71E3993825E7935F000570F6 /* SwiftNestedTypes.swift in Sources */,
 				718B95462508D43900C1DB77 /* User_M.m in Sources */,
+				719F39FD25F10B7F00740D1C /* SwiftDeinitialization.swift in Sources */,
 				98BE2D1B259B19080005A66D /* TestLocalizableViewController.m in Sources */,
 				710338C6250A0BE20061F6BE /* TestFunctionSuper.m in Sources */,
 				71555B932553E8AE00DD8246 /* CppStudent.cpp in Sources */,
@@ -951,6 +961,7 @@
 				71138F3825E8959C0048CF46 /* Stopwatch.swift in Sources */,
 				71290BED251EE38D00B3229A /* TestOtherMacro.m in Sources */,
 				98D4D86A2510B98500E3B9AB /* TestXibViewController.m in Sources */,
+				719F3A0225F10C9E00740D1C /* SwiftInitialization.swift in Sources */,
 				71D1870525C28D99003D3115 /* SwiftTableViewController.swift in Sources */,
 				718B95362508AFD200C1DB77 /* MBProgressHUD.m in Sources */,
 				718B95402508D3A500C1DB77 /* SCSelectModel.m in Sources */,
@@ -971,6 +982,7 @@
 				719313E0255A786A004A7802 /* CppViewController.mm in Sources */,
 				7187FF2125DF6E3800DA13BE /* SwiftProperty.swift in Sources */,
 				710338C3250A0BD40061F6BE /* TestFunction.m in Sources */,
+				710C94F225F0954700D57528 /* SwiftSelector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

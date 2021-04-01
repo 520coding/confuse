@@ -12,11 +12,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TestFunctionOtherTemplate : NSObject
 
++ (void)blockSmart:(id)formatStr,...;
+
 @end
 
 
 @interface TestFunctionOtherTemplateLabel : UILabel
 
+- (instancetype) init: (NSString *)clientId
+            channelId: (NSString *)channelId
+            clientKey: (NSString *)clientKey;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -8,77 +8,86 @@
 
 import UIKit
 
-class SwiftFunction2: UIViewController {
-    var cyanButton: UIButton!
-    var anotherCyanButton: UIButton!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        let methodA = #selector(cyanButtonClick as () -> Void)
-        let methodB = #selector(cyanButtonClick as (UIButton) -> Void)
-
-        cyanButton.addTarget(self,
-                             action: methodA,
-                             for: .touchUpInside)
-        anotherCyanButton.addTarget(self,
-                                    action: methodB,
-                                    for: .touchUpInside)
+class Counter {
+    var count = 0
+    func increment() {
+        count += 1
+        count += 1
     }
 
-    @objc func cyanButtonClick() {
-        print(#function)
+    func increment(by amount: Int) {
+        count += amount
     }
 
-    @objc private func cyanButtonClick(_ button: UIButton) {
-        let btnLabel = button.titleLabel?.text ?? "nil"
-        print(btnLabel)
-        print(#function)
+    func reset() {
+        count = 0
     }
 }
 
-class SwiftFunction3: UIViewController {
-    @objc private func privateFunc() {
-        print(#function)
+struct FuncPoint {
+    var x = 0.0, y = 0.0
+    func isToTheRightOf(x: Double) -> Bool {
+        return self.x > x
     }
 
-    @objc func defaultFunc() {
-        print(#function)
+    mutating func moveBy(x deltaX: Double, y deltaY: Double) {
+        x += deltaX
+        y += deltaY
     }
-}
 
-class SwiftFunction4: SwiftFunction3 {
-    var cyanButton: UIButton!
-    var anotherCyanButton: UIButton!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        cyanButton.addTarget(self,
-                             action: #selector(defaultFunc),
-                             for: .touchUpInside)
-        anotherCyanButton.addTarget(self,
-                                    action: Selector("privateFunc"),
-                                    for: .touchUpInside)
+    mutating func moveBy2(x deltaX: Double, y deltaY: Double) {
+        self = FuncPoint(x: x + deltaX, y: y + deltaY)
     }
 }
 
-class SwiftFunction5: NSObject {
-    @objc dynamic var firstName: String
-    dynamic let lastName: String
-    dynamic var fullName: String {
-        return "\(firstName) \(lastName)"
-    }
-
-    init(firstName: String, lastName: String) {
-        self.firstName = firstName
-        self.lastName = lastName
+enum TriStateSwitch {
+    case off, low, high
+    mutating func next() {
+        switch self {
+        case .off:
+            self = .low
+        case .low:
+            self = .high
+        case .high:
+            self = .off
+        }
     }
 }
 
-fileprivate extension Selector {
-    static let firstNameGetter = #selector(getter: SwiftFunction5.firstName)
-    static let firstNameSetter = #selector(setter: SwiftFunction5.firstName)
+struct LevelTracker {
+    static var highestUnlockedLevel = 1
+    var currentLevel = 1
+
+    static func unlock(_ level: Int) {
+        if level > highestUnlockedLevel { highestUnlockedLevel = level }
+    }
+
+    static func isUnlocked(_ level: Int) -> Bool {
+        return level <= highestUnlockedLevel
+    }
+
+    @discardableResult
+    mutating func advance(to level: Int) -> Bool {
+        if LevelTracker.isUnlocked(level) {
+            currentLevel = level
+            return true
+        } else {
+            return false
+        }
+    }
+}
+
+class Player {
+    var tracker = LevelTracker()
+    let playerName: String
+    func complete(level: Int) {
+        LevelTracker.unlock(level + 1)
+        tracker.advance(to: level + 1)
+    }
+
+    init(name: String) {
+        playerName = name
+    }
 }
 
 class SwiftFunction: UIViewController, SwiftBaseProtocol {
@@ -86,7 +95,55 @@ class SwiftFunction: UIViewController, SwiftBaseProtocol {
         test()
     }
 
+    @IBAction func touchDown(_ sender: Any) {
+        print(sender)
+    }
+
+    @IBAction func clickOutside(_ sender: Any) {
+        print(sender)
+    }
+
+    @IBAction func click(_ sender: Any) {
+        print(sender)
+    }
+
     func test() {
+        let counter = Counter()
+        // the initial counter value is 0
+        counter.increment()
+        // the counter's value is now 2
+        counter.increment(by: 5)
+        counter.reset()
+        // the counter's value is now 0
+
+        let somePoint = FuncPoint(x: 4.0, y: 5.0)
+        if somePoint.isToTheRightOf(x: 1.0) {
+            print("This point is to the right of the line where x == 1.0")
+        }
+        // Prints "This point is to the right of the line where x == 1.0"
+
+        var somePoint2 = FuncPoint(x: 1.0, y: 1.0)
+        somePoint2.moveBy(x: 2.0, y: 3.0)
+        print("The point is now at (\(somePoint2.x), \(somePoint2.y))")
+        // Prints "The point is now at (3.0, 4.0)"
+
+        var ovenLight = TriStateSwitch.low
+        ovenLight.next()
+        // ovenLight .high
+        ovenLight.next()
+        // ovenLight .off
+
+        var player = Player(name: "Argyrios")
+        player.complete(level: 1)
+        print("highest unlocked level is now \(LevelTracker.highestUnlockedLevel)")
+        // Prints "highest unlocked level is now 2"
+
+        player = Player(name: "Beto")
+        if player.tracker.advance(to: 6) {
+            print("player is now on level 6")
+        } else {
+            print("level 6 hasn't yet been unlocked")
+        }
+        // Prints "level 6 hasn't yet been unlocked"
     }
 }
-
