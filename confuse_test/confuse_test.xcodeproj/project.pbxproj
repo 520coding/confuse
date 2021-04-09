@@ -56,6 +56,8 @@
 		719313E0255A786A004A7802 /* CppViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 719313DF255A786A004A7802 /* CppViewController.mm */; };
 		719F39FD25F10B7F00740D1C /* SwiftDeinitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719F39FC25F10B7F00740D1C /* SwiftDeinitialization.swift */; };
 		719F3A0225F10C9E00740D1C /* SwiftInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719F3A0125F10C9E00740D1C /* SwiftInitialization.swift */; };
+		71A6044C261AB7D1004579C2 /* SwiftEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A6044B261AB7D1004579C2 /* SwiftEnum.swift */; };
+		71A6044F261AC8C7004579C2 /* SwiftClassStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A6044E261AC8C7004579C2 /* SwiftClassStruct.swift */; };
 		71ABC63F2520286D006BB37E /* TestGlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABC63E2520286D006BB37E /* TestGlobalVariable.m */; };
 		71ABC6422520288A006BB37E /* TestSuperGlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABC6412520288A006BB37E /* TestSuperGlobalVariable.m */; };
 		71ABC645252028AB006BB37E /* TestOtherGlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABC644252028AB006BB37E /* TestOtherGlobalVariable.m */; };
@@ -215,6 +217,8 @@
 		719313DF255A786A004A7802 /* CppViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CppViewController.mm; sourceTree = "<group>"; };
 		719F39FC25F10B7F00740D1C /* SwiftDeinitialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDeinitialization.swift; sourceTree = "<group>"; };
 		719F3A0125F10C9E00740D1C /* SwiftInitialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftInitialization.swift; sourceTree = "<group>"; };
+		71A6044B261AB7D1004579C2 /* SwiftEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftEnum.swift; sourceTree = "<group>"; };
+		71A6044E261AC8C7004579C2 /* SwiftClassStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftClassStruct.swift; sourceTree = "<group>"; };
 		71ABC63D2520286D006BB37E /* TestGlobalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestGlobalVariable.h; sourceTree = "<group>"; };
 		71ABC63E2520286D006BB37E /* TestGlobalVariable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGlobalVariable.m; sourceTree = "<group>"; };
 		71ABC6402520288A006BB37E /* TestSuperGlobalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSuperGlobalVariable.h; sourceTree = "<group>"; };
@@ -596,6 +600,8 @@
 				7187FF2325DF6F5A00DA13BE /* SwiftBase.swift */,
 				71D1870425C28D99003D3115 /* SwiftTableViewController.swift */,
 				7187FF2025DF6E3800DA13BE /* SwiftProperty.swift */,
+				71A6044B261AB7D1004579C2 /* SwiftEnum.swift */,
+				71A6044E261AC8C7004579C2 /* SwiftClassStruct.swift */,
 				718D2A2125D2E10B003BC9B1 /* SwiftFunction.swift */,
 				710C94F125F0954700D57528 /* SwiftSelector.swift */,
 				7187FF2625DF711200DA13BE /* SwiftProtocol.swift */,
@@ -965,6 +971,7 @@
 				71D1870525C28D99003D3115 /* SwiftTableViewController.swift in Sources */,
 				718B95362508AFD200C1DB77 /* MBProgressHUD.m in Sources */,
 				718B95402508D3A500C1DB77 /* SCSelectModel.m in Sources */,
+				71A6044F261AC8C7004579C2 /* SwiftClassStruct.swift in Sources */,
 				98C382B525358AE6004FA4D5 /* TestMasonry.m in Sources */,
 				718B95432508D3E200C1DB77 /* SCOrder.m in Sources */,
 				718B951F2508982700C1DB77 /* TestProperty.m in Sources */,
@@ -976,6 +983,7 @@
 				718B95242508988D00C1DB77 /* Base.m in Sources */,
 				718D2A2225D2E10B003BC9B1 /* SwiftFunction.swift in Sources */,
 				71D7C8D025DD140A00012BAC /* Product.swift in Sources */,
+				71A6044C261AB7D1004579C2 /* SwiftEnum.swift in Sources */,
 				98742DE8252073B9003B608D /* TestFont.m in Sources */,
 				71138F3925E8959C0048CF46 /* Test2ViewController.swift in Sources */,
 				710338CD250A12C70061F6BE /* TestFunctionXibViewController.m in Sources */,
@@ -1183,6 +1191,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 4.2.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1240,6 +1249,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 4.2.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1296,6 +1306,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 4.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-sdk";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1323,6 +1334,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 4.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-sdk";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

@@ -8,6 +8,32 @@
 
 #import <Foundation/Foundation.h>
 
+#define YJS_TARGET @"YJS_TARGET"
+
+#if TARGET_OS_MAC
+#undef YJS_TARGET
+#define YJS_TARGET @"TARGET_OS_MAC"
+//TARGET_OS_MAC
+#endif
+
+#if TARGET_OS_IOS
+#undef YJS_TARGET
+#define YJS_TARGET @"TARGET_OS_IOS"
+//TARGET_OS_IOS
+#endif
+
+#if TARGET_IPHONE_SIMULATOR
+#undef YJS_TARGET
+#define YJS_TARGET @"TARGET_IPHONE_SIMULATOR"
+//TARGET_IPHONE_SIMULATOR
+#endif
+
+#if TARGET_OS_NANO
+#undef YJS_TARGET
+#define YJS_TARGET @"TARGET_OS_NANO"
+//TARGET_OS_NANO
+#endif
+
 #define TEST_super_macro unfold_test_super_macro
 #define TEST_super_macro_(var) unfold_test_super_macro_##var
 
@@ -24,3 +50,4 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
