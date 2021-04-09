@@ -8,14 +8,17 @@
 
 import Foundation
 
+extension Bundle {
+    var module: String {
+        return infoDictionary?["CFBundleName"] as? String ?? ""
+    }
+}
+
 protocol SwiftBaseProtocol {
     func test()
 }
 
 class SwiftBase: SwiftBaseProtocol {
     func test() {
-        
     }
 }
-
-

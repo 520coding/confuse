@@ -11,7 +11,7 @@
 @implementation TestSuperMacro
 
 - (void)TEST_super_macro {
-    
+    YJS_TARGET;
 }
 
 - (void)TEST_super_macro_(YJS) {
