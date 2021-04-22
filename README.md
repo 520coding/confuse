@@ -1,11 +1,11 @@
 <a name="X50Qx"></a>
-#                             ![1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1606304234500-46a10b02-f83d-4996-99fc-ce092241ea7c.png#align=left&display=inline&height=100&margin=%5Bobject%20Object%5D&name=1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png&originHeight=200&originWidth=200&size=28522&status=done&style=shadow&width=100)
+#                             ![1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1606304234500-46a10b02-f83d-4996-99fc-ce092241ea7c.png#height=100&id=SslN0&name=1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png&originHeight=200&originWidth=200&originalType=binary&size=28522&status=done&style=shadow&width=100)
 <a name="GZrkm"></a>
 # 前言
 机缘巧合偶遇iOS[马甲包业务](https://www.yuque.com/docs/share/7e70244c-5dea-4035-b634-65cc082097da?#《马甲包简介》)，前期也使用过目前市面上其他得工具，实际效果不太理想。经过大量实践，开发出一款功能齐全的[混淆工具](https://github.com/520coding/confuse)。工具的主要功能OC、C++、Swift已封装成Mac应用，其他功能还在封装中，敬请期待。
 <a name="qPY4i"></a>
 # 提示
-为了让大家快速上手及对比混淆效果，新建了测试工程**[confuse_test](https://github.com/520coding/confuse/tree/master/confuse_test)**，大家在实际使用过程中如果遇到问题，欢迎扩展测试工程，请在工程中请注明bug细节，有奖励。
+为了让大家快速上手及对比混淆效果，新建了测试工程[**confuse_test**](https://github.com/520coding/confuse/tree/master/confuse_test)，大家在实际使用过程中如果遇到问题，欢迎扩展测试工程，请在工程中请注明bug细节，有奖励。
 > 1.2.0之前的老版本说明：  
 > 简介：不涉及语法及编译要求，但是混淆后可能出现局部漏改或者改错，请自行添加至黑名单过滤。  
 > 适用项目：RN等还未适配的混合项目。  
@@ -24,18 +24,18 @@
 
 1. 能否修改方法名的所有参数名（极少）
 1. 带block的参数的方法（极少），典型的网络请求
-> + (BOOL)post:(NSString *)url parameters:(NSDictionary *)parameters success:(HttpRequestResponse)success error:(HttpRequestResponse)error;
+> 例如：+ (BOOL)post:(NSString *)url parameters:(NSDictionary *)parameters success:(HttpRequestResponse)success error:(HttpRequestResponse)error;
 
 3. 方法名和属性名改后的名字的长短（本工具能够保证60~80%的改后名称是常见的一个单词，例如：name、title等且保证不与系统冲突，~~完全摒弃简单的靠大量单词库堆砌以保证命名的唯一性的做法~~，真正模拟人工开发）
 3. 修改布局（较少）
-3. 插入的是代码还是‘垃圾’（Apple今年不止三岁了）。
+3. 插入的是代码还是‘垃圾’（本工具通过封装网络请求，创建自定义控件，文件之间使用MVC模式关联，彻底告别‘垃圾’，实现以假乱真）。
 3. 更别说“还有谁...”能识别宏、区分继承链等上下文关联内容，智能识别不可修改部分
-> + (void)init;- (void)reloadData;基本能改，做到的有几个呢？”
+> 例如：+ (void)init;- (void)reloadData;基本能改，做到的有几个呢？”
 
 7. 正常项目（或者第三方库）混淆完基本不报错（除了一些个别[语法不严谨](https://www.yuque.com/docs/share/4a87ec96-80fe-4d25-873d-93cb428b3e15?#5sCql)造成混淆后报错）
 
 
-<br />也欢迎大家使用不同工具混淆测试工程**[confuse_test](https://github.com/520coding/confuse/tree/master/confuse_test)**或者第三方开源库项目，对比效果。
+<br />也欢迎大家使用不同工具混淆测试工程[**confuse_test**](https://github.com/520coding/confuse/tree/master/confuse_test)或者第三方开源库项目，对比效果。
 <a name="ICzWQ"></a>
 # 功能
 confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能模拟人工开发，仿照Xcode部分功能，避免机核4.3、2.1、2.3.1、账号调查等。<br />目标：**模拟人工修改一切能改的地方**，这也是为什么本工具只有黑名单没有白名单的原因<br />详细功能如下（基本功能不做描述，详见其他工具）：
@@ -46,7 +46,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 1. 黑名单（二级）过滤，自由控制每个功能的混淆内容，几乎适应所有项目。
 1. 混淆百分比控制，可以结合自己项目的实际需求，自由调整
 <a name="Pfu38"></a>
-### 通用部分**
+### 通用部分
 
 1. [项目配置]，只要选择项目路径，自动完成其他默认配置
    1. 全局设置‘忽略路径’，支持正则，配合黑名单使用更佳
@@ -107,7 +107,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 14. [修改字体]，对项目中使用的字体随机微调，识别宏
 14. [修改颜色]，对项目中UI控件颜色随机偏移，识别宏
 14. [UI布局偏移]，支持Frame、Mansonry、SDAutoLayout常见布局微调
-14. [插入文件]，生成其它文件（创建自定义控件，模拟正常开发），项目中自动调用；**注意：**(在项目根路径下，会生成"**other_xxx_file**"的文件夹，子选项**Target**控制导入方式，若为空，则需要手动导入，将生成的文件夹拖入工程即可；反之，自动导入）
+14. [插入文件]，生成其它文件（封装网络请求，创建自定义控件，模拟正常开发），项目中自动调用；**注意：**(在项目根路径下，会生成"**other_xxx_file**"的文件夹，子选项**Target**控制导入方式，若为空，则需要手动导入，将生成的文件夹拖入工程即可；反之，自动导入）
 14. [插入文本]，生成json、txt、doc、plist等文本文件，项目中自动调用；**注意：**(在项目根路径下，会生成"**other_xxx_text**"的文件夹，生成的文件会**自动导入**）
 14. [重命名类]，类名不限制（例如：my、My），可指定添加前缀，优势：
     1. 智能名词替换
@@ -186,18 +186,16 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
    1. 快速混淆模式
 <a name="vlfzY"></a>
 # 图文介绍
-运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#align=left&display=inline&height=540&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&size=489209&status=done&style=none&width=960)
+运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#height=540&id=Ai791&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&size=489209&status=done&style=none&width=960)
 <a name="WtuYs"></a>
 # 更新日志
-<a name="WrTbG"></a>
-# v4.2.0（2021.04.09）
+<a name="YcSOK"></a>
+### v4.3.0（2021.04.21）
 
-1. 新增Swift[重命名类]，类名不限制（例如：my、My）
-   1. 识别嵌套类型及typealias，支持class、struct，enum、protocol，【智能名词替换】
-   1. 可设置‘重命名同名文件’
-   1. 可设置‘前缀’
-2. 优化[宏展开]，提高识别精度
-2. 移除部分冗余错误提示警告
+1. 新增[编译]控制，允许手动参与，解决部分项目的编译异常问题。分为自动、半自动、手动三种模式
+1. 优化扫描，预计减少混淆时间20%~60%，OC的PCH重度使用者或者大项目效果较为明显
+1. 优化APP设置，提高流畅度
+1. 优化对项目名包含特殊字符的支持，及其他特殊的bug
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="63ca6131"></a>
