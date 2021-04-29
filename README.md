@@ -189,13 +189,19 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#height=540&id=Ai791&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&size=489209&status=done&style=none&width=960)
 <a name="WtuYs"></a>
 # 更新日志
-<a name="YcSOK"></a>
-### v4.3.0（2021.04.21）
+<a name="LVTeH"></a>
+### v4.3.1（2021.04.28）
 
-1. 新增[编译]控制，允许手动参与，解决部分项目的编译异常问题。分为自动、半自动、手动三种模式
-1. 优化扫描，预计减少混淆时间20%~60%，OC的PCH重度使用者或者大项目效果较为明显
-1. 优化APP设置，提高流畅度
-1. 优化对项目名包含特殊字符的支持，及其他特殊的bug
+1. 修复上一个版本APP编辑设置出现空白及无法连续编辑问题
+1. 优化混淆，预计减少10%以上（大项目比较明显）（目前，500M项目测试[重命名方法]、[重命名属性]一遍通过，耗时各20分钟）
+1. 优化[忽略路径]，Framework强制忽略
+1. 修复[重命名方法]
+   1. 自定义set/get，没有声明@property，调用为点语法漏改问题。
+   1. 系统类型本地扩展，子类继承混淆后有可能冲突问题
+5. 修复[重命名属性]，偶尔和系统名称冲突问题
+5. 优化[重命名方法]，支持不同子类混淆后允许存在相同方法名，及同类的对象方法和类方法允许同名
+5. 优化[重命名属性]，支持不同子类混淆后允许存在相同属性名
+5. 修复[重命名图片]，数字开头图片有可能出现异常
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="63ca6131"></a>
