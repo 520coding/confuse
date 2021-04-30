@@ -1,9 +1,9 @@
-<a name="X50Qx"></a>
+<a name="54fa66eaba498942a1604ffa591838ac"></a>
 #                             ![1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1606304234500-46a10b02-f83d-4996-99fc-ce092241ea7c.png#height=100&id=SslN0&name=1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png&originHeight=200&originWidth=200&originalType=binary&size=28522&status=done&style=shadow&width=100)
-<a name="GZrkm"></a>
+<a name="174be9787bb85687706b11dfa538cd99"></a>
 # 前言
 机缘巧合偶遇iOS[马甲包业务](https://www.yuque.com/docs/share/7e70244c-5dea-4035-b634-65cc082097da?#《马甲包简介》)，前期也使用过目前市面上其他得工具，实际效果不太理想。经过大量实践，开发出一款功能齐全的[混淆工具](https://github.com/520coding/confuse)。工具的主要功能OC、C++、Swift已封装成Mac应用，其他功能还在封装中，敬请期待。
-<a name="qPY4i"></a>
+<a name="9716a56c8b2aa1819920e42731952b21"></a>
 # 提示
 为了让大家快速上手及对比混淆效果，新建了测试工程[**confuse_test**](https://github.com/520coding/confuse/tree/master/confuse_test)，大家在实际使用过程中如果遇到问题，欢迎扩展测试工程，请在工程中请注明bug细节，有奖励。
 > 1.2.0之前的老版本说明：  
@@ -11,14 +11,14 @@
 > 适用项目：RN等还未适配的混合项目。  
 > 使用条件：暂时没法使用，后期重新开放
 
-<a name="VPIgN"></a>
+<a name="d414d8542c4c96e2fa3cda81b4a61dc1"></a>
 # 自述
-<a name="8a270da4"></a>
+<a name="6e674183b5d2f1af15baaa27bb7c93b2"></a>
 ### 马甲包的本质：
 
 1. 阶段一减低重复率 ，本人开发初期的版本和目前市面上的其它工具基本相似，主要是‘名称’全局替换这一个基本的功能
 1. 阶段二减少相似度（相同元素的正态分布），目前该工具经过优化及不断重构已经有了很大的改善，目前基本符合这方面要求，详情见以下功能介绍。事物都有两面性，功能越强大混淆耗时越长，如果你的项目很大，混淆几个小时也是有可能的，请不要见怪，后续持续优化中。
-<a name="DcZrA"></a>
+<a name="fc8a03eacc987f4c5e94e6dc0086ea50"></a>
 ### 区分工具优劣
 其实识别一个工具的优劣，只需看看以下几点：
 
@@ -36,16 +36,16 @@
 
 
 <br />也欢迎大家使用不同工具混淆测试工程[**confuse_test**](https://github.com/520coding/confuse/tree/master/confuse_test)或者第三方开源库项目，对比效果。
-<a name="ICzWQ"></a>
+<a name="426215c094f184f34acdb12593ddb1fc"></a>
 # 功能
 confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能模拟人工开发，仿照Xcode部分功能，避免机核4.3、2.1、2.3.1、账号调查等。<br />目标：**模拟人工修改一切能改的地方**，这也是为什么本工具只有黑名单没有白名单的原因<br />详细功能如下（基本功能不做描述，详见其他工具）：
-<a name="fad5222c"></a>
+<a name="82f2e3582d1466241460f1564b36b2a6"></a>
 ## 已完成
 以下功能均支持：
 
 1. 黑名单（二级）过滤，自由控制每个功能的混淆内容，几乎适应所有项目。
 1. 混淆百分比控制，可以结合自己项目的实际需求，自由调整
-<a name="Pfu38"></a>
+<a name="7e02145ffab0f7184b0a6b92e79d9acd"></a>
 ### 通用部分
 
 1. [项目配置]，只要选择项目路径，自动完成其他默认配置
@@ -66,7 +66,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
    1. 可设置‘修改uuid’，彻底翻新
    1. 自定义‘修改target’名称，相关联信息同步更新
 7. 自动备份源码
-<a name="uYJj8"></a>
+<a name="279a46203c9fe475b30ffab43dad6dba"></a>
 ### Objective-C
 
 1. [删除注释]，可‘保留空格’‘保留pragma’设置，利于测试阶段查看
@@ -114,7 +114,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
     1. 可设置‘重命名同名文件’
     1. 可设置‘重命名相似字符串’，(忽略|相等|包含)三种设置
     1. 新增‘纠正非标准点语法’，针对非标准的点语法调用（方法当做属性调用）
-<a name="GTE99"></a>
+<a name="015937695b202fc108bd5bc9b3283082"></a>
 ### C++
 
 1. [重命名属性]，支持所有类型属性，【智能识别不可修改部分】
@@ -132,10 +132,10 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
    1. 可切换旧模式
    1. 前缀设置
    1. 可设置‘重命名同名文件’
-<a name="NVIkj"></a>
+<a name="ea78561d0c1d5c21d3e2c93d960472e5"></a>
 ### Cocos2d-x
 该部分功能整合至C++中，支持cocos2dx自动过滤
-<a name="JDvGB"></a>
+<a name="47038e8338f9e18ef9eaba0ea5effb80"></a>
 ### Swift
 适配Swift5.3，SPM包管理项目暂未测试
 
@@ -154,7 +154,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
    1. 可设置‘前缀’
 > 注意：目前Swift和OC混合项目，OC和Swift相互调用的部分需要手动加入黑名单，后续将优化。
 
-<a name="cf7Dx"></a>
+<a name="ae3d2a81844b919b3215e2a0033bf5c2"></a>
 ### 名词解释
 
 - 智能名词替换：
@@ -164,7 +164,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
    - 类方法：+ (void)init;原则上任何地方都能改
    - 对象方法：- (void)reloadData;不是UITableView的子类是可以改的
    - 属性：@property (readonly) NSUInteger length;如果不是NSString的子类也是可以改的
-<a name="ifIVC"></a>
+<a name="6554a51551d5572e2cd7d848844e9660"></a>
 ## 规划中
 更新迭代将按照以下顺序依次进行
 
@@ -184,30 +184,24 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 4. C#（0%），本人实际项目使用不多，故排在最后，看用户需求再决定
 4. 其他功能：
    1. 快速混淆模式
-<a name="vlfzY"></a>
+<a name="af444a353c9380bc9aa8aec067937316"></a>
 # 图文介绍
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#height=540&id=Ai791&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&size=489209&status=done&style=none&width=960)
-<a name="WtuYs"></a>
+<a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
 <a name="LVTeH"></a>
-### v4.3.1（2021.04.28）
+### v4.3.2（2021.04.30）
 
-1. 修复上一个版本APP编辑设置出现空白及无法连续编辑问题
-1. 优化混淆，预计减少10%以上（大项目比较明显）（目前，500M项目测试[重命名方法]、[重命名属性]一遍通过，耗时各20分钟）
-1. 优化[忽略路径]，Framework强制忽略
-1. 修复[重命名方法]
-   1. 自定义set/get，没有声明@property，调用为点语法漏改问题。
-   1. 系统类型本地扩展，子类继承混淆后有可能冲突问题
-5. 修复[重命名属性]，偶尔和系统名称冲突问题
-5. 优化[重命名方法]，支持不同子类混淆后允许存在相同方法名，及同类的对象方法和类方法允许同名
-5. 优化[重命名属性]，支持不同子类混淆后允许存在相同属性名
-5. 修复[重命名图片]，数字开头图片有可能出现异常
+1. 优化[OC插入文件]
+   1. 封装网络请求模块，进一步模拟正常开发
+   1. 插入的类存在继承关系，提高模块之间的耦合度
+   1. 修复出现的一些小概率Bug
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
-<a name="63ca6131"></a>
+<a name="41b9f638a3e62c9449ec872644258c8d"></a>
 # 感谢反馈
 [shizu2014](https://github.com/shizu2014)、[myhonior](https://github.com/myhonior)、[imbahong](https://github.com/imbahong)
-<a name="BUG"></a>
+<a name="0ae29cb26e944f357b114cccc4c1211b"></a>
 # 链接导航
 
 1. [工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)
