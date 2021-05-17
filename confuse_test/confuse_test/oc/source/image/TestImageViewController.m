@@ -24,6 +24,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [UIImage imageNamed:@"error"];
+    [UIImage imageNamed:@"my_fox"];
     [UIImage imageNamed:@"timg-21"];
     UILabel *label = [[UILabel alloc] init];
     label.text = @"swift";

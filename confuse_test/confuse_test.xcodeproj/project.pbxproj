@@ -63,6 +63,7 @@
 		71ABC645252028AB006BB37E /* TestOtherGlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABC644252028AB006BB37E /* TestOtherGlobalVariable.m */; };
 		71ABC64825203222006BB37E /* TestGlobalVariableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABC64725203222006BB37E /* TestGlobalVariableTableViewController.m */; };
 		71CC72EA253841BC0094F702 /* TestDiscardSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CC72E9253841BC0094F702 /* TestDiscardSuper.m */; };
+		71CFBF14263E3F4C005080D4 /* SwiftString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CFBF13263E3F4C005080D4 /* SwiftString.swift */; };
 		71D1870125C28C7B003D3115 /* Swift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D1870025C28C7B003D3115 /* Swift.storyboard */; };
 		71D1870525C28D99003D3115 /* SwiftTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D1870425C28D99003D3115 /* SwiftTableViewController.swift */; };
 		71D708D1255A38E4002CCDA8 /* Cpp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D708D0255A38E3002CCDA8 /* Cpp.storyboard */; };
@@ -229,6 +230,7 @@
 		71ABC64725203222006BB37E /* TestGlobalVariableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGlobalVariableTableViewController.m; sourceTree = "<group>"; };
 		71CC72E8253841BC0094F702 /* TestDiscardSuper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDiscardSuper.h; sourceTree = "<group>"; };
 		71CC72E9253841BC0094F702 /* TestDiscardSuper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDiscardSuper.m; sourceTree = "<group>"; };
+		71CFBF13263E3F4C005080D4 /* SwiftString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftString.swift; sourceTree = "<group>"; };
 		71D1870025C28C7B003D3115 /* Swift.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Swift.storyboard; sourceTree = "<group>"; };
 		71D1870325C28D98003D3115 /* confuse_test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "confuse_test-Bridging-Header.h"; sourceTree = "<group>"; };
 		71D1870425C28D99003D3115 /* SwiftTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTableViewController.swift; sourceTree = "<group>"; };
@@ -454,7 +456,7 @@
 				98BE2D2F259B200E0005A66D /* File.strings */,
 				98BE2D25259B19E10005A66D /* Localizable.strings */,
 				718B95012508930900C1DB77 /* confuse_test */,
-				718B952E2508ADA800C1DB77 /* other */,
+				718B952E2508ADA800C1DB77 /* ThirdPart */,
 				718DDB9F257F3387002B35AE /* confuse_sdk */,
 				718B95002508930900C1DB77 /* Products */,
 				C93ED7FE990E683212DB2E88 /* Pods */,
@@ -510,7 +512,7 @@
 			path = property;
 			sourceTree = "<group>";
 		};
-		718B952E2508ADA800C1DB77 /* other */ = {
+		718B952E2508ADA800C1DB77 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
 				71E3606E25628AD5003C3264 /* yjs.png */,
@@ -520,7 +522,7 @@
 				718B95352508AFD200C1DB77 /* MBProgressHUD.m */,
 				71E3606C25628A3F003C3264 /* discard.xcassets */,
 			);
-			path = other;
+			path = ThirdPart;
 			sourceTree = "<group>";
 		};
 		718B952F2508AEEC00C1DB77 /* third */ = {
@@ -599,6 +601,7 @@
 				71D1870025C28C7B003D3115 /* Swift.storyboard */,
 				7187FF2325DF6F5A00DA13BE /* SwiftBase.swift */,
 				71D1870425C28D99003D3115 /* SwiftTableViewController.swift */,
+				71CFBF13263E3F4C005080D4 /* SwiftString.swift */,
 				7187FF2025DF6E3800DA13BE /* SwiftProperty.swift */,
 				71A6044B261AB7D1004579C2 /* SwiftEnum.swift */,
 				71A6044E261AC8C7004579C2 /* SwiftClassStruct.swift */,
@@ -968,6 +971,7 @@
 				71290BED251EE38D00B3229A /* TestOtherMacro.m in Sources */,
 				98D4D86A2510B98500E3B9AB /* TestXibViewController.m in Sources */,
 				719F3A0225F10C9E00740D1C /* SwiftInitialization.swift in Sources */,
+				71CFBF14263E3F4C005080D4 /* SwiftString.swift in Sources */,
 				71D1870525C28D99003D3115 /* SwiftTableViewController.swift in Sources */,
 				718B95362508AFD200C1DB77 /* MBProgressHUD.m in Sources */,
 				718B95402508D3A500C1DB77 /* SCSelectModel.m in Sources */,
@@ -1191,7 +1195,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.3.0;
+				MARKETING_VERSION = 4.4.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1249,7 +1253,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.3.0;
+				MARKETING_VERSION = 4.4.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1306,7 +1310,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.3.0;
+				MARKETING_VERSION = 4.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-sdk";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1334,7 +1338,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.3.0;
+				MARKETING_VERSION = 4.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-sdk";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
