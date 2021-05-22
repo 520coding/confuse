@@ -180,16 +180,18 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 1. 新增Swift[修改字符串]，识别单行、多行、字符串插值、及扩展字符串，改后由加密和拆分字符组等多种方式自由组合，并保留原有字符的注释，方便检查
    1. 设置‘最少长度’过滤
    1. 也可设置‘有效个数’搭配使用
-2. 优化OC[布局偏移]，提高识别精度（5百兆项目测试一遍通过）
+2. 优化OC[布局偏移]，.修复OC[布局偏移]运算逻辑优先级改变问题，提高识别精度（5百兆项目测试一遍通过）
 2. 优化OC[插入文件]，新增Debug测试，用于快速定位耗时操作
 2. 修复OC[重命名属性]，属性和实例变量小概率重名bug
 2. 修复OC[插入属性]，特殊情况下bug
 2. 优化[重命名类]、[修改工程]，大项目有可能会混淆时间超长或者卡死，目前已改善（5百兆项目测试一遍通过，3分钟以内）
+2. 修复试用模式百分比设置有可能异常
+2. 修复OC[插入方法]之前几个版本误改，导致只有插入方法，漏调用问题
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
 # 感谢反馈
-[shizu2014](https://github.com/shizu2014)、[myhonior](https://github.com/myhonior)、[imbahong](https://github.com/imbahong)
+[shizu2014](https://github.com/shizu2014)、[myhonior](https://github.com/myhonior)、[imbahong](https://github.com/imbahong)、[tabier008](https://github.com/tabier008)
 <a name="0ae29cb26e944f357b114cccc4c1211b"></a>
 # 链接导航
 
