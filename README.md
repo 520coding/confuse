@@ -4,9 +4,9 @@
 ### English| [中文](/README_ZH.md)
 <a name="wNymF"></a>
 # Preface
-By chance, I ran into the iOS [vest bag business](https://www.yuque.com/docs/share/7e70244c-5dea-4035-b634-65cc082097da?#《马甲包简介》) . I also used other tools on the market in the early stage, but the actual effect was not ideal. After a lot of practice, a full-featured [obfuscation tool has been developed](https://github.com/520coding/confuse) . The tool have been packaged into a Mac application which support multiple programming languages, such as OC, C++, Swift. More functions are still being packaged, so stay tuned.
+By chance, I ran into the iOS [vest bag business](https://www.yuque.com/docs/share/7e70244c-5dea-4035-b634-65cc082097da?translate=en) . I also used other tools on the market in the early stage, but the actual effect was not ideal. After a lot of practice, a full-featured [obfuscation tool has been developed](https://github.com/520coding/confuse) . The tool have been packaged into a Mac application which support multiple programming languages, such as OC, C++, Swift. More functions are still being packaged, so stay tuned.
 <a name="ixxhF"></a>
-# prompt
+# Prompt
 In order to let everyone get started quickly and compare the effects of confusion, a new test project [**confuse_test**](https://github.com/520coding/confuse/tree/master/confuse_test) was created. If you encounter problems during actual use, welcome to extend the test project. Please indicate the bug details in the project, and there will be rewards.
 > Instructions for the old version before 1.2.0:  
 > Introduction: No grammar and compilation requirements are involved, but partial omissions or corrections may occur after confusion, please add to the blacklist filter by yourself.  
@@ -35,7 +35,7 @@ In fact, to identify the pros and cons of a tool, just look at the following poi
 3. Not to mention "Who else..." can identify macros, distinguish contextual content such as inheritance chains, and intelligently identify unmodifiable parts
 > For example: + (void)init ;-(void)reloadData; basically can be changed, who else can do it? "
 
-7. Normal projects (or third-party libraries) basically do not report errors after obfuscation (except for some individual [improper grammars that](https://www.yuque.com/docs/share/4a87ec96-80fe-4d25-873d-93cb428b3e15?#5sCql) cause confusion and report errors)
+7. Normal projects (or third-party libraries) basically do not report errors after obfuscation (except for some individual [improper grammars](https://www.yuque.com/docs/share/4a87ec96-80fe-4d25-873d-93cb428b3e15#iz0Zi) that cause confusion and report errors)
 
 
 <br />You are also welcome to use different tools to confuse the test project [**confuse_test**](https://github.com/520coding/confuse/tree/master/confuse_test) or third-party open source library projects to compare the effects.
@@ -43,7 +43,7 @@ In fact, to identify the pros and cons of a tool, just look at the following poi
 # Features
 confuse is a [confusion tool](https://github.com/520coding/confuse) that simulates manual development as much as possible, imitates some functions of Xcode, and avoids machine core 4.3, 2.1, 2.3.1, account surveys, etc.<br />Goal: **Simulate manually modify everything that can be changed** , which is why this tool only has a blacklist and no whitelist<br />The detailed functions are as follows (the basic functions are not described, see other tools for details):
 <a name="82f2e3582d1466241460f1564b36b2a6"></a>
-## completed
+## Completed
 The following functions are supported:
 
 1. Blacklist (secondary) filtering, freely control the obfuscated content of each function, and adapt to almost all projects.
@@ -98,12 +98,12 @@ The following functions are supported:
    1. According to the return value type of the method, create the corresponding method in the category. At the same time , the return value of the original method is encapsulated and called.
    1. Can be executed multiple times, the index x2 increases
 8. [Modification method], simulating manual package call, advantages:
-   1. **Split the call** to the original method **and adjust** it **locally according to the parameter type (support inheritance)** . For details, see the [summary table of supported parameter types.](https://www.yuque.com/docs/share/315b72d9-28f9-4fa6-bf20-c40d94f2253a?#《修改方法-支持参数类型汇总表》)
+   1. **Split the call** to the original method **and adjust** it **locally according to the parameter type (support inheritance)** . For details, see the [summary table of supported parameter types.](https://www.yuque.com/docs/share/315b72d9-28f9-4fa6-bf20-c40d94f2253a?translate=en)
    1. Can be executed multiple times, the index x2 increases
 9. [Rename global variables], smart noun substitution
 9. [Modify global variables], replace global variable names, **convert global variables into global functions** , and confuse string variable values
 9. [Modify local variables], simulate manual encapsulation call, variable name association type, advantages:
-   1. Local variable values remain unchanged during operation, see the [summary table of supported types for](https://www.yuque.com/docs/share/90444065-4f4e-49c8-9e1a-5bd3d3b4f84d?#《修改局部变量-支持类型汇总表》) details
+   1. Local variable values remain unchanged during operation, see the [summary table of supported types for](https://www.yuque.com/docs/share/90444065-4f4e-49c8-9e1a-5bd3d3b4f84d?translate=en) details
    1. Can be executed multiple times, the index x2 increases
 12. [Rename multilingual], using a system of direct or indirect methods **NSLocalizedString** , **NSLocalizedStringFromTable** multilingual modified
 12. [Modify string], support arbitrary string, encryption processing (hard code -> memory), the original string is kept in the comment for easy inspection
@@ -154,7 +154,7 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
 > Note: In the current mixed project of Swift and OC, the mutual call between OC and Swift needs to be added to the blacklist manually, which will be optimized in the future.
 
 <a name="6554a51551d5572e2cd7d848844e9660"></a>
-## planning
+## Planning
 Update iterations will be carried out in the following order
 
 1. Objective-C (95%), mainly to improve the versatility and stability of the tool, and strengthen the function
@@ -174,27 +174,29 @@ Update iterations will be carried out in the following order
    1. Fast obfuscation mode
 <a name="af444a353c9380bc9aa8aec067937316"></a>
 # Graphic introduction
-Run the APP rendering, please read the [tool usage tutorial in](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》) detail before [use](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/213807/1623167266244-4978d5ed-0b2c-42b5-80c4-1b44e4ff7f96.png#clientId=u4ef53c93-4376-4&from=paste&height=877&id=ufbdd65fd&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1754&originWidth=2532&originalType=binary&ratio=2&size=443560&status=done&style=none&taskId=ue83d9a90-392f-4558-9b46-f06320d2c45&width=1266)
+Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8?#《confuse instructions》) in detail before use<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/213807/1623167266244-4978d5ed-0b2c-42b5-80c4-1b44e4ff7f96.png#clientId=u4ef53c93-4376-4&from=paste&height=877&id=ufbdd65fd&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1754&originWidth=2532&originalType=binary&ratio=2&size=443560&status=done&style=none&taskId=ue83d9a90-392f-4558-9b46-f06320d2c45&width=1266)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="FnHXN"></a>
-### v4.4.2 (2021.06.08)
+### v4.4.3 (2021.06.10)
 
-1. APP optimizes the prompt message and automatically corrects the error blacklist format
-1. Optimize the Swift series, support folders containing special characters
-1. Optimize Swift[Modify String] to improve the scope of application
-1. Optimize OC [insert attribute], improve recognition accuracy, increase the amount of modification, and support classification and different files of the same kind
-1. Optimize OC [Layout Offset], improve recognition accuracy, and fix special bugs
-1. Fix OC [insertion method], under special circumstances, the header file does not declare the enumeration type exception
+1. Optimize OC [insert file]
+   1. Differentiated insertion is based on MVC, Xib, network encapsulation and database are random modules
+   1. Intelligent call, according to the context of the insertion point, combined with class, attribute and formal parameter, makes the inserted file closely associated with it
+   1. Performance optimization, greatly reduce the confusion time
+   1. Repairing the inserted files that are called in the high frequency method, resulting in the program stuck.
+2. Optimize OC [insert text]
+   1. Performance optimization, greatly reduce the confusion time
+   1. Fixed duplicate property names inserted
 
-[View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
+[View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
 # Thanks for the feedback
 [shizu2014](https://github.com/shizu2014)、[myhonior](https://github.com/myhonior)、[imbahong](https://github.com/imbahong)、[tabier008](https://github.com/tabier008)
 <a name="0ae29cb26e944f357b114cccc4c1211b"></a>
 # Link navigation
 
-1. [Tool usage tutorial](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)
-1. [Software Questions and Answers (Q&A)](https://www.yuque.com/docs/share/4a87ec96-80fe-4d25-873d-93cb428b3e15?#《软件使用问答（Q&A）》)
-1. [[Modification method] Parameter type summary table](https://www.yuque.com/docs/share/315b72d9-28f9-4fa6-bf20-c40d94f2253a?#《修改方法-支持参数类型汇总表》)
-1. [[Modify local variables] Modify local variables-summary table of supported types](https://www.yuque.com/docs/share/90444065-4f4e-49c8-9e1a-5bd3d3b4f84d?#《修改局部变量-支持类型汇总表》)
+1. [Tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8?#《confuse instructions》)
+1. [Software Questions and Answers (Q&A)](https://www.yuque.com/docs/share/4a87ec96-80fe-4d25-873d-93cb428b3e15?translate=en)
+1. [[Modification method] Parameter type summary table](https://www.yuque.com/docs/share/315b72d9-28f9-4fa6-bf20-c40d94f2253a?translate=en)
+1. [[Modify local variables] Modify local variables-summary table of supported types](https://www.yuque.com/docs/share/90444065-4f4e-49c8-9e1a-5bd3d3b4f84d?translate=en)

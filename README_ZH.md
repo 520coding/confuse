@@ -1,7 +1,7 @@
 <a name="54fa66eaba498942a1604ffa591838ac"></a>
 # ![1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1606304234500-46a10b02-f83d-4996-99fc-ce092241ea7c.png#height=100&id=SslN0&name=1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png&originHeight=200&originWidth=200&originalType=binary&ratio=1&size=28522&status=done&style=shadow&width=100)
 <a name="HGXXr"></a>
-### 中文 | [English](/README.md)
+### 中文 | [English](/README_EN.md)
 <a name="174be9787bb85687706b11dfa538cd99"></a>
 # 前言
 机缘巧合偶遇iOS[马甲包业务](https://www.yuque.com/docs/share/7e70244c-5dea-4035-b634-65cc082097da?#《马甲包简介》)，前期也使用过目前市面上其他得工具，实际效果不太理想。经过大量实践，开发出一款功能齐全的[混淆工具](https://github.com/520coding/confuse)。工具的主要功能OC、C++、Swift已封装成Mac应用，其他功能还在封装中，敬请期待。
@@ -179,14 +179,16 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
 <a name="WWGd9"></a>
-### v4.4.2（2021.06.08）
+### v4.4.3（2021.06.10）
 
-1. APP优化提示信息，自动纠正错误黑名单格式
-1. 优化Swift系列，支持文件夹包含特殊字符
-1. 优化Swift[修改字符串]，提高适用范围
-1. 优化OC[插入属性]，提高识别精度，加大修改量，同时支持分类及同类不同文件
-1. 优化OC[布局偏移]，提高识别精度，修复特殊Bug
-1. 修复OC[插入方法]，特殊情况下，头文件未声明枚举类型异常
+1. 优化OC[插入文件]
+   1. 差异化插入，以MVC为基础，xib、网络封装、数据库作为随机模块
+   1. 智能化调用，根据插入点的上下文，与类、属性、形参结合，使插入的文件与之紧密关联
+   1. 性能优化，大大降低混淆时长
+   1. 修复在高频方法中调用插入文件，导致卡死
+2. 优化OC[插入文本]
+   1. 性能优化，大大降低混淆时长
+   1. 修复插入的属性名重名问题
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
