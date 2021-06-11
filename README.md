@@ -178,7 +178,7 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="FnHXN"></a>
-### v4.4.3 (2021.06.10)
+### v4.4.3 (2021.06.11)
 
 1. Optimize OC [insert file]
    1. Differentiated insertion is based on MVC, Xib, network encapsulation and database are random modules
