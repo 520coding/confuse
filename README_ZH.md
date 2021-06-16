@@ -1,7 +1,7 @@
 <a name="54fa66eaba498942a1604ffa591838ac"></a>
 # ![1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1606304234500-46a10b02-f83d-4996-99fc-ce092241ea7c.png#height=100&id=SslN0&name=1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png&originHeight=200&originWidth=200&originalType=binary&ratio=1&size=28522&status=done&style=shadow&width=100)
 <a name="HGXXr"></a>
-### 中文 | [English](/README_EN.md)
+### 中文 | [English](/README.md)
 <a name="174be9787bb85687706b11dfa538cd99"></a>
 # 前言
 机缘巧合偶遇iOS[马甲包业务](https://www.yuque.com/docs/share/7e70244c-5dea-4035-b634-65cc082097da?#《马甲包简介》)，前期也使用过目前市面上其他得工具，实际效果不太理想。经过大量实践，开发出一款功能齐全的[混淆工具](https://github.com/520coding/confuse)。工具的主要功能OC、C++、Swift已封装成Mac应用，其他功能还在封装中，敬请期待。
@@ -70,7 +70,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
    1. ‘脚本路径特征’，病毒编译前会执行一个可疑脚本，支持正则扫描
    1. ‘运行脚本代码标志’，病毒编译前会执行一个可疑脚本代码，支持正则扫描
 3. [资源替换]，混淆前指定需要替换的资源文件夹，自动进行同名文件替换，方便快捷
-3. [修改图片]，质量修改、大小偏移、局部像素微调
+3. [修改图片]，质量修改、大小偏移、局部像素微调、模式修改（支持热更新）
 3. [修改文件属性]，如创建时间、访问时间、修改时间
 3. [修改项目]，无需删除Cocoapods
    1. 可设置‘修改uuid’，彻底翻新
@@ -178,17 +178,12 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#height=540&id=Ai791&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&size=489209&status=done&style=none&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="WWGd9"></a>
-### v4.4.3（2021.06.11）
+<a name="YCuvA"></a>
+### v4.4.4（2021.06.16）
 
-1. 优化OC[插入文件]
-   1. 差异化插入，以MVC为基础，xib、网络封装、数据库作为随机模块
-   1. 智能化调用，根据插入点的上下文，与类、属性、形参结合，使插入的文件与之紧密关联
-   1. 性能优化，大大降低混淆时长
-   1. 修复在高频方法中调用插入文件，导致卡死
-2. 优化OC[插入文本]
-   1. 性能优化，大大降低混淆时长
-   1. 修复插入的属性名重名问题
+1. 优化OC[修改xib、storyboard]，新增支持颜色、布局修改
+1. 优化[修改图片]，支持模式修改（目前支持9中模式，后续将以热更新方式扩展）
+1. 修复OC[插入属性]，小概率出现死循环问题
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

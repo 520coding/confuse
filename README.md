@@ -70,7 +70,7 @@ The following functions are supported:
    1. 'Script path feature', a suspicious script will be executed before virus compilation, support regular scanning
    1. 'Run script code flag', a suspicious script code will be executed before virus compilation, support regular scanning
 3. [Resource replacement], specify the resource folder that needs to be replaced before obfuscation , and automatically replace the file with the same name, which is convenient and quick
-3. [Edit picture], quality modification, size shift, local pixel fine-tuning
+3. [Edit picture], quality modification, size shift, local pixel fine-tuning，mode modification (support hot update)
 3. [Modify file attributes], such as creation time, access time, modification time
 3. [Modify item], no need to delete Cocoapods
    1. Can be set to'modify uuid', completely refurbished
@@ -178,16 +178,11 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="FnHXN"></a>
-### v4.4.3 (2021.06.11)
+### v4.4.4 (2021.06.16)
 
-1. Optimize OC [insert file]
-   1. Differentiated insertion is based on MVC, Xib, network encapsulation and database are random modules
-   1. Intelligent call, according to the context of the insertion point, combined with class, attribute and formal parameter, makes the inserted file closely associated with it
-   1. Performance optimization, greatly reduce the confusion time
-   1. Repairing the inserted files that are called in the high frequency method, resulting in the program stuck.
-2. Optimize OC [insert text]
-   1. Performance optimization, greatly reduce the confusion time
-   1. Fixed duplicate property names inserted
+1. Optimize OC [modify xib, storyboard], add support for color and layout modification
+1. Optimization [Modify Picture], support mode modification (currently supports 9 modes, and will be expanded by hot update in the future)
+1. Fix OC[insert property], a small probability of infinite loop problem
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
