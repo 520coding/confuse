@@ -107,8 +107,8 @@ The following functions are supported:
    1. Can be executed multiple times, the index x2 increases
 12. [Rename multilingual], using a system of direct or indirect methods **NSLocalizedString** , **NSLocalizedStringFromTable** multilingual modified
 12. [Modify string], support arbitrary string, encryption processing (hard code -> memory), the original string is kept in the comment for easy inspection
-    1. Set the'minimum length' filter
-    1. You can also set the " effective number" to use together
+   1. Set the'minimum length' filter
+   1. You can also set the " effective number" to use together
 14. [Modify xib, storyboard], automatically insert the view, and modify the internal structure properties
 14. [Modify font] , randomly fine-tune the font used in the project, and identify macros
 14. [Modify color], randomly shift the color of the UI controls in the project, and identify the macro
@@ -116,10 +116,10 @@ The following functions are supported:
 14. [Insert file], generate other files (encapsulate network requests, create custom controls, simulate normal development), and call them automatically in the project ; **Note:** (Under the project root path, a folder of " **other_xxx_file** " will be generated , and the sub-option **Target** controls Import method, if it is empty, you need to manually import, just drag the generated folder into the project; otherwise, automatically import)
 14. [Insert text], generate json, txt, doc, plist and other text files, which are automatically called in the project ; **note:** (under the project root path, a folder of " **other_xxx_text** " will be generated , and the generated files will be **automatically imported** )
 14. [Rename class], the class name is not limited (for example: my, My), you can specify to add a prefix, advantages:
-    1. Smart noun substitution
-    1. Can be set to'rename files with the same name'
-    1. You can set'rename similar strings', (ignore | equal | include) three modes
-    1. Added 'correct non-standard dot grammar', calling for non-standard dot grammar (methods are called as attributes)
+   1. Smart noun substitution
+   1. Can be set to'rename files with the same name'
+   1. You can set'rename similar strings', (ignore | equal | include) three modes
+   1. Added 'correct non-standard dot grammar', calling for non-standard dot grammar (methods are called as attributes)
 <a name="015937695b202fc108bd5bc9b3283082"></a>
 ### C++
 
@@ -174,15 +174,15 @@ Update iterations will be carried out in the following order
    1. Fast obfuscation mode
 <a name="af444a353c9380bc9aa8aec067937316"></a>
 # Graphic introduction
-Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8?#《confuse instructions》) in detail before use<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/213807/1623167266244-4978d5ed-0b2c-42b5-80c4-1b44e4ff7f96.png#clientId=u4ef53c93-4376-4&from=paste&height=877&id=ufbdd65fd&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1754&originWidth=2532&originalType=binary&ratio=2&size=443560&status=done&style=none&taskId=ue83d9a90-392f-4558-9b46-f06320d2c45&width=1266)
+Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8) in detail before use<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/213807/1623167266244-4978d5ed-0b2c-42b5-80c4-1b44e4ff7f96.png#clientId=u4ef53c93-4376-4&from=paste&height=877&id=ufbdd65fd&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1754&originWidth=2532&originalType=binary&ratio=2&size=443560&status=done&style=none&taskId=ue83d9a90-392f-4558-9b46-f06320d2c45&width=1266)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="FnHXN"></a>
-### v4.4.4 (2021.06.16)
+### v4.4.5 (2021.06.20)
 
-1. Optimize OC [modify xib, storyboard], add support for color and layout modification
-1. Optimization [Modify Picture], support mode modification (currently supports 9 modes, and will be expanded by hot update in the future)
-1. Fix OC[insert property], a small probability of infinite loop problem
+1. Added App overall progress bar display
+1. Optimize OC [insert attribute] to avoid changing the execution logic order of the original project with a small probability
+1. Fix OC[insert method], the problem is caused by the bug of v4.4.2 version
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
@@ -191,7 +191,7 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="0ae29cb26e944f357b114cccc4c1211b"></a>
 # Link navigation
 
-1. [Tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8?#《confuse instructions》)
+1. [Tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8)
 1. [Software Questions and Answers (Q&A)](https://www.yuque.com/docs/share/4a87ec96-80fe-4d25-873d-93cb428b3e15?translate=en)
 1. [[Modification method] Parameter type summary table](https://www.yuque.com/docs/share/315b72d9-28f9-4fa6-bf20-c40d94f2253a?translate=en)
 1. [[Modify local variables] Modify local variables-summary table of supported types](https://www.yuque.com/docs/share/90444065-4f4e-49c8-9e1a-5bd3d3b4f84d?translate=en)
