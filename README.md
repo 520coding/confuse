@@ -70,7 +70,7 @@ The following functions are supported:
    1. 'Script path feature', a suspicious script will be executed before virus compilation, support regular scanning
    1. 'Run script code flag', a suspicious script code will be executed before virus compilation, support regular scanning
 3. [Resource replacement], specify the resource folder that needs to be replaced before obfuscation , and automatically replace the file with the same name, which is convenient and quick
-3. [Edit picture], quality modification, size shift, local pixel fine-tuning，mode modification (support hot update)
+3. [Edit picture], quality modification, size shift, local pixel fine-tuning，RGBA offset，mode modification (support hot update)
 3. [Modify file attributes], such as creation time, access time, modification time
 3. [Modify item], no need to delete Cocoapods
    1. Can be set to'modify uuid', completely refurbished
@@ -88,14 +88,14 @@ The following functions are supported:
 3. [Rename property], support all types of @property , advantages:
    1. Identify grammar, identify type, inheritance relationship, **attribute name confusion and class name (including inheritance chain) association** , automatically identify system attributes
    1. File name Model suffix filtering can be set
-5. [Insert property], associate existing types, smart noun replacement
+5. [Insert property], creation, assignment, and modification are all associated with existing types, smart noun replacement
    1. 'Percentage control'
    1. 'Model suffix' switch, purpose: to avoid model archiving or data transfer failure
    1. Can be executed multiple times, the index x2 increases
 6. [Rename method], similar to Xcode's Rename function , advantages:
    1. Syntax-related, identification of types, inheritance relationships, support for **multi-parameter modification, confusion of method names, class names (including inheritance chains) and type associations** , automatic identification of system methods
 7. [Insert method], insert and call context-related methods, bid farewell to "garbage code", advantages:
-   1. According to the return value type of the method, create the corresponding method in the category. At the same time , the return value of the original method is encapsulated and called.
+   1. According to the return value type of the method, create the corresponding method in the category. At the same time , the return value of the original method is encapsulated and use (local variables, attributes, formal parameters) called.
    1. Can be executed multiple times, the index x2 increases
 8. [Modification method], simulating manual package call, advantages:
    1. **Split the call** to the original method **and adjust** it **locally according to the parameter type (support inheritance)** . For details, see the [summary table of supported parameter types.](https://www.yuque.com/docs/share/315b72d9-28f9-4fa6-bf20-c40d94f2253a?translate=en)
@@ -107,8 +107,8 @@ The following functions are supported:
    1. Can be executed multiple times, the index x2 increases
 12. [Rename multilingual], using a system of direct or indirect methods **NSLocalizedString** , **NSLocalizedStringFromTable** multilingual modified
 12. [Modify string], support arbitrary string, encryption processing (hard code -> memory), the original string is kept in the comment for easy inspection
-   1. Set the'minimum length' filter
-   1. You can also set the " effective number" to use together
+    1. Set the'minimum length' filter
+    1. You can also set the " effective number" to use together
 14. [Modify xib, storyboard], automatically insert the view, and modify the internal structure properties
 14. [Modify font] , randomly fine-tune the font used in the project, and identify macros
 14. [Modify color], randomly shift the color of the UI controls in the project, and identify the macro
@@ -116,10 +116,10 @@ The following functions are supported:
 14. [Insert file], generate other files (encapsulate network requests, create custom controls, simulate normal development), and call them automatically in the project ; **Note:** (Under the project root path, a folder of " **other_xxx_file** " will be generated , and the sub-option **Target** controls Import method, if it is empty, you need to manually import, just drag the generated folder into the project; otherwise, automatically import)
 14. [Insert text], generate json, txt, doc, plist and other text files, which are automatically called in the project ; **note:** (under the project root path, a folder of " **other_xxx_text** " will be generated , and the generated files will be **automatically imported** )
 14. [Rename class], the class name is not limited (for example: my, My), you can specify to add a prefix, advantages:
-   1. Smart noun substitution
-   1. Can be set to'rename files with the same name'
-   1. You can set'rename similar strings', (ignore | equal | include) three modes
-   1. Added 'correct non-standard dot grammar', calling for non-standard dot grammar (methods are called as attributes)
+    1. Smart noun substitution
+    1. Can be set to'rename files with the same name'
+    1. You can set'rename similar strings', (ignore | equal | include) three modes
+    1. Added 'correct non-standard dot grammar', calling for non-standard dot grammar (methods are called as attributes)
 <a name="015937695b202fc108bd5bc9b3283082"></a>
 ### C++
 
@@ -178,11 +178,14 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="FnHXN"></a>
-### v4.4.5 (2021.06.20)
+### v4.4.6 (2021.06.26)
 
-1. Added App overall progress bar display
-1. Optimize OC [insert attribute] to avoid changing the execution logic order of the original project with a small probability
-1. Fix OC[insert method], the problem is caused by the bug of v4.4.2 version
+1. Strengthen OC [Modify Picture], add RGBA offset, you can customize the offset range
+1. Strengthen OC [insertion method] to avoid endless loops and strengthen contextual relevance (local variables, attributes, formal parameters)
+1. Fix the problem of OC [modification method], the small probability method has the same name or the formal parameter has the same name
+1. Optimize OC[Insert Picture], OC[Modify Layout], OC[Insert Attribute], automatically avoid high frequency calls (support actively filtering by method name, class name, and file name in the blacklist)
+1. Fix OC[Modify Layout], single-line super-long nesting mistakenly changed problem (currently can be any)
+1. Fix OC[Modify Local Variables], the type recognition error in special circumstances
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
