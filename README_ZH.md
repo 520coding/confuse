@@ -178,15 +178,12 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#height=540&id=Ai791&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&size=489209&status=done&style=none&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="YCuvA"></a>
-### v4.4.6（2021.06.26）
+<a name="pwHR5"></a>
+### v4.5.0（2021.07.04）
 
-1. 强化OC[修改图片]，新增RGBA偏移，可以自定义偏移范围
-1. 强化OC[插入方法]，避免死循环，强化上下文关联（局部变量、属性、形参）
-1. 修复OC[修改方法]，小概率方法重名或者形参重名问题
-1. 优化OC[插入图片]，OC[修改布局]、OC[插入属性]，自动避开高频调用（支持主动在黑名单中以方法名、类名、文件名过滤）
-1. 修复OC[修改布局]，单行超长嵌套误改问题（目前可任意）
-1. 修复OC[修改局部变量]，特殊情况下类型识别出错问题
+1. 修复OC[插入文本]，小概率插入的属性重名问题
+1. 修复OC[重命名属性]，子类重写父类（@property）的set属性方法，混淆后可能不一致问题，以及个别运行时问题
+1. 修复OC[插入方法]，小概率typeof类型作为形参报错问题
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

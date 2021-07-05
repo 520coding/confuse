@@ -177,15 +177,12 @@ Update iterations will be carried out in the following order
 Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8) in detail before use<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/213807/1623167266244-4978d5ed-0b2c-42b5-80c4-1b44e4ff7f96.png#clientId=u4ef53c93-4376-4&from=paste&height=877&id=ufbdd65fd&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1754&originWidth=2532&originalType=binary&ratio=2&size=443560&status=done&style=none&taskId=ue83d9a90-392f-4558-9b46-f06320d2c45&width=1266)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
-<a name="FnHXN"></a>
-### v4.4.6 (2021.06.26)
+<a name="OiPMh"></a>
+### v4.5.0 (2021.07.04)
 
-1. Strengthen OC [Modify Picture], add RGBA offset, you can customize the offset range
-1. Strengthen OC [insertion method] to avoid endless loops and strengthen contextual relevance (local variables, attributes, formal parameters)
-1. Fix the problem of OC [modification method], the small probability method has the same name or the formal parameter has the same name
-1. Optimize OC[Insert Picture], OC[Modify Layout], OC[Insert Attribute], automatically avoid high frequency calls (support actively filtering by method name, class name, and file name in the blacklist)
-1. Fix OC[Modify Layout], single-line super-long nesting mistakenly changed problem (currently can be any)
-1. Fix OC[Modify Local Variables], the type recognition error in special circumstances
+1. Fix OC[insert text], the attribute with a small probability of inserting the same name problem
+1. Fix OC[Rename Property], the subclass overrides the set property method of the parent class (@property), which may be inconsistent after confusion, and individual runtime problems
+1. Fix OC [insertion method], small probability typeof type as a formal parameter error report
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
