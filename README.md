@@ -178,11 +178,12 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="OiPMh"></a>
-### v4.5.0 (2021.07.04)
+### v4.5.1 (2021.07.17)
 
-1. Fix OC[insert text], the attribute with a small probability of inserting the same name problem
-1. Fix OC[Rename Property], the subclass overrides the set property method of the parent class (@property), which may be inconsistent after confusion, and individual runtime problems
-1. Fix OC [insertion method], small probability typeof type as a formal parameter error report
+1. Optimize OC [Insert file]
+   1. Improve module differentiation and reduce code similarity
+   1. Modify the call stack to improve code diversity
+   1. Fixed bugs with a small probability which refreshed the UI in a subthread.
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
