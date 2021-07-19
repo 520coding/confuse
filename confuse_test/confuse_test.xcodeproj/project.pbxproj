@@ -22,6 +22,8 @@
 		7121E179252F6B5F00F19EE0 /* TestFunctionOtherTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7121E178252F6B5F00F19EE0 /* TestFunctionOtherTemplate.m */; };
 		71290BEA251EE2AF00B3229A /* TestSuperMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 71290BE9251EE2AF00B3229A /* TestSuperMacro.m */; };
 		71290BED251EE38D00B3229A /* TestOtherMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 71290BEC251EE38D00B3229A /* TestOtherMacro.m */; };
+		712AC5A82680956F00B3916F /* SwiftImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712AC5A72680956F00B3916F /* SwiftImage.swift */; };
+		712AC5AC268095E400B3916F /* SwiftImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712AC5AB268095E400B3916F /* SwiftImageModel.swift */; };
 		713619522546A46A00124111 /* TestPropertyOther_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 713619512546A46A00124111 /* TestPropertyOther_VC.m */; };
 		71555B932553E8AE00DD8246 /* CppStudent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71555B912553E8AD00DD8246 /* CppStudent.cpp */; };
 		716A28F4255F80D800187F30 /* TestClassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A28F2255F80D800187F30 /* TestClassCell.m */; };
@@ -161,6 +163,8 @@
 		71290BE9251EE2AF00B3229A /* TestSuperMacro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSuperMacro.m; sourceTree = "<group>"; };
 		71290BEB251EE38D00B3229A /* TestOtherMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestOtherMacro.h; sourceTree = "<group>"; };
 		71290BEC251EE38D00B3229A /* TestOtherMacro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOtherMacro.m; sourceTree = "<group>"; };
+		712AC5A72680956F00B3916F /* SwiftImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftImage.swift; sourceTree = "<group>"; };
+		712AC5AB268095E400B3916F /* SwiftImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftImageModel.swift; sourceTree = "<group>"; };
 		713619502546A46A00124111 /* TestPropertyOther_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPropertyOther_VC.h; sourceTree = "<group>"; };
 		713619512546A46A00124111 /* TestPropertyOther_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPropertyOther_VC.m; sourceTree = "<group>"; };
 		71555B912553E8AD00DD8246 /* CppStudent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CppStudent.cpp; sourceTree = "<group>"; };
@@ -381,6 +385,23 @@
 			path = test2;
 			sourceTree = "<group>";
 		};
+		712AC5A52680955E00B3916F /* source */ = {
+			isa = PBXGroup;
+			children = (
+				712AC5A62680956300B3916F /* image */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		712AC5A62680956300B3916F /* image */ = {
+			isa = PBXGroup;
+			children = (
+				712AC5A72680956F00B3916F /* SwiftImage.swift */,
+				712AC5AB268095E400B3916F /* SwiftImageModel.swift */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		71555B102553D57300DD8246 /* oc */ = {
 			isa = PBXGroup;
 			children = (
@@ -596,6 +617,7 @@
 		71D186FF25C28C1E003D3115 /* swift */ = {
 			isa = PBXGroup;
 			children = (
+				712AC5A52680955E00B3916F /* source */,
 				71D7C8D925DD16CC00012BAC /* test1 */,
 				71138F3025E88E3C0048CF46 /* test2 */,
 				71D1870025C28C7B003D3115 /* Swift.storyboard */,
@@ -974,7 +996,9 @@
 				71CFBF14263E3F4C005080D4 /* SwiftString.swift in Sources */,
 				71D1870525C28D99003D3115 /* SwiftTableViewController.swift in Sources */,
 				718B95362508AFD200C1DB77 /* MBProgressHUD.m in Sources */,
+				712AC5AC268095E400B3916F /* SwiftImageModel.swift in Sources */,
 				718B95402508D3A500C1DB77 /* SCSelectModel.m in Sources */,
+				712AC5A82680956F00B3916F /* SwiftImage.swift in Sources */,
 				71A6044F261AC8C7004579C2 /* SwiftClassStruct.swift in Sources */,
 				98C382B525358AE6004FA4D5 /* TestMasonry.m in Sources */,
 				718B95432508D3E200C1DB77 /* SCOrder.m in Sources */,
@@ -1195,7 +1219,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.4.0;
+				MARKETING_VERSION = 4.6.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1253,7 +1277,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.4.0;
+				MARKETING_VERSION = 4.6.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1310,7 +1334,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.4.0;
+				MARKETING_VERSION = 4.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-sdk";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1338,7 +1362,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.4.0;
+				MARKETING_VERSION = 4.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-sdk";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

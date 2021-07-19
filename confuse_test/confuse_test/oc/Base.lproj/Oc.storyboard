@@ -534,7 +534,7 @@
                                     </slider>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift" translatesAutoresizingMaskIntoConstraints="NO" id="3NR-0z-GCY">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oc" translatesAutoresizingMaskIntoConstraints="NO" id="3NR-0z-GCY">
                                 <rect key="frame" x="127" y="88" width="160" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="6OI-bK-bKm"/>
@@ -709,7 +709,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="2cE-zO-NFo">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="属性混淆只保证编译层面准确性，运行时错误（kvc、kvo属性混淆暂不考虑），需要用户依据工具《预检查结果》自行调整&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vly-1Q-q4h">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="31.5"/>
@@ -718,7 +718,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Label2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQq-Ix-dfr">
-                                                <rect key="frame" x="0.0" y="31.5" width="414" height="40.5"/>
+                                                <rect key="frame" x="0.0" y="31.5" width="414" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -726,24 +726,24 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dV3-nq-3fN">
-                                        <rect key="frame" x="0.0" y="72" width="414" height="210"/>
+                                        <rect key="frame" x="0.0" y="52" width="414" height="217"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="A38-lA-yUO">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="31"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PUl-fm-eWC">
-                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="31"/>
                                                     </switch>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ae0-WR-yna">
-                                                        <rect key="frame" x="138" y="0.0" width="140" height="30"/>
+                                                        <rect key="frame" x="138" y="0.0" width="140" height="31"/>
                                                     </switch>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Blj-EO-shg">
-                                                        <rect key="frame" x="276" y="0.0" width="140" height="30"/>
+                                                        <rect key="frame" x="276" y="0.0" width="140" height="31"/>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jk6-V7-PWf">
-                                                <rect key="frame" x="0.0" y="30" width="414" height="30"/>
+                                                <rect key="frame" x="0.0" y="31" width="414" height="31"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <state key="normal" title="testKvoKvc"/>
@@ -752,7 +752,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPM-3Z-ZfN">
-                                                <rect key="frame" x="0.0" y="60" width="414" height="30"/>
+                                                <rect key="frame" x="0.0" y="62" width="414" height="31"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button1"/>
                                                 <connections>
@@ -762,7 +762,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWg-oy-k1b">
-                                                <rect key="frame" x="0.0" y="90" width="414" height="30"/>
+                                                <rect key="frame" x="0.0" y="93" width="414" height="31"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                                 <state key="normal" title="Button2"/>
                                                 <connections>
@@ -773,21 +773,21 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2K-iH-rud">
-                                                <rect key="frame" x="0.0" y="120" width="414" height="30"/>
+                                                <rect key="frame" x="0.0" y="124" width="414" height="31"/>
                                                 <state key="normal" title="push TestPropertyXibViewController"/>
                                                 <connections>
                                                     <action selector="push:" destination="OSG-ht-XV9" eventType="touchUpInside" id="OUr-Sf-W4Z"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMI-e9-tnd">
-                                                <rect key="frame" x="0.0" y="150" width="414" height="30"/>
+                                                <rect key="frame" x="0.0" y="155" width="414" height="31"/>
                                                 <state key="normal" title="push TestPropertyTableView"/>
                                                 <connections>
                                                     <segue destination="OsA-Y9-eI1" kind="show" id="MRB-JF-jcm"/>
                                                 </connections>
                                             </button>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3sV-YC-kR8">
-                                                <rect key="frame" x="0.0" y="180" width="414" height="31"/>
+                                                <rect key="frame" x="0.0" y="186" width="414" height="32"/>
                                                 <segments>
                                                     <segment title="First"/>
                                                     <segment title="Second"/>
@@ -796,7 +796,7 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jrt-VR-fhq" customClass="TestPropertyXibView">
-                                        <rect key="frame" x="0.0" y="282" width="414" height="443"/>
+                                        <rect key="frame" x="0.0" y="269" width="414" height="456"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                     </view>
                                 </subviews>
@@ -880,7 +880,6 @@
         <image name="discard_lajitong" width="100" height="100"/>
         <image name="number1.png" width="200" height="200"/>
         <image name="oc" width="32" height="31.5"/>
-        <image name="swift" width="58.5" height="32"/>
         <image name="zhongguo" width="100" height="100"/>
         <image name="减.png" width="32" height="32"/>
         <image name="加.png" width="32" height="32"/>
