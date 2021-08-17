@@ -103,6 +103,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
    1. 可多次执行，指数x2递增
 9. [重命名全局变量]，智能名词替换
 9. [修改全局变量]，替换全局变量名、**全局变量转化为全局函数**、混淆字符串变量值
+9. [插入局部变量]，单行复合调用变为简单多行调用，**改变执行顺序**
 9. [修改局部变量]，模拟人工封装调用，变量名关联类型，优势：
    1. 局部变量值运行时保持不变，详情见[支持类型汇总表](https://www.yuque.com/docs/share/90444065-4f4e-49c8-9e1a-5bd3d3b4f84d?#《修改局部变量-支持类型汇总表》)
    1. 可多次执行，指数x2递增
@@ -149,10 +150,11 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
    1. 类似OC[重命名属性]，识别继承链及嵌套类型，支持存储和计算属性、观察器、包装器、类属性
    1. 可设置文件名Model后缀过滤
 3. [重命名方法]，基本功能改名字类似其他工具，不做过多描述，优势：识别继承链嵌套类型，支持（class、struct、enum）的静态方法和实例方法，及可选链等
+3. [修改方法]，利用重载技术修改函数原型并调用修改形参
 3. [修改字符串]，识别单行、多行、字符串插值、及扩展字符串，改后由加密和拆分字符组等多种方式自由组合，并保留原有字符的注释，方便检查
    1. 设置‘最少长度’过滤
    1. 也可设置‘有效个数’搭配使用
-5. [重命名类]，类名不限制（例如：my、My），识别嵌套类型及typealias，支持class、struct，enum、protocol
+6. [重命名类]，类名不限制（例如：my、My），识别嵌套类型及typealias，支持class、struct，enum、protocol
    1. 可设置‘重命名同名文件’
    1. 可设置‘前缀’
 > 注意：目前Swift和OC混合项目，OC和Swift相互调用的部分需要手动加入黑名单，后续将优化。
@@ -182,14 +184,14 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#height=540&id=Ai791&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&size=489209&status=done&style=none&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="oEZuW"></a>
-### v4.6.0（2021.07.21）
+<a name="BQYuN"></a>
+### v5.0.0（2021.08.17）
 
-1. 新增Debug模式，可在源文件中查看修改前后对比，避免文件名修改后或者大的改动导致git对比困难
-1. 新增Swift[重命名图片]，智能名词替换，自动纠正图片名和xcassets文件夹名不对应的情况
-   1. 可设置‘运行拼接名称’，用于运行时通过字符串拼接生成的图片名
-   1. 可设置‘重命名关联字符串，用于修改字符串与图片名相等的情况
-   1. 可设置‘忽略危险名称’开关
+1. 新增Swift[修改方法]，利用重载技术修改函数原型并调用修改形参
+1. 新增OC[插入局部变量]，单行复合调用变为简单多行调用，改变执行顺序
+1. 优化OC[插入文件]，字典可能为空的异常和以及线程调用方式不合理情况
+1. 优化[Debug]模式无法关闭问题
+1. 修复其他小概率概率性bug
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

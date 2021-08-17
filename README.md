@@ -103,20 +103,21 @@ The following functions are supported:
    1. Can be executed multiple times, the index x2 increases
 9. [Rename global variables], smart noun substitution
 9. [Modify global variables], replace global variable names, **convert global variables into global functions** , and confuse string variable values
+9. [Insert local variable], single-line compound call becomes simple multi-line call, change the execution order
 9. [Modify local variables], simulate manual encapsulation call, variable name association type, advantages:
    1. Local variable values remain unchanged during operation, see the [summary table of supported types for](https://www.yuque.com/docs/share/90444065-4f4e-49c8-9e1a-5bd3d3b4f84d?translate=en) details
    1. Can be executed multiple times, the index x2 increases
-12. [Rename multilingual], using a system of direct or indirect methods **NSLocalizedString** , **NSLocalizedStringFromTable** multilingual modified
-12. [Modify string], support arbitrary string, encryption processing (hard code -> memory), the original string is kept in the comment for easy inspection
+13. [Rename multilingual], using a system of direct or indirect methods **NSLocalizedString** , **NSLocalizedStringFromTable** multilingual modified
+13. [Modify string], support arbitrary string, encryption processing (hard code -> memory), the original string is kept in the comment for easy inspection
     1. Set the'minimum length' filter
     1. You can also set the " effective number" to use together
-14. [Modify xib, storyboard], automatically insert the view, and modify the internal structure properties
-14. [Modify font] , randomly fine-tune the font used in the project, and identify macros
-14. [Modify color], randomly shift the color of the UI controls in the project, and identify the macro
-14. [UI layout offset], support frame, Mansonry, SDAutoLayout common layout fine-tuning
-14. [Insert file], generate other files (encapsulate network requests, create custom controls, simulate normal development), and call them automatically in the project ; **Note:** (Under the project root path, a folder of " **other_xxx_file** " will be generated , and the sub-option **Target** controls Import method, if it is empty, you need to manually import, just drag the generated folder into the project; otherwise, automatically import)
-14. [Insert text], generate json, txt, doc, plist and other text files, which are automatically called in the project ; **note:** (under the project root path, a folder of " **other_xxx_text** " will be generated , and the generated files will be **automatically imported** )
-14. [Rename class], the class name is not limited (for example: my, My), you can specify to add a prefix, advantages:
+15. [Modify xib, storyboard], automatically insert the view, and modify the internal structure properties
+15. [Modify font] , randomly fine-tune the font used in the project, and identify macros
+15. [Modify color], randomly shift the color of the UI controls in the project, and identify the macro
+15. [UI layout offset], support frame, Mansonry, SDAutoLayout common layout fine-tuning
+15. [Insert file], generate other files (encapsulate network requests, create custom controls, simulate normal development), and call them automatically in the project ; **Note:** (Under the project root path, a folder of " **other_xxx_file** " will be generated , and the sub-option **Target** controls Import method, if it is empty, you need to manually import, just drag the generated folder into the project; otherwise, automatically import)
+15. [Insert text], generate json, txt, doc, plist and other text files, which are automatically called in the project ; **note:** (under the project root path, a folder of " **other_xxx_text** " will be generated , and the generated files will be **automatically imported** )
+15. [Rename class], the class name is not limited (for example: my, My), you can specify to add a prefix, advantages:
     1. Smart noun substitution
     1. Can be set to'rename files with the same name'
     1. You can set'rename similar strings', (ignore | equal | include) three modes
@@ -149,10 +150,11 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
    1. Similar to OC [Rename attribute], identify inheritance chain and nested type, support storage and calculation of attributes, observers, wrappers, class attributes
    1. File name Model suffix filtering can be set
 3. [Rename method], the basic functions are renamed similar to other tools, without too much description, advantages: identification of inheritance chain nested types, support for (class, struct, enum) static methods and instance methods, and optional chains, etc.
+3. [Modification method], use overloading technology to modify the function prototype and call the modified parameter
 3. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
    1. Set the'minimum length' filter
    1. You can also set the "effective number" to use together
-5. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class, struct, enum, protocol
+6. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class, struct, enum, protocol
    1. Can be set to'rename files with the same name'
    1. 'Prefix' can be set
 > Note: In the current mixed project of Swift and OC, the mutual call between OC and Swift needs to be added to the blacklist manually, which will be optimized in the future.
@@ -182,12 +184,13 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="OiPMh"></a>
-### v4.6.0 (2021.07.21)
+### v5.0.0 (2021.08.17)
 
-1. Added Debug mode, you can view the comparison before and after the modification in the source file to avoid the difficulty of git comparison after the file name modification or major changes
-1. Added Swift [Rename Picture], smart noun replacement, and automatically correct the situation where the picture name and the xcassets folder name do not correspond to each other
-   1. You can set a ‘run splicing name’ for the image name generated by string splicing at runtime
-   1. ‘Ignore dangerous names’ switch can be set
+1. Added Swift [Modification Method], using overloading technology to modify the function prototype and call the modified formal parameters
+1. Added OC [Insert local variable], single-line compound call becomes simple multi-line call, change the execution order
+1. Optimize OC [insert file], the exception that the dictionary may be empty, and the unreasonable way of thread calling
+1. Optimized the problem that [Debug] mode cannot be closed
+1. Fix other small probability bugs
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
