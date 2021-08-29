@@ -36,9 +36,9 @@ void CppBase::sf1(int *v) {
     
 }
 
-void CppBase::sf1(int *v1, float v2){
-    
-}
+//void CppBase::sf1(int *v1, float v2){
+//    
+//}
 
 int CppBase::sf1(int *v1, float *v2) {
     return *v1;

@@ -36,15 +36,17 @@ class SwiftClassStruct: UIViewController, SwiftBaseProtocol {
         print("mode: %@", mode.self);
         print(NSStringFromClass(VideoMode.self))
         NSClassFromString("VideoMode")
-        Bundle.main.loadNibNamed("VideoMode", owner: self, options: nil)
-        _ = UINib.init(nibName: "VideoMode", bundle: nil)
-        print("VideoMode")
-        print("ContainVideoMode")
-        print("ContainVideoModeContainVideoMode")
-        tableView.register(UINib.init(nibName: "VideoMode", bundle: nil), forCellReuseIdentifier: NSStringFromClass(mode.self))
-        tableView.register(UINib.init(nibName: "VideoMode", bundle: nil), forCellReuseIdentifier: "VideoMode")
-        tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(mode.self))
-        tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(mode.self), for: IndexPath.init(row: 0, section: 1))
+        if self.title == "VideoMode" {
+            Bundle.main.loadNibNamed("VideoMode", owner: self, options: nil)
+            _ = UINib.init(nibName: "VideoMode", bundle: nil)
+            print("VideoMode")
+            print("ContainVideoMode")
+            print("ContainVideoModeContainVideoMode")
+            tableView.register(UINib.init(nibName: "VideoMode", bundle: nil), forCellReuseIdentifier: NSStringFromClass(mode.self))
+            tableView.register(UINib.init(nibName: "VideoMode", bundle: nil), forCellReuseIdentifier: "VideoMode")
+            tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(mode.self))
+            tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(mode.self), for: IndexPath.init(row: 0, section: 1))
+        }
         
         let someResolution = Resolution()
         print("The width of someResolution is \(someResolution.width)")

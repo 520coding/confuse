@@ -149,12 +149,15 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
 2. [Rename attribute], basic function, without too much description, advantages:
    1. Similar to OC [Rename attribute], identify inheritance chain and nested type, support storage and calculation of attributes, observers, wrappers, class attributes
    1. File name Model suffix filtering can be set
-3. [Rename method], the basic functions are renamed similar to other tools, without too much description, advantages: identification of inheritance chain nested types, support for (class, struct, enum) static methods and instance methods, and optional chains, etc.
-3. [Modification method], use overloading technology to modify the function prototype and call the modified parameter
-3. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
+3. [insert property], use calculated properties to wrap and call and replace the original properties
+   1. Support storage and calculation of attributes, observers, wrappers, class attributes
+   1. File name Model suffix filtering can be set
+4. [Rename method], the basic functions are renamed similar to other tools, without too much description, advantages: identification of inheritance chain nested types, support for (class, struct, enum) static methods and instance methods, and optional chains, etc.
+4. [Modification method], use overloading technology to modify the function prototype and call the modified parameter
+4. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
    1. Set the'minimum length' filter
    1. You can also set the "effective number" to use together
-6. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class, struct, enum, protocol
+7. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class, struct, enum, protocol
    1. Can be set to'rename files with the same name'
    1. 'Prefix' can be set
 > Note: In the current mixed project of Swift and OC, the mutual call between OC and Swift needs to be added to the blacklist manually, which will be optimized in the future.
@@ -165,9 +168,8 @@ Update iterations will be carried out in the following order
 
 1. Objective-C (95%), mainly to improve the versatility and stability of the tool, and strengthen the function
    1. Audio and video files are used less and will be added later
-2. Swift (50%), under development...
-   1. Insert attributes
-   1. Modification method
+2. Swift (60%), under development...
+   1. Modify local variables
    1. Insert file
 3. C++ (65%), under development...
    1. Method: Insert
@@ -184,13 +186,15 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="OiPMh"></a>
-### v5.0.0 (2021.08.17)
+### v5.1.0 (2021.08.29)
 
-1. Added Swift [Modification Method], using overloading technology to modify the function prototype and call the modified formal parameters
-1. Added OC [Insert local variable], single-line compound call becomes simple multi-line call, change the execution order
-1. Optimize OC [insert file], the exception that the dictionary may be empty, and the unreasonable way of thread calling
-1. Optimized the problem that [Debug] mode cannot be closed
-1. Fix other small probability bugs
+1. Added Swift [insert property], use calculated properties to wrap and call and replace the original properties
+   1. Support storage and calculation of attributes, observers, wrappers, class attributes
+   1. File name Model suffix filtering can be set
+2. Optimized [Modify String] to solve the problem of escaping one more time after decryption after the escaped string is confused
+2. Optimize OC [insert file], optimize performance to reduce confusion time
+2. Fix [Environment check] becomes English after repairing reset configuration
+2. Fix the problem that the information related to switching accounts is not refreshed in time
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

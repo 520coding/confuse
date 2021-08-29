@@ -831,8 +831,30 @@
                     <view key="view" contentMode="scaleToFill" id="e7t-Q5-x1p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="apA-XW-xVB">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoMode" id="O4r-ak-vVl">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O4r-ak-vVl" id="gd3-S2-JLR">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="oX6-R0-2t4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oX6-R0-2t4" firstAttribute="trailing" secondItem="apA-XW-xVB" secondAttribute="trailing" id="OtV-Fk-PfJ"/>
+                            <constraint firstItem="apA-XW-xVB" firstAttribute="top" secondItem="oX6-R0-2t4" secondAttribute="top" id="Qxe-yb-BUf"/>
+                            <constraint firstItem="apA-XW-xVB" firstAttribute="leading" secondItem="oX6-R0-2t4" secondAttribute="leading" id="ZSY-lO-ZdQ"/>
+                            <constraint firstItem="oX6-R0-2t4" firstAttribute="bottom" secondItem="apA-XW-xVB" secondAttribute="bottom" id="gfX-SZ-rLB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qRM-DI-re8"/>
                 </viewController>
