@@ -154,10 +154,13 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
    1. File name Model suffix filtering can be set
 4. [Rename method], the basic functions are renamed similar to other tools, without too much description, advantages: identification of inheritance chain nested types, support for (class, struct, enum) static methods and instance methods, and optional chains, etc.
 4. [Modification method], use overloading technology to modify the function prototype and call the modified parameter
-4. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
+4. Add Swift[Modify Local Variables], simulate manual encapsulation call, variable name association type (support nesting), advantages:
+   1. The value of the local variable remains unchanged during operation. For details, see the summary table of supported types.
+   1. Can be executed multiple times, the index x2 increases
+7. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
    1. Set the'minimum length' filter
    1. You can also set the "effective number" to use together
-7. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class, struct, enum, protocol
+8. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class, struct, enum, protocol
    1. Can be set to'rename files with the same name'
    1. 'Prefix' can be set
 > Note: In the current mixed project of Swift and OC, the mutual call between OC and Swift needs to be added to the blacklist manually, which will be optimized in the future.
@@ -171,11 +174,10 @@ Update iterations will be carried out in the following order
 2. Swift (60%), under development...
    1. Modify local variables
    1. Insert file
-3. C++ (65%), under development...
+3. C++ (70%), under development...
    1. Method: Insert
    1. Property: modify
    1. Global variables: modify
-   1. Local variables: modify
 4. Lua (0%) is too specific, and it is temporarily closed. If users have this demand, we will refactor this part
 4. C# (0%), I don’t use much in actual projects, so I ranked last, depending on user needs before deciding
 4. Other functions:
@@ -186,15 +188,15 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="OiPMh"></a>
-### v5.1.0 (2021.08.29)
+### v5.2.0 (2021.09.21)
 
-1. Added Swift [insert property], use calculated properties to wrap and call and replace the original properties
-   1. Support storage and calculation of attributes, observers, wrappers, class attributes
-   1. File name Model suffix filtering can be set
-2. Optimized [Modify String] to solve the problem of escaping one more time after decryption after the escaped string is confused
-2. Optimize OC [insert file], optimize performance to reduce confusion time
-2. Fix [Environment check] becomes English after repairing reset configuration
-2. Fix the problem that the information related to switching accounts is not refreshed in time
+1. Add Swift[Modify Local Variables], simulate manual encapsulation call, variable name association type (support nesting), advantages:
+   1. The value of the local variable remains unchanged during operation. For details, see the summary table of supported types.
+   1. Can be executed multiple times, the index x2 increases
+2. Added App’s abnormal path selection prompt and abnormal startup recognition to avoid unexpected long-term freezes.
+2. Optimize Swift[Modify String], adapt to @available
+2. Optimize Swift system class recognition to avoid missing changes
+2. Optimize [Modify Picture], adapt to paths that contain spaces
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

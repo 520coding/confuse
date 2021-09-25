@@ -108,6 +108,33 @@ class Dice {
     }
 }
 
+struct Square: Collection {
+    typealias Element = Int
+    typealias Index = Int
+    typealias Indices = Range<Int>
+    let contents = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    var indices: Range<Int> = 0..<10
+    
+    public func index(after i: Int) -> Int {
+        return i + 1
+    }
+    public var startIndex: Int {
+        get {
+            return indices.startIndex
+        }
+    }
+    public var endIndex: Int {
+        get {
+            return indices.endIndex
+        }
+    }
+    public subscript(index: Int) -> Element {
+        get {
+            return contents[index]
+        }
+    }
+}
+
 class SwiftProtocol: UIViewController, SwiftBaseProtocol {
     override func viewWillAppear(_ animated: Bool) {
         test()
@@ -136,5 +163,8 @@ class SwiftProtocol: UIViewController, SwiftBaseProtocol {
         // Random dice roll is 4
         // Random dice roll is 5
         // Random dice roll is 4
+        
+        let square = Square()
+        print(square[1])
     }
 }
