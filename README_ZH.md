@@ -107,7 +107,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 9. [修改局部变量]，模拟人工封装调用，变量名关联类型，优势：
    1. 局部变量值运行时保持不变，详情见[支持类型汇总表](https://www.yuque.com/docs/share/90444065-4f4e-49c8-9e1a-5bd3d3b4f84d?#《修改局部变量-支持类型汇总表》)
    1. 可多次执行，指数x2递增
-12. [重命名多语言]，对直接或间接使用系统方法**NSLocalizedString**、**NSLocalizedStringFromTable**的多语言进行修改
+12. [重命名多语言]，对直接或间接使用系统方法**NSLocalizedString**、**NSLocalizedStringFromTable**的多语言进行修改，[自定义封装方法](https://520coding.yuque.com/docs/share/de45751a-c629-4737-84ad-251fb2502123)需要手动处理
 12. [修改字符串]，支持任意字符串，加密处理（硬编码->内存），原始字符串保留在注释中方便检查
     1. 设置‘最少长度’过滤
     1. 也可设置‘有效个数’搭配使用
@@ -154,13 +154,14 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
    1. 可设置文件名Model后缀过滤
 4. [重命名方法]，基本功能改名字类似其他工具，不做过多描述，优势：识别继承链嵌套类型，支持（class、struct、enum）的静态方法和实例方法，及可选链等
 4. [修改方法]，利用重载技术修改函数原型并调用修改形参
+4. [修改字体]，对项目中使用的字体随机微调
 4. [修改局部变量]，模拟人工封装调用，变量名关联类型（支持嵌套），优势：
    1. 局部变量值运行时保持不变，详情见[支持类型汇总表](https://520coding.yuque.com/docs/share/cd70e83b-4ab4-40e5-b719-70f214e869c8)
    1. 可多次执行，指数x2递增
-7. [修改字符串]，识别单行、多行、字符串插值、及扩展字符串，改后由加密和拆分字符组等多种方式自由组合，并保留原有字符的注释，方便检查
+8. [修改字符串]，识别单行、多行、字符串插值、及扩展字符串，改后由加密和拆分字符组等多种方式自由组合，并保留原有字符的注释，方便检查
    1. 设置‘最少长度’过滤
    1. 也可设置‘有效个数’搭配使用
-8. [重命名类]，类名不限制（例如：my、My），识别嵌套类型及typealias，支持class、struct，enum、protocol
+9. [重命名类]，类名不限制（例如：my、My），识别嵌套类型及typealias，支持class、struct，enum、protocol
    1. 可设置‘重命名同名文件’
    1. 可设置‘前缀’
 > 注意：目前Swift和OC混合项目，OC和Swift相互调用的部分需要手动加入黑名单，后续将优化。
@@ -174,7 +175,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 2. Swift（60%），开发中...
    1. 修改局部变量
    1. 插入文件
-3. C++（70%），开发中...
+3. C++（75%），开发中...
    1. 方法：插入
    1. 属性：修改
    1. 全局变量：修改
@@ -188,15 +189,14 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
 <a name="nOH4z"></a>
-### v5.2.0（2021.09.21）
+### v5.2.0（2021.10.06）
 
-1. 新增Swift[修改局部变量]，模拟人工封装调用，变量名关联类型（支持嵌套），优势：
-   1. 局部变量值运行时保持不变，详情见[支持类型汇总表](https://520coding.yuque.com/docs/share/cd70e83b-4ab4-40e5-b719-70f214e869c8)
-   1. 可多次执行，指数x2递增
-2. 新增App的异常路径选择提示，及异常启动识别，避免意外长时间卡顿。
-2. 优化Swift[修改字符串]，适配@available
-2. 优化Swift系统类识别，避免漏改
-2. 优化[修改图片]，适配包含空格路径
+1. 新增Swift[修改字体]，对项目中使用的字体随机微调
+1. 新增对@IBInspectable的支持
+1. 优化Swift对OC的调用，改为默认忽略，避免手动添加
+1. 优化Swift模块的兼容性，支持更多类型
+1. 优化OC[重命名多语言]，适配自定义封装方法
+1. 修复v5.0.0以后版本大项目中有可能意外卡死问题
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
@@ -207,5 +207,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 
 1. [工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)
 1. [软件使用问答（Q&A）](https://www.yuque.com/docs/share/4a87ec96-80fe-4d25-873d-93cb428b3e15?#《软件使用问答（Q&A）》)
-1. [[修改方法]参数类型汇总表](https://www.yuque.com/docs/share/315b72d9-28f9-4fa6-bf20-c40d94f2253a?#《修改方法-支持参数类型汇总表》)
-1. [[修改局部变量]修改局部变量-支持类型汇总表](https://www.yuque.com/docs/share/90444065-4f4e-49c8-9e1a-5bd3d3b4f84d?#《修改局部变量-支持类型汇总表》)
+1. [OC[修改方法]参数类型汇总表](https://www.yuque.com/docs/share/315b72d9-28f9-4fa6-bf20-c40d94f2253a?#《修改方法-支持参数类型汇总表》)
+1. [OC[修改局部变量]修改局部变量-支持类型汇总表](https://www.yuque.com/docs/share/90444065-4f4e-49c8-9e1a-5bd3d3b4f84d?#《修改局部变量-支持类型汇总表》)
+1. [OC[重命名多语言]自定义封装方法处理](https://520coding.yuque.com/docs/share/de45751a-c629-4737-84ad-251fb2502123)
+1. [Swift[修改方法]参数类型汇总表](https://520coding.yuque.com/docs/share/cd70e83b-4ab4-40e5-b719-70f214e869c8)

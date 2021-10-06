@@ -107,7 +107,7 @@ The following functions are supported:
 9. [Modify local variables], simulate manual encapsulation call, variable name association type, advantages:
    1. Local variable values remain unchanged during operation, see the [summary table of supported types for](https://www.yuque.com/docs/share/90444065-4f4e-49c8-9e1a-5bd3d3b4f84d?translate=en) details
    1. Can be executed multiple times, the index x2 increases
-13. [Rename multilingual], using a system of direct or indirect methods **NSLocalizedString** , **NSLocalizedStringFromTable** multilingual modified
+13. [Rename multilingual], using a system of direct or indirect methods **NSLocalizedString** , **NSLocalizedStringFromTable** multilingual modified，[The custom packaging methods require manual processing](https://520coding.yuque.com/docs/share/de45751a-c629-4737-84ad-251fb2502123?translate=en)
 13. [Modify string], support arbitrary string, encryption processing (hard code -> memory), the original string is kept in the comment for easy inspection
     1. Set the'minimum length' filter
     1. You can also set the " effective number" to use together
@@ -154,13 +154,14 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
    1. File name Model suffix filtering can be set
 4. [Rename method], the basic functions are renamed similar to other tools, without too much description, advantages: identification of inheritance chain nested types, support for (class, struct, enum) static methods and instance methods, and optional chains, etc.
 4. [Modification method], use overloading technology to modify the function prototype and call the modified parameter
+4. [Modify font] , randomly fine-tune the font used in the project, and identify macros
 4. Add Swift[Modify Local Variables], simulate manual encapsulation call, variable name association type (support nesting), advantages:
    1. The value of the local variable remains unchanged during operation. For details, see the summary table of supported types.
    1. Can be executed multiple times, the index x2 increases
-7. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
+8. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
    1. Set the'minimum length' filter
    1. You can also set the "effective number" to use together
-8. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class, struct, enum, protocol
+9. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class, struct, enum, protocol
    1. Can be set to'rename files with the same name'
    1. 'Prefix' can be set
 > Note: In the current mixed project of Swift and OC, the mutual call between OC and Swift needs to be added to the blacklist manually, which will be optimized in the future.
@@ -174,7 +175,7 @@ Update iterations will be carried out in the following order
 2. Swift (60%), under development...
    1. Modify local variables
    1. Insert file
-3. C++ (70%), under development...
+3. C++ (75%), under development...
    1. Method: Insert
    1. Property: modify
    1. Global variables: modify
@@ -188,15 +189,14 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="OiPMh"></a>
-### v5.2.0 (2021.09.21)
+### v5.3.0 (2021.10.06)
 
-1. Add Swift[Modify Local Variables], simulate manual encapsulation call, variable name association type (support nesting), advantages:
-   1. The value of the local variable remains unchanged during operation. For details, see the summary table of supported types.
-   1. Can be executed multiple times, the index x2 increases
-2. Added App’s abnormal path selection prompt and abnormal startup recognition to avoid unexpected long-term freezes.
-2. Optimize Swift[Modify String], adapt to @available
-2. Optimize Swift system class recognition to avoid missing changes
-2. Optimize [Modify Picture], adapt to paths that contain spaces
+1. Add Swift[Modify Font], randomly fine-tune the font used in the project
+1. New support for @ IBInspectable
+1. Optimize the call of Swift to OC, change it to ignore by default, avoid adding manually
+1. Optimize the compatibility of Swift modules and support more types
+1. Optimize OC [Rename Multilingual], adapt to custom packaging method
+1. Fix >= v5.0.0 version may accidentally stuck in big projects
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
@@ -207,5 +207,7 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 
 1. [Tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8)
 1. [Software Questions and Answers (Q&A)](https://www.yuque.com/docs/share/4a87ec96-80fe-4d25-873d-93cb428b3e15?translate=en)
-1. [[Modification method] Parameter type summary table](https://www.yuque.com/docs/share/315b72d9-28f9-4fa6-bf20-c40d94f2253a?translate=en)
-1. [[Modify local variables] Modify local variables-summary table of supported types](https://www.yuque.com/docs/share/90444065-4f4e-49c8-9e1a-5bd3d3b4f84d?translate=en)
+1. [OC[Modification method] Parameter type summary table](https://www.yuque.com/docs/share/315b72d9-28f9-4fa6-bf20-c40d94f2253a?translate=en)
+1. [OC[Modify local variables] Modify local variables-summary table of supported types](https://www.yuque.com/docs/share/90444065-4f4e-49c8-9e1a-5bd3d3b4f84d?translate=en)
+1. [OC[Rename multilingual] processing custom packaging method](https://520coding.yuque.com/docs/share/de45751a-c629-4737-84ad-251fb2502123?translate=en)
+1. [Swift[Modification method] Parameter type summary table](https://520coding.yuque.com/docs/share/cd70e83b-4ab4-40e5-b719-70f214e869c8)
