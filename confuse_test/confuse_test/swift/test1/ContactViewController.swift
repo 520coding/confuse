@@ -27,4 +27,30 @@ class ContactViewController: UIViewController {
 
         scrollView.contentSize = CGSize(width: view.frame.width, height: 800)
     }
+    
+    func color() {
+        var color = UIColor()
+        color = UIColor(white: 0.1, alpha: 0.2)
+        color = UIColor(hue: 0.10, saturation: 0.2, brightness: 0.3, alpha: 0.4)
+        color = UIColor(red: 12, green: 13, blue: 1, alpha: 1)
+        color = UIColor(red: 12,
+                            green: 13,
+                            blue: 1,
+                            alpha: 1)
+        color = UIColor(red:12, green:  13, blue:  1, alpha: 1)
+        color = UIColor(displayP3Red: 0.1, green: 0.2, blue: 0.33, alpha: 0.21)
+        
+        color = UIColor.init()
+        color = UIColor.init(white: 0.1, alpha: 0.2)
+        color = UIColor.init(hue: 0.10, saturation: 0.2, brightness: 0.3, alpha: 0.4)
+        color = UIColor.init(red: 12, green: 13, blue: 1, alpha: 1)
+        color = UIColor.init(red: 12,
+                            green: 13,
+                            blue: 1,
+                            alpha: 1)
+        color = UIColor.init(red:12, green:  13, blue:  1, alpha: 1)
+        color = UIColor.init(displayP3Red: 0.1, green: 0.2, blue: 0.33, alpha: 0.21)
+        print(color)
+    }
+    
 }

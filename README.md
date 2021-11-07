@@ -157,15 +157,16 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
 4. [Rename method], the basic functions are renamed similar to other tools, without too much description, advantages: identification of inheritance chain nested types, support for (class, struct, enum) static methods and instance methods, and optional chains, etc.
 4. [Modification method], use overloading technology to modify the function prototype and call the modified parameter
 4. [Modify font] , randomly fine-tune the font used in the project, and identify macros
+4. [Modify color], randomly shift the color of UI controls in the project
 4. Add Swift[Modify Local Variables], simulate manual encapsulation call, variable name association type (support nesting), advantages:
    1. The value of the local variable remains unchanged during operation. For details, see the summary table of supported types.
    1. Can be executed multiple times, the index x2 increases
-8. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
+9. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
    1. Set the'minimum length' filter
    1. You can also set the "effective number" to use together
-9. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class, struct, enum, protocol
-   1. Can be set to'rename files with the same name'
-   1. 'Prefix' can be set
+10. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class, struct, enum, protocol
+    1. Can be set to'rename files with the same name'
+    1. 'Prefix' can be set
 > Note: At present, the Swift and OC mixed project, the OC calling Swift part will not be processed for the time being, and will be optimized in the future.
 
 <a name="6554a51551d5572e2cd7d848844e9660"></a>
@@ -175,7 +176,6 @@ Update iterations will be carried out in the following order
 1. Objective-C (95%), mainly to improve the versatility and stability of the tool, and strengthen the function
    1. Audio and video files are used less and will be added later
 2. Swift (75%), under development...
-   1. Modify color
    1. Modify layout
    1. Insert file
 3. C++ (60%), under development...
@@ -192,12 +192,16 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v5.3.1 (2021.10.24)
+### v5.4.0 (2021.11.07)
 
-1. Optimize the mixed editing project to support Swift's obfuscation of OC calls, and all renamed series support synchronous obfuscation
-1. Optimize OC [Rename Attribute], [Insert Attribute], support @synthesize, no need to process manually
-1. Optimize OC [insert attribute], compatible with different files of the same attribute, same category
-1. Optimize OC[Rename Picture], Swift[Rename Picture], support custom settings to ignore the name length, and identify risk modifications
+1. Added Swift [Modify Color], which randomly shifts the color of UI controls in the project
+1. Optimize OC [Rename attribute], add @dynamic support
+1. Optimize [Modify Picture] to avoid a small probability of large differences before and after the picture is modified
+1. Optimize all plug-in module functions:
+   1. Expand the template by 40% and optimize the template structure to avoid small probability of affecting the actual code execution
+   1. Added the logo in Debug mode (additional custom control is available),
+   1. Fix naming conflicts under special circumstances
+   1. Optimizing the unreasonable individual insertion positions
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
