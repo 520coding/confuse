@@ -64,10 +64,86 @@ typedef NSString *(^Block)(int *num);
     
     NSDictionary *dic = @{};
     NSLog(@"%@", dic);
+
+    [self otherNSFoundationTest];
+    [self otherUIKitTest];
 }
 
 + (UIView *)view:(void (^)(void))block {
     return nil;
+}
+
++ (void)otherNSFoundationTest {
+    NSString *string = @"";
+    NSLog(@"string: %@", string);
+
+    NSMutableString *mutableString = [NSMutableString stringWithString:string];
+    NSLog(@"mutableString: %@", mutableString);
+
+    NSArray *array = @[];
+    NSLog(@"array: %@", array);
+
+    NSMutableArray *mutableArray = [NSMutableArray arrayWithArray:array];
+    NSLog(@"array: %@", mutableArray);
+
+    NSDictionary *dictionary = @{};
+    NSLog(@"dictionary: %@", dictionary);
+
+    NSMutableDictionary *mutableDictionary = [NSMutableDictionary dictionaryWithDictionary:dictionary];
+    NSLog(@"mutableDictionary: %@", mutableDictionary);
+
+    NSSet *set = [NSSet set];
+    NSLog(@"set: %@", set);
+
+    NSMutableSet *mutableSet = [NSMutableSet setWithSet:set];
+    NSLog(@"mutableSet: %@", mutableSet);
+
+    NSData *data = [NSData data];
+    NSLog(@"data: %@", data);
+
+    NSMutableData *mutableData = [NSMutableData dataWithLength:0];
+    NSLog(@"mutableData: %@", mutableData);
+
+    NSNumber *number = @0;
+    NSLog(@"number: %@", number);
+
+    NSValue *value = [NSValue valueWithCGPoint:CGPointMake(0, 0)];
+    NSLog(@"value: %@", value);
+
+    NSURL *url = [NSURL URLWithString:@""];
+    NSLog(@"url: %@", url);
+
+    NSObject *object = [[NSObject alloc] init];
+    NSLog(@"object: %@", object);
+}
+
++ (void)otherUIKitTest {
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
+    NSLog(@"label: %@", label);
+
+    UIImage *image = [UIImage imageNamed:@""];
+    NSLog(@"image: %@", image);
+
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+    NSLog(@"imageView: %@", imageView);
+
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectZero];
+    NSLog(@"button: %@", button);
+
+    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectZero];
+    NSLog(@"textField: %@", textField);
+
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero];
+    NSLog(@"tableView: %@", tableView);
+
+    UIFont *font = [UIFont systemFontOfSize:10];
+    NSLog(@"font: %@", font);
+
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectZero];
+    NSLog(@"scrollView: %@", scrollView);
+
+    UIView *view = [[UIView alloc] initWithFrame:CGRectZero];
+    NSLog(@"view: %@", view);
 }
 
 @end

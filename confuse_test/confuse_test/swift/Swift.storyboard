@@ -300,6 +300,26 @@
                                             <segue destination="49g-Yh-0OW" kind="show" id="nct-xh-a26"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="28H-BS-Hqh" style="IBUITableViewCellStyleDefault" id="PyK-8X-NbX">
+                                        <rect key="frame" x="0.0" y="637" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PyK-8X-NbX" id="siw-xh-JAP">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Layout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="28H-BS-Hqh">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="083-NH-wYx" kind="show" id="ShL-oO-SF0"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -1002,6 +1022,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6jd-Wl-3or" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2051" y="4235"/>
+        </scene>
+        <!--Layout View Controller-->
+        <scene sceneID="ChV-C9-rio">
+            <objects>
+                <viewController id="083-NH-wYx" customClass="LayoutViewController" customModule="confuse_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dbd-5h-BJQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vjx-5w-PCx">
+                                <rect key="frame" x="184" y="410.5" width="46" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ef-TK-avs">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Frame"/>
+                                        <connections>
+                                            <segue destination="UEW-sy-lUb" kind="show" id="fc5-x1-f4H"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGh-bi-QPj">
+                                        <rect key="frame" x="0.0" y="50" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="r3h-2I-z2B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vjx-5w-PCx" firstAttribute="centerX" secondItem="r3h-2I-z2B" secondAttribute="centerX" id="no1-42-m6U"/>
+                            <constraint firstItem="vjx-5w-PCx" firstAttribute="centerY" secondItem="r3h-2I-z2B" secondAttribute="centerY" id="xtt-Dc-Un3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bXy-qV-MR6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uRO-X2-KTW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3165" y="4235"/>
+        </scene>
+        <!--Frame View Controller-->
+        <scene sceneID="n5M-4o-tMC">
+            <objects>
+                <viewController id="UEW-sy-lUb" customClass="FrameViewController" customModule="confuse_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="31m-U0-SlM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YcD-Uw-RGI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ABY-Lw-jzz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hPH-5o-lYV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3164" y="5004"/>
         </scene>
     </scenes>
     <resources>

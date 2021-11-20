@@ -15,6 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *label1;
 @property (weak, nonatomic) IBOutlet TestPropertyXibView *propertyXibView;
 
+@property (readonly,nonatomic) NSUInteger loopCount0;
+@property (readonly,nonatomic) NSUInteger loopCount1;
+@property (readonly) NSUInteger loopCount2;
+
 @end
 
 NS_ASSUME_NONNULL_END

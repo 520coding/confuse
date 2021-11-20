@@ -1,7 +1,7 @@
 <a name="tMJSz"></a>
-# ![](https://cdn.nlark.com/yuque/0/2020/png/213807/1606304234500-46a10b02-f83d-4996-99fc-ce092241ea7c.png#from=paste&height=200&id=v0ghq&margin=%5Bobject%20Object%5D&originHeight=200&originWidth=200&originalType=url&ratio=1&status=done&style=none&width=200)
+# ![](https://cdn.nlark.com/yuque/0/2020/png/213807/1606304234500-46a10b02-f83d-4996-99fc-ce092241ea7c.png#crop=0&crop=0&crop=1&crop=1&from=paste&height=200&id=v0ghq&margin=%5Bobject%20Object%5D&originHeight=200&originWidth=200&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=&width=200)
 <a name="beqYw"></a>
-### English| [中文](/README_ZH.md)
+### English | [中文](/README_ZH.md)
 <a name="wNymF"></a>
 # Preface
 By chance, I ran into the iOS [vest bag business](https://www.yuque.com/docs/share/7e70244c-5dea-4035-b634-65cc082097da?translate=en) . I also used other tools on the market in the early stage, but the actual effect was not ideal. After a lot of practice, a full-featured [obfuscation tool has been developed](https://github.com/520coding/confuse) . The tool have been packaged into a Mac application which support multiple programming languages, such as OC, C++, Swift. More functions are still being packaged, so stay tuned.
@@ -62,7 +62,7 @@ The following functions are supported:
    1. Global setting "Ignore path", support regular, better use with blacklist
    1. ' xcodeproj' setting, for multiple xcodeproj projects and xx.xcodeproj is not in the project root directory
    1. 'Scheme' is confused and consistent with Xcode
-   1. 'Debug mode', you can view the comparison before and after the modification in the source file to avoid the difficulty of git comparison after the file name modification or major changes
+   1. 'Debug mode', It is convenient to view the comparison before and after the modification in the source file, and insert some special annotations to facilitate the location of the bug. 
    1. 'Hybrid mode', this mode is used to process the swift call oc part of the mixed project, to ensure that the call relationship is maintained after confusion
    1. 'Reference project root path' setting, read the word and UUID of the reference project
    1. 'Sensitive words' filtering
@@ -188,20 +188,22 @@ Update iterations will be carried out in the following order
    1. Fast obfuscation mode
 <a name="af444a353c9380bc9aa8aec067937316"></a>
 # Graphic introduction
-Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8) in detail before use<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/213807/1623167266244-4978d5ed-0b2c-42b5-80c4-1b44e4ff7f96.png#clientId=u4ef53c93-4376-4&from=paste&height=877&id=ufbdd65fd&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1754&originWidth=2532&originalType=binary&ratio=2&size=443560&status=done&style=none&taskId=ue83d9a90-392f-4558-9b46-f06320d2c45&width=1266)
+Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8) in detail before use<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/213807/1623167266244-4978d5ed-0b2c-42b5-80c4-1b44e4ff7f96.png#clientId=u4ef53c93-4376-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=877&id=ufbdd65fd&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1754&originWidth=2532&originalType=binary&ratio=2&rotation=0&showTitle=false&size=443560&status=done&style=none&taskId=ue83d9a90-392f-4558-9b46-f06320d2c45&title=&width=1266)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v5.4.0 (2021.11.07)
+### v5.4.1 (2021.11.20)
 
-1. Added Swift [Modify Color], which randomly shifts the color of UI controls in the project
-1. Optimize OC [Rename attribute], add @dynamic support
-1. Optimize [Modify Picture] to avoid a small probability of large differences before and after the picture is modified
-1. Optimize all plug-in module functions:
-   1. Expand the template by 40% and optimize the template structure to avoid small probability of affecting the actual code execution
-   1. Added the logo in Debug mode (additional custom control is available),
-   1. Fix naming conflicts under special circumstances
-   1. Optimizing the unreasonable individual insertion positions
+1. Optimize the naming rules to make the long name more real
+1. Optimize and expand the template, compress the length of if judgment sentence, and add 35%-compatible types
+1. Fix OC[insert attribute], individual readonly syntax errors caused by the previous version
+1. Fix OC [rename method], there is a small probability that the base class and Protocol naming conflict
+1. Fix OC [modification method], a small probability of local variable name conflicts
+1. Fix OC [insertion method], the type does not match in special cases
+1. Fix OC[Modify Global Variables], the wrong modification position problem in the case of Masonry
+1. Modify OC[Modify Local Variables], self syntax error in C language global function
+1. Fix OC[Insert local variable], in special cases, the error of changing from void * to id is reported
+1. Fix OC[Rename Class], the comment of debug mode was changed by mistake under the old mode option
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

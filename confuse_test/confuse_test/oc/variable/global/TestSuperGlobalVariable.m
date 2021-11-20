@@ -33,6 +33,8 @@ UILabel* const kSuperGlobalVariable7 = nil;
 NSArray*  kSuperGlobalVariable8 = 0;
 
 static const char kBundleKey = 0;
+static const char kWebSafeBase64DecodeChars[] = {90};
+NSString * const kURLActions[] = {@"url->",@"email->",@"phoneNumber->",@"at->",@"poundSign->"};
 
 @implementation TestSuperGlobalVariable
 

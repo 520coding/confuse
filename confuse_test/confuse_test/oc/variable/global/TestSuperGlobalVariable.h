@@ -17,6 +17,7 @@ extern NSString* const kSuperGlobalVariable1_2;
 extern NSInteger const kSuperGlobalVariable2;
 extern NSString* kSuperGlobalVariable3;
 NSString* kSuperGlobalVariable4(NSString* str);
+extern const unsigned char TTTAttributedLabelVersionString[];
 
 NS_ASSUME_NONNULL_BEGIN
 

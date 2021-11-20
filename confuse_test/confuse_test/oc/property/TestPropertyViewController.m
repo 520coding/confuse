@@ -17,6 +17,11 @@
 @property (weak, nonatomic) IBOutlet UIButton *button1;
 @property (weak, nonatomic) IBOutlet UIButton *button2;
 @property (weak, nonatomic) IBOutlet UILabel *label2;
+
+@property (nonatomic, readwrite) NSUInteger loopCount;
+@property (nonatomic) NSUInteger loopCount1;
+@property NSUInteger loopCount2;
+
 @end
 
 @implementation TestPropertyViewController
@@ -32,10 +37,16 @@
 }
 
 - (IBAction)click:(id)sender {
+    self.loopCount = self.loopCount + 0;
+    self.loopCount1 = self.loopCount1 + 1;
+    self.loopCount2 = self.loopCount2 + 2;
     NSLog(@"%@", sender);
 }
 
 - (IBAction)button2:(id)sender {
+    self.loopCount = 0;
+    self.loopCount1 = 1;
+    self.loopCount2 = 2;
     NSLog(@"%@", sender);
 }
 

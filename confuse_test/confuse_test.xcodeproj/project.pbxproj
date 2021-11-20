@@ -26,6 +26,8 @@
 		712AC5AC268095E400B3916F /* SwiftImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712AC5AB268095E400B3916F /* SwiftImageModel.swift */; };
 		713619522546A46A00124111 /* TestPropertyOther_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 713619512546A46A00124111 /* TestPropertyOther_VC.m */; };
 		71555B932553E8AE00DD8246 /* CppStudent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71555B912553E8AD00DD8246 /* CppStudent.cpp */; };
+		7163B6F22739E59D00ED16D4 /* FrameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7163B6F12739E59D00ED16D4 /* FrameViewController.swift */; };
+		7163B6F52739E82200ED16D4 /* LayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7163B6F42739E82200ED16D4 /* LayoutViewController.swift */; };
 		716A28F4255F80D800187F30 /* TestClassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A28F2255F80D800187F30 /* TestClassCell.m */; };
 		716A28F5255F80D800187F30 /* TestClassCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 716A28F3255F80D800187F30 /* TestClassCell.xib */; };
 		7187FF2125DF6E3800DA13BE /* SwiftProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187FF2025DF6E3800DA13BE /* SwiftProperty.swift */; };
@@ -170,6 +172,8 @@
 		71555B912553E8AD00DD8246 /* CppStudent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CppStudent.cpp; sourceTree = "<group>"; };
 		71555B922553E8AE00DD8246 /* CppStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppStudent.h; sourceTree = "<group>"; };
 		71555B942553E90F00DD8246 /* CppHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppHeader.h; sourceTree = "<group>"; };
+		7163B6F12739E59D00ED16D4 /* FrameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameViewController.swift; sourceTree = "<group>"; };
+		7163B6F42739E82200ED16D4 /* LayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutViewController.swift; sourceTree = "<group>"; };
 		716A28F1255F80D800187F30 /* TestClassCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestClassCell.h; sourceTree = "<group>"; };
 		716A28F2255F80D800187F30 /* TestClassCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestClassCell.m; sourceTree = "<group>"; };
 		716A28F3255F80D800187F30 /* TestClassCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestClassCell.xib; sourceTree = "<group>"; };
@@ -471,6 +475,23 @@
 			path = function;
 			sourceTree = "<group>";
 		};
+		7163B6EF2739E4CC00ED16D4 /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				7163B6F02739E4DE00ED16D4 /* frame */,
+				7163B6F42739E82200ED16D4 /* LayoutViewController.swift */,
+			);
+			path = layout;
+			sourceTree = "<group>";
+		};
+		7163B6F02739E4DE00ED16D4 /* frame */ = {
+			isa = PBXGroup;
+			children = (
+				7163B6F12739E59D00ED16D4 /* FrameViewController.swift */,
+			);
+			path = frame;
+			sourceTree = "<group>";
+		};
 		718B94F62508930800C1DB77 = {
 			isa = PBXGroup;
 			children = (
@@ -617,6 +638,7 @@
 		71D186FF25C28C1E003D3115 /* swift */ = {
 			isa = PBXGroup;
 			children = (
+				7163B6EF2739E4CC00ED16D4 /* layout */,
 				712AC5A52680955E00B3916F /* source */,
 				71D7C8D925DD16CC00012BAC /* test1 */,
 				71138F3025E88E3C0048CF46 /* test2 */,
@@ -981,9 +1003,11 @@
 				71555B932553E8AE00DD8246 /* CppStudent.cpp in Sources */,
 				710571902550097F003FFB3C /* TestImageViewController.m in Sources */,
 				711D8F3C25ED17D000B29F70 /* TestFunctionView.m in Sources */,
+				7163B6F52739E82200ED16D4 /* LayoutViewController.swift in Sources */,
 				980BB6CD255D1B3400404641 /* TestClassController.m in Sources */,
 				718B953D2508D29700C1DB77 /* UserInfoModel.m in Sources */,
 				71D7C8D225DD140A00012BAC /* ProductsTableViewController.swift in Sources */,
+				7163B6F22739E59D00ED16D4 /* FrameViewController.swift in Sources */,
 				718B95322508AF0C00C1DB77 /* MBHudDemoViewController.m in Sources */,
 				989FAFE92546A4EB009D0BB5 /* TestLayoutCell.m in Sources */,
 				718F1753258C98210001E6F0 /* CppClass.cpp in Sources */,

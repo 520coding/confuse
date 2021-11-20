@@ -1,5 +1,5 @@
 <a name="54fa66eaba498942a1604ffa591838ac"></a>
-# ![1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1606304234500-46a10b02-f83d-4996-99fc-ce092241ea7c.png#height=100&id=SslN0&name=1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png&originHeight=200&originWidth=200&originalType=binary&ratio=1&size=28522&status=done&style=shadow&width=100)
+# ![1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1606304234500-46a10b02-f83d-4996-99fc-ce092241ea7c.png#crop=0&crop=0&crop=1&crop=1&height=100&id=SslN0&name=1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png&originHeight=200&originWidth=200&originalType=binary&ratio=1&rotation=0&showTitle=false&size=28522&status=done&style=shadow&title=&width=100)
 <a name="HGXXr"></a>
 ### 中文 | [English](/README.md)
 <a name="174be9787bb85687706b11dfa538cd99"></a>
@@ -62,7 +62,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
    1. 全局设置‘忽略路径’，支持正则，配合黑名单使用更佳
    1. ‘xcodeproj’设置，针对多xcodeproj项目和xx.xcodeproj不在项目根目录的情况
    1. ‘Scheme’混淆，与Xcode保持一致
-   1. ‘Debug模式’，可在源文件中查看修改前后对比，避免文件名修改后或者大的改动导致git对比困难
+   1. ‘Debug模式’，便于在源文件中查看修改前后对比，同时插入一些特殊注释标识便于定位bug
    1. ‘混编模式’，该模式用于处理混编项目中swift调用oc部分，保证混淆后维持调用关系
    1. ‘参考项目根路径’设置，读取参考项目的单词、UUID
    1. ‘敏感词’过滤
@@ -188,20 +188,22 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
    1. 快速混淆模式
 <a name="af444a353c9380bc9aa8aec067937316"></a>
 # 图文介绍
-运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#height=540&id=Ai791&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&size=489209&status=done&style=none&width=960)
+运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#crop=0&crop=0&crop=1&crop=1&height=540&id=Ai791&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="nOH4z"></a>
-### v5.4.0（2021.11.07）
+<a name="qEK78"></a>
+### v5.4.1（2021.11.20）
 
-1. 新增Swift[修改颜色]，对项目中UI控件颜色随机偏移
-1. 优化OC[重命名属性]，新增@dynamic支持
-1. 优化[修改图片]，避免小概率出现图片修改前后差异过大
-1. 优化所有插入模块功能：
-   1. 扩展模板40%，优化模板结构，避免小概率影响实际代码执行
-   1. 新增Debug模式下的标识（可额外自定义控制），
-   1. 修复特殊情况下命名冲突
-   1. 优化个别插入位置不合理
+1. 优化命名规则，使得长名更真实
+1. 优化扩充模板，压缩if判断语句长度，新增适配35%的类型
+1. 修复OC[插入属性]，上一版本引起的个别readonly语法错误
+1. 修复OC[重命名方法]，小概率出现基类和Protocol命名冲突
+1. 修复OC[修改方法]，小概率的局部变量名称冲突
+1. 修复OC[插入方法]，特殊情况下类型不匹配问题
+1. 修复OC[修改全局变量]，在Masonry情况下的错修改位问题
+1. 修改OC[修改局部变量]，在C语言全局函数中的self语法错误
+1. 修复OC[插入局部变量]，特殊情况下的void * 转 id 报错
+1. 修复OC[重命名类]，旧模式选项下误改debug模式的注释
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
