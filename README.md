@@ -117,8 +117,8 @@ The following functions are supported:
 15. [Modify font] , randomly fine-tune the font used in the project, and identify macros
 15. [Modify color], randomly shift the color of the UI controls in the project, and identify the macro
 15. [UI layout offset], support frame, Mansonry, SDAutoLayout common layout fine-tuning
-15. [Insert file], generate other files (encapsulate network requests, create custom controls, simulate normal development), and call them automatically in the project ; **Note:** (Under the project root path, a folder of " **other_xxx_file** " will be generated , and the sub-option **Target** controls Import method, if it is empty, you need to manually import, just drag the generated folder into the project; otherwise, automatically import)
-15. [Insert text], generate json, txt, doc, plist and other text files, which are automatically called in the project ; **note:** (under the project root path, a folder of " **other_xxx_text** " will be generated , and the generated files will be **automatically imported** )
+15. [Insert file], generate other files (Combined with network, storage, and MVC to ensure that the code has high relevance and practical significance), automatic high-related calls in the project ; **Note:** (Under the project root path, a folder of " **other_xxx_file** " will be generated , and the sub-option **Target** controls Import method, if it is empty, you need to manually import, just drag the generated folder into the project; otherwise, automatically import)
+15. [Insert text], Generate json, txt, plist and other common text files, automatic high-related calls in the project  ; **note:** (under the project root path, a folder of " **other_xxx_text** " will be generated , and the generated files will be **automatically imported** )
 15. [Rename class], the class name is not limited (for example: my, My), you can specify to add a prefix, advantages:
     1. Smart noun substitution
     1. Can be set to'rename files with the same name'
@@ -192,18 +192,14 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v5.4.1 (2021.11.20)
+### v5.5.0 (2022.01.09)
 
-1. Optimize the naming rules to make the long name more real
-1. Optimize and expand the template, compress the length of if judgment sentence, and add 35%-compatible types
-1. Fix OC[insert attribute], individual readonly syntax errors caused by the previous version
-1. Fix OC [rename method], there is a small probability that the base class and Protocol naming conflict
-1. Fix OC [modification method], a small probability of local variable name conflicts
-1. Fix OC [insertion method], the type does not match in special cases
-1. Fix OC[Modify Global Variables], the wrong modification position problem in the case of Masonry
-1. Modify OC[Modify Local Variables], self syntax error in C language global function
-1. Fix OC[Insert local variable], in special cases, the error of changing from void * to id is reported
-1. Fix OC[Rename Class], the comment of debug mode was changed by mistake under the old mode option
+1. Refactor OC [insert file], close to actual development (combined with network, storage, MVC, to ensure that the code has high relevance and practical significance), strengthen contextual relevance
+1. Refactor OC [insert text], enrich templates, strengthen calls, simulate real development, and ensure that the embedding conforms to real scenarios
+1. Strengthen OC [modify local variables], support custom type recognition
+1. Optimize OC [insert local variable], correct the expression that affects self-increase and self-decrease
+1. Expand basic templates by 30% and enrich the changing styles
+1. Strengthen the scope of use of reference projects
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
