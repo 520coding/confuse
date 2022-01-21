@@ -192,14 +192,12 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v5.5.0 (2022.01.09)
+### v5.5.1 (2022.01.22)
 
-1. Refactor OC [insert file], close to actual development (combined with network, storage, MVC, to ensure that the code has high relevance and practical significance), strengthen contextual relevance
-1. Refactor OC [insert text], enrich templates, strengthen calls, simulate real development, and ensure that the embedding conforms to real scenarios
-1. Strengthen OC [modify local variables], support custom type recognition
-1. Optimize OC [insert local variable], correct the expression that affects self-increase and self-decrease
-1. Expand basic templates by 30% and enrich the changing styles
-1. Strengthen the scope of use of reference projects
+1. The latest feature Xcode13 that mainly affects Swift,
+1. Optimize OC [plug-in], expand templates, rich change styles
+1. Fix OC [modify string], the syntax in special cases (association object) does not matter
+1. Optimize the UI of the APP and adapt to macOS Monterey
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

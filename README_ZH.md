@@ -191,15 +191,13 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#crop=0&crop=0&crop=1&crop=1&height=540&id=Ai791&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="bWMGG"></a>
-### v5.5.0（2022.01.09）
+<a name="bsjqI"></a>
+### v5.5.1（2022.01.22）
 
-1. 重构OC[插入文件]，接近实际开发（结合网络、存储、MVC，保证代码具有高关联度和实际意义），强化上下文关联
-1. 重构OC[插入文本]，丰富模板，强化调用，模拟真实开发，保证嵌入符合真实场景
-1. 强化OC[修改局部变量]，支持自定义类型识别
-1. 优化OC[插入局部变量]，纠正影响自增自减表达式
-1. 扩充30%基础模板，丰富变化样式
-1. 强化参考项目使用范围
+1. 适配最新的Xcode13.2.1，主要影响Swift的功能
+1. 优化OC[插入文件]，扩充模板，丰富变化样式
+1. 修复OC[修改字符串]，特殊情况下（关联对象）的语法不严谨
+1. 优化APP的UI，适配最新macOS Monterey
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
