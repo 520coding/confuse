@@ -158,7 +158,8 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
 4. [Modification method], use overloading technology to modify the function prototype and call the modified parameter
 4. [Modify font] , randomly fine-tune the font used in the project, and identify macros
 4. [Modify color], randomly shift the color of UI controls in the project
-4. Add Swift[Modify Local Variables], simulate manual encapsulation call, variable name association type (support nesting), advantages:
+4. [UI layout offset], temporarily only supports Frame layout fine-tuning
+4. [Modify Local Variables], simulate manual encapsulation call, variable name association type (support nesting), advantages:
    1. The value of the local variable remains unchanged during operation. For details, see the summary table of supported types.
    1. Can be executed multiple times, the index x2 increases
 9. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
@@ -175,8 +176,7 @@ Update iterations will be carried out in the following order
 
 1. Objective-C (95%), mainly to improve the versatility and stability of the tool, and strengthen the function
    1. Audio and video files are used less and will be added later
-2. Swift (75%), under development...
-   1. Modify layout
+2. Swift (80%), under development...
    1. Insert file
 3. C++ (60%), under development...
    1. Method: Insert
@@ -192,12 +192,12 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v5.5.1 (2022.01.22)
+### v5.6.0 (2022.01.30)
 
-1. The latest feature Xcode13 that mainly affects Swift,
-1. Optimize OC [plug-in], expand templates, rich change styles
-1. Fix OC [modify string], the syntax in special cases (association object) does not matter
-1. Optimize the UI of the APP and adapt to macOS Monterey
+1. Added Swift [modify layout], currently only supports Fram
+1. Optimized compatibility with Xcode 12 and 13
+1. Optimize OC [insert file], continue to expand templates, and correct individual unreasonable usages
+1. Optimize the UI of the APP and optimize the individual prompt information
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
