@@ -192,12 +192,10 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v5.6.0 (2022.01.30)
+### v5.6.1 (2022.02.07)
 
-1. Added Swift [modify layout], currently only supports Fram
-1. Optimized compatibility with Xcode 12 and 13
-1. Optimize OC [insert file], continue to expand templates, and correct individual unreasonable usages
-1. Optimize the UI of the APP and optimize the individual prompt information
+1. Optimize compatibility, support M1, support componentized projects
+1. Optimize OC [insert file], optimize xib template
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
