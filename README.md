@@ -192,10 +192,12 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v5.6.1 (2022.02.07)
+### v5.6.2 (2022.02.15)
 
-1. Optimize compatibility, support M1, support componentized projects
-1. Optimize OC [insert file], optimize xib template
+1. Optimize M1 admission
+1. Optimize [rename method], naming rules in mixed mode
+1. Fix Swift[modify method], method identification error
+1. Re-update [rename class], the project is quickly updated to the problem
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
