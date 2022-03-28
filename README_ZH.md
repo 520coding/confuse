@@ -162,9 +162,10 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 4. [修改局部变量]，模拟人工封装调用，变量名关联类型（支持嵌套），优势：
    1. 局部变量值运行时保持不变，详情见[支持类型汇总表](https://520coding.yuque.com/docs/share/cd70e83b-4ab4-40e5-b719-70f214e869c8)
    1. 可多次执行，指数x2递增
-9. [修改字符串]，识别单行、多行、字符串插值、及扩展字符串，改后由加密和拆分字符组等多种方式自由组合，并保留原有字符的注释，方便检查
-   1. 设置‘最少长度’过滤
-   1. 也可设置‘有效个数’搭配使用
+10. [修改字符串]，识别单行、多行、字符串插值、及扩展字符串，改后由加密和拆分字符组等多种方式自由组合，并保留原有字符的注释，方便检查
+    1. 设置‘最少长度’过滤
+    1. 也可设置‘有效个数’搭配使用
+11. [插入文本]，生成json、txt、plist等常用文本文件，项目中自动高关联调用（引入属性、初始化、自动销毁等）。**注意：**(在项目根路径下，会生成"**other_xxx_text**"的文件夹，生成的文件会**自动导入**）
 11. [重命名类]，类名不限制（例如：my、My），识别嵌套类型及typealias，支持class、struct，enum、protocol
     1. 可设置‘重命名同名文件’
     1. 可设置‘前缀’
@@ -177,6 +178,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 1. Objective-C（95%），主要提高工具的通用性和稳定性，及强化功能
    1. 音频、视频文件使用少，后续添加
 2. Swift（80%），开发中...
+   1. 插入图片
    1. 插入文件
 3. C++（60%），开发中...
    1. 方法：插入
@@ -191,13 +193,11 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#crop=0&crop=0&crop=1&crop=1&height=540&id=Ai791&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="XmZh7"></a>
-### v5.6.2（2022.02.15）
+<a name="KhpJd"></a>
+### v5.7.0（2022.03.27）
 
-1. 优化M1兼容性
-1. 优化[重命名方法]，混编模式下的命名规则
-1. 修复Swift[修改方法]，个别方法识别错误
-1. 修复Swift[重命名类]，个别项目混淆中断问题
+1. 新增Swift[插入文本]，生成json、txt、doc、plist等文本、而且会在项目中的其它文件中引用，生成属性、初始化、自动销毁等，模拟真实开发，保证嵌入符合真实场景
+1. 扩充70%Swift基础模板，丰富变化样式
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

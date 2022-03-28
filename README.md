@@ -162,10 +162,11 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
 4. [Modify Local Variables], simulate manual encapsulation call, variable name association type (support nesting), advantages:
    1. The value of the local variable remains unchanged during operation. For details, see the summary table of supported types.
    1. Can be executed multiple times, the index x2 increases
-9. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
-   1. Set the'minimum length' filter
-   1. You can also set the "effective number" to use together
-10. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class, struct, enum, protocol
+10. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
+    1. Set the'minimum length' filter
+    1. You can also set the "effective number" to use together
+11.  [Insert text], generate common text files such as json, txt, plist, etc., and automatically high-related calls in the project (introduction of attributes, initialization, automatic destruction, etc.). Note: (under the project root path, the folder "other_xxx_text" will be generated, and the generated files will be automatically imported)
+11. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class, struct, enum, protocol
     1. Can be set to'rename files with the same name'
     1. 'Prefix' can be set
 > Note: At present, the Swift and OC mixed project, the OC calling Swift part will not be processed for the time being, and will be optimized in the future.
@@ -177,6 +178,7 @@ Update iterations will be carried out in the following order
 1. Objective-C (95%), mainly to improve the versatility and stability of the tool, and strengthen the function
    1. Audio and video files are used less and will be added later
 2. Swift (80%), under development...
+   1. Insert image
    1. Insert file
 3. C++ (60%), under development...
    1. Method: Insert
@@ -192,12 +194,10 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v5.6.2 (2022.02.15)
+### v5.7.0 (2022.03.27)
 
-1. Optimize M1 admission
-1. Optimize [rename method], naming rules in mixed mode
-1. Fix Swift[modify method], method identification error
-1. Re-update [rename class], the project is quickly updated to the problem
+1. Add Swift [insert text], generate json, txt, doc, plist and other text, and will be referenced in other files in the project, generate properties, initialization, automatic destruction, etc., simulate real development, and ensure that the embedding conforms to the real scene
+1. Expand 70% Swift basic templates to enrich changing styles
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
