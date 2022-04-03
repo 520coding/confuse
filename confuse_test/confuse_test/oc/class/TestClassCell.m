@@ -22,3 +22,7 @@
 }
 
 @end
+
+@implementation LBHomeMatchUserTotalModel
+
+@end

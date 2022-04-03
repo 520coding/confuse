@@ -57,9 +57,6 @@ class SelectorViewController2: SelectorViewController1 {
         cyanButton.addTarget(self,
                              action: #selector(defaultFunc),
                              for: .touchUpInside)
-        anotherCyanButton.addTarget(self,
-                                    action: Selector("privateFunc"),
-                                    for: .touchUpInside)
     }
 }
 

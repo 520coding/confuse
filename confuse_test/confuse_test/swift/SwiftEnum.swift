@@ -34,12 +34,14 @@ enum ArithmeticExpression {
 }
 
 class SwiftEnum: UIViewController, SwiftBaseProtocol {
+    var directionToHead = CompassPoint.west
+    let somePlanet = Planet.earth
+
     override func viewDidAppear(_ animated: Bool) {
         test()
     }
 
     func test() {
-        var directionToHead = CompassPoint.west
         directionToHead = .east
         directionToHead = .south
         
@@ -54,7 +56,6 @@ class SwiftEnum: UIViewController, SwiftBaseProtocol {
             print("Where the skies are blue")
         }
 
-        let somePlanet = Planet.earth
         switch somePlanet {
         case .earth:
             print("Mostly harmless")
@@ -100,7 +101,7 @@ class SwiftEnum: UIViewController, SwiftBaseProtocol {
         let sunsetDirection = CompassPoint.west.rawValue
         print(sunsetDirection)
 
-        let possiblePlanet = Planet(rawValue: 7)
+        let possiblePlanet = Planet(rawValue: 7)!
         print(possiblePlanet)
 
         let positionToFind = 11

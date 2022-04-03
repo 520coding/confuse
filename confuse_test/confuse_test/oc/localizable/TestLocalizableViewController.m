@@ -25,8 +25,9 @@
     label3.text = @"是时候表演真正的技术了！";
     label3.text = NSLocalizedStringFromTable(@"me", @"File", nil);
     [self.view addSubview:label1];
-    [self.view addSubview:label2];
+    [self.view addSubview:[label2 superview]];
     [self.view addSubview:label3];
+    [self.view addSubview:[self getView]];
 
     NSArray *array = @[
         @"特斯拉",
@@ -37,6 +38,10 @@
     ];
     NSLog(@"string array : %@", array);
     // Do any additional setup after loading the view.
+}
+
+- (UILabel *)getView {
+    return [[UILabel alloc] initWithFrame:CGRectMake(20, 200, 200, 100)];
 }
 
 /*
@@ -50,3 +55,4 @@
 */
 
 @end
+

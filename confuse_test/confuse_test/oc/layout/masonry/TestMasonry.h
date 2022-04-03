@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TestMasonry : NSObject
 
+@property (nonatomic, strong) UIView *view;
+@property (nonatomic, strong) UILabel *label;
+
 @end
 
 NS_ASSUME_NONNULL_END

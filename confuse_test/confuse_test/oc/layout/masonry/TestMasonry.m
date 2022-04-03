@@ -26,6 +26,12 @@
     
     [view3 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(view.mas_centerY);
+        if (_view && _label) {
+            make.centerY.mas_equalTo(_view);
+            make.centerY.mas_equalTo(self.view);
+            make.centerY.mas_equalTo([self view]);
+            make.centerY.mas_equalTo(self.label);
+        }
         make.left.equalTo(view2.mas_right).with.offset(padding1);
         make.right.equalTo(view.mas_right).with.offset(-padding1);
         make.height.mas_equalTo(@150);
@@ -77,4 +83,6 @@
         make.bottom.equalTo(lastView.mas_bottom);
     }];
 }
+
 @end
+

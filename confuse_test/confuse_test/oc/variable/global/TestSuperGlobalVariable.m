@@ -57,7 +57,8 @@ NSString * const kURLActions[] = {@"url->",@"email->",@"phoneNumber->",@"at->",@
     NSLog(@"%ld",(long)kSuperGlobalVariable2);
     NSLog(@"%@",kSuperGlobalVariable3);
     NSLog(@"%@",kSuperGlobalVariable4(nil));
-    NSLog(@"%s",kSuperGlobalVariable6);
+    NSLog(@"%s",(char *)kSuperGlobalVariable6);
+    NSLog(@"%s",kWebSafeBase64DecodeChars);
 }
 
 @end

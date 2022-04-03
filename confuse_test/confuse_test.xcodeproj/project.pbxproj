@@ -864,7 +864,7 @@
 		718B94F72508930800C1DB77 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = coding520;
 				TargetAttributes = {
 					718B94FE2508930900C1DB77 = {
@@ -1221,6 +1221,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
