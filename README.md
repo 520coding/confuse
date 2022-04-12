@@ -152,10 +152,11 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
 2. [Rename attribute], basic function, without too much description, advantages:
    1. Similar to OC [Rename attribute], identify inheritance chain and nested type, support storage and calculation of attributes, observers, wrappers, class attributes
    1. File name Model suffix filtering can be set
-4. [insert property], use calculated properties to wrap and call and replace the original properties
+4. [Insert property], use calculated properties to wrap and call and replace the original properties
    1. Support storage and calculation of attributes, observers, wrappers, class attributes
    1. File name Model suffix filtering can be set
 5. [Rename method], the basic functions are renamed similar to other tools, without too much description, advantages: identification of inheritance chain nested types, support for (class, struct, enum) static methods and instance methods, and optional chains, etc.
+5. [Insert method], encapsulate the return value of the original method and use the context to call additional associated methods, saying goodbye to "garbage code"
 5. [Modification method], use overloading technology to modify the function prototype and call the modified parameter
 5. [Modify font] , randomly fine-tune the font used in the project, and identify macros
 5. [Modify color], randomly shift the color of UI controls in the project
@@ -163,11 +164,11 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
 5. [Modify Local Variables], simulate manual encapsulation call, variable name association type (support nesting), advantages:
    1. The value of the local variable remains unchanged during operation. For details, see the summary table of supported types.
    1. Can be executed multiple times, the index x2 increases
-11. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
+12. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
     1. Set the'minimum length' filter
     1. You can also set the "effective number" to use together
-12.  [Insert text], generate common text files such as json, txt, plist, etc., and automatically high-related calls in the project (introduction of attributes, initialization, automatic destruction, etc.). Note: (under the project root path, the folder "other_xxx_text" will be generated, and the generated files will be automatically imported)
-12. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class, struct, enum, protocol
+13.  [Insert text], generate common text files such as json, txt, plist, etc., and automatically high-related calls in the project (introduction of attributes, initialization, automatic destruction, etc.). Note: (under the project root path, the folder "other_xxx_text" will be generated, and the generated files will be automatically imported)
+13. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class, struct, enum, protocol
     1. Can be set to'rename files with the same name'
     1. 'Prefix' can be set
 > Note: At present, the Swift and OC mixed project, the OC calling Swift part will not be processed for the time being, and will be optimized in the future.
@@ -178,8 +179,8 @@ Update iterations will be carried out in the following order
 
 1. Objective-C (95%), mainly to improve the versatility and stability of the tool, and strengthen the function
    1. Audio and video files are used less and will be added later
-2. Swift (80%), under development...
-   1. Insert function
+2. Swift (85%), under development...
+   1. Insert local variable
    1. Insert file
 3. C++ (60%), under development...
    1. Method: Insert
@@ -195,10 +196,12 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v5.8.0 (2022.04.03)
+### v5.9.0 (2022.04.12)
 
-1. Added Swift [Insert Picture], which automatically inserts pictures, and simulates manual calls according to the context and type, and the number of insertions can be specified
-1. Optimize OC [insert picture], optimize the calling method, and balance the modification position in the source code
+1. Add Swift [insert method], encapsulate the return value of the original method and use the context to call additional associated methods, saying goodbye to "garbage code"
+1. Optimize Swift[modification method], change the print output to context-sensitive modification
+1. Optimize Swift [insert text], optimize the calling method, and improve the performance of this function by 40%
+1. Repair [Antivirus], read soft link file problem
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
