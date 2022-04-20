@@ -37,8 +37,7 @@ In fact, to identify the pros and cons of a tool, just look at the following poi
 
 7. Normal projects (or third-party libraries) basically do not report errors after obfuscation (except for some individual [improper grammars](https://www.yuque.com/docs/share/4a87ec96-80fe-4d25-873d-93cb428b3e15#iz0Zi) that cause confusion and report errors)
 
-
-<br />You are also welcome to use different tools to confuse the test project [**confuse_test**](https://github.com/520coding/confuse/tree/master/confuse_test) or third-party open source library projects to compare the effects.
+You are also welcome to use different tools to confuse the test project [**confuse_test**](https://github.com/520coding/confuse/tree/master/confuse_test) or third-party open source library projects to compare the effects.
 <a name="426215c094f184f34acdb12593ddb1fc"></a>
 # Features
 confuse is a [confusion tool](https://github.com/520coding/confuse) that simulates manual development as much as possible, imitates some functions of Xcode, and avoids machine core 4.3, 2.1, 2.3.1, account surveys, etc.<br />Goal: **Simulate manually modify everything that can be changed** , which is why this tool only has a blacklist and no whitelist<br />The detailed functions are as follows (the basic functions are not described, see other tools for details):
@@ -106,7 +105,7 @@ The following functions are supported:
 9. [Rename global variables], smart noun substitution
 9. [Modify global variables], replace global variable names, **convert global variables into global functions** , and confuse string variable values
 9. [Insert local variable], single-line compound call becomes simple multi-line call, change the execution order
-9. [Modify local variables], simulate manual encapsulation call, variable name association type, advantages:
+9. [Modify local variable], simulate manual encapsulation call, variable name association type, advantages:
    1. Local variable values remain unchanged during operation, see the [summary table of supported types for](https://www.yuque.com/docs/share/90444065-4f4e-49c8-9e1a-5bd3d3b4f84d?translate=en) details
    1. Can be executed multiple times, the index x2 increases
 13. [Rename multilingual], using a system of direct or indirect methods **NSLocalizedString** , **NSLocalizedStringFromTable** multilingual modified，[The custom packaging methods require manual processing](https://520coding.yuque.com/docs/share/de45751a-c629-4737-84ad-251fb2502123?translate=en)
@@ -161,14 +160,15 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
 5. [Modify font] , randomly fine-tune the font used in the project, and identify macros
 5. [Modify color], randomly shift the color of UI controls in the project
 5. [UI layout offset], temporarily only supports Frame layout fine-tuning
-5. [Modify Local Variables], simulate manual encapsulation call, variable name association type (support nesting), advantages:
+5. [Insert local variable], split single-line compound calls, change the execution order
+5. [Modify local variable], simulate manual encapsulation call, variable name association type (support nesting), advantages:
    1. The value of the local variable remains unchanged during operation. For details, see the summary table of supported types.
    1. Can be executed multiple times, the index x2 increases
-12. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
+13. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
     1. Set the'minimum length' filter
     1. You can also set the "effective number" to use together
-13.  [Insert text], generate common text files such as json, txt, plist, etc., and automatically high-related calls in the project (introduction of attributes, initialization, automatic destruction, etc.). Note: (under the project root path, the folder "other_xxx_text" will be generated, and the generated files will be automatically imported)
-13. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class, struct, enum, protocol
+14. [Insert text], generate common text files such as json, txt, plist, etc., and automatically high-related calls in the project (introduction of attributes, initialization, automatic destruction, etc.). Note: (under the project root path, the folder "other_xxx_text" will be generated, and the generated files will be automatically imported)
+14. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class, struct, enum, protocol
     1. Can be set to'rename files with the same name'
     1. 'Prefix' can be set
 > Note: At present, the Swift and OC mixed project, the OC calling Swift part will not be processed for the time being, and will be optimized in the future.
@@ -180,7 +180,6 @@ Update iterations will be carried out in the following order
 1. Objective-C (95%), mainly to improve the versatility and stability of the tool, and strengthen the function
    1. Audio and video files are used less and will be added later
 2. Swift (85%), under development...
-   1. Insert local variable
    1. Insert file
 3. C++ (60%), under development...
    1. Method: Insert
@@ -196,12 +195,9 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v5.9.0 (2022.04.12)
+### v6.0.0 (2022.04.20)
 
-1. Add Swift [insert method], encapsulate the return value of the original method and use the context to call additional associated methods, saying goodbye to "garbage code"
-1. Optimize Swift[modification method], change the print output to context-sensitive modification
-1. Optimize Swift [insert text], optimize the calling method, and improve the performance of this function by 40%
-1. Repair [Antivirus], read soft link file problem
+1. Added Swift[Insert local variable], split single-line compound calls, change the execution order
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

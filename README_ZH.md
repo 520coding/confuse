@@ -160,14 +160,15 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 5. [修改字体]，对项目中使用的字体随机微调
 5. [修改颜色]，对项目中UI控件颜色随机偏移
 5. [UI布局偏移]，暂时只支持Frame布局微调
+5. [插入局部变量]，拆分单行复合调用，改变执行顺序
 5. [修改局部变量]，模拟人工封装调用，变量名关联类型（支持嵌套），优势：
    1. 局部变量值运行时保持不变，详情见[支持类型汇总表](https://520coding.yuque.com/docs/share/cd70e83b-4ab4-40e5-b719-70f214e869c8)
    1. 可多次执行，指数x2递增
-12. [修改字符串]，识别单行、多行、字符串插值、及扩展字符串，改后由加密和拆分字符组等多种方式自由组合，并保留原有字符的注释，方便检查
+13. [修改字符串]，识别单行、多行、字符串插值、及扩展字符串，改后由加密和拆分字符组等多种方式自由组合，并保留原有字符的注释，方便检查
     1. 设置‘最少长度’过滤
     1. 也可设置‘有效个数’搭配使用
-13. [插入文本]，生成json、txt、plist等常用文本文件，项目中自动高关联调用（引入属性、初始化、自动销毁等）。**注意：**(在项目根路径下，会生成"**other_xxx_text**"的文件夹，生成的文件会**自动导入**）
-13. [重命名类]，类名不限制（例如：my、My），识别嵌套类型及typealias，支持class、struct，enum、protocol
+14. [插入文本]，生成json、txt、plist等常用文本文件，项目中自动高关联调用（引入属性、初始化、自动销毁等）。**注意：**(在项目根路径下，会生成"**other_xxx_text**"的文件夹，生成的文件会**自动导入**）
+14. [重命名类]，类名不限制（例如：my、My），识别嵌套类型及typealias，支持class、struct，enum、protocol
     1. 可设置‘重命名同名文件’
     1. 可设置‘前缀’
 > 注意：目前Swift和OC混编项目，OC调用Swift部分暂不处理，后续将优化。
@@ -179,7 +180,6 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 1. Objective-C（95%），主要提高工具的通用性和稳定性，及强化功能
    1. 音频、视频文件使用少，后续添加
 2. Swift（85%），开发中...
-   1. 插入局部变量
    1. 插入文件
 3. C++（60%），开发中...
    1. 方法：插入
@@ -194,13 +194,10 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#crop=0&crop=0&crop=1&crop=1&height=540&id=Ai791&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="Ncs8P"></a>
-### v5.9.0（2022.04.12）
+<a name="wZRGT"></a>
+### v6.0.0（2022.04.20）
 
-1. 新增Swift[插入方法]，封装原方法的返回值并利用上下文调用额外关联方法，告别“垃圾代码”
-1. 优化Swift[修改方法]，print输出改为上下文关联修改
-1. 优化Swift[插入文本]，优化调用方式，提升该功能40%性能
-1. 修复[杀病毒]，读取软链接文件问题
+1. 新增Swift[插入方法]，拆分单行复合调用，改变执行顺序
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
