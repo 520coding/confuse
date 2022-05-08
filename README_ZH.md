@@ -194,10 +194,15 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#crop=0&crop=0&crop=1&crop=1&height=540&id=Ai791&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="wZRGT"></a>
-### v6.0.0（2022.04.20）
+<a name="lY3Xh"></a>
+### v6.0.1（2022.05.08）
 
-1. 新增Swift[插入方法]，拆分单行复合调用，改变执行顺序
+1. 优化Swift性能，整体缩短20%以上时间，大文件减少70%时间
+1. 修复Swift部分功能小概率和局部变量名冲突，嵌套类型识别不准
+1. 修复Swift[重命名属性]，小概率和方法名重名问题
+1. 修复Swift[插入方法]，有可能出现返回值错位问题
+1. 优化Swift[修改方法]，修复枚举原始值误改，关联枚举Int误改
+1. 优化导出历史，支持项目根路径包含点符号
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

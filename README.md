@@ -195,9 +195,14 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.0.0 (2022.04.20)
+### v6.0.1 (2022.05.08)
 
-1. Added Swift[Insert local variable], split single-line compound calls, change the execution order
+1. Optimize Swift performance, reduce the overall time by more than 20%, and reduce the time by 70% for large files
+1. Small functions and names of different types in the Swift part are not punctual
+1. Fix Swift [rename property], minor style and method name renaming problem
+1. Fix Swift [plug-in method], there may be a return value error bit problem
+1. Optimize Swift [modification method], fix the wrong change of the original value of the enumeration, and the wrong change of the associated enumeration Int
+1. Optimize the export history, support the project path to contain dot symbols
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
