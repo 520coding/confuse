@@ -168,6 +168,7 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
 14. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
     1. Set the'minimum length' filter
     1. You can also set the "effective number" to use together
+15. [Insert file], close to actual development (combined with network, storage, MVC, xib, etc., to ensure that the code has high relevance and practical significance), and strengthen contextual relevance. Can set 'file name prefix', set 'Target import' in the same way as OC
 15. [Insert text], generate common text files such as json, txt, plist, etc., and automatically high-related calls in the project (introduction of attributes, initialization, automatic destruction, etc.). Note: (under the project root path, the folder "other_xxx_text" will be generated, and the generated files will be automatically imported)
 15. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class, struct, enum, protocol
     1. Can be set to'rename files with the same name'
@@ -180,8 +181,8 @@ Update iterations will be carried out in the following order
 
 1. Objective-C (95%), mainly to improve the versatility and stability of the tool, and strengthen the function
    1. Audio and video files are used less and will be added later
-2. Swift (85%), under development...
-   1. Insert file
+2. Swift (90%), under development...
+   1. Optimize performance
 3. C++ (60%), under development...
    1. Method: Insert
    1. Property: modify
@@ -196,10 +197,10 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.1.0 (2022.05.15)
+### v6.2.0 (2022.06.29)
 
-1. Optimize Swift [rename property], [rename method], and reduce the time by 10%, and reduce the time for large files
-1. Added Swift [rename enum], support associated values and primitive values
+1. Added Swift [insert file], which is close to actual development (combined with network, storage, MVC, xib, etc., to ensure that the code has high relevance and practical significance), and strengthens contextual relevance
+1. Optimize individual M1 adaptation environment issues
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
