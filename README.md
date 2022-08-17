@@ -199,11 +199,16 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.3.1 (2022.07.24)
+### v6.3.2 (2022.08.17)
 
-1. Enhance Swift [rename global method], add the function of renaming 'parameter label', support hidden parameter label and trailing closure usage
-1. Optimize Swift [rename method], and fix the problem that Swift cannot recognize the oc protocol of Pods in some mixed projects
-1. Optimize Swift [rename property], fix the inconsistency between protocol properties and extended protocol properties
+1. Enhance Swift [rename image], support Image Literal
+1. Optimize Swift [insert picture], improve compatibility, optimize call distribution
+1. Fix Swift [rename property], the small probability name conflicts with the long-deprecated property in OC
+1. Fix Swift [rename method], the extension declaration adopts protocol mistakenly changed
+1. Fix Swift[modified method], syntax warning outdated problem, compound tuple type recognition error
+1. Fix Swift [insert local variable], optional closure recognition error, method multi-line complex call is not recognized correctly
+1. Fix Swift [modify local variables], collection type contains optional type recognition error
+1. Repair OC [modify xib], some function modifications did not take effect after the v5.5.0 version was incorrectly modified
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
