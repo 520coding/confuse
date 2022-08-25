@@ -199,16 +199,14 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.3.2 (2022.08.17)
+### v6.3.3 (2022.08.25)
 
-1. Enhance Swift [rename image], support Image Literal
-1. Optimize Swift [insert picture], improve compatibility, optimize call distribution
-1. Fix Swift [rename property], the small probability name conflicts with the long-deprecated property in OC
-1. Fix Swift [rename method], the extension declaration adopts protocol mistakenly changed
-1. Fix Swift[modified method], syntax warning outdated problem, compound tuple type recognition error
-1. Fix Swift [insert local variable], optional closure recognition error, method multi-line complex call is not recognized correctly
-1. Fix Swift [modify local variables], collection type contains optional type recognition error
-1. Repair OC [modify xib], some function modifications did not take effect after the v5.5.0 version was incorrectly modified
+1. Fix Swift [rename method], it is possible that Pods or the system's swift type protocol recognition is not allowed to change by mistake
+1. Fix Swift [insert local variable], the method argument is an empty collection, the collection element is of type Any, and the syntax after insertion is not rigorous enough
+1. Fix Swift[insert method], multi-level nesting or return unrecognized method of case statement, typealias type recognition error problem
+1. Fix Swift [insert image], there may be an if condition implicit parsing optional error
+1. Fix Swift [rename image], OC [rename image], there may be the same name problem
+1. Optimize some templates that are not rigorous and improve the rationality
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

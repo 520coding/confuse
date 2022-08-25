@@ -198,17 +198,15 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#crop=0&crop=0&crop=1&crop=1&height=540&id=Ai791&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="iXskI"></a>
-### v6.3.2（2022.08.17）
+<a name="apCAe"></a>
+### v6.3.3（2022.08.25）
 
-1. 强化Swift[重命名图片]，支持Image Literal
-1. 优化Swift[插入图片]，提高兼容性，优化调用分布
-1. 修复Swift[重命名属性]，小概率名称和OC中早已废弃属性冲突
-1. 修复Swift[重命名方法]，扩展声明采纳协议误改问题
-1. 修复Swift[修改方法]，语法警告过时问题，复合元组类型识别错误
-1. 修复Swift[插入局部变量]，可选闭包识别错误，方法多行复杂调用识别不准
-1. 修复Swift[修改局部变量]，集合类型包含可选类型识别错误
-1. 修复OC[修改xib]，v5.5.0版本以后误改导致部分功能修改没生效问题
+1. 修复Swift[重命名方法]，有可能Pods或者系统的swift类型协议识别不准误改问题
+1. 修复Swift[插入局部变量]，方法实参为空集合、集合元素Any类型，插入后语法不够严谨问题
+1. 修复Swift[插入方法]，多层嵌套或者case语句的return无识别法，typealias类型识别错误问题
+1. 修复Swift[插入图片]，有可能出现if条件隐式解析可选错误
+1. 修复Swift[重命名图片]、OC[重命名图片]，有可能出现同名问题
+1. 优化部分模版不严谨问题，提高合理性
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
