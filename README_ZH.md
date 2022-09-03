@@ -170,6 +170,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 15. [修改字符串]，识别单行、多行、字符串插值、及扩展字符串，改后由加密和拆分字符组等多种方式自由组合，并保留原有字符的注释，方便检查
     1. 设置‘最少长度’过滤
     1. 也可设置‘有效个数’搭配使用
+16. [修改xib、storyboard]，自动插入视图，并修改内部结构属性
 16. [插入文件]，接近实际开发（结合网络、存储、MVC、xib等，保证代码具有高关联度和实际意义），强化上下文关联。可设置‘文件名前缀’，设置‘**Target**导入’方式和OC相同
 16. [插入文本]，生成json、txt、plist等常用文本文件，项目中自动高关联调用（引入属性、初始化、自动销毁等）。**注意：**(在项目根路径下，会生成"**other_xxx_text**"的文件夹，生成的文件会**自动导入**）
 16. [重命名类]，类名不限制（例如：my、My），识别嵌套类型及typealias，支持class、struct，enum、protocol
@@ -198,15 +199,13 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#crop=0&crop=0&crop=1&crop=1&height=540&id=Ai791&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="apCAe"></a>
-### v6.3.3（2022.08.25）
+<a name="moMKb"></a>
+### v6.4.0（2022.09.03）
 
-1. 修复Swift[重命名方法]，有可能Pods或者系统的swift类型协议识别不准误改问题
-1. 修复Swift[插入局部变量]，方法实参为空集合、集合元素Any类型，插入后语法不够严谨问题
-1. 修复Swift[插入方法]，多层嵌套或者case语句的return无识别法，typealias类型识别错误问题
-1. 修复Swift[插入图片]，有可能出现if条件隐式解析可选错误
-1. 修复Swift[重命名图片]、OC[重命名图片]，有可能出现同名问题
-1. 优化部分模版不严谨问题，提高合理性
+1. 新增Swift[修改xib、storyboard]，自动插入视图，并修改内部结构属性
+1. 强化Swift[修改颜色]，扩大适用范围
+1. 修复Swift[重命名属性]、Swift[重命名方法]，有可能在混编项目下引用第三方OC的framework，出现结构体、枚举的父类或扩展协议无法识别问题
+1. 优化部分UI交互
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

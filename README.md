@@ -170,6 +170,7 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
 15. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
     1. Set the'minimum length' filter
     1. You can also set the "effective number" to use together
+16. [Modify xib, storyboard], automatically insert the view, and modify the internal structure properties
 16. [Insert file], close to actual development (combined with network, storage, MVC, xib, etc., to ensure that the code has high relevance and practical significance), and strengthen contextual relevance. Can set 'file name prefix', set 'Target import' in the same way as OC
 16. [Insert text], generate common text files such as json, txt, plist, etc., and automatically high-related calls in the project (introduction of attributes, initialization, automatic destruction, etc.). Note: (under the project root path, the folder "other_xxx_text" will be generated, and the generated files will be automatically imported)
 16. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class, struct, enum, protocol
@@ -199,14 +200,12 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.3.3 (2022.08.25)
+### v6.4.0 (2022.09.03)
 
-1. Fix Swift [rename method], it is possible that Pods or the system's swift type protocol recognition is not allowed to change by mistake
-1. Fix Swift [insert local variable], the method argument is an empty collection, the collection element is of type Any, and the syntax after insertion is not rigorous enough
-1. Fix Swift[insert method], multi-level nesting or return unrecognized method of case statement, typealias type recognition error problem
-1. Fix Swift [insert image], there may be an if condition implicit parsing optional error
-1. Fix Swift [rename image], OC [rename image], there may be the same name problem
-1. Optimize some templates that are not rigorous and improve the rationality
+1. Added Swift [Modify xib, storyboard], automatic plug-in view, and modified internal structure properties
+1. Strengthen Swift [modify color], expand the scope of application
+1. Repair Swift [rename property], rename method], it is possible to refer to the Swift [OC framework under the mixed project, there is a problem that the parent class extension protocol of the structure and enumeration cannot be recognized
+1. Optimize some UI labels
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
