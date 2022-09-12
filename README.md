@@ -157,14 +157,16 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
 6. [Insert property], use calculated properties to wrap and call and replace the original properties
    1. Support storage and calculation of attributes, observers, wrappers, class attributes
    1. File name Model suffix filtering can be set
-7. [Rename method], the basic functions are renamed similar to other tools, without too much description, advantages: identification of inheritance chain nested types, support for (class, struct, enum) static methods and instance methods, and optional chains, etc.
-7. [Insert method], encapsulate the return value of the original method and use the context to call additional associated methods, saying goodbye to "garbage code"
-7. [Modification method], use overloading technology to modify the function prototype and call the modified parameter
-7. [Modify font] , randomly fine-tune the font used in the project, and identify macros
-7. [Modify color], randomly shift the color of UI controls in the project
-7. [UI layout offset], temporarily only supports Frame layout fine-tuning
-7. [Insert local variable], split single-line compound calls, change the execution order
-7. [Modify local variable], simulate manual encapsulation call, variable name association type (support nesting), advantages:
+7. [Rename method], the basic functions are renamed similar to other tools, without too much description, advantages: 
+   1. Can set 'parameter label', support hidden parameter label and trailing closure usage
+   1. Identification of inheritance chain nested types, support for (class, struct, enum) static methods and instance methods, and optional chains, etc.
+8. [Insert method], encapsulate the return value of the original method and use the context to call additional associated methods, saying goodbye to "garbage code"
+8. [Modification method], use overloading technology to modify the function prototype and call the modified parameter
+8. [Modify font] , randomly fine-tune the font used in the project, and identify macros
+8. [Modify color], randomly shift the color of UI controls in the project
+8. [UI layout offset], temporarily only supports Frame layout fine-tuning
+8. [Insert local variable], split single-line compound calls, change the execution order
+8. [Modify local variable], simulate manual encapsulation call, variable name association type (support nesting), advantages:
    1. The value of the local variable remains unchanged during operation. For details, see the summary table of supported types.
    1. Can be executed multiple times, the index x2 increases
 15. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
@@ -200,12 +202,10 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.4.0 (2022.09.03)
+### v6.4.1 (2022.09.11)
 
-1. Added Swift [Modify xib, storyboard], automatic plug-in view, and modified internal structure properties
-1. Strengthen Swift [modify color], expand the scope of application
-1. Repair Swift [rename property], rename method], it is possible to refer to the Swift [OC framework under the mixed project, there is a problem that the parent class extension protocol of the structure and enumeration cannot be recognized
-1. Optimize some UI labels
+1. Enhance Swift [rename method], add the function of renaming 'parameter label', support hidden parameter label and trailing closure usage
+1. Optimize interaction, environment check and cache cleaning guide prompts
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
