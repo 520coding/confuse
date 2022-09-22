@@ -6,6 +6,5 @@ pod 'Masonry'
 pod 'YYModel'
 pod 'YYCategories'
 pod 'MJExtension'
-pod 'SDAutoLayout'
 
 end

@@ -7,69 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		710338C3250A0BD40061F6BE /* TestFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 710338C2250A0BD40061F6BE /* TestFunction.m */; };
-		710338C6250A0BE20061F6BE /* TestFunctionSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = 710338C5250A0BE20061F6BE /* TestFunctionSuper.m */; };
-		710338C9250A12AF0061F6BE /* TestFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 710338C8250A12AF0061F6BE /* TestFunctionViewController.m */; };
-		710338CD250A12C70061F6BE /* TestFunctionXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 710338CB250A12C70061F6BE /* TestFunctionXibViewController.m */; };
-		710338CE250A12C70061F6BE /* TestFunctionXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 710338CC250A12C70061F6BE /* TestFunctionXibViewController.xib */; };
-		710571902550097F003FFB3C /* TestImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7105718F2550097F003FFB3C /* TestImageViewController.m */; };
-		7105719325500A06003FFB3C /* TestImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7105719225500A06003FFB3C /* TestImageModel.m */; };
-		710C94F225F0954700D57528 /* SwiftSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C94F125F0954700D57528 /* SwiftSelector.swift */; };
-		710F33CF2514731F00AEE75E /* TestPropertyXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 710F33CE2514731F00AEE75E /* TestPropertyXibView.xib */; };
 		71138F3825E8959C0048CF46 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71138F3425E88E9D0048CF46 /* Stopwatch.swift */; };
 		71138F3925E8959C0048CF46 /* Test2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71138F3325E88E9D0048CF46 /* Test2ViewController.swift */; };
-		711D8F3C25ED17D000B29F70 /* TestFunctionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 711D8F3B25ED17D000B29F70 /* TestFunctionView.m */; };
-		7121E179252F6B5F00F19EE0 /* TestFunctionOtherTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7121E178252F6B5F00F19EE0 /* TestFunctionOtherTemplate.m */; };
-		71290BEA251EE2AF00B3229A /* TestSuperMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 71290BE9251EE2AF00B3229A /* TestSuperMacro.m */; };
-		71290BED251EE38D00B3229A /* TestOtherMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 71290BEC251EE38D00B3229A /* TestOtherMacro.m */; };
-		712AC5A82680956F00B3916F /* SwiftImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712AC5A72680956F00B3916F /* SwiftImage.swift */; };
-		712AC5AC268095E400B3916F /* SwiftImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712AC5AB268095E400B3916F /* SwiftImageModel.swift */; };
-		713619522546A46A00124111 /* TestPropertyOther_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 713619512546A46A00124111 /* TestPropertyOther_VC.m */; };
 		71555B932553E8AE00DD8246 /* CppStudent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71555B912553E8AD00DD8246 /* CppStudent.cpp */; };
-		7163B6F22739E59D00ED16D4 /* FrameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7163B6F12739E59D00ED16D4 /* FrameViewController.swift */; };
-		7163B6F52739E82200ED16D4 /* LayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7163B6F42739E82200ED16D4 /* LayoutViewController.swift */; };
-		716A28F4255F80D800187F30 /* TestClassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A28F2255F80D800187F30 /* TestClassCell.m */; };
-		716A28F5255F80D800187F30 /* TestClassCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 716A28F3255F80D800187F30 /* TestClassCell.xib */; };
-		7187FF2125DF6E3800DA13BE /* SwiftProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187FF2025DF6E3800DA13BE /* SwiftProperty.swift */; };
-		7187FF2425DF6F5A00DA13BE /* SwiftBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187FF2325DF6F5A00DA13BE /* SwiftBase.swift */; };
-		7187FF2725DF711200DA13BE /* SwiftProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7187FF2625DF711200DA13BE /* SwiftProtocol.swift */; };
 		718B95042508930900C1DB77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95032508930900C1DB77 /* AppDelegate.m */; };
 		718B950A2508930900C1DB77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95092508930900C1DB77 /* ViewController.m */; };
 		718B950D2508930900C1DB77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 718B950B2508930900C1DB77 /* Main.storyboard */; };
 		718B950F2508930A00C1DB77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718B950E2508930A00C1DB77 /* Assets.xcassets */; };
 		718B95122508930A00C1DB77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 718B95102508930A00C1DB77 /* LaunchScreen.storyboard */; };
 		718B95152508930A00C1DB77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95142508930A00C1DB77 /* main.m */; };
-		718B951F2508982700C1DB77 /* TestProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B951D2508982700C1DB77 /* TestProperty.m */; };
-		718B95202508982700C1DB77 /* TestPropertySuper.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B951B2508982600C1DB77 /* TestPropertySuper.m */; };
-		718B95242508988D00C1DB77 /* Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95232508988D00C1DB77 /* Base.m */; };
-		718B95282508AA2000C1DB77 /* TestPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95272508AA2000C1DB77 /* TestPropertyViewController.m */; };
-		718B952C2508AA6B00C1DB77 /* TestPropertyXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B952A2508AA6B00C1DB77 /* TestPropertyXibViewController.m */; };
-		718B952D2508AA6B00C1DB77 /* TestPropertyXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 718B952B2508AA6B00C1DB77 /* TestPropertyXibViewController.xib */; };
 		718B95322508AF0C00C1DB77 /* MBHudDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95312508AF0B00C1DB77 /* MBHudDemoViewController.m */; };
 		718B95362508AFD200C1DB77 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95352508AFD200C1DB77 /* MBProgressHUD.m */; };
-		718B953D2508D29700C1DB77 /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B953C2508D29700C1DB77 /* UserInfoModel.m */; };
-		718B95402508D3A500C1DB77 /* SCSelectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B953F2508D3A500C1DB77 /* SCSelectModel.m */; };
-		718B95432508D3E200C1DB77 /* SCOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95422508D3E200C1DB77 /* SCOrder.m */; };
-		718B95462508D43900C1DB77 /* User_M.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B95452508D43900C1DB77 /* User_M.m */; };
-		718B954C2508D66E00C1DB77 /* Dog_M.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B954B2508D66E00C1DB77 /* Dog_M.m */; };
-		718D2A2225D2E10B003BC9B1 /* SwiftFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718D2A2125D2E10B003BC9B1 /* SwiftFunction.swift */; };
 		718DDBA2257F3387002B35AE /* confuse_sdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 718DDBA0257F3387002B35AE /* confuse_sdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		718DDBA5257F3387002B35AE /* confuse_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718DDB9E257F3387002B35AE /* confuse_sdk.framework */; };
 		718DDBA6257F3387002B35AE /* confuse_sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 718DDB9E257F3387002B35AE /* confuse_sdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		718F1753258C98210001E6F0 /* CppClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 718F1751258C98210001E6F0 /* CppClass.cpp */; };
 		719313E0255A786A004A7802 /* CppViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 719313DF255A786A004A7802 /* CppViewController.mm */; };
-		719F39FD25F10B7F00740D1C /* SwiftDeinitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719F39FC25F10B7F00740D1C /* SwiftDeinitialization.swift */; };
-		719F3A0225F10C9E00740D1C /* SwiftInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719F3A0125F10C9E00740D1C /* SwiftInitialization.swift */; };
-		71A6044C261AB7D1004579C2 /* SwiftEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A6044B261AB7D1004579C2 /* SwiftEnum.swift */; };
-		71A6044F261AC8C7004579C2 /* SwiftClassStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A6044E261AC8C7004579C2 /* SwiftClassStruct.swift */; };
-		71ABC63F2520286D006BB37E /* TestGlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABC63E2520286D006BB37E /* TestGlobalVariable.m */; };
-		71ABC6422520288A006BB37E /* TestSuperGlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABC6412520288A006BB37E /* TestSuperGlobalVariable.m */; };
-		71ABC645252028AB006BB37E /* TestOtherGlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABC644252028AB006BB37E /* TestOtherGlobalVariable.m */; };
-		71ABC64825203222006BB37E /* TestGlobalVariableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABC64725203222006BB37E /* TestGlobalVariableTableViewController.m */; };
 		71CC72EA253841BC0094F702 /* TestDiscardSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CC72E9253841BC0094F702 /* TestDiscardSuper.m */; };
-		71CFBF14263E3F4C005080D4 /* SwiftString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CFBF13263E3F4C005080D4 /* SwiftString.swift */; };
 		71D1870125C28C7B003D3115 /* Swift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D1870025C28C7B003D3115 /* Swift.storyboard */; };
-		71D1870525C28D99003D3115 /* SwiftTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D1870425C28D99003D3115 /* SwiftTableViewController.swift */; };
 		71D708D1255A38E4002CCDA8 /* Cpp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D708D0255A38E3002CCDA8 /* Cpp.storyboard */; };
 		71D708D6255A4679002CCDA8 /* Oc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D708D4255A3DCD002CCDA8 /* Oc.storyboard */; };
 		71D708DB255A726B002CCDA8 /* CppFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71D708D9255A726B002CCDA8 /* CppFunction.cpp */; };
@@ -79,37 +34,11 @@
 		71D7C8D225DD140A00012BAC /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7C8CC25DD140900012BAC /* ProductsTableViewController.swift */; };
 		71D7C8D325DD140A00012BAC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7C8CD25DD140900012BAC /* ContactViewController.swift */; };
 		71D7C8D425DD140A00012BAC /* SwiftTest1.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D7C8CE25DD140A00012BAC /* SwiftTest1.xcassets */; };
-		71D8A39325316E60001A4920 /* TestLocalVariableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D8A39225316E60001A4920 /* TestLocalVariableTableViewController.m */; };
-		71D8A39625316E84001A4920 /* TestLocalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D8A39525316E84001A4920 /* TestLocalVariable.m */; };
-		71DA2CB5256381C1006CD4BE /* 加.png in Resources */ = {isa = PBXBuildFile; fileRef = 71DA2CB3256381C0006CD4BE /* 加.png */; };
-		71DA2CB6256381C1006CD4BE /* 减.png in Resources */ = {isa = PBXBuildFile; fileRef = 71DA2CB4256381C1006CD4BE /* 减.png */; };
-		71DA2CB72563EB22006CD4BE /* number1.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E3607125629739003C3264 /* number1.png */; };
-		71DA2CB82563EB22006CD4BE /* number2.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E3607225629739003C3264 /* number2.png */; };
-		71DA2CB92563EB22006CD4BE /* number3.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E3607025629739003C3264 /* number3.png */; };
-		71E3340B251D97A700FB695A /* TestMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E3340A251D97A700FB695A /* TestMacro.m */; };
-		71E3606725627278003C3264 /* 锤石.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E3606625627278003C3264 /* 锤石.png */; };
-		71E3606925627289003C3264 /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E3606825627289003C3264 /* image.xcassets */; };
-		71E3606B2562851F003C3264 /* Lee Sin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71E3606A25628365003C3264 /* Lee Sin.jpg */; };
 		71E3606D25628A3F003C3264 /* discard.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E3606C25628A3F003C3264 /* discard.xcassets */; };
 		71E3606F25628AD5003C3264 /* yjs.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E3606E25628AD5003C3264 /* yjs.png */; };
-		71E3993825E7935F000570F6 /* SwiftNestedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3993725E7935F000570F6 /* SwiftNestedTypes.swift */; };
-		71E5944B2578C992007739FC /* TestXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71E5944A2578C992007739FC /* TestXibView.xib */; };
 		71F526EC25903B6C00650E3A /* CppTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71F526EA25903B6C00650E3A /* CppTemplate.cpp */; };
-		980BB6CD255D1B3400404641 /* TestClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980BB6CA255D1B3400404641 /* TestClassController.m */; };
-		980BB6CE255D1B3400404641 /* TestClassController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980BB6CB255D1B3400404641 /* TestClassController.xib */; };
-		98742DE8252073B9003B608D /* TestFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 98742DE7252073B9003B608D /* TestFont.m */; };
-		989FAFE92546A4EB009D0BB5 /* TestLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 989FAFE32546A4EB009D0BB5 /* TestLayoutCell.m */; };
-		989FAFEA2546A4EB009D0BB5 /* TestLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989FAFE52546A4EB009D0BB5 /* TestLayoutViewController.m */; };
-		989FAFEB2546A4EB009D0BB5 /* TestLayoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989FAFE62546A4EB009D0BB5 /* TestLayoutTableViewController.m */; };
-		98BE2D1B259B19080005A66D /* TestLocalizableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BE2D19259B19080005A66D /* TestLocalizableViewController.m */; };
 		98BE2D23259B19E10005A66D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98BE2D25259B19E10005A66D /* Localizable.strings */; };
 		98BE2D2D259B200E0005A66D /* File.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98BE2D2F259B200E0005A66D /* File.strings */; };
-		98BEEE1C2521FED700D085DF /* TestColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BEEE1B2521FED700D085DF /* TestColor.m */; };
-		98C382AB253439EF004FA4D5 /* TestFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C382AA253439EF004FA4D5 /* TestFrame.m */; };
-		98C382B525358AE6004FA4D5 /* TestMasonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C382B425358AE6004FA4D5 /* TestMasonry.m */; };
-		98D4D86A2510B98500E3B9AB /* TestXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D4D8682510B98500E3B9AB /* TestXibViewController.m */; };
-		98D4D86B2510B98500E3B9AB /* TestXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98D4D8692510B98500E3B9AB /* TestXibViewController.xib */; };
-		98D4D86E2510B9A500E3B9AB /* TestXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D4D86D2510B9A500E3B9AB /* TestXibView.m */; };
 		AA47C427D0DA2DFA108DF18B /* libPods-confuse_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D9F27051B5588CBE9C68AE /* libPods-confuse_test.a */; };
 /* End PBXBuildFile section */
 
@@ -139,47 +68,12 @@
 
 /* Begin PBXFileReference section */
 		2AF48204C6D0BEB24FE13CBB /* Pods-confuse_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-confuse_test.release.xcconfig"; path = "Target Support Files/Pods-confuse_test/Pods-confuse_test.release.xcconfig"; sourceTree = "<group>"; };
-		710338C1250A0BD40061F6BE /* TestFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFunction.h; sourceTree = "<group>"; };
-		710338C2250A0BD40061F6BE /* TestFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFunction.m; sourceTree = "<group>"; };
-		710338C4250A0BE20061F6BE /* TestFunctionSuper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFunctionSuper.h; sourceTree = "<group>"; };
-		710338C5250A0BE20061F6BE /* TestFunctionSuper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFunctionSuper.m; sourceTree = "<group>"; };
-		710338C7250A12AF0061F6BE /* TestFunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFunctionViewController.h; sourceTree = "<group>"; };
-		710338C8250A12AF0061F6BE /* TestFunctionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFunctionViewController.m; sourceTree = "<group>"; };
-		710338CA250A12C70061F6BE /* TestFunctionXibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFunctionXibViewController.h; sourceTree = "<group>"; };
-		710338CB250A12C70061F6BE /* TestFunctionXibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFunctionXibViewController.m; sourceTree = "<group>"; };
-		710338CC250A12C70061F6BE /* TestFunctionXibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestFunctionXibViewController.xib; sourceTree = "<group>"; };
-		7105718E2550097F003FFB3C /* TestImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestImageViewController.h; sourceTree = "<group>"; };
-		7105718F2550097F003FFB3C /* TestImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestImageViewController.m; sourceTree = "<group>"; };
-		7105719125500A06003FFB3C /* TestImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestImageModel.h; sourceTree = "<group>"; };
-		7105719225500A06003FFB3C /* TestImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestImageModel.m; sourceTree = "<group>"; };
 		710751CB255D40F100D7F0B7 /* CppNamespace.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CppNamespace.hpp; sourceTree = "<group>"; };
-		710C94F125F0954700D57528 /* SwiftSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSelector.swift; sourceTree = "<group>"; };
-		710F33CE2514731F00AEE75E /* TestPropertyXibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestPropertyXibView.xib; sourceTree = "<group>"; };
 		71138F3325E88E9D0048CF46 /* Test2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2ViewController.swift; sourceTree = "<group>"; };
 		71138F3425E88E9D0048CF46 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
-		711D8F3A25ED17D000B29F70 /* TestFunctionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFunctionView.h; sourceTree = "<group>"; };
-		711D8F3B25ED17D000B29F70 /* TestFunctionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFunctionView.m; sourceTree = "<group>"; };
-		7121E177252F6B5F00F19EE0 /* TestFunctionOtherTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFunctionOtherTemplate.h; sourceTree = "<group>"; };
-		7121E178252F6B5F00F19EE0 /* TestFunctionOtherTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFunctionOtherTemplate.m; sourceTree = "<group>"; };
-		71290BE8251EE2AF00B3229A /* TestSuperMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSuperMacro.h; sourceTree = "<group>"; };
-		71290BE9251EE2AF00B3229A /* TestSuperMacro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSuperMacro.m; sourceTree = "<group>"; };
-		71290BEB251EE38D00B3229A /* TestOtherMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestOtherMacro.h; sourceTree = "<group>"; };
-		71290BEC251EE38D00B3229A /* TestOtherMacro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOtherMacro.m; sourceTree = "<group>"; };
-		712AC5A72680956F00B3916F /* SwiftImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftImage.swift; sourceTree = "<group>"; };
-		712AC5AB268095E400B3916F /* SwiftImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftImageModel.swift; sourceTree = "<group>"; };
-		713619502546A46A00124111 /* TestPropertyOther_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPropertyOther_VC.h; sourceTree = "<group>"; };
-		713619512546A46A00124111 /* TestPropertyOther_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPropertyOther_VC.m; sourceTree = "<group>"; };
 		71555B912553E8AD00DD8246 /* CppStudent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CppStudent.cpp; sourceTree = "<group>"; };
 		71555B922553E8AE00DD8246 /* CppStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppStudent.h; sourceTree = "<group>"; };
 		71555B942553E90F00DD8246 /* CppHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppHeader.h; sourceTree = "<group>"; };
-		7163B6F12739E59D00ED16D4 /* FrameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameViewController.swift; sourceTree = "<group>"; };
-		7163B6F42739E82200ED16D4 /* LayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutViewController.swift; sourceTree = "<group>"; };
-		716A28F1255F80D800187F30 /* TestClassCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestClassCell.h; sourceTree = "<group>"; };
-		716A28F2255F80D800187F30 /* TestClassCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestClassCell.m; sourceTree = "<group>"; };
-		716A28F3255F80D800187F30 /* TestClassCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestClassCell.xib; sourceTree = "<group>"; };
-		7187FF2025DF6E3800DA13BE /* SwiftProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProperty.swift; sourceTree = "<group>"; };
-		7187FF2325DF6F5A00DA13BE /* SwiftBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBase.swift; sourceTree = "<group>"; };
-		7187FF2625DF711200DA13BE /* SwiftProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProtocol.swift; sourceTree = "<group>"; };
 		718B94FF2508930900C1DB77 /* confuse_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = confuse_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718B95022508930900C1DB77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		718B95032508930900C1DB77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -190,33 +84,11 @@
 		718B95112508930A00C1DB77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		718B95132508930A00C1DB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		718B95142508930A00C1DB77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		718B951B2508982600C1DB77 /* TestPropertySuper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPropertySuper.m; sourceTree = "<group>"; };
-		718B951C2508982600C1DB77 /* TestPropertySuper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPropertySuper.h; sourceTree = "<group>"; };
-		718B951D2508982700C1DB77 /* TestProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestProperty.m; sourceTree = "<group>"; };
-		718B951E2508982700C1DB77 /* TestProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestProperty.h; sourceTree = "<group>"; };
-		718B95222508988D00C1DB77 /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
-		718B95232508988D00C1DB77 /* Base.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Base.m; sourceTree = "<group>"; };
 		718B95252508992300C1DB77 /* confuse_test.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = confuse_test.pch; sourceTree = "<group>"; };
-		718B95262508AA2000C1DB77 /* TestPropertyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPropertyViewController.h; sourceTree = "<group>"; };
-		718B95272508AA2000C1DB77 /* TestPropertyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPropertyViewController.m; sourceTree = "<group>"; };
-		718B95292508AA6B00C1DB77 /* TestPropertyXibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPropertyXibViewController.h; sourceTree = "<group>"; };
-		718B952A2508AA6B00C1DB77 /* TestPropertyXibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPropertyXibViewController.m; sourceTree = "<group>"; };
-		718B952B2508AA6B00C1DB77 /* TestPropertyXibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestPropertyXibViewController.xib; sourceTree = "<group>"; };
 		718B95302508AF0B00C1DB77 /* MBHudDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBHudDemoViewController.h; sourceTree = "<group>"; };
 		718B95312508AF0B00C1DB77 /* MBHudDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBHudDemoViewController.m; sourceTree = "<group>"; };
 		718B95342508AFD200C1DB77 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		718B95352508AFD200C1DB77 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		718B953B2508D29700C1DB77 /* UserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoModel.h; sourceTree = "<group>"; };
-		718B953C2508D29700C1DB77 /* UserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
-		718B953E2508D3A500C1DB77 /* SCSelectModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSelectModel.h; sourceTree = "<group>"; };
-		718B953F2508D3A500C1DB77 /* SCSelectModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSelectModel.m; sourceTree = "<group>"; };
-		718B95412508D3E200C1DB77 /* SCOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCOrder.h; sourceTree = "<group>"; };
-		718B95422508D3E200C1DB77 /* SCOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCOrder.m; sourceTree = "<group>"; };
-		718B95442508D43900C1DB77 /* User_M.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User_M.h; sourceTree = "<group>"; };
-		718B95452508D43900C1DB77 /* User_M.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User_M.m; sourceTree = "<group>"; };
-		718B954A2508D66E00C1DB77 /* Dog_M.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog_M.h; sourceTree = "<group>"; };
-		718B954B2508D66E00C1DB77 /* Dog_M.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog_M.m; sourceTree = "<group>"; };
-		718D2A2125D2E10B003BC9B1 /* SwiftFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFunction.swift; sourceTree = "<group>"; };
 		718DDB9E257F3387002B35AE /* confuse_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = confuse_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		718DDBA0257F3387002B35AE /* confuse_sdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = confuse_sdk.h; sourceTree = "<group>"; };
 		718DDBA1257F3387002B35AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -224,24 +96,10 @@
 		718F1752258C98210001E6F0 /* CppClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CppClass.hpp; sourceTree = "<group>"; };
 		719313DE255A786A004A7802 /* CppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CppViewController.h; sourceTree = "<group>"; };
 		719313DF255A786A004A7802 /* CppViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CppViewController.mm; sourceTree = "<group>"; };
-		719F39FC25F10B7F00740D1C /* SwiftDeinitialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDeinitialization.swift; sourceTree = "<group>"; };
-		719F3A0125F10C9E00740D1C /* SwiftInitialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftInitialization.swift; sourceTree = "<group>"; };
-		71A6044B261AB7D1004579C2 /* SwiftEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftEnum.swift; sourceTree = "<group>"; };
-		71A6044E261AC8C7004579C2 /* SwiftClassStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftClassStruct.swift; sourceTree = "<group>"; };
-		71ABC63D2520286D006BB37E /* TestGlobalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestGlobalVariable.h; sourceTree = "<group>"; };
-		71ABC63E2520286D006BB37E /* TestGlobalVariable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGlobalVariable.m; sourceTree = "<group>"; };
-		71ABC6402520288A006BB37E /* TestSuperGlobalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSuperGlobalVariable.h; sourceTree = "<group>"; };
-		71ABC6412520288A006BB37E /* TestSuperGlobalVariable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSuperGlobalVariable.m; sourceTree = "<group>"; };
-		71ABC643252028AB006BB37E /* TestOtherGlobalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestOtherGlobalVariable.h; sourceTree = "<group>"; };
-		71ABC644252028AB006BB37E /* TestOtherGlobalVariable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOtherGlobalVariable.m; sourceTree = "<group>"; };
-		71ABC64625203222006BB37E /* TestGlobalVariableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestGlobalVariableTableViewController.h; sourceTree = "<group>"; };
-		71ABC64725203222006BB37E /* TestGlobalVariableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGlobalVariableTableViewController.m; sourceTree = "<group>"; };
 		71CC72E8253841BC0094F702 /* TestDiscardSuper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDiscardSuper.h; sourceTree = "<group>"; };
 		71CC72E9253841BC0094F702 /* TestDiscardSuper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDiscardSuper.m; sourceTree = "<group>"; };
-		71CFBF13263E3F4C005080D4 /* SwiftString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftString.swift; sourceTree = "<group>"; };
 		71D1870025C28C7B003D3115 /* Swift.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Swift.storyboard; sourceTree = "<group>"; };
 		71D1870325C28D98003D3115 /* confuse_test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "confuse_test-Bridging-Header.h"; sourceTree = "<group>"; };
-		71D1870425C28D99003D3115 /* SwiftTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTableViewController.swift; sourceTree = "<group>"; };
 		71D708D0255A38E3002CCDA8 /* Cpp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cpp.storyboard; sourceTree = "<group>"; };
 		71D708D5255A3DCD002CCDA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Oc.storyboard; sourceTree = "<group>"; };
 		71D708D9255A726B002CCDA8 /* CppFunction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CppFunction.cpp; sourceTree = "<group>"; };
@@ -253,54 +111,14 @@
 		71D7C8CC25DD140900012BAC /* ProductsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
 		71D7C8CD25DD140900012BAC /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		71D7C8CE25DD140A00012BAC /* SwiftTest1.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SwiftTest1.xcassets; sourceTree = "<group>"; };
-		71D8A39125316E60001A4920 /* TestLocalVariableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLocalVariableTableViewController.h; sourceTree = "<group>"; };
-		71D8A39225316E60001A4920 /* TestLocalVariableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLocalVariableTableViewController.m; sourceTree = "<group>"; };
-		71D8A39425316E84001A4920 /* TestLocalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLocalVariable.h; sourceTree = "<group>"; };
-		71D8A39525316E84001A4920 /* TestLocalVariable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLocalVariable.m; sourceTree = "<group>"; };
-		71DA2CB3256381C0006CD4BE /* 加.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "加.png"; sourceTree = "<group>"; };
-		71DA2CB4256381C1006CD4BE /* 减.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "减.png"; sourceTree = "<group>"; };
-		71E33409251D97A700FB695A /* TestMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMacro.h; sourceTree = "<group>"; };
-		71E3340A251D97A700FB695A /* TestMacro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMacro.m; sourceTree = "<group>"; };
-		71E3606625627278003C3264 /* 锤石.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "锤石.png"; sourceTree = "<group>"; };
-		71E3606825627289003C3264 /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
-		71E3606A25628365003C3264 /* Lee Sin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lee Sin.jpg"; sourceTree = "<group>"; };
 		71E3606C25628A3F003C3264 /* discard.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = discard.xcassets; sourceTree = "<group>"; };
 		71E3606E25628AD5003C3264 /* yjs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yjs.png; sourceTree = "<group>"; };
-		71E3607025629739003C3264 /* number3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number3.png; sourceTree = "<group>"; };
-		71E3607125629739003C3264 /* number1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number1.png; sourceTree = "<group>"; };
-		71E3607225629739003C3264 /* number2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number2.png; sourceTree = "<group>"; };
-		71E3993725E7935F000570F6 /* SwiftNestedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNestedTypes.swift; sourceTree = "<group>"; };
-		71E5944A2578C992007739FC /* TestXibView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestXibView.xib; sourceTree = "<group>"; };
 		71F526EA25903B6C00650E3A /* CppTemplate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CppTemplate.cpp; sourceTree = "<group>"; };
 		71F526EB25903B6C00650E3A /* CppTemplate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CppTemplate.hpp; sourceTree = "<group>"; };
-		980BB6CA255D1B3400404641 /* TestClassController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClassController.m; sourceTree = "<group>"; };
-		980BB6CB255D1B3400404641 /* TestClassController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestClassController.xib; sourceTree = "<group>"; };
-		980BB6CC255D1B3400404641 /* TestClassController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClassController.h; sourceTree = "<group>"; };
-		98742DE6252073B9003B608D /* TestFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFont.h; sourceTree = "<group>"; };
-		98742DE7252073B9003B608D /* TestFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFont.m; sourceTree = "<group>"; };
-		989FAFE32546A4EB009D0BB5 /* TestLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLayoutCell.m; sourceTree = "<group>"; };
-		989FAFE42546A4EB009D0BB5 /* TestLayoutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLayoutTableViewController.h; sourceTree = "<group>"; };
-		989FAFE52546A4EB009D0BB5 /* TestLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLayoutViewController.m; sourceTree = "<group>"; };
-		989FAFE62546A4EB009D0BB5 /* TestLayoutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLayoutTableViewController.m; sourceTree = "<group>"; };
-		989FAFE72546A4EB009D0BB5 /* TestLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLayoutCell.h; sourceTree = "<group>"; };
-		989FAFE82546A4EB009D0BB5 /* TestLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLayoutViewController.h; sourceTree = "<group>"; };
-		98BE2D19259B19080005A66D /* TestLocalizableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLocalizableViewController.m; sourceTree = "<group>"; };
-		98BE2D1A259B19080005A66D /* TestLocalizableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLocalizableViewController.h; sourceTree = "<group>"; };
 		98BE2D24259B19E10005A66D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		98BE2D27259B19E50005A66D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		98BE2D2E259B200E0005A66D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/File.strings"; sourceTree = "<group>"; };
 		98BE2D30259B20120005A66D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/File.strings; sourceTree = "<group>"; };
-		98BEEE1A2521FED700D085DF /* TestColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestColor.h; sourceTree = "<group>"; };
-		98BEEE1B2521FED700D085DF /* TestColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestColor.m; sourceTree = "<group>"; };
-		98C382A9253439EF004FA4D5 /* TestFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFrame.h; sourceTree = "<group>"; };
-		98C382AA253439EF004FA4D5 /* TestFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFrame.m; sourceTree = "<group>"; };
-		98C382B325358AE6004FA4D5 /* TestMasonry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMasonry.h; sourceTree = "<group>"; };
-		98C382B425358AE6004FA4D5 /* TestMasonry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMasonry.m; sourceTree = "<group>"; };
-		98D4D8672510B98500E3B9AB /* TestXibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestXibViewController.h; sourceTree = "<group>"; };
-		98D4D8682510B98500E3B9AB /* TestXibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestXibViewController.m; sourceTree = "<group>"; };
-		98D4D8692510B98500E3B9AB /* TestXibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestXibViewController.xib; sourceTree = "<group>"; };
-		98D4D86C2510B9A500E3B9AB /* TestXibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestXibView.h; sourceTree = "<group>"; };
-		98D4D86D2510B9A500E3B9AB /* TestXibView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestXibView.m; sourceTree = "<group>"; };
 		C64A7D6FA27ABCE6E68B41CD /* Pods-confuse_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-confuse_test.debug.xcconfig"; path = "Target Support Files/Pods-confuse_test/Pods-confuse_test.debug.xcconfig"; sourceTree = "<group>"; };
 		F7D9F27051B5588CBE9C68AE /* libPods-confuse_test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-confuse_test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -325,53 +143,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		710338C0250A0B7F0061F6BE /* function */ = {
-			isa = PBXGroup;
-			children = (
-				711D8F3A25ED17D000B29F70 /* TestFunctionView.h */,
-				711D8F3B25ED17D000B29F70 /* TestFunctionView.m */,
-				710338C1250A0BD40061F6BE /* TestFunction.h */,
-				710338C2250A0BD40061F6BE /* TestFunction.m */,
-				710338C4250A0BE20061F6BE /* TestFunctionSuper.h */,
-				710338C5250A0BE20061F6BE /* TestFunctionSuper.m */,
-				710338C7250A12AF0061F6BE /* TestFunctionViewController.h */,
-				710338C8250A12AF0061F6BE /* TestFunctionViewController.m */,
-				7121E177252F6B5F00F19EE0 /* TestFunctionOtherTemplate.h */,
-				7121E178252F6B5F00F19EE0 /* TestFunctionOtherTemplate.m */,
-				710338CA250A12C70061F6BE /* TestFunctionXibViewController.h */,
-				710338CB250A12C70061F6BE /* TestFunctionXibViewController.m */,
-				710338CC250A12C70061F6BE /* TestFunctionXibViewController.xib */,
-			);
-			path = function;
-			sourceTree = "<group>";
-		};
-		7105718C25500949003FFB3C /* source */ = {
-			isa = PBXGroup;
-			children = (
-				7105718D2550095F003FFB3C /* image */,
-			);
-			path = source;
-			sourceTree = "<group>";
-		};
-		7105718D2550095F003FFB3C /* image */ = {
-			isa = PBXGroup;
-			children = (
-				71DA2CB3256381C0006CD4BE /* 加.png */,
-				71DA2CB4256381C1006CD4BE /* 减.png */,
-				71E3607125629739003C3264 /* number1.png */,
-				71E3607225629739003C3264 /* number2.png */,
-				71E3607025629739003C3264 /* number3.png */,
-				71E3606825627289003C3264 /* image.xcassets */,
-				71E3606625627278003C3264 /* 锤石.png */,
-				71E3606A25628365003C3264 /* Lee Sin.jpg */,
-				7105718E2550097F003FFB3C /* TestImageViewController.h */,
-				7105718F2550097F003FFB3C /* TestImageViewController.m */,
-				7105719125500A06003FFB3C /* TestImageModel.h */,
-				7105719225500A06003FFB3C /* TestImageModel.m */,
-			);
-			path = image;
-			sourceTree = "<group>";
-		};
 		710751C7255D3FE000D7F0B7 /* namespace */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,62 +160,13 @@
 			path = test2;
 			sourceTree = "<group>";
 		};
-		712AC5A52680955E00B3916F /* source */ = {
-			isa = PBXGroup;
-			children = (
-				712AC5A62680956300B3916F /* image */,
-			);
-			path = source;
-			sourceTree = "<group>";
-		};
-		712AC5A62680956300B3916F /* image */ = {
-			isa = PBXGroup;
-			children = (
-				712AC5A72680956F00B3916F /* SwiftImage.swift */,
-				712AC5AB268095E400B3916F /* SwiftImageModel.swift */,
-			);
-			path = image;
-			sourceTree = "<group>";
-		};
 		71555B102553D57300DD8246 /* oc */ = {
 			isa = PBXGroup;
 			children = (
 				71D708D4255A3DCD002CCDA8 /* Oc.storyboard */,
-				98BE2D18259B19080005A66D /* localizable */,
-				718B95332508AF2A00C1DB77 /* base */,
 				718B952F2508AEEC00C1DB77 /* third */,
-				980BB6C9255D1B3400404641 /* class */,
-				718B95212508982E00C1DB77 /* property */,
-				710338C0250A0B7F0061F6BE /* function */,
-				71555B122553D89F00DD8246 /* variable */,
-				98D4D8662510B96000E3B9AB /* xib */,
-				98742DE525207388003B608D /* font */,
-				98BEEE192521FEC600D085DF /* color */,
-				71555B112553D87F00DD8246 /* layout */,
-				7105718C25500949003FFB3C /* source */,
-				71E33408251D978500FB695A /* macro */,
-				718B953A2508D09B00C1DB77 /* Model */,
 			);
 			path = oc;
-			sourceTree = "<group>";
-		};
-		71555B112553D87F00DD8246 /* layout */ = {
-			isa = PBXGroup;
-			children = (
-				989FAFE22546A4EB009D0BB5 /* SDAutoLayout */,
-				98C382B225358ACA004FA4D5 /* masonry */,
-				98C382A8253439DB004FA4D5 /* frame */,
-			);
-			path = layout;
-			sourceTree = "<group>";
-		};
-		71555B122553D89F00DD8246 /* variable */ = {
-			isa = PBXGroup;
-			children = (
-				71D8A39025316E03001A4920 /* local */,
-				71ABC63C2520284C006BB37E /* global */,
-			);
-			path = variable;
 			sourceTree = "<group>";
 		};
 		71555B132553D91200DD8246 /* cpp */ = {
@@ -473,23 +195,6 @@
 				71555B912553E8AD00DD8246 /* CppStudent.cpp */,
 			);
 			path = function;
-			sourceTree = "<group>";
-		};
-		7163B6EF2739E4CC00ED16D4 /* layout */ = {
-			isa = PBXGroup;
-			children = (
-				7163B6F02739E4DE00ED16D4 /* frame */,
-				7163B6F42739E82200ED16D4 /* LayoutViewController.swift */,
-			);
-			path = layout;
-			sourceTree = "<group>";
-		};
-		7163B6F02739E4DE00ED16D4 /* frame */ = {
-			isa = PBXGroup;
-			children = (
-				7163B6F12739E59D00ED16D4 /* FrameViewController.swift */,
-			);
-			path = frame;
 			sourceTree = "<group>";
 		};
 		718B94F62508930800C1DB77 = {
@@ -535,25 +240,6 @@
 			path = confuse_test;
 			sourceTree = "<group>";
 		};
-		718B95212508982E00C1DB77 /* property */ = {
-			isa = PBXGroup;
-			children = (
-				718B951E2508982700C1DB77 /* TestProperty.h */,
-				718B951D2508982700C1DB77 /* TestProperty.m */,
-				718B951C2508982600C1DB77 /* TestPropertySuper.h */,
-				718B951B2508982600C1DB77 /* TestPropertySuper.m */,
-				718B95262508AA2000C1DB77 /* TestPropertyViewController.h */,
-				718B95272508AA2000C1DB77 /* TestPropertyViewController.m */,
-				713619502546A46A00124111 /* TestPropertyOther_VC.h */,
-				713619512546A46A00124111 /* TestPropertyOther_VC.m */,
-				718B95292508AA6B00C1DB77 /* TestPropertyXibViewController.h */,
-				718B952A2508AA6B00C1DB77 /* TestPropertyXibViewController.m */,
-				718B952B2508AA6B00C1DB77 /* TestPropertyXibViewController.xib */,
-				710F33CE2514731F00AEE75E /* TestPropertyXibView.xib */,
-			);
-			path = property;
-			sourceTree = "<group>";
-		};
 		718B952E2508ADA800C1DB77 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
@@ -576,32 +262,6 @@
 			path = third;
 			sourceTree = "<group>";
 		};
-		718B95332508AF2A00C1DB77 /* base */ = {
-			isa = PBXGroup;
-			children = (
-				718B95222508988D00C1DB77 /* Base.h */,
-				718B95232508988D00C1DB77 /* Base.m */,
-			);
-			path = base;
-			sourceTree = "<group>";
-		};
-		718B953A2508D09B00C1DB77 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				718B953B2508D29700C1DB77 /* UserInfoModel.h */,
-				718B953C2508D29700C1DB77 /* UserInfoModel.m */,
-				718B953E2508D3A500C1DB77 /* SCSelectModel.h */,
-				718B953F2508D3A500C1DB77 /* SCSelectModel.m */,
-				718B95412508D3E200C1DB77 /* SCOrder.h */,
-				718B95422508D3E200C1DB77 /* SCOrder.m */,
-				718B95442508D43900C1DB77 /* User_M.h */,
-				718B95452508D43900C1DB77 /* User_M.m */,
-				718B954A2508D66E00C1DB77 /* Dog_M.h */,
-				718B954B2508D66E00C1DB77 /* Dog_M.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		718DDB9F257F3387002B35AE /* confuse_sdk */ = {
 			isa = PBXGroup;
 			children = (
@@ -620,41 +280,12 @@
 			path = class;
 			sourceTree = "<group>";
 		};
-		71ABC63C2520284C006BB37E /* global */ = {
-			isa = PBXGroup;
-			children = (
-				71ABC63D2520286D006BB37E /* TestGlobalVariable.h */,
-				71ABC63E2520286D006BB37E /* TestGlobalVariable.m */,
-				71ABC6402520288A006BB37E /* TestSuperGlobalVariable.h */,
-				71ABC6412520288A006BB37E /* TestSuperGlobalVariable.m */,
-				71ABC643252028AB006BB37E /* TestOtherGlobalVariable.h */,
-				71ABC644252028AB006BB37E /* TestOtherGlobalVariable.m */,
-				71ABC64625203222006BB37E /* TestGlobalVariableTableViewController.h */,
-				71ABC64725203222006BB37E /* TestGlobalVariableTableViewController.m */,
-			);
-			path = global;
-			sourceTree = "<group>";
-		};
 		71D186FF25C28C1E003D3115 /* swift */ = {
 			isa = PBXGroup;
 			children = (
-				7163B6EF2739E4CC00ED16D4 /* layout */,
-				712AC5A52680955E00B3916F /* source */,
 				71D7C8D925DD16CC00012BAC /* test1 */,
 				71138F3025E88E3C0048CF46 /* test2 */,
 				71D1870025C28C7B003D3115 /* Swift.storyboard */,
-				7187FF2325DF6F5A00DA13BE /* SwiftBase.swift */,
-				71D1870425C28D99003D3115 /* SwiftTableViewController.swift */,
-				71CFBF13263E3F4C005080D4 /* SwiftString.swift */,
-				7187FF2025DF6E3800DA13BE /* SwiftProperty.swift */,
-				71A6044B261AB7D1004579C2 /* SwiftEnum.swift */,
-				71A6044E261AC8C7004579C2 /* SwiftClassStruct.swift */,
-				718D2A2125D2E10B003BC9B1 /* SwiftFunction.swift */,
-				710C94F125F0954700D57528 /* SwiftSelector.swift */,
-				7187FF2625DF711200DA13BE /* SwiftProtocol.swift */,
-				71E3993725E7935F000570F6 /* SwiftNestedTypes.swift */,
-				719F3A0125F10C9E00740D1C /* SwiftInitialization.swift */,
-				719F39FC25F10B7F00740D1C /* SwiftDeinitialization.swift */,
 				71D1870325C28D98003D3115 /* confuse_test-Bridging-Header.h */,
 			);
 			path = swift;
@@ -672,30 +303,6 @@
 			path = test1;
 			sourceTree = "<group>";
 		};
-		71D8A39025316E03001A4920 /* local */ = {
-			isa = PBXGroup;
-			children = (
-				71D8A39425316E84001A4920 /* TestLocalVariable.h */,
-				71D8A39525316E84001A4920 /* TestLocalVariable.m */,
-				71D8A39125316E60001A4920 /* TestLocalVariableTableViewController.h */,
-				71D8A39225316E60001A4920 /* TestLocalVariableTableViewController.m */,
-			);
-			path = local;
-			sourceTree = "<group>";
-		};
-		71E33408251D978500FB695A /* macro */ = {
-			isa = PBXGroup;
-			children = (
-				71E33409251D97A700FB695A /* TestMacro.h */,
-				71E3340A251D97A700FB695A /* TestMacro.m */,
-				71290BE8251EE2AF00B3229A /* TestSuperMacro.h */,
-				71290BE9251EE2AF00B3229A /* TestSuperMacro.m */,
-				71290BEB251EE38D00B3229A /* TestOtherMacro.h */,
-				71290BEC251EE38D00B3229A /* TestOtherMacro.m */,
-			);
-			path = macro;
-			sourceTree = "<group>";
-		};
 		71F526E925903B4900650E3A /* template */ = {
 			isa = PBXGroup;
 			children = (
@@ -711,90 +318,6 @@
 				F7D9F27051B5588CBE9C68AE /* libPods-confuse_test.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		980BB6C9255D1B3400404641 /* class */ = {
-			isa = PBXGroup;
-			children = (
-				716A28F1255F80D800187F30 /* TestClassCell.h */,
-				716A28F2255F80D800187F30 /* TestClassCell.m */,
-				716A28F3255F80D800187F30 /* TestClassCell.xib */,
-				980BB6CC255D1B3400404641 /* TestClassController.h */,
-				980BB6CA255D1B3400404641 /* TestClassController.m */,
-				980BB6CB255D1B3400404641 /* TestClassController.xib */,
-			);
-			path = class;
-			sourceTree = "<group>";
-		};
-		98742DE525207388003B608D /* font */ = {
-			isa = PBXGroup;
-			children = (
-				98742DE6252073B9003B608D /* TestFont.h */,
-				98742DE7252073B9003B608D /* TestFont.m */,
-			);
-			path = font;
-			sourceTree = "<group>";
-		};
-		989FAFE22546A4EB009D0BB5 /* SDAutoLayout */ = {
-			isa = PBXGroup;
-			children = (
-				989FAFE32546A4EB009D0BB5 /* TestLayoutCell.m */,
-				989FAFE52546A4EB009D0BB5 /* TestLayoutViewController.m */,
-				989FAFE42546A4EB009D0BB5 /* TestLayoutTableViewController.h */,
-				989FAFE62546A4EB009D0BB5 /* TestLayoutTableViewController.m */,
-				989FAFE72546A4EB009D0BB5 /* TestLayoutCell.h */,
-				989FAFE82546A4EB009D0BB5 /* TestLayoutViewController.h */,
-			);
-			path = SDAutoLayout;
-			sourceTree = "<group>";
-		};
-		98BE2D18259B19080005A66D /* localizable */ = {
-			isa = PBXGroup;
-			children = (
-				98BE2D1A259B19080005A66D /* TestLocalizableViewController.h */,
-				98BE2D19259B19080005A66D /* TestLocalizableViewController.m */,
-			);
-			path = localizable;
-			sourceTree = "<group>";
-		};
-		98BEEE192521FEC600D085DF /* color */ = {
-			isa = PBXGroup;
-			children = (
-				98BEEE1A2521FED700D085DF /* TestColor.h */,
-				98BEEE1B2521FED700D085DF /* TestColor.m */,
-			);
-			path = color;
-			sourceTree = "<group>";
-		};
-		98C382A8253439DB004FA4D5 /* frame */ = {
-			isa = PBXGroup;
-			children = (
-				98C382A9253439EF004FA4D5 /* TestFrame.h */,
-				98C382AA253439EF004FA4D5 /* TestFrame.m */,
-			);
-			path = frame;
-			sourceTree = "<group>";
-		};
-		98C382B225358ACA004FA4D5 /* masonry */ = {
-			isa = PBXGroup;
-			children = (
-				98C382B325358AE6004FA4D5 /* TestMasonry.h */,
-				98C382B425358AE6004FA4D5 /* TestMasonry.m */,
-			);
-			path = masonry;
-			sourceTree = "<group>";
-		};
-		98D4D8662510B96000E3B9AB /* xib */ = {
-			isa = PBXGroup;
-			children = (
-				98D4D8672510B98500E3B9AB /* TestXibViewController.h */,
-				98D4D8682510B98500E3B9AB /* TestXibViewController.m */,
-				98D4D8692510B98500E3B9AB /* TestXibViewController.xib */,
-				98D4D86C2510B9A500E3B9AB /* TestXibView.h */,
-				98D4D86D2510B9A500E3B9AB /* TestXibView.m */,
-				71E5944A2578C992007739FC /* TestXibView.xib */,
-			);
-			path = xib;
 			sourceTree = "<group>";
 		};
 		C93ED7FE990E683212DB2E88 /* Pods */ = {
@@ -902,31 +425,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				71E3606F25628AD5003C3264 /* yjs.png in Resources */,
-				980BB6CE255D1B3400404641 /* TestClassController.xib in Resources */,
 				71D708D1255A38E4002CCDA8 /* Cpp.storyboard in Resources */,
-				71DA2CB72563EB22006CD4BE /* number1.png in Resources */,
 				71D7C8D425DD140A00012BAC /* SwiftTest1.xcassets in Resources */,
 				98BE2D2D259B200E0005A66D /* File.strings in Resources */,
-				71DA2CB5256381C1006CD4BE /* 加.png in Resources */,
-				71E5944B2578C992007739FC /* TestXibView.xib in Resources */,
 				718B95122508930A00C1DB77 /* LaunchScreen.storyboard in Resources */,
 				718B950F2508930A00C1DB77 /* Assets.xcassets in Resources */,
 				71D1870125C28C7B003D3115 /* Swift.storyboard in Resources */,
-				98D4D86B2510B98500E3B9AB /* TestXibViewController.xib in Resources */,
-				716A28F5255F80D800187F30 /* TestClassCell.xib in Resources */,
 				71D708D6255A4679002CCDA8 /* Oc.storyboard in Resources */,
-				71DA2CB6256381C1006CD4BE /* 减.png in Resources */,
 				98BE2D23259B19E10005A66D /* Localizable.strings in Resources */,
-				71E3606925627289003C3264 /* image.xcassets in Resources */,
-				71DA2CB92563EB22006CD4BE /* number3.png in Resources */,
 				718B950D2508930900C1DB77 /* Main.storyboard in Resources */,
-				71E3606725627278003C3264 /* 锤石.png in Resources */,
-				71DA2CB82563EB22006CD4BE /* number2.png in Resources */,
 				71E3606D25628A3F003C3264 /* discard.xcassets in Resources */,
-				718B952D2508AA6B00C1DB77 /* TestPropertyXibViewController.xib in Resources */,
-				710F33CF2514731F00AEE75E /* TestPropertyXibView.xib in Resources */,
-				71E3606B2562851F003C3264 /* Lee Sin.jpg in Resources */,
-				710338CE250A12C70061F6BE /* TestFunctionXibViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -969,80 +477,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98C382AB253439EF004FA4D5 /* TestFrame.m in Sources */,
-				989FAFEB2546A4EB009D0BB5 /* TestLayoutTableViewController.m in Sources */,
-				71ABC6422520288A006BB37E /* TestSuperGlobalVariable.m in Sources */,
 				718B950A2508930900C1DB77 /* ViewController.m in Sources */,
-				718B952C2508AA6B00C1DB77 /* TestPropertyXibViewController.m in Sources */,
 				71F526EC25903B6C00650E3A /* CppTemplate.cpp in Sources */,
 				718B95042508930900C1DB77 /* AppDelegate.m in Sources */,
-				71290BEA251EE2AF00B3229A /* TestSuperMacro.m in Sources */,
-				718B95202508982700C1DB77 /* TestPropertySuper.m in Sources */,
 				71CC72EA253841BC0094F702 /* TestDiscardSuper.m in Sources */,
-				718B95282508AA2000C1DB77 /* TestPropertyViewController.m in Sources */,
 				71D708DB255A726B002CCDA8 /* CppFunction.cpp in Sources */,
-				7187FF2725DF711200DA13BE /* SwiftProtocol.swift in Sources */,
 				718B95152508930A00C1DB77 /* main.m in Sources */,
-				71ABC645252028AB006BB37E /* TestOtherGlobalVariable.m in Sources */,
-				98BEEE1C2521FED700D085DF /* TestColor.m in Sources */,
-				71E3340B251D97A700FB695A /* TestMacro.m in Sources */,
-				98D4D86E2510B9A500E3B9AB /* TestXibView.m in Sources */,
-				71D8A39625316E84001A4920 /* TestLocalVariable.m in Sources */,
-				710338C9250A12AF0061F6BE /* TestFunctionViewController.m in Sources */,
 				71D7C8D125DD140A00012BAC /* ProductViewController.swift in Sources */,
 				71D708DE255A7333002CCDA8 /* CppBase.cpp in Sources */,
-				713619522546A46A00124111 /* TestPropertyOther_VC.m in Sources */,
-				71ABC63F2520286D006BB37E /* TestGlobalVariable.m in Sources */,
-				716A28F4255F80D800187F30 /* TestClassCell.m in Sources */,
-				7187FF2425DF6F5A00DA13BE /* SwiftBase.swift in Sources */,
-				71E3993825E7935F000570F6 /* SwiftNestedTypes.swift in Sources */,
-				718B95462508D43900C1DB77 /* User_M.m in Sources */,
-				719F39FD25F10B7F00740D1C /* SwiftDeinitialization.swift in Sources */,
-				98BE2D1B259B19080005A66D /* TestLocalizableViewController.m in Sources */,
-				710338C6250A0BE20061F6BE /* TestFunctionSuper.m in Sources */,
 				71555B932553E8AE00DD8246 /* CppStudent.cpp in Sources */,
-				710571902550097F003FFB3C /* TestImageViewController.m in Sources */,
-				711D8F3C25ED17D000B29F70 /* TestFunctionView.m in Sources */,
-				7163B6F52739E82200ED16D4 /* LayoutViewController.swift in Sources */,
-				980BB6CD255D1B3400404641 /* TestClassController.m in Sources */,
-				718B953D2508D29700C1DB77 /* UserInfoModel.m in Sources */,
 				71D7C8D225DD140A00012BAC /* ProductsTableViewController.swift in Sources */,
-				7163B6F22739E59D00ED16D4 /* FrameViewController.swift in Sources */,
 				718B95322508AF0C00C1DB77 /* MBHudDemoViewController.m in Sources */,
-				989FAFE92546A4EB009D0BB5 /* TestLayoutCell.m in Sources */,
 				718F1753258C98210001E6F0 /* CppClass.cpp in Sources */,
-				718B954C2508D66E00C1DB77 /* Dog_M.m in Sources */,
-				7105719325500A06003FFB3C /* TestImageModel.m in Sources */,
 				71138F3825E8959C0048CF46 /* Stopwatch.swift in Sources */,
-				71290BED251EE38D00B3229A /* TestOtherMacro.m in Sources */,
-				98D4D86A2510B98500E3B9AB /* TestXibViewController.m in Sources */,
-				719F3A0225F10C9E00740D1C /* SwiftInitialization.swift in Sources */,
-				71CFBF14263E3F4C005080D4 /* SwiftString.swift in Sources */,
-				71D1870525C28D99003D3115 /* SwiftTableViewController.swift in Sources */,
 				718B95362508AFD200C1DB77 /* MBProgressHUD.m in Sources */,
-				712AC5AC268095E400B3916F /* SwiftImageModel.swift in Sources */,
-				718B95402508D3A500C1DB77 /* SCSelectModel.m in Sources */,
-				712AC5A82680956F00B3916F /* SwiftImage.swift in Sources */,
-				71A6044F261AC8C7004579C2 /* SwiftClassStruct.swift in Sources */,
-				98C382B525358AE6004FA4D5 /* TestMasonry.m in Sources */,
-				718B95432508D3E200C1DB77 /* SCOrder.m in Sources */,
-				718B951F2508982700C1DB77 /* TestProperty.m in Sources */,
-				71D8A39325316E60001A4920 /* TestLocalVariableTableViewController.m in Sources */,
 				71D7C8D325DD140A00012BAC /* ContactViewController.swift in Sources */,
-				7121E179252F6B5F00F19EE0 /* TestFunctionOtherTemplate.m in Sources */,
-				989FAFEA2546A4EB009D0BB5 /* TestLayoutViewController.m in Sources */,
-				71ABC64825203222006BB37E /* TestGlobalVariableTableViewController.m in Sources */,
-				718B95242508988D00C1DB77 /* Base.m in Sources */,
-				718D2A2225D2E10B003BC9B1 /* SwiftFunction.swift in Sources */,
 				71D7C8D025DD140A00012BAC /* Product.swift in Sources */,
-				71A6044C261AB7D1004579C2 /* SwiftEnum.swift in Sources */,
-				98742DE8252073B9003B608D /* TestFont.m in Sources */,
 				71138F3925E8959C0048CF46 /* Test2ViewController.swift in Sources */,
-				710338CD250A12C70061F6BE /* TestFunctionXibViewController.m in Sources */,
 				719313E0255A786A004A7802 /* CppViewController.mm in Sources */,
-				7187FF2125DF6E3800DA13BE /* SwiftProperty.swift in Sources */,
-				710338C3250A0BD40061F6BE /* TestFunction.m in Sources */,
-				710C94F225F0954700D57528 /* SwiftSelector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1236,7 +688,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				GCC_INPUT_FILETYPE = automatic;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = confuse_test/confuse_test.pch;
 				INFOPLIST_FILE = confuse_test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -1244,13 +696,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.4.0;
+				MARKETING_VERSION = 6.4.2;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-l\"MJExtension\"",
 					"-l\"Masonry\"",
-					"-l\"SDAutoLayout\"",
 					"-l\"YYCategories\"",
 					"-l\"YYModel\"",
 					"-l\"z\"",
@@ -1294,7 +745,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				GCC_INPUT_FILETYPE = automatic;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = confuse_test/confuse_test.pch;
 				INFOPLIST_FILE = confuse_test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -1302,13 +753,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.4.0;
+				MARKETING_VERSION = 6.4.2;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-l\"MJExtension\"",
 					"-l\"Masonry\"",
-					"-l\"SDAutoLayout\"",
 					"-l\"YYCategories\"",
 					"-l\"YYModel\"",
 					"-l\"z\"",
@@ -1359,7 +809,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.4.0;
+				MARKETING_VERSION = 6.4.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-sdk";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1387,7 +837,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.4.0;
+				MARKETING_VERSION = 6.4.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-sdk";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

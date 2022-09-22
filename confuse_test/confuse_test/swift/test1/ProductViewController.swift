@@ -28,7 +28,7 @@ class ProductViewController: UIViewController {
 
         let btn = UIButton(type: .custom)
         btn.frame = CGRect(x: 40, y: 50, width: 40, height: 40)
-        btn.backgroundColor = UIColor.red
+        btn.backgroundColor = UIColor.clear
         view.addSubview(btn)
 //        btn.addTarget(self, action: Selector("leftAction"), for: .touchUpInside)
         btn.addTarget(self, action: #selector(leftAction), for: .touchUpInside)
@@ -75,14 +75,14 @@ class ProductViewController: UIViewController {
     }
 }
 
-func scaleTo(number: CGFloat) -> CGFloat {
+func pictureFloat(color number: CGFloat) -> CGFloat {
    return number
 }
 
 extension UILabel {
     func scaleFontSize() {
         self.font = UIFont(name: self.font.fontName,
-                           size: scaleTo(number: self.font.pointSize))
+                           size: pictureFloat(color: self.font.pointSize))
     }
 }
 

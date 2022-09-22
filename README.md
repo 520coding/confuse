@@ -36,8 +36,13 @@ In fact, to identify the pros and cons of a tool, just look at the following poi
 > For example: + (void)init ;-(void)reloadData; basically can be changed, who else can do it? "
 
 7. Normal projects (or third-party libraries) basically do not report errors after obfuscation (except for some individual [improper grammars](https://www.yuque.com/docs/share/4a87ec96-80fe-4d25-873d-93cb428b3e15#iz0Zi) that cause confusion and report errors)
+<a name="KDqM3"></a>
+#### Test engineering description:
+> [confuse_test](https://github.com/520coding/confuse/tree/master/confuse_test): Contains oc, c++, swift and some third-party use cases to quickly verify the overall effect
+> [confuse_test_oc](https://github.com/520coding/confuse/tree/master/confuse_test_oc): only contains oc, which is convenient to verify the effect of each function
+> [confuse_test_swift](https://github.com/520coding/confuse/tree/master/confuse_test_swift): only contains swift, the code comes from[ Apple's official example code](https://docs.swift.org/swift-book/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0), which is convenient to verify the effect of each function
 
-You are also welcome to use different tools to confuse the test project [**confuse_test**](https://github.com/520coding/confuse/tree/master/confuse_test) or third-party open source library projects to compare the effects.
+The source code can be modified arbitrarily to verify the actual effect. It is recommended to use different tools to confuse the above test projects or third-party open source library projects to compare the effects.
 <a name="426215c094f184f34acdb12593ddb1fc"></a>
 # Features
 confuse is a [confusion tool](https://github.com/520coding/confuse) that simulates manual development as much as possible, imitates some functions of Xcode, and avoids machine core 4.3, 2.1, 2.3.1, account surveys, etc.<br />Goal: **Simulate manually modify everything that can be changed** , which is why this tool only has a blacklist and no whitelist<br />The detailed functions are as follows (the basic functions are not described, see other tools for details):
@@ -118,7 +123,7 @@ The following functions are supported:
 14. [UI layout offset], support frame, Mansonry, SDAutoLayout common layout fine-tuning
 14. [Insert file], generate other files (Combined with network, storage, and MVC to ensure that the code has high relevance and practical significance), automatic high-related calls in the project ; **Note:** (Under the project root path, a folder of " **other_xxx_file** " will be generated , and the sub-option **Target** controls Import method, if it is empty, you need to manually import, just drag the generated folder into the project; otherwise, automatically import)
 14. [Insert text], Generate json, txt, plist and other common text files, automatic high-related calls in the project  ; **note:** (under the project root path, a folder of " **other_xxx_text** " will be generated , and the generated files will be **automatically imported** )
-14. [Rename class], the class name is not limited (for example: my, My), you can specify to add a prefix, advantages:
+14. [Rename class], the class name is not limited (for example: my, My), you can specify to add a prefix, support class|struct|protocol，advantages:
     1. Smart noun substitution
     1. Can be set to'rename files with the same name'
     1. You can set'rename similar strings', (ignore | equal | include) three modes
@@ -162,6 +167,7 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
    1. Identification of inheritance chain nested types, support for (class, struct, enum) static methods and instance methods, and optional chains, etc.
 8. [Insert method], encapsulate the return value of the original method and use the context to call additional associated methods, saying goodbye to "garbage code"
 8. [Modification method], use overloading technology to modify the function prototype and call the modified parameter
+8. [Rename global variables], smart noun substitution
 8. [Modify font] , randomly fine-tune the font used in the project, and identify macros
 8. [Modify color], randomly shift the color of UI controls in the project
 8. [UI layout offset], temporarily only supports Frame layout fine-tuning
@@ -169,13 +175,13 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
 8. [Modify local variable], simulate manual encapsulation call, variable name association type (support nesting), advantages:
    1. The value of the local variable remains unchanged during operation. For details, see the summary table of supported types.
    1. Can be executed multiple times, the index x2 increases
-15. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
+16. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
     1. Set the'minimum length' filter
     1. You can also set the "effective number" to use together
-16. [Modify xib, storyboard], automatically insert the view, and modify the internal structure properties
-16. [Insert file], close to actual development (combined with network, storage, MVC, xib, etc., to ensure that the code has high relevance and practical significance), and strengthen contextual relevance. Can set 'file name prefix', set 'Target import' in the same way as OC
-16. [Insert text], generate common text files such as json, txt, plist, etc., and automatically high-related calls in the project (introduction of attributes, initialization, automatic destruction, etc.). Note: (under the project root path, the folder "other_xxx_text" will be generated, and the generated files will be automatically imported)
-16. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class, struct, enum, protocol
+17. [Modify xib, storyboard], automatically insert the view, and modify the internal structure properties
+17. [Insert file], close to actual development (combined with network, storage, MVC, xib, etc., to ensure that the code has high relevance and practical significance), and strengthen contextual relevance. Can set 'file name prefix', set 'Target import' in the same way as OC
+17. [Insert text], generate common text files such as json, txt, plist, etc., and automatically high-related calls in the project (introduction of attributes, initialization, automatic destruction, etc.). Note: (under the project root path, the folder "other_xxx_text" will be generated, and the generated files will be automatically imported)
+17. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class|struct|enum|protocol
     1. Can be set to'rename files with the same name'
     1. 'Prefix' can be set
 > Note: At present, the Swift and OC mixed project, the OC calling Swift part will not be processed for the time being, and will be optimized in the future.
@@ -198,14 +204,16 @@ Update iterations will be carried out in the following order
    1. Fast obfuscation mode
 <a name="af444a353c9380bc9aa8aec067937316"></a>
 # Graphic introduction
-Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8) in detail before use<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/213807/1623167266244-4978d5ed-0b2c-42b5-80c4-1b44e4ff7f96.png#clientId=u4ef53c93-4376-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=877&id=ufbdd65fd&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1754&originWidth=2532&originalType=binary&ratio=2&rotation=0&showTitle=false&size=443560&status=done&style=none&taskId=ue83d9a90-392f-4558-9b46-f06320d2c45&title=&width=1266)
+Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8) in detail before use<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/213807/1623167266244-4978d5ed-0b2c-42b5-80c4-1b44e4ff7f96.png#clientId=u4ef53c93-4376-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=paste&height=877&id=ufbdd65fd&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1754&originWidth=2532&originalType=binary&ratio=2&rotation=0&showTitle=false&size=443560&status=error&style=none&taskId=ue83d9a90-392f-4558-9b46-f06320d2c45&title=&width=1266)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.4.1 (2022.09.11)
+### v6.4.2 (2022.09.22)
 
-1. Enhance Swift [rename method], add the function of renaming 'parameter label', support hidden parameter label and trailing closure usage
-1. Optimize interaction, environment check and cache cleaning guide prompts
+1. Added Swift [rename global variable], smart noun replacement
+1. Strengthen OC [rename class], support protocols and structures
+1. Fix OC[insert attribute], .m may conflict with readonly and .h
+1. Optimized test cases, split into confuse_test, confuse_test_oc, confuse_test_swift for quick testing
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

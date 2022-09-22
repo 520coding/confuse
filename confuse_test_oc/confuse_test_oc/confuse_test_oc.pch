@@ -1,0 +1,25 @@
+//
+//  confuse_test_oc.pch
+//  confuse_test_oc
+//
+//  Created by yjs on 2020/9/9.
+//  Copyright © 2020 coding520. All rights reserved.
+//
+
+#ifndef confuse_test_oc_pch
+#define confuse_test_oc_pch
+
+#ifdef __OBJC__
+
+#import <Masonry.h>
+//#import <YYCategories.h>
+
+
+#endif
+
+#define Localizable(key)           NSLocalizedString(key, nil);
+#define LocalizableTable(key, tbl) NSLocalizedStringFromTable(key, tbl, nil);
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* confuse_test_oc_pch */

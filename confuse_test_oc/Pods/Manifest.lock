@@ -1,0 +1,34 @@
+PODS:
+  - Masonry (1.1.0)
+  - MJExtension (3.2.2)
+  - SDAutoLayout (2.2.1)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - Masonry
+  - MJExtension
+  - SDAutoLayout
+  - YYCategories
+  - YYModel
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - MJExtension
+    - SDAutoLayout
+    - YYCategories
+    - YYModel
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
+  SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 82b72044f2bbde5fc25b08bad99c1755b7875297
+
+COCOAPODS: 1.9.3

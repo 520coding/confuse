@@ -50,6 +50,9 @@ class ContactViewController: UIViewController {
                             alpha: 1)
         color = UIColor.init(red:12, green:  13, blue:  1, alpha: 1)
         color = UIColor.init(displayP3Red: 0.1, green: 0.2, blue: 0.33, alpha: 0.21)
+        color = UIColor(named: "Color-1")!
+        color = UIColor.init(named: "Color-2")!
+        color = #colorLiteral(red: 0, green: 0.9914394021, blue: 1, alpha: 1)
         print(color)
     }
     

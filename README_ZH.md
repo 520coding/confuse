@@ -36,8 +36,13 @@
 > 例如：+ (void)init;- (void)reloadData;基本能改，做到的有几个呢？”
 
 7. 正常项目（或者第三方库）混淆完基本不报错（除了一些个别[语法不严谨](https://www.yuque.com/docs/share/4a87ec96-80fe-4d25-873d-93cb428b3e15?#5sCql)造成混淆后报错）
+<a name="F1BbD"></a>
+#### 测试工程说明：
+> [confuse_test](https://github.com/520coding/confuse/tree/master/confuse_test)：包含oc、c++、swift及一些第三方用例，快速验证整体效果
+> [confuse_test_oc](https://github.com/520coding/confuse/tree/master/confuse_test_oc)：只包含oc，方便验证每个功能的效果
+> [confuse_test_swift](https://github.com/520coding/confuse/tree/master/confuse_test_swift)：只包含swift，代码来源于[Apple官方实例代码](https://docs.swift.org/swift-book/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0)，方便验证每个功能的效果
 
-也欢迎大家使用不同工具混淆测试工程[**confuse_test**](https://github.com/520coding/confuse/tree/master/confuse_test)或者第三方开源库项目，对比效果。
+可任意修改源码来验证实际效果，建议用不同工具混淆以上测试工程或者第三方开源库项目，对比效果。
 <a name="426215c094f184f34acdb12593ddb1fc"></a>
 # 功能
 confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能模拟人工开发，仿照Xcode部分功能，避免机核4.3、2.1、2.3.1、账号调查等。<br />目标：**模拟人工修改一切能改的地方**，这也是为什么本工具只有黑名单没有白名单的原因<br />详细功能如下（基本功能不做描述，详见其他工具）：
@@ -118,7 +123,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 14. [UI布局偏移]，支持Frame、Mansonry、SDAutoLayout常见布局微调
 14. [插入文件]，生成其它文件（结合网络、存储、MVC，保证代码具有高关联度和实际意义），项目中自动高关联调用；**注意：**(在项目根路径下，会生成"**other_xxx_file**"的文件夹，子选项**Target**控制导入方式，若为空，则需要手动导入，将生成的文件夹拖入工程即可；反之，自动导入）
 14. [插入文本]，生成json、txt、plist等常用文本文件，项目中自动高关联调用；**注意：**(在项目根路径下，会生成"**other_xxx_text**"的文件夹，生成的文件会**自动导入**）
-14. [重命名类]，类名不限制（例如：my、My），可指定添加前缀，优势：
+14. [重命名类]，类名不限制（例如：my、My），可指定添加前缀，支持class、struct、protocol，优势：
     1. 智能名词替换
     1. 可设置‘重命名同名文件’
     1. 可设置‘重命名相似字符串’，(忽略|相等|包含)三种设置
@@ -162,6 +167,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
    1. 识别继承链嵌套类型，支持（class、struct、enum）的静态方法和实例方法，及可选链等
 8. [插入方法]，封装原方法的返回值并利用上下文调用额外关联方法，告别“垃圾代码”
 8. [修改方法]，利用重载技术修改函数原型并调用修改形参
+8. [重命名全局变量]，智能名词替换
 8. [修改字体]，对项目中使用的字体随机微调
 8. [修改颜色]，对项目中UI控件颜色随机偏移
 8. [UI布局偏移]，暂时只支持Frame布局微调
@@ -169,13 +175,13 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 8. [修改局部变量]，模拟人工封装调用，变量名关联类型（支持嵌套），优势：
    1. 局部变量值运行时保持不变，详情见[支持类型汇总表](https://520coding.yuque.com/docs/share/cd70e83b-4ab4-40e5-b719-70f214e869c8)
    1. 可多次执行，指数x2递增
-15. [修改字符串]，识别单行、多行、字符串插值、及扩展字符串，改后由加密和拆分字符组等多种方式自由组合，并保留原有字符的注释，方便检查
+16. [修改字符串]，识别单行、多行、字符串插值、及扩展字符串，改后由加密和拆分字符组等多种方式自由组合，并保留原有字符的注释，方便检查
     1. 设置‘最少长度’过滤
     1. 也可设置‘有效个数’搭配使用
-16. [修改xib、storyboard]，自动插入视图，并修改内部结构属性
-16. [插入文件]，接近实际开发（结合网络、存储、MVC、xib等，保证代码具有高关联度和实际意义），强化上下文关联。可设置‘文件名前缀’，设置‘**Target**导入’方式和OC相同
-16. [插入文本]，生成json、txt、plist等常用文本文件，项目中自动高关联调用（引入属性、初始化、自动销毁等）。**注意：**(在项目根路径下，会生成"**other_xxx_text**"的文件夹，生成的文件会**自动导入**）
-16. [重命名类]，类名不限制（例如：my、My），识别嵌套类型及typealias，支持class、struct，enum、protocol
+17. [修改xib、storyboard]，自动插入视图，并修改内部结构属性
+17. [插入文件]，接近实际开发（结合网络、存储、MVC、xib等，保证代码具有高关联度和实际意义），强化上下文关联。可设置‘文件名前缀’，设置‘**Target**导入’方式和OC相同
+17. [插入文本]，生成json、txt、plist等常用文本文件，项目中自动高关联调用（引入属性、初始化、自动销毁等）。**注意：**(在项目根路径下，会生成"**other_xxx_text**"的文件夹，生成的文件会**自动导入**）
+17. [重命名类]，类名不限制（例如：my、My），识别嵌套类型及typealias，支持class、struct、enum、protocol
     1. 可设置‘重命名同名文件’
     1. 可设置‘前缀’
 > 注意：目前Swift和OC混编项目，OC调用Swift部分暂不处理，后续将优化。
@@ -201,11 +207,13 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#crop=0&crop=0&crop=1&crop=1&height=540&id=Ai791&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="TH1eR"></a>
-### v6.4.1（2022.09.11）
+<a name="BRhTZ"></a>
+### v6.4.2（2022.09.22）
 
-1. 强化Swift[重命名方法]，新增重命名‘参数标签’功能，支持隐藏参数标签和尾随闭包用法
-1. 优化交互，环境检查和缓存清理引导提示
+1. 新增Swift[重命名全局变量]，智能名词替换
+1. 强化OC[重命名类]，支持协议和结构体
+1. 修复OC[插入属性]，.m有可能出现readonly和.h冲突问题
+1. 优化测试用例，拆分为confuse_test、confuse_test_oc、confuse_test_swift方便快速测试
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
