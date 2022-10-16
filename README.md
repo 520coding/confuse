@@ -38,9 +38,9 @@ In fact, to identify the pros and cons of a tool, just look at the following poi
 7. Normal projects (or third-party libraries) basically do not report errors after obfuscation (except for some individual [improper grammars](https://www.yuque.com/docs/share/4a87ec96-80fe-4d25-873d-93cb428b3e15#iz0Zi) that cause confusion and report errors)
 <a name="KDqM3"></a>
 #### Test engineering description:
-> [confuse_test](https://github.com/520coding/confuse/tree/master/confuse_test): Contains oc, c++, swift and some third-party use cases to quickly verify the overall effect
-> [confuse_test_oc](https://github.com/520coding/confuse/tree/master/confuse_test_oc): only contains oc, which is convenient to verify the effect of each function
-> [confuse_test_swift](https://github.com/520coding/confuse/tree/master/confuse_test_swift): only contains swift, the code comes from[ Apple's official example code](https://docs.swift.org/swift-book/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0), which is convenient to verify the effect of each function
+> [confuse_test](https://github.com/520coding/confuse/tree/master/confuse_test): Contains oc, c++, swift and some third-party use cases to quickly verify the overall effect  
+> [confuse_test_oc](https://github.com/520coding/confuse/tree/master/confuse_test_oc): only contains oc, which is convenient to verify the effect of each function  
+> [confuse_test_swift](https://github.com/520coding/confuse/tree/master/confuse_test_swift): only contains swift, the code comes from[ Apple's official example code](https://docs.swift.org/swift-book/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0), which is convenient to verify the effect of each function  
 
 The source code can be modified arbitrarily to verify the actual effect. It is recommended to use different tools to confuse the above test projects or third-party open source library projects to compare the effects.
 <a name="426215c094f184f34acdb12593ddb1fc"></a>
@@ -209,14 +209,11 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.4.3 (2022.09.30)
+### v6.4.4 (2022.10.16)
 
-1. Enhance Swift [rename enum], support 'original value' setting, and refine the control range
-2. Fix Swift individual file parsing failure
-3. Fix Swift [rename class], there may be a problem of incorrectly changing nested types
-4. Fix Swift [insert local variable], there is no context connection after the enumeration abbreviation is split, resulting in a syntax error
-5. Fix the syntax error after other small probability of confusion in Swift
-6. Optimize interaction and update prompt information
+1. Strengthen Swift [modify string], add variable references, divide too much before integration (more reasonable and beautiful), the original string is displayed in the overall comment, which is easy to maintain
+2. Strengthen Swift [modification method], expand context modification capabilities
+3. Optimize OC and Swift's reference to multi-level attributes to simulate actual development
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

@@ -38,9 +38,9 @@
 7. 正常项目（或者第三方库）混淆完基本不报错（除了一些个别[语法不严谨](https://www.yuque.com/docs/share/4a87ec96-80fe-4d25-873d-93cb428b3e15?#5sCql)造成混淆后报错）
 <a name="F1BbD"></a>
 #### 测试工程说明：
-> [confuse_test](https://github.com/520coding/confuse/tree/master/confuse_test)：包含oc、c++、swift及一些第三方用例，快速验证整体效果
-> [confuse_test_oc](https://github.com/520coding/confuse/tree/master/confuse_test_oc)：只包含oc，方便验证每个功能的效果
-> [confuse_test_swift](https://github.com/520coding/confuse/tree/master/confuse_test_swift)：只包含swift，代码来源于[Apple官方实例代码](https://docs.swift.org/swift-book/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0)，方便验证每个功能的效果
+> [confuse_test](https://github.com/520coding/confuse/tree/master/confuse_test)：包含oc、c++、swift及一些第三方用例，快速验证整体效果  
+> [confuse_test_oc](https://github.com/520coding/confuse/tree/master/confuse_test_oc)：只包含oc，方便验证每个功能的效果  
+> [confuse_test_swift](https://github.com/520coding/confuse/tree/master/confuse_test_swift)：只包含swift，代码来源于[Apple官方实例代码](https://docs.swift.org/swift-book/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0)，方便验证每个功能的效果  
 
 可任意修改源码来验证实际效果，建议用不同工具混淆以上测试工程或者第三方开源库项目，对比效果。
 <a name="426215c094f184f34acdb12593ddb1fc"></a>
@@ -209,14 +209,11 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
 <a name="jHHqn"></a>
-### v6.4.3（2022.09.30）
+### v6.4.4（2022.10.16）
 
-1. 强化Swift[重命名枚举]，支持‘原始值’设置，细化控制范围
-2. 修复Swift个别文件解析失败
-3. 修复Swift[重命名类]，可能出现嵌套类型误改问题
-4. 修复Swift[插入局部变量]，枚举缩写情况拆分后没有上下文联系导致语法报错
-5. 修复Swift其他小概率出现混淆后语法错误
-6. 优化交互，更新提示信息
+1. 强化Swift[修改字符串]，新增变量引用，整合之前过多分割（更合理美观），原始字符串以整体注释集中展示，便于维护
+2. 强化Swift[修改方法]，扩充上下文修改能力
+3. 优化OC、Swift对多级属性的引用，模拟实际开发
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
