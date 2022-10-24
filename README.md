@@ -78,11 +78,12 @@ The following functions are supported:
 3. [Resource replacement], specify the resource folder that needs to be replaced before obfuscation , and automatically replace the file with the same name, which is convenient and quick
 4. [Remove comment], identify single-line, multi-line comments
 5. [Edit picture], quality modification, size shift, local pixel fine-tuning，RGBA offset，mode modification (support hot update)
-6. [Modify file attributes], such as creation time, access time, modification time
-7. [Modify item], no need to delete Cocoapods
+6. [Modify Lottie], simulate the real Lottie file structure, modify and expand the source file, basically does not affect the actual effect
+7. [Modify file attributes], such as creation time, access time, modification time
+8. [Modify item], no need to delete Cocoapods
    1. Can be set to'modify uuid', completely refurbished
    2. Customize the name of the'modify target', and the associated information will be updated synchronously
-8. Automatic source code backup
+9. Automatic source code backup
 <a name="279a46203c9fe475b30ffab43dad6dba"></a>
 ### Objective-C
 
@@ -209,11 +210,10 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.4.4 (2022.10.16)
+### v6.5.0 (2022.10.25)
 
-1. Strengthen Swift [modify string], add variable references, divide too much before integration (more reasonable and beautiful), the original string is displayed in the overall comment, which is easy to maintain
-2. Strengthen Swift [modification method], expand context modification capabilities
-3. Optimize OC and Swift's reference to multi-level attributes to simulate actual development
+1. Add [Modify Lottie], simulate the real Lottie file structure, modify and expand the source file, basically does not affect the actual effect
+2. Optimize OC, Swift [insert text], enrich the lottie file style, the results are consistent with the official style
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
