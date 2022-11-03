@@ -210,10 +210,10 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
 <a name="d12Pl"></a>
-### v6.5.0（2022.10.25）
+### v6.5.1（2022.11.03）
 
-1. 新增[修改Lottie]，模拟真实Lottie文件结构，修改和扩充源文件，基本不影响实际效果
-2. 优化OC、Swift[插入文本]，丰富lottie文件样式，结果与官方样式一致
+1. 强化OC[修改字符串]，扩充修改样式，增加变化
+2. 优化UI交互，简化配置全选、支持按语法模块区分隐藏
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

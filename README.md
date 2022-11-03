@@ -210,10 +210,10 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.5.0 (2022.10.25)
+### v6.5.1 (2022.11.03)
 
-1. Add [Modify Lottie], simulate the real Lottie file structure, modify and expand the source file, basically does not affect the actual effect
-2. Optimize OC, Swift [insert text], enrich the lottie file style, the results are consistent with the official style
+1. Strengthen OC [modify string], expand modification styles, and increase changes
+2. Optimize UI interaction, simplify configuration selection, support distinguishing and hiding according to grammar modules
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
