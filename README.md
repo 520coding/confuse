@@ -1,5 +1,5 @@
 <a name="tMJSz"></a>
-# ![](https://cdn.nlark.com/yuque/0/2020/png/213807/1606304234500-46a10b02-f83d-4996-99fc-ce092241ea7c.png#crop=0&crop=0&crop=1&crop=1&from=paste&height=200&id=v0ghq&margin=%5Bobject%20Object%5D&originHeight=200&originWidth=200&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=&width=200)
+# ![](https://cdn.nlark.com/yuque/0/2020/png/213807/1606304234500-46a10b02-f83d-4996-99fc-ce092241ea7c.png#averageHue=%23e9c2bf&crop=0&crop=0&crop=1&crop=1&from=paste&height=200&id=v0ghq&margin=%5Bobject%20Object%5D&originHeight=200&originWidth=200&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=&width=200)
 <a name="beqYw"></a>
 ### English | [中文](/README_ZH.md)
 <a name="wNymF"></a>
@@ -206,14 +206,13 @@ Update iterations will be carried out in the following order
    1. Fast obfuscation mode
 <a name="af444a353c9380bc9aa8aec067937316"></a>
 # Graphic introduction
-Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8) in detail before use<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/213807/1623167266244-4978d5ed-0b2c-42b5-80c4-1b44e4ff7f96.png#clientId=u4ef53c93-4376-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=paste&height=877&id=ufbdd65fd&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1754&originWidth=2532&originalType=binary&ratio=2&rotation=0&showTitle=false&size=443560&status=error&style=none&taskId=ue83d9a90-392f-4558-9b46-f06320d2c45&title=&width=1266)
+Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8) in detail before use<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/213807/1623167266244-4978d5ed-0b2c-42b5-80c4-1b44e4ff7f96.png#averageHue=%233a9b1d&clientId=u4ef53c93-4376-4&crop=0&crop=0&crop=1&crop=1&errorMessage=unknown%20error&from=paste&height=877&id=ufbdd65fd&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1754&originWidth=2532&originalType=binary&ratio=2&rotation=0&showTitle=false&size=443560&status=error&style=none&taskId=ue83d9a90-392f-4558-9b46-f06320d2c45&title=&width=1266)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.5.1 (2022.11.03)
+### v6.5.2 (2022.11.09)
 
-1. Strengthen OC [modify string], expand modification styles, and increase changes
-2. Optimize UI interaction, simplify configuration selection, support distinguishing and hiding according to grammar modules
+1. Adapt to Xcode14
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
