@@ -210,16 +210,10 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.5.3 (2022.11.22)
+### v6.5.4 (2022.11.29)
 
-1. Fix Swift [rename class], OC class error modification problem in mixed mode
-2. Fix Swift [rename attribute], OC with generic class in mixed mode, the modification is not the same problem
-3. Fix OC [rename attribute], [rename method], and modify the wrong position in special cases, such as model.model = model
-4. Fix OC [Insert Attribute], the problem of calling the wrong position in the case of some system macros
-5. Modify OC[modify string], single-step execution may cause naming conflicts
-6. Optimize OC [modify global variables], expand and modify styles
-7. Optimize OC's consideration of double underscores
-8. Optimize file editing knowledge recognition
+1. Strengthen OC [Insert Attributes], the attributes inserted in the classification adopt associated attributes, simulating the actual development
+2. Optimize APP prompt information
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
