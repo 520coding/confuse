@@ -96,6 +96,7 @@ The following functions are supported:
 3. [Rename property], support all types of @property , advantages:
    1. Identify grammar, identify type, inheritance relationship, **attribute name confusion and class name (including inheritance chain) association** , automatically identify system attributes
    2. File name Model suffix filtering can be set
+   3. 'Model mapping', automatically insert mapping relationship, match background data
 4. [Insert property], creation, assignment, and modification are all associated with existing types, smart noun replacement
    1. 'Percentage control'
    2. 'Model suffix' switch, purpose: to avoid model archiving or data transfer failure
@@ -210,10 +211,12 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.5.4 (2022.11.29)
+### v6.5.5 (2022.12.05)
 
-1. Strengthen OC [Insert Attributes], the attributes inserted in the classification adopt associated attributes, simulating the actual development
-2. Optimize APP prompt information
+1. Enhanced OC [Rename Attribute], added 'Model Mapping', and automatically inserted mappings were turned off (manually inserted mappings before being retained). Purpose: Changing the model attribute can also match the background data
+2. Optimize OC [insert attribute] to improve compatibility
+3. Fix OC [modify local variables], refer to multi-layer attributes without importing corresponding header files and refer to old attributes
+4. Fix Swift [rename method], when the protocol name is the same as the system name, the modification is out of sync with the protocol definition
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

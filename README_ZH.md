@@ -96,6 +96,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 3. [重命名属性]，支持@property的所有类型，优势：
    1. 识别语法，识别类型、继承关系，**属性名混淆和类名（包含继承链）关联**，自动识别系统属性
    2. 可设置文件名Model后缀过滤
+   3. ‘Model映射’，自动插入映射关系，匹配后台数据
 4. [插入属性]，创建、赋值、修改都关联已有类型，智能名词替换
    1. ‘百分比控制’
    2. ‘Model后缀’开关，目的：避免Model归档或者数据转模型失败
@@ -209,11 +210,13 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#averageHue=%239a6a2a&crop=0&crop=0&crop=1&crop=1&height=540&id=Ai791&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="QnnBF"></a>
-### v6.5.4（2022.11.29）
+<a name="uaWSC"></a>
+### v6.5.5（2022.12.05）
 
-1. 强化OC[插入属性]，分类中插入的属性采用关联属性，模拟实际开发
-2. 优化APP提示信息
+1. 强化OC[重命名属性]，新增‘Model映射’，自动插入映射关闭（保留之前手动插入映射）。目的：改了model属性也能匹配后台数据
+2. 优化OC[插入属性]，提高兼容性
+3. 修复OC[修改局部变量]，引用多层属性没有导入对应头文件和引用旧属性问题
+4. 修复Swift[重命名方法]，协议名和系统同名情况下，修改后和协议定义不同步问题
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
