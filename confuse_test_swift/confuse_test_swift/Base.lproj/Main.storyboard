@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1qZ-4x-5J8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1qZ-4x-5J8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -46,11 +46,11 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RMc-MB-beu">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Strings and Characters
+                                <string key="text">Strings and Characters
 
 A string is a series of characters, such as "hello, world" or "albatross". Swift strings are represented by the String type. The contents of a String can be accessed in various ways, including as a collection of Character values.
 
-Swift’s String and Character types provide a fast, Unicode-compliant way to work with text in your code. The syntax for string creation and manipulation is lightweight and readable, with a string literal syntax that’s similar to C. String concatenation is as simple as combining two strings with the + operator, and string mutability is managed by choosing between a constant or a variable, just like any other value in Swift. You can also use strings to insert constants, variables, literals, and expressions into longer strings, in a process known as string interpolation. This makes it easy to create custom string values for display, storage, and printing.</mutableString>
+Swift’s String and Character types provide a fast, Unicode-compliant way to work with text in your code. The syntax for string creation and manipulation is lightweight and readable, with a string literal syntax that’s similar to C. String concatenation is as simple as combining two strings with the + operator, and string mutability is managed by choosing between a constant or a variable, just like any other value in Swift. You can also use strings to insert constants, variables, literals, and expressions into longer strings, in a process known as string interpolation. This makes it easy to create custom string values for display, storage, and printing.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -81,8 +81,8 @@ Swift’s String and Character types provide a fast, Unicode-compliant way to wo
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d75-It-XRx">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <mutableString key="text">A deinitializer is called immediately before a class instance is deallocated. You write deinitializers with the deinit keyword, similar to how initializers are written with the init keyword. Deinitializers are only available on class types.
+                                <rect key="frame" x="0.0" y="92" width="414" height="721"/>
+                                <string key="text">A deinitializer is called immediately before a class instance is deallocated. You write deinitializers with the deinit keyword, similar to how initializers are written with the init keyword. Deinitializers are only available on class types.
 
 How Deinitialization Works
 
@@ -92,7 +92,7 @@ Class definitions can have at most one deinitializer per class. The deinitialize
 
 deinit {
     // perform the deinitialization
-}</mutableString>
+}</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -122,9 +122,9 @@ deinit {
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Bo-ve-QPU">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="721"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Enumerations are often created to support a specific class or structure’s functionality. Similarly, it can be convenient to define utility classes and structures purely for use within the context of a more complex type. To accomplish this, Swift enables you to define nested types, whereby you nest supporting enumerations, classes, and structures within the definition of the type they support.</mutableString>
+                                <string key="text">Enumerations are often created to support a specific class or structure’s functionality. Similarly, it can be convenient to define utility classes and structures purely for use within the context of a more complex type. To accomplish this, Swift enables you to define nested types, whereby you nest supporting enumerations, classes, and structures within the definition of the type they support.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -184,7 +184,7 @@ deinit {
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="gKf-wI-kLG">
-                                <rect key="frame" x="0.0" y="88" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVO-tB-Gfs">
                                         <rect key="frame" x="0.0" y="0.0" width="192" height="30"/>
@@ -205,7 +205,7 @@ deinit {
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZXA-QC-ojA">
-                                <rect key="frame" x="0.0" y="118" width="414" height="695"/>
+                                <rect key="frame" x="0.0" y="122" width="414" height="691"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Methods are functions that are associated with a particular type. Classes, structures, and enumerations can all define instance methods, which encapsulate specific tasks and functionality for working with an instance of a given type. Classes, structures, and enumerations can also define type methods, which are associated with the type itself. Type methods are similar to class methods in Objective-C.</string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -243,9 +243,9 @@ deinit {
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YsR-uy-2DR">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="721"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">An enumeration defines a common type for a group of related values and enables you to work with those values in a type-safe way within your code.
+                                <string key="text">An enumeration defines a common type for a group of related values and enables you to work with those values in a type-safe way within your code.
 
 If you are familiar with C, you will know that C enumerations assign related names to a set of integer values. Enumerations in Swift are much more flexible, and don’t have to provide a value for each case of the enumeration. If a value (known as a raw value) is provided for each enumeration case, the value can be a string, a character, or a value of any integer or floating-point type.
 
@@ -253,7 +253,7 @@ Alternatively, enumeration cases can specify associated values of any type to be
 
 Enumerations in Swift are first-class types in their own right. They adopt many features traditionally supported only by classes, such as computed properties to provide additional information about the enumeration’s current value, and instance methods to provide functionality related to the values the enumeration represents. Enumerations can also define initializers to provide an initial case value; can be extended to expand their functionality beyond their original implementation; and can conform to protocols to provide standard functionality.
 
-For more about these capabilities, see Properties, Methods, Initialization, Extensions, and Protocols.</mutableString>
+For more about these capabilities, see Properties, Methods, Initialization, Extensions, and Protocols.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -299,7 +299,7 @@ For more about these capabilities, see Properties, Methods, Initialization, Exte
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="oZX-Gb-9fO">
-                                <rect key="frame" x="0.0" y="88" width="60" height="132"/>
+                                <rect key="frame" x="0.0" y="92" width="60" height="132"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86e-Fo-15w">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -317,9 +317,9 @@ For more about these capabilities, see Properties, Methods, Initialization, Exte
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="LKF-4n-QK3">
-                                <rect key="frame" x="0.0" y="304" width="414" height="77"/>
+                                <rect key="frame" x="0.0" y="308" width="414" height="77"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Test Image" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="default" disabledBackground="discard_lajitong" translatesAutoresizingMaskIntoConstraints="NO" id="c24-oh-5sQ">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Test Image" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="default" disabledBackground="my_fox" translatesAutoresizingMaskIntoConstraints="NO" id="c24-oh-5sQ">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -330,24 +330,24 @@ For more about these capabilities, see Properties, Methods, Initialization, Exte
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift" translatesAutoresizingMaskIntoConstraints="NO" id="aeo-iE-ojI">
-                                <rect key="frame" x="127" y="88" width="160" height="60"/>
+                                <rect key="frame" x="127" y="92" width="160" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="G2a-XC-6Br"/>
                                     <constraint firstAttribute="height" constant="60" id="Hcc-wh-Zbt"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vbs-Gn-htZ">
-                                <rect key="frame" x="127" y="160" width="160" height="60"/>
+                                <rect key="frame" x="127" y="164" width="160" height="60"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d6e-8e-mqJ">
-                                <rect key="frame" x="127" y="232" width="160" height="60"/>
+                                <rect key="frame" x="127" y="236" width="160" height="60"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6cC-DK-94d">
-                                <rect key="frame" x="0.0" y="393" width="414" height="408"/>
+                                <rect key="frame" x="0.0" y="397" width="414" height="404"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwiftImageCell" textLabel="dyW-ch-qxZ" style="IBUITableViewCellStyleDefault" id="VgF-TV-ZTD">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VgF-TV-ZTD" id="w9J-YA-rno">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -370,7 +370,7 @@ For more about these capabilities, see Properties, Methods, Initialization, Exte
                                 </connections>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Vmq-DG-efO">
-                                <rect key="frame" x="354" y="88" width="60" height="204"/>
+                                <rect key="frame" x="354" y="92" width="60" height="204"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yd3-EQ-5fa">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -440,11 +440,11 @@ For more about these capabilities, see Properties, Methods, Initialization, Exte
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u5k-Nb-KK3">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="721"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="confuse_test_swift.VideoMode" id="JKL-df-q9I">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="285"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="285"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JKL-df-q9I" id="Jlt-3Q-hEi">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="285"/>
@@ -452,9 +452,9 @@ For more about these capabilities, see Properties, Methods, Initialization, Exte
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FV-25-WgS">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="285"/>
-                                                    <mutableString key="text">Structures and classes are general-purpose, flexible constructs that become the building blocks of your program’s code. You define properties and methods to add functionality to your structures and classes using the same syntax you use to define constants, variables, and functions.
+                                                    <string key="text">Structures and classes are general-purpose, flexible constructs that become the building blocks of your program’s code. You define properties and methods to add functionality to your structures and classes using the same syntax you use to define constants, variables, and functions.
 
-Unlike other programming languages, Swift doesn’t require you to create separate interface and implementation files for custom structures and classes. In Swift, you define a structure or class in a single file, and the external interface to that class or structure is automatically made available for other code to use.</mutableString>
+Unlike other programming languages, Swift doesn’t require you to create separate interface and implementation files for custom structures and classes. In Swift, you define a structure or class in a single file, and the external interface to that class or structure is automatically made available for other code to use.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -502,10 +502,10 @@ Unlike other programming languages, Swift doesn’t require you to create separa
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acE-g6-hdS">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <mutableString key="text">Initialization is the process of preparing an instance of a class, structure, or enumeration for use. This process involves setting an initial value for each stored property on that instance and performing any other setup or initialization that’s required before the new instance is ready for use.
+                                <rect key="frame" x="0.0" y="92" width="414" height="721"/>
+                                <string key="text">Initialization is the process of preparing an instance of a class, structure, or enumeration for use. This process involves setting an initial value for each stored property on that instance and performing any other setup or initialization that’s required before the new instance is ready for use.
 
-You implement this initialization process by defining initializers, which are like special methods that can be called to create a new instance of a particular type. Unlike Objective-C initializers, Swift initializers don’t return a value. Their primary role is to ensure that new instances of a type are correctly initialized before they’re used for the first time.</mutableString>
+You implement this initialization process by defining initializers, which are like special methods that can be called to create a new instance of a particular type. Unlike Objective-C initializers, Swift initializers don’t return a value. Their primary role is to ensure that new instances of a type are correctly initialized before they’re used for the first time.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -550,7 +550,7 @@ You implement this initialization process by defining initializers, which are li
                 <navigationController id="B99-Ys-cKd" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Grammar" image="swift" id="JW9-7M-BmT"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lE2-xY-ckH">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -573,7 +573,7 @@ You implement this initialization process by defining initializers, which are li
                             <tableViewSection id="0ck-se-DaQ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="oyB-zL-4Vd" style="IBUITableViewCellStyleDefault" id="qyE-EK-KXH">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qyE-EK-KXH" id="O7s-vf-cjO">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -593,7 +593,7 @@ You implement this initialization process by defining initializers, which are li
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="VoC-0m-sIC" style="IBUITableViewCellStyleDefault" id="YiM-Xk-RAU">
-                                        <rect key="frame" x="0.0" y="88" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="93.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YiM-Xk-RAU" id="hFO-qf-0VC">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -613,7 +613,7 @@ You implement this initialization process by defining initializers, which are li
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Y03-OY-Sfp" style="IBUITableViewCellStyleDefault" id="dgU-Ed-v7J">
-                                        <rect key="frame" x="0.0" y="131.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="137" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dgU-Ed-v7J" id="EC5-Ih-hX6">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -633,7 +633,7 @@ You implement this initialization process by defining initializers, which are li
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="LEz-p1-Lp9" style="IBUITableViewCellStyleDefault" id="dG0-1Y-2Rn">
-                                        <rect key="frame" x="0.0" y="175" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="180.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dG0-1Y-2Rn" id="NlO-Ro-2Z5">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -653,7 +653,7 @@ You implement this initialization process by defining initializers, which are li
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="ASP-eO-Hyq" style="IBUITableViewCellStyleDefault" id="zkj-pC-jzU">
-                                        <rect key="frame" x="0.0" y="218.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="224" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zkj-pC-jzU" id="W87-QU-Hva">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -673,7 +673,7 @@ You implement this initialization process by defining initializers, which are li
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="v6q-Op-pH2" style="IBUITableViewCellStyleDefault" id="Bnc-oq-Zxx">
-                                        <rect key="frame" x="0.0" y="262" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="267.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bnc-oq-Zxx" id="WBx-6m-hpV">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -693,7 +693,7 @@ You implement this initialization process by defining initializers, which are li
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="w6V-YW-bYM" style="IBUITableViewCellStyleDefault" id="aLX-Rw-biq">
-                                        <rect key="frame" x="0.0" y="305.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="311" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aLX-Rw-biq" id="OJt-if-tuj">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -713,7 +713,7 @@ You implement this initialization process by defining initializers, which are li
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="fQe-yx-lqC" style="IBUITableViewCellStyleDefault" id="ktm-ga-rZA">
-                                        <rect key="frame" x="0.0" y="349" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="354.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ktm-ga-rZA" id="X2q-7i-lN3">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -733,7 +733,7 @@ You implement this initialization process by defining initializers, which are li
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="GWZ-ce-0JC" style="IBUITableViewCellStyleDefault" id="4VL-jp-XAz">
-                                        <rect key="frame" x="0.0" y="392.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="398" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4VL-jp-XAz" id="SHz-EH-IZj">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -753,7 +753,7 @@ You implement this initialization process by defining initializers, which are li
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Y0a-fX-sgj" style="IBUITableViewCellStyleDefault" id="tnH-6A-s6K">
-                                        <rect key="frame" x="0.0" y="436" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="441.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tnH-6A-s6K" id="65C-Jr-7RF">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -773,7 +773,7 @@ You implement this initialization process by defining initializers, which are li
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="rDd-O1-hKj" style="IBUITableViewCellStyleDefault" id="Mh9-74-FgT">
-                                        <rect key="frame" x="0.0" y="479.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="485" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mh9-74-FgT" id="eTg-R9-SPS">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -816,7 +816,7 @@ You implement this initialization process by defining initializers, which are li
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cWq-zi-XB1">
-                                <rect key="frame" x="184" y="410.5" width="46" height="80"/>
+                                <rect key="frame" x="184" y="412.5" width="46" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBS-Us-g7K">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
@@ -854,7 +854,7 @@ You implement this initialization process by defining initializers, which are li
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9q7-Yq-MRh">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="721"/>
                                 <string key="text">Closures are self-contained blocks of functionality that can be passed around and used in your code. Closures in Swift are similar to blocks in C and Objective-C and to lambdas in other programming languages.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -885,7 +885,7 @@ You implement this initialization process by defining initializers, which are li
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Dn-68-Qxm">
-                                <rect key="frame" x="0.0" y="88" width="414" height="32"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="32"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <inset key="contentEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -898,7 +898,7 @@ You implement this initialization process by defining initializers, which are li
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6v-fl-rDc">
-                                <rect key="frame" x="0.0" y="120" width="414" height="693"/>
+                                <rect key="frame" x="0.0" y="124" width="414" height="689"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -931,7 +931,7 @@ You implement this initialization process by defining initializers, which are li
                 <navigationController id="d8b-PF-cc6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Other" image="scan" id="1Hw-xS-Rln"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="x9J-J0-pdz">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -954,7 +954,7 @@ You implement this initialization process by defining initializers, which are li
                             <tableViewSection id="qST-xQ-Vl0">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="JMb-A9-lgE" style="IBUITableViewCellStyleDefault" id="9nN-J6-8Z6">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9nN-J6-8Z6" id="QfA-on-PWU">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -974,7 +974,7 @@ You implement this initialization process by defining initializers, which are li
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Xxi-mp-btk" style="IBUITableViewCellStyleDefault" id="wDI-dw-Jg2">
-                                        <rect key="frame" x="0.0" y="88" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="93.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wDI-dw-Jg2" id="pkC-Z7-kv7">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -993,6 +993,26 @@ You implement this initialization process by defining initializers, which are li
                                             <segue destination="tD1-Sn-6uF" kind="show" id="pJX-iJ-fdM"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="fSb-sR-Oon" style="IBUITableViewCellStyleDefault" id="uFT-1m-g7J">
+                                        <rect key="frame" x="0.0" y="137" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uFT-1m-g7J" id="DYT-iM-O9S">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="lottie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fSb-sR-Oon">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Yg4-BX-fBC" kind="show" id="ZzL-Jq-lMq"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -1008,13 +1028,118 @@ You implement this initialization process by defining initializers, which are li
             </objects>
             <point key="canvasLocation" x="-642" y="2383"/>
         </scene>
+        <!--Swift Lottie-->
+        <scene sceneID="O13-We-VSd">
+            <objects>
+                <viewController id="Yg4-BX-fBC" customClass="SwiftLottie" customModule="confuse_test_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Iy-Uj-wcY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="vFB-GJ-ea5">
+                                <rect key="frame" x="0.0" y="92" width="324" height="100"/>
+                                <subviews>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="5Is-ki-TBg" customClass="LottieAnimationView" customModule="Lottie">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="5Is-ki-TBg" secondAttribute="height" id="dAH-d3-DXc"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="loading_zhibo"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FO6-Xu-ZwO" customClass="LottieAnimationView" customModule="Lottie">
+                                        <rect key="frame" x="112" y="0.0" width="100" height="100"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxe-tT-Aop" customClass="LottieAnimationView" customModule="Lottie">
+                                        <rect key="frame" x="224" y="0.0" width="100" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="B42-YW-c8g"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="YqE-Gw-2Ws">
+                                <rect key="frame" x="0.0" y="202" width="414" height="77"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Test Image" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="default" disabledBackground="my_fox" translatesAutoresizingMaskIntoConstraints="NO" id="Rpo-Hu-Faa">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="减.png" maximumValueImage="加.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gqs-0k-S1a">
+                                        <rect key="frame" x="-2" y="46" width="418" height="32"/>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fkY-JG-kia">
+                                <rect key="frame" x="0.0" y="291" width="414" height="510"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwiftLottieCell" textLabel="JM7-zy-JYa" rowHeight="100" style="IBUITableViewCellStyleDefault" id="6g2-t0-ZcF">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6g2-t0-ZcF" id="HNN-B3-CGg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JM7-zy-JYa">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Yg4-BX-fBC" id="bbv-tR-c4e"/>
+                                    <outlet property="delegate" destination="Yg4-BX-fBC" id="YcZ-4v-oqD"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hcB-6r-cDP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YqE-Gw-2Ws" firstAttribute="leading" secondItem="4Iy-Uj-wcY" secondAttribute="leading" id="DlQ-Ap-TLA"/>
+                            <constraint firstItem="hcB-6r-cDP" firstAttribute="bottom" secondItem="fkY-JG-kia" secondAttribute="bottom" constant="12" id="JNi-Of-vYz"/>
+                            <constraint firstItem="vFB-GJ-ea5" firstAttribute="top" secondItem="hcB-6r-cDP" secondAttribute="top" id="Kse-aL-NQV"/>
+                            <constraint firstAttribute="trailing" secondItem="YqE-Gw-2Ws" secondAttribute="trailing" id="QBq-c4-m5t"/>
+                            <constraint firstItem="vFB-GJ-ea5" firstAttribute="leading" secondItem="4Iy-Uj-wcY" secondAttribute="leading" id="Wlz-tv-Otj"/>
+                            <constraint firstItem="fkY-JG-kia" firstAttribute="centerX" secondItem="hcB-6r-cDP" secondAttribute="centerX" id="YDK-Lq-mFJ"/>
+                            <constraint firstItem="YqE-Gw-2Ws" firstAttribute="top" secondItem="vFB-GJ-ea5" secondAttribute="bottom" constant="10" id="ZwM-wj-UgJ"/>
+                            <constraint firstItem="fkY-JG-kia" firstAttribute="width" secondItem="4Iy-Uj-wcY" secondAttribute="width" id="i2c-pc-hgW"/>
+                            <constraint firstItem="fkY-JG-kia" firstAttribute="top" secondItem="YqE-Gw-2Ws" secondAttribute="bottom" constant="12" id="ufP-Je-1j1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VBJ-Ub-Wg2"/>
+                    <connections>
+                        <outlet property="lottieLeft" destination="5Is-ki-TBg" id="HKD-sm-uAU"/>
+                        <outlet property="lottieMiddle" destination="FO6-Xu-ZwO" id="CWB-Aq-gbw"/>
+                        <outlet property="lottieRight" destination="Fxe-tT-Aop" id="TZ9-Ed-RAU"/>
+                        <outlet property="tableView" destination="fkY-JG-kia" id="35g-Ic-hX0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eLx-Xo-cLt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1567" y="2383"/>
+        </scene>
     </scenes>
+    <designables>
+        <designable name="5Is-ki-TBg"/>
+        <designable name="FO6-Xu-ZwO"/>
+        <designable name="Fxe-tT-Aop"/>
+    </designables>
     <resources>
         <image name="0" width="100" height="100"/>
         <image name="Lee Sin.jpg" width="407" height="609"/>
         <image name="default" width="200" height="200"/>
-        <image name="discard_lajitong" width="100" height="100"/>
         <image name="hashiqi" width="100" height="100"/>
+        <image name="my_fox" width="474" height="670"/>
         <image name="number1.png" width="200" height="200"/>
         <image name="scan" width="32" height="32"/>
         <image name="swift" width="58.5" height="32"/>
@@ -1025,7 +1150,7 @@ You implement this initialization process by defining initializers, which are li
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

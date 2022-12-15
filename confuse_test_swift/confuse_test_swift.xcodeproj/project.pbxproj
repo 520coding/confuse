@@ -38,9 +38,41 @@
 		71B26EA728D1450C0080ED54 /* 加.png in Resources */ = {isa = PBXBuildFile; fileRef = 71B26EA028D1450C0080ED54 /* 加.png */; };
 		71B26EA828D1450C0080ED54 /* 锤石.png in Resources */ = {isa = PBXBuildFile; fileRef = 71B26EA128D1450C0080ED54 /* 锤石.png */; };
 		71B26EAA28D145250080ED54 /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71B26EA928D145250080ED54 /* image.xcassets */; };
+		71C3CCB6293F310600CCD930 /* SwiftLottie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3CCB5293F310600CCD930 /* SwiftLottie.swift */; };
+		71C3CCB7293F310600CCD930 /* SwiftLottieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3CCB4293F310500CCD930 /* SwiftLottieModel.swift */; };
+		71C3CCBB293F4AF100CCD930 /* view_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CCB8293F4AF100CCD930 /* view_2.json */; };
+		71C3CCBC293F4AF100CCD930 /* A.json in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CCB9293F4AF100CCD930 /* A.json */; };
+		71C3CCBD293F4AF100CCD930 /* view_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CCBA293F4AF100CCD930 /* view_1.json */; };
+		71C3CCE9293F59CC00CCD930 /* loading_zhibo.json in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CCC5293F4D9300CCD930 /* loading_zhibo.json */; };
+		71C3CCEA293F59D300CCD930 /* loadingImg_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CCCC293F4D9300CCD930 /* loadingImg_5.png */; };
+		71C3CCEB293F59D300CCD930 /* loadingImg_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CCC8293F4D9300CCD930 /* loadingImg_3.png */; };
+		71C3CCEC293F59D300CCD930 /* loadingImg_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CCCA293F4D9300CCD930 /* loadingImg_0.png */; };
+		71C3CCED293F59D300CCD930 /* loadingImg_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CCCB293F4D9300CCD930 /* loadingImg_4.png */; };
+		71C3CCEE293F59D300CCD930 /* loadingImg_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CCC7293F4D9300CCD930 /* loadingImg_2.png */; };
+		71C3CCEF293F59D300CCD930 /* loadingImg_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CCCD293F4D9300CCD930 /* loadingImg_7.png */; };
+		71C3CCF0293F59D300CCD930 /* loadingImg_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CCC9293F4D9300CCD930 /* loadingImg_1.png */; };
+		71C3CCF1293F59D300CCD930 /* loadingImg_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CCCE293F4D9300CCD930 /* loadingImg_6.png */; };
+		71C3CCF2293F59D800CCD930 /* scan.json in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CCD0293F4D9400CCD930 /* scan.json */; };
+		71C3CCF6293F59D800CCD930 /* servishero_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CCCF293F4D9400CCD930 /* servishero_loading.json */; };
+		71C3CD07293F683600CCD930 /* flash loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CD04293F683200CCD930 /* flash loader.json */; };
+		71C3CD08293F683600CCD930 /* 工作.json in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CD05293F683200CCD930 /* 工作.json */; };
+		71C3CD0A293F683600CCD930 /* dots-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CCF8293F682F00CCD930 /* dots-1.json */; };
+		71C3CD0C293F683600CCD930 /* dots-2.json in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CCFE293F683000CCD930 /* dots-2.json */; };
+		71C3CD0D293F683600CCD930 /* my.json in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CCF9293F682F00CCD930 /* my.json */; };
+		71C3CD0F293F683600CCD930 /* 龙.json in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CD02293F683100CCD930 /* 龙.json */; };
+		71C3CD11293F683600CCD930 /* number1.json in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CCFC293F682F00CCD930 /* number1.json */; };
+		71C3CD12293F683600CCD930 /* 加.json in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CCFA293F682F00CCD930 /* 加.json */; };
+		71C3CD14293F683600CCD930 /* loading-h.json in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CD03293F683100CCD930 /* loading-h.json */; };
+		71C3CD15293F683600CCD930 /* left.json in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CD06293F683200CCD930 /* left.json */; };
+		71C3CD17293F6FC700CCD930 /* draft_icon.json in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CD16293F6FC700CCD930 /* draft_icon.json */; };
+		71C3CD19293F70C500CCD930 /* Watermelon.json in Resources */ = {isa = PBXBuildFile; fileRef = 71C3CD18293F70C500CCD930 /* Watermelon.json */; };
+		71E0A6612940E38D00A4EDB5 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 71E0A6602940E38D00A4EDB5 /* loading.json */; };
+		DB265441AAF4D9CCA63628EF /* Pods_confuse_test_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B6E283370709F917FA10F60 /* Pods_confuse_test_swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BDF49207C65432ED2DE6072 /* Pods-confuse_test_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-confuse_test_swift.debug.xcconfig"; path = "Target Support Files/Pods-confuse_test_swift/Pods-confuse_test_swift.debug.xcconfig"; sourceTree = "<group>"; };
+		2B6E283370709F917FA10F60 /* Pods_confuse_test_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_confuse_test_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		712E815928D0C1CE003BAC76 /* confuse_test_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = confuse_test_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		712E815C28D0C1CE003BAC76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		712E815E28D0C1CE003BAC76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +106,36 @@
 		71B26EA028D1450C0080ED54 /* 加.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "加.png"; sourceTree = "<group>"; };
 		71B26EA128D1450C0080ED54 /* 锤石.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "锤石.png"; sourceTree = "<group>"; };
 		71B26EA928D145250080ED54 /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
+		71C3CCB4293F310500CCD930 /* SwiftLottieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLottieModel.swift; sourceTree = "<group>"; };
+		71C3CCB5293F310600CCD930 /* SwiftLottie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLottie.swift; sourceTree = "<group>"; };
+		71C3CCB8293F4AF100CCD930 /* view_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = view_2.json; sourceTree = "<group>"; };
+		71C3CCB9293F4AF100CCD930 /* A.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = A.json; sourceTree = "<group>"; };
+		71C3CCBA293F4AF100CCD930 /* view_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = view_1.json; sourceTree = "<group>"; };
+		71C3CCC5293F4D9300CCD930 /* loading_zhibo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = loading_zhibo.json; sourceTree = "<group>"; };
+		71C3CCC7293F4D9300CCD930 /* loadingImg_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingImg_2.png; sourceTree = "<group>"; };
+		71C3CCC8293F4D9300CCD930 /* loadingImg_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingImg_3.png; sourceTree = "<group>"; };
+		71C3CCC9293F4D9300CCD930 /* loadingImg_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingImg_1.png; sourceTree = "<group>"; };
+		71C3CCCA293F4D9300CCD930 /* loadingImg_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingImg_0.png; sourceTree = "<group>"; };
+		71C3CCCB293F4D9300CCD930 /* loadingImg_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingImg_4.png; sourceTree = "<group>"; };
+		71C3CCCC293F4D9300CCD930 /* loadingImg_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingImg_5.png; sourceTree = "<group>"; };
+		71C3CCCD293F4D9300CCD930 /* loadingImg_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingImg_7.png; sourceTree = "<group>"; };
+		71C3CCCE293F4D9300CCD930 /* loadingImg_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingImg_6.png; sourceTree = "<group>"; };
+		71C3CCCF293F4D9400CCD930 /* servishero_loading.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = servishero_loading.json; sourceTree = "<group>"; };
+		71C3CCD0293F4D9400CCD930 /* scan.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scan.json; sourceTree = "<group>"; };
+		71C3CCF8293F682F00CCD930 /* dots-1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "dots-1.json"; sourceTree = "<group>"; };
+		71C3CCF9293F682F00CCD930 /* my.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = my.json; sourceTree = "<group>"; };
+		71C3CCFA293F682F00CCD930 /* 加.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "加.json"; sourceTree = "<group>"; };
+		71C3CCFC293F682F00CCD930 /* number1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = number1.json; sourceTree = "<group>"; };
+		71C3CCFE293F683000CCD930 /* dots-2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "dots-2.json"; sourceTree = "<group>"; };
+		71C3CD02293F683100CCD930 /* 龙.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "龙.json"; sourceTree = "<group>"; };
+		71C3CD03293F683100CCD930 /* loading-h.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "loading-h.json"; sourceTree = "<group>"; };
+		71C3CD04293F683200CCD930 /* flash loader.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "flash loader.json"; sourceTree = "<group>"; };
+		71C3CD05293F683200CCD930 /* 工作.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "工作.json"; sourceTree = "<group>"; };
+		71C3CD06293F683200CCD930 /* left.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = left.json; sourceTree = "<group>"; };
+		71C3CD16293F6FC700CCD930 /* draft_icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = draft_icon.json; sourceTree = "<group>"; };
+		71C3CD18293F70C500CCD930 /* Watermelon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Watermelon.json; sourceTree = "<group>"; };
+		71E0A6602940E38D00A4EDB5 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		EEE5E723B4DE190178E7C4F3 /* Pods-confuse_test_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-confuse_test_swift.release.xcconfig"; path = "Target Support Files/Pods-confuse_test_swift/Pods-confuse_test_swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,17 +143,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB265441AAF4D9CCA63628EF /* Pods_confuse_test_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2959E89E0CDFDCE0067E9B5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B6E283370709F917FA10F60 /* Pods_confuse_test_swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		712E815028D0C1CD003BAC76 = {
 			isa = PBXGroup;
 			children = (
 				712E815B28D0C1CE003BAC76 /* confuse_test_swift */,
 				712E815A28D0C1CE003BAC76 /* Products */,
+				A3ECD219B0B25D33FC140EA1 /* Pods */,
+				2959E89E0CDFDCE0067E9B5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +190,16 @@
 				712E816A28D0C1D1003BAC76 /* Info.plist */,
 			);
 			path = confuse_test_swift;
+			sourceTree = "<group>";
+		};
+		71A12FEA29056734006D9CB0 /* lottie */ = {
+			isa = PBXGroup;
+			children = (
+				71C3CCC3293F4D7A00CCD930 /* file */,
+				71C3CCB4293F310500CCD930 /* SwiftLottieModel.swift */,
+				71C3CCB5293F310600CCD930 /* SwiftLottie.swift */,
+			);
+			path = lottie;
 			sourceTree = "<group>";
 		};
 		71B26E7328D13D850080ED54 /* other */ = {
@@ -168,14 +251,7 @@
 		71B26E9328D141250080ED54 /* source */ = {
 			isa = PBXGroup;
 			children = (
-				71B26EA928D145250080ED54 /* image.xcassets */,
-				71B26EA128D1450C0080ED54 /* 锤石.png */,
-				71B26EA028D1450C0080ED54 /* 加.png */,
-				71B26E9B28D1450B0080ED54 /* 减.png */,
-				71B26E9D28D1450B0080ED54 /* Lee Sin.jpg */,
-				71B26E9C28D1450B0080ED54 /* number1.png */,
-				71B26E9F28D1450C0080ED54 /* number2.png */,
-				71B26E9E28D1450B0080ED54 /* number3.png */,
+				71A12FEA29056734006D9CB0 /* lottie */,
 				71B26E9428D141250080ED54 /* image */,
 			);
 			path = source;
@@ -184,10 +260,85 @@
 		71B26E9428D141250080ED54 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				71C3CCC2293F4D7100CCD930 /* file */,
 				71B26E9528D141250080ED54 /* SwiftImageModel.swift */,
 				71B26E9628D141250080ED54 /* SwiftImage.swift */,
 			);
 			path = image;
+			sourceTree = "<group>";
+		};
+		71C3CCC2293F4D7100CCD930 /* file */ = {
+			isa = PBXGroup;
+			children = (
+				71B26EA928D145250080ED54 /* image.xcassets */,
+				71B26EA128D1450C0080ED54 /* 锤石.png */,
+				71B26EA028D1450C0080ED54 /* 加.png */,
+				71B26E9B28D1450B0080ED54 /* 减.png */,
+				71B26E9D28D1450B0080ED54 /* Lee Sin.jpg */,
+				71B26E9C28D1450B0080ED54 /* number1.png */,
+				71B26E9F28D1450C0080ED54 /* number2.png */,
+				71B26E9E28D1450B0080ED54 /* number3.png */,
+			);
+			path = file;
+			sourceTree = "<group>";
+		};
+		71C3CCC3293F4D7A00CCD930 /* file */ = {
+			isa = PBXGroup;
+			children = (
+				71C3CCC4293F4D9300CCD930 /* Loading */,
+				71C3CD18293F70C500CCD930 /* Watermelon.json */,
+				71C3CD16293F6FC700CCD930 /* draft_icon.json */,
+				71C3CCD0293F4D9400CCD930 /* scan.json */,
+				71C3CCCF293F4D9400CCD930 /* servishero_loading.json */,
+				71C3CCBA293F4AF100CCD930 /* view_1.json */,
+				71C3CCB8293F4AF100CCD930 /* view_2.json */,
+				71C3CCB9293F4AF100CCD930 /* A.json */,
+				71C3CCFC293F682F00CCD930 /* number1.json */,
+				71C3CCF9293F682F00CCD930 /* my.json */,
+				71C3CD05293F683200CCD930 /* 工作.json */,
+				71C3CD02293F683100CCD930 /* 龙.json */,
+				71C3CCFA293F682F00CCD930 /* 加.json */,
+				71C3CD06293F683200CCD930 /* left.json */,
+				71C3CD04293F683200CCD930 /* flash loader.json */,
+				71C3CCF8293F682F00CCD930 /* dots-1.json */,
+				71C3CCFE293F683000CCD930 /* dots-2.json */,
+				71C3CD03293F683100CCD930 /* loading-h.json */,
+				71E0A6602940E38D00A4EDB5 /* loading.json */,
+			);
+			path = file;
+			sourceTree = "<group>";
+		};
+		71C3CCC4293F4D9300CCD930 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				71C3CCC5293F4D9300CCD930 /* loading_zhibo.json */,
+				71C3CCC6293F4D9300CCD930 /* loadingImages */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		71C3CCC6293F4D9300CCD930 /* loadingImages */ = {
+			isa = PBXGroup;
+			children = (
+				71C3CCC7293F4D9300CCD930 /* loadingImg_2.png */,
+				71C3CCC8293F4D9300CCD930 /* loadingImg_3.png */,
+				71C3CCC9293F4D9300CCD930 /* loadingImg_1.png */,
+				71C3CCCA293F4D9300CCD930 /* loadingImg_0.png */,
+				71C3CCCB293F4D9300CCD930 /* loadingImg_4.png */,
+				71C3CCCC293F4D9300CCD930 /* loadingImg_5.png */,
+				71C3CCCD293F4D9300CCD930 /* loadingImg_7.png */,
+				71C3CCCE293F4D9300CCD930 /* loadingImg_6.png */,
+			);
+			path = loadingImages;
+			sourceTree = "<group>";
+		};
+		A3ECD219B0B25D33FC140EA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BDF49207C65432ED2DE6072 /* Pods-confuse_test_swift.debug.xcconfig */,
+				EEE5E723B4DE190178E7C4F3 /* Pods-confuse_test_swift.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,9 +348,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 712E816D28D0C1D1003BAC76 /* Build configuration list for PBXNativeTarget "confuse_test_swift" */;
 			buildPhases = (
+				EAC74653A3EB0A74340BB4D6 /* [CP] Check Pods Manifest.lock */,
 				712E815528D0C1CE003BAC76 /* Sources */,
 				712E815628D0C1CE003BAC76 /* Frameworks */,
 				712E815728D0C1CE003BAC76 /* Resources */,
+				7B55215CFA5B8C2007DE562B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,21 +401,90 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71C3CD17293F6FC700CCD930 /* draft_icon.json in Resources */,
+				71C3CD11293F683600CCD930 /* number1.json in Resources */,
 				71B26EA828D1450C0080ED54 /* 锤石.png in Resources */,
+				71C3CCEA293F59D300CCD930 /* loadingImg_5.png in Resources */,
+				71C3CCEC293F59D300CCD930 /* loadingImg_0.png in Resources */,
 				71B26EA728D1450C0080ED54 /* 加.png in Resources */,
+				71C3CD0D293F683600CCD930 /* my.json in Resources */,
 				712E816928D0C1D1003BAC76 /* LaunchScreen.storyboard in Resources */,
+				71C3CD12293F683600CCD930 /* 加.json in Resources */,
+				71C3CD19293F70C500CCD930 /* Watermelon.json in Resources */,
+				71C3CCF2293F59D800CCD930 /* scan.json in Resources */,
+				71C3CCF0293F59D300CCD930 /* loadingImg_1.png in Resources */,
+				71C3CCED293F59D300CCD930 /* loadingImg_4.png in Resources */,
+				71C3CD14293F683600CCD930 /* loading-h.json in Resources */,
 				71B26EA628D1450C0080ED54 /* number2.png in Resources */,
 				71B26EA528D1450C0080ED54 /* number3.png in Resources */,
+				71C3CCF1293F59D300CCD930 /* loadingImg_6.png in Resources */,
+				71C3CD07293F683600CCD930 /* flash loader.json in Resources */,
 				71B26EA328D1450C0080ED54 /* number1.png in Resources */,
+				71C3CD08293F683600CCD930 /* 工作.json in Resources */,
+				71C3CCF6293F59D800CCD930 /* servishero_loading.json in Resources */,
+				71C3CCEB293F59D300CCD930 /* loadingImg_3.png in Resources */,
+				71C3CCE9293F59CC00CCD930 /* loading_zhibo.json in Resources */,
 				71B26EA428D1450C0080ED54 /* Lee Sin.jpg in Resources */,
+				71C3CD0F293F683600CCD930 /* 龙.json in Resources */,
+				71C3CD0C293F683600CCD930 /* dots-2.json in Resources */,
 				712E816628D0C1D1003BAC76 /* Assets.xcassets in Resources */,
+				71C3CCBD293F4AF100CCD930 /* view_1.json in Resources */,
+				71C3CCEE293F59D300CCD930 /* loadingImg_2.png in Resources */,
+				71C3CD0A293F683600CCD930 /* dots-1.json in Resources */,
+				71E0A6612940E38D00A4EDB5 /* loading.json in Resources */,
+				71C3CCEF293F59D300CCD930 /* loadingImg_7.png in Resources */,
+				71C3CCBC293F4AF100CCD930 /* A.json in Resources */,
 				712E816428D0C1CE003BAC76 /* Main.storyboard in Resources */,
+				71C3CD15293F683600CCD930 /* left.json in Resources */,
 				71B26EA228D1450C0080ED54 /* 减.png in Resources */,
 				71B26EAA28D145250080ED54 /* image.xcassets in Resources */,
+				71C3CCBB293F4AF100CCD930 /* view_2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B55215CFA5B8C2007DE562B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-confuse_test_swift/Pods-confuse_test_swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-confuse_test_swift/Pods-confuse_test_swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-confuse_test_swift/Pods-confuse_test_swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAC74653A3EB0A74340BB4D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-confuse_test_swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		712E815528D0C1CE003BAC76 /* Sources */ = {
@@ -272,11 +494,13 @@
 				71B26E9728D141250080ED54 /* FrameViewController.swift in Sources */,
 				71B26E8528D13E2B0080ED54 /* SwiftSelector.swift in Sources */,
 				71B26E8928D13E2B0080ED54 /* SwiftEnum.swift in Sources */,
+				71C3CCB7293F310600CCD930 /* SwiftLottieModel.swift in Sources */,
 				71B26E8628D13E2B0080ED54 /* SwiftFunction.swift in Sources */,
 				71B26E9828D141250080ED54 /* LayoutViewController.swift in Sources */,
 				71B26E8B28D13E2B0080ED54 /* SwiftNestedTypes.swift in Sources */,
 				71B26E8E28D13E2B0080ED54 /* SwiftDeinitialization.swift in Sources */,
 				71B26E9A28D141250080ED54 /* SwiftImage.swift in Sources */,
+				71C3CCB6293F310600CCD930 /* SwiftLottie.swift in Sources */,
 				71B26E8D28D13E2B0080ED54 /* SwiftTableViewController.swift in Sources */,
 				71B26E8228D13E2B0080ED54 /* SwiftProperty.swift in Sources */,
 				71B26E8C28D13E2B0080ED54 /* SwiftClassStruct.swift in Sources */,
@@ -430,6 +654,7 @@
 		};
 		712E816E28D0C1D1003BAC76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BDF49207C65432ED2DE6072 /* Pods-confuse_test_swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -447,7 +672,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.4.2;
+				MARKETING_VERSION = 6.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-test-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -458,6 +683,7 @@
 		};
 		712E816F28D0C1D1003BAC76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE5E723B4DE190178E7C4F3 /* Pods-confuse_test_swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,7 +701,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.4.2;
+				MARKETING_VERSION = 6.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-test-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

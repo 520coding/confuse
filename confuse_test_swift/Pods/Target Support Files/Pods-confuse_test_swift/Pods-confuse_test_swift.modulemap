@@ -1,0 +1,6 @@
+framework module Pods_confuse_test_swift {
+  umbrella header "Pods-confuse_test_swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

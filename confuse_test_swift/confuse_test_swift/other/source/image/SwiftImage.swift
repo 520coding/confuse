@@ -45,7 +45,7 @@ class SwiftImage: UIViewController, SwiftBaseProtocol, UITableViewDataSource {
             "hashiqi": "hello",
             "bayijianjunjie": "520coding/confuse",
             "yjs.png": "discard file png",
-            "discard_lajitong": "discard.xcassets",
+            "my_fox": "discard.xcassets",
             "Lee Sin.jpg": "image file",
         ]
         for (k, v) in data {
