@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-confuse_test_swift/Pods-confuse_test_swift-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
 ${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework

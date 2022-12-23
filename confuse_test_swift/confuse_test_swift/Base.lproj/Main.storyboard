@@ -816,18 +816,21 @@ You implement this initialization process by defining initializers, which are li
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cWq-zi-XB1">
-                                <rect key="frame" x="184" y="412.5" width="46" height="80"/>
+                                <rect key="frame" x="180" y="412.5" width="54" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBS-Us-g7K">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="54" height="30"/>
                                         <state key="normal" title="Frame"/>
                                         <connections>
                                             <segue destination="loT-pU-XCO" kind="show" id="J5H-TJ-NDN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnt-rK-8xT">
-                                        <rect key="frame" x="0.0" y="50" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="0.0" y="50" width="54" height="30"/>
+                                        <state key="normal" title="SnapKit"/>
+                                        <connections>
+                                            <segue destination="JLT-3m-H3k" kind="show" id="v2Q-P6-faL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -1127,6 +1130,22 @@ You implement this initialization process by defining initializers, which are li
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eLx-Xo-cLt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1567" y="2383"/>
+        </scene>
+        <!--Test Snap Kit-->
+        <scene sceneID="UZV-Qq-cCh">
+            <objects>
+                <viewController id="JLT-3m-H3k" customClass="TestSnapKit" customModule="confuse_test_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7y6-j9-ayb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hnV-yh-S4i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SLj-73-6FU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P6P-ZK-Dx2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2348" y="1614"/>
         </scene>
     </scenes>
     <designables>

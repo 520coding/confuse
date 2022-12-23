@@ -13,6 +13,7 @@
 		712E816428D0C1CE003BAC76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712E816228D0C1CE003BAC76 /* Main.storyboard */; };
 		712E816628D0C1D1003BAC76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712E816528D0C1D1003BAC76 /* Assets.xcassets */; };
 		712E816928D0C1D1003BAC76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712E816728D0C1D1003BAC76 /* LaunchScreen.storyboard */; };
+		716AFE2B294D6FBA00E342CB /* TestSnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716AFE2A294D6FBA00E342CB /* TestSnapKit.swift */; };
 		71B26E8228D13E2B0080ED54 /* SwiftProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B26E7528D13E2A0080ED54 /* SwiftProperty.swift */; };
 		71B26E8328D13E2B0080ED54 /* SwiftClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B26E7628D13E2A0080ED54 /* SwiftClosure.swift */; };
 		71B26E8428D13E2B0080ED54 /* SwiftInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B26E7728D13E2A0080ED54 /* SwiftInitialization.swift */; };
@@ -81,6 +82,7 @@
 		712E816528D0C1D1003BAC76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		712E816828D0C1D1003BAC76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		712E816A28D0C1D1003BAC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		716AFE2A294D6FBA00E342CB /* TestSnapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSnapKit.swift; sourceTree = "<group>"; };
 		71B26E7528D13E2A0080ED54 /* SwiftProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftProperty.swift; sourceTree = "<group>"; };
 		71B26E7628D13E2A0080ED54 /* SwiftClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftClosure.swift; sourceTree = "<group>"; };
 		71B26E7728D13E2A0080ED54 /* SwiftInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftInitialization.swift; sourceTree = "<group>"; };
@@ -192,6 +194,14 @@
 			path = confuse_test_swift;
 			sourceTree = "<group>";
 		};
+		716AFE29294D6F1B00E342CB /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				716AFE2A294D6FBA00E342CB /* TestSnapKit.swift */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
 		71A12FEA29056734006D9CB0 /* lottie */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +244,7 @@
 		71B26E8F28D141250080ED54 /* layout */ = {
 			isa = PBXGroup;
 			children = (
+				716AFE29294D6F1B00E342CB /* SnapKit */,
 				71B26E9028D141250080ED54 /* frame */,
 				71B26E9228D141250080ED54 /* LayoutViewController.swift */,
 			);
@@ -497,6 +508,7 @@
 				71C3CCB7293F310600CCD930 /* SwiftLottieModel.swift in Sources */,
 				71B26E8628D13E2B0080ED54 /* SwiftFunction.swift in Sources */,
 				71B26E9828D141250080ED54 /* LayoutViewController.swift in Sources */,
+				716AFE2B294D6FBA00E342CB /* TestSnapKit.swift in Sources */,
 				71B26E8B28D13E2B0080ED54 /* SwiftNestedTypes.swift in Sources */,
 				71B26E8E28D13E2B0080ED54 /* SwiftDeinitialization.swift in Sources */,
 				71B26E9A28D141250080ED54 /* SwiftImage.swift in Sources */,
@@ -672,7 +684,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.6.0;
+				MARKETING_VERSION = 6.6.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-test-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -701,7 +713,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.6.0;
+				MARKETING_VERSION = 6.6.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-test-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
