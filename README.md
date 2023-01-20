@@ -96,11 +96,11 @@ The following functions are supported:
 2. [Insert picture], automatically insert pictures, and simulate manual calls according to context and type, and the number of inserts can be specified
 3. [Rename property], support all types of @property , advantages:
    1. Identify grammar, identify type, inheritance relationship, **attribute name confusion and class name (including inheritance chain) association** , automatically identify system attributes
-   2. You can set the 'Model suffix' to facilitate filtering Model
-   3. You can set the 'Model mapping', automatically insert the mapping relationship, and match the background data
+   2. You can set the 'Model suffix' to filter by the suffix of the class name, which is convenient for filtering Model
+   3. You can set 'Model Mapping' to automatically insert the mapping relationship (customized, and automatically complete other attributes) to ensure that the background data is matched
 4. [Insert property], creation, assignment, and modification are all associated with existing types, smart noun replacement
    1. 'Percentage control'
-   2. 'Model suffix' switch, purpose: to avoid model archiving or data transfer failure
+   2. You can set the 'Model suffix' to filter by the suffix of the class name, the purpose: to avoid Model archiving or data transfer model failure
    3. Can be executed multiple times, the index x2 increases
 5. [Rename method], similar to Xcode's Rename function , advantages:
    1. Syntax-related, identification of types, inheritance relationships, support for **multi-parameter modification, confusion of method names, class names (including inheritance chains) and type associations** , automatic identification of system methods
@@ -168,11 +168,11 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
    1. 'Original value' can be set to refine the control range
 6. [Rename attribute], basic function, without too much description, advantages:
    1. Similar to OC [Rename attribute], identify inheritance chain and nested type, support storage and calculation of attributes, observers, wrappers, class attributes
-   2. You can set the 'Model suffix' to facilitate filtering Model
+   2. You can set the 'Model suffix' to filter by the suffix of the class name, which is convenient for filtering Model
    3. You can set the 'Model mapping', automatically insert the mapping relationship, and match the background data
 7. [Insert property], use calculated properties to wrap and call and replace the original properties
    1. Support storage and calculation of attributes, observers, wrappers, class attributes
-   2. File name Model suffix filtering can be set
+   2. You can set the 'Model suffix' to filter by the suffix of the class name, the purpose: to avoid Model archiving or data transfer model failure
 8. [Rename method], the basic functions are renamed similar to other tools, without too much description, advantages: 
    1. Can set 'parameter label', support hidden parameter label and trailing closure usage
    2. Identification of inheritance chain nested types, support for (class, struct, enum) static methods and instance methods, and optional chains, etc.
@@ -219,12 +219,14 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.6.2 (2022.12.30)
+### v6.6.3 (2023.01.20)
 
-1. Enhance Swift[rename property], similar to OC, add 'Model mapping', automatically insert Codable mapping relationship
-2. Expand the scope of context references and add support for enumeration type references
-3. Fix [Insert Image], which may cause the same name problem of inserted local variables
-4. Strengthen the pre-check to scan for code irregularities
+1. Strengthen OC [rename attribute]<br />a. 'Model suffix', the file name suffix is upgraded to a class name suffix to improve versatility<br />b. 'Model' mapping, which has been customized and automatically completes other attributes
+2. Fix OC [rename attribute]<br />a. The blacklist attribute name automatically matches the set method, simplifying the setting<br />b. Fix the problem that [@selector ](/selector ) may be incorrectly changed 
+3. Fix OC[rename method], [@selector ](/selector ) may have mistakenly changed the problem 
+4. Fix OC [Insert Attribute], the boxing setting in the classification cannot recognize individual enumeration types
+5. Expand the scope of environmental inspection and support mode setting
+6. Add garbage path settings to avoid special items and redundant scanning
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
