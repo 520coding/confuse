@@ -1,5 +1,5 @@
 <a name="54fa66eaba498942a1604ffa591838ac"></a>
-# ![1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1606304234500-46a10b02-f83d-4996-99fc-ce092241ea7c.png#averageHue=%23e9c2bf&crop=0&crop=0&crop=1&crop=1&height=100&id=SslN0&name=1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png&originHeight=200&originWidth=200&originalType=binary&ratio=1&rotation=0&showTitle=false&size=28522&status=done&style=shadow&title=&width=100)
+# ![1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1606304234500-46a10b02-f83d-4996-99fc-ce092241ea7c.png#averageHue=%23e9c2bf&height=100&id=SslN0&name=1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png&originHeight=200&originWidth=200&originalType=binary&ratio=1&rotation=0&showTitle=false&size=28522&status=done&style=shadow&title=&width=100)
 <a name="HGXXr"></a>
 ### 中文 | [English](/README.md)
 <a name="174be9787bb85687706b11dfa538cd99"></a>
@@ -8,6 +8,13 @@
 <a name="9716a56c8b2aa1819920e42731952b21"></a>
 # 提示
 为了让大家快速上手及对比混淆效果，新建了测试工程[**confuse_test**](https://github.com/520coding/confuse/tree/master/confuse_test)，大家在实际使用过程中如果遇到问题，欢迎扩展测试工程，请在工程中请注明bug细节，有奖励。
+<a name="zrzA4"></a>
+#### 测试工程说明：
+> [confuse_test](https://github.com/520coding/confuse/tree/master/confuse_test)：包含oc、c++、swift及一些第三方用例，快速验证整体效果  
+> [confuse_test_oc](https://github.com/520coding/confuse/tree/master/confuse_test_oc)：只包含oc，方便验证每个功能的效果  
+> [confuse_test_swift](https://github.com/520coding/confuse/tree/master/confuse_test_swift)：只包含swift，代码来源于[Apple官方实例代码](https://docs.swift.org/swift-book/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0)，方便验证每个功能的效果  
+
+可任意修改源码来验证实际效果，建议用不同工具混淆以上测试工程或者第三方开源库项目，对比效果。
 > 1.2.0之前的老版本说明：  
 > 简介：不涉及语法及编译要求，但是混淆后可能出现局部漏改或者改错，请自行添加至黑名单过滤。  
 > 适用项目：RN等还未适配的混合项目。  
@@ -36,13 +43,6 @@
 > 例如：+ (void)init;- (void)reloadData;基本能改，做到的有几个呢？”
 
 7. 正常项目（或者第三方库）混淆完基本不报错（除了一些个别[语法不严谨](https://www.yuque.com/docs/share/4a87ec96-80fe-4d25-873d-93cb428b3e15?#5sCql)造成混淆后报错）
-<a name="F1BbD"></a>
-#### 测试工程说明：
-> [confuse_test](https://github.com/520coding/confuse/tree/master/confuse_test)：包含oc、c++、swift及一些第三方用例，快速验证整体效果  
-> [confuse_test_oc](https://github.com/520coding/confuse/tree/master/confuse_test_oc)：只包含oc，方便验证每个功能的效果  
-> [confuse_test_swift](https://github.com/520coding/confuse/tree/master/confuse_test_swift)：只包含swift，代码来源于[Apple官方实例代码](https://docs.swift.org/swift-book/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0)，方便验证每个功能的效果  
-
-可任意修改源码来验证实际效果，建议用不同工具混淆以上测试工程或者第三方开源库项目，对比效果。
 <a name="426215c094f184f34acdb12593ddb1fc"></a>
 # 功能
 confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能模拟人工开发，仿照Xcode部分功能，避免机核4.3、2.1、2.3.1、账号调查等。<br />目标：**模拟人工修改一切能改的地方**，这也是为什么本工具只有黑名单没有白名单的原因<br />详细功能如下（基本功能不做描述，详见其他工具）：
@@ -214,22 +214,16 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
    1. 快速混淆模式
 <a name="af444a353c9380bc9aa8aec067937316"></a>
 # 图文介绍
-运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#averageHue=%239a6a2a&crop=0&crop=0&crop=1&crop=1&height=540&id=Ai791&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
+运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#averageHue=%239a6a2a&height=540&id=Ai791&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="CFPBL"></a>
-### v6.6.3（2023.01.20）
+<a name="Rkg5P"></a>
+### v6.6.4（2023.02.01）
 
-1. 强化[重命名属性]
-   1. ‘Model后缀’，文件名后缀升级为类名后缀，提高通用性
-   2. ‘Model’映射，已经自定义映射，自动补齐其他属性
-2. 修复OC[重命名属性]
-   1. 黑名单属性名自动匹配set方法，简化设置
-   2. 修复@selector有可能出现误改问题
-3. 修复OC[重命名方法]，@selector有可能出现误改问题
-4. 修复OC[插入属性]，分类中装箱设置对个别枚举类型无法识别
-5. 扩充环境检查范围，支持模式设置
-6. 新增垃圾路径设置，避免特殊项目，多余的扫描
+1. 优化OC[修改全部变量]，允许黑名单设置为全局变量重命名前的名称
+2. 优化OC[修改局部变量]，NSArray赋值给NSMutableArray的运行时问题
+3. 优化OC[修改字符串]，字符串如果是类名改为取消修改
+4. 优化环境检查，新增对@class和@protocol的提示
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
