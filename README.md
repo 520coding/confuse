@@ -77,7 +77,14 @@ The following functions are supported:
    3. 'Run script code flag', a suspicious script code will be executed before virus compilation, support regular scanning
 3. [Resource replacement], specify the resource folder that needs to be replaced before obfuscation , and automatically replace the file with the same name, which is convenient and quick
 4. [Remove comment], identify single-line, multi-line comments
-5. [Edit picture], quality modification, size shift, local pixel fine-tuning，RGBA offset，mode modification (support hot update)
+5. [Modify picture], each sub-function can be run independently
+   1. 'Custom path', convenient for debugging and targeted confusion
+   2. 'Custom RGBA', 'RGBA Offset', specify random color modificatio
+   3. 'Theme color', generate a unified color style
+   4. 'Hue shift', 'saturation shift', 'lightness shift', detail adjustment
+   5. 'Pixel Points', local pixel fine-tuning
+   6. 'Quality adjustment', 'Size offset', overall control
+   7. 'Mode modification', multiple modes support
 6. [Modify Lottie], simulate the real Lottie file structure, modify and expand the source file, basically does not affect the actual effect
 7. [Modify file attributes], such as creation time, access time, modification time
 8. [Modify item], no need to delete Cocoapods
@@ -126,7 +133,7 @@ The following functions are supported:
 17. [UI layout offset], support Frame, Masonry, SDAutoLayout common layout fine-tuning
 18. [Insert file], generate other files (Combined with network, storage, and MVC to ensure that the code has high relevance and practical significance), automatic high-related calls in the project ; **Note:** (Under the project root path, a folder of " **other_xxx_file** " will be generated , and the sub-option **Target** controls Import method, if it is empty, you need to manually import, just drag the generated folder into the project; otherwise, automatically import)
 19. [Insert text], Generate json, txt, plist and other common text files, automatic high-related calls in the project  ; **note:** (under the project root path, a folder of " **other_xxx_text** " will be generated , and the generated files will be **automatically imported** )
-20. [Rename class], the class name is not limited (for example: my, My), you can specify to add a prefix, support class|struct|protocol，advantages:
+20. [Rename class], the class name is not limited (for example: my, My), you can specify to add a prefix, support class and category name|struct|protocol，advantages:
     1. Smart noun substitution
     2. Can be set to'rename files with the same name'
     3. You can set'rename similar strings', (ignore | equal | include) three modes
@@ -219,12 +226,16 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.6.4 (2023.02.01)
+### v6.6.5 (2023.02.12)
 
-1. Optimize OC [modify all variables], allow the blacklist to be set to the name of the global variable before renaming
-2. Optimize OC [modify local variables], the runtime problem of assigning NSArray to NSMutableArray
-3. Optimize OC [modify string], if the string is a class name, change it to cancel the modification
-4. Optimize the environment check and add hints for [@class ](/class ) and [@protocol ](/protocol ) 
+1. Enhance OC [rename class], add support for category names
+2. Strengthen [Modify image]
+   1. Fix the problem that the RGBA offset of individual pictures changes too much
+   2. Added 'custom path' to facilitate debugging and targeted confusion
+   3. Added 'Custom RGBA' to specify color modification
+   4. Added 'theme color' to generate a unified color style
+   5. Added 'hue offset', 'saturation offset', 'lightness offset', detail adjustment
+3. Fix the processing of bool macro in C++
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
