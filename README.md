@@ -68,9 +68,11 @@ The following functions are supported:
    3. 'Scheme' is confused and consistent with Xcode
    4. 'Debug mode', It is convenient to view the comparison before and after the modification in the source file, and insert some special annotations to facilitate the location of the bug. 
    5. 'Hybrid mode', this mode is used to process the swift call oc part of the mixed project, to ensure that the call relationship is maintained after confusion
-   6. 'Reference project root path' setting, read the word and UUID of the reference project
-   7. 'Sensitive words' filtering
-   8. ' **Version iteration confusion** ', iteratively update after review, continue to use the last time (you can also choose the version arbitrarily) to obfuscate the record incremental confusion, maintain version continuity, and simulate normal development. Advantages: Development and obfuscation are synchronized and independent . The main functions currently support update confusion
+   6. 'proto' setting, used for separate obfuscation of protobuf files
+   7. 'Environmental inspection mode' setting, which is convenient for correcting irregular codes in advance
+   8. 'Reference project root path' setting, read the word and UUID of the reference project
+   9. 'Sensitive words' filtering
+   10. ' **Version iteration confusion** ', iteratively update after review, continue to use the last time (you can also choose the version arbitrarily) to obfuscate the record incremental confusion, maintain version continuity, and simulate normal development. Advantages: Development and obfuscation are synchronized and independent . The main functions currently support update confusion
 2. [Antivirus], [Xcode poisoning, XCSSET Malware](https://juejin.cn/post/6936535178118430733)
    1. 'UUID suffix', the virus will randomly insert UUID with a fixed suffix, regular scanning
    2. 'Script path feature', a suspicious script will be executed before virus compilation, support regular scanning
@@ -101,7 +103,7 @@ The following functions are supported:
    4. You can set 'ignore danger', which has the same name as the dictionary key, and it will be ignored
    5. You can set 'associated files', other files containing picture names
 2. [Insert picture], automatically insert pictures, and simulate manual calls according to context and type, and the number of inserts can be specified
-3. [Rename property], support all types of @property , advantages:
+3. [Rename property], support all types of @property , Support Protobuf, advantages:
    1. Identify grammar, identify type, inheritance relationship, **attribute name confusion and class name (including inheritance chain) association** , automatically identify system attributes
    2. You can set the 'Model suffix' to filter by the suffix of the class name, which is convenient for filtering Model
    3. You can set 'Model Mapping' to automatically insert the mapping relationship (customized, and automatically complete other attributes) to ensure that the background data is matched
@@ -226,16 +228,16 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.6.5 (2023.02.12)
+### v6.6.6 (2023.03.19)
 
-1. Enhance OC [rename class], add support for category names
-2. Strengthen [Modify image]
-   1. Fix the problem that the RGBA offset of individual pictures changes too much
-   2. Added 'custom path' to facilitate debugging and targeted confusion
-   3. Added 'Custom RGBA' to specify color modification
-   4. Added 'theme color' to generate a unified color style
-   5. Added 'hue offset', 'saturation offset', 'lightness offset', detail adjustment
-3. Fix the processing of bool macro in C++
+1. Enhance OC[Rename Property], add support for Protobuf
+2. Fix OC [Insert Attribute] to avoid excessive modification of the address of the instance variable
+3. Strengthen OC [rename global variables], support defining global variables in separate .h
+4. Fix OC[modification method], it is possible to assign values to coons formal parameters, and optimize the modification of the init initialization method
+5. Optimize [Rename Image] to improve the recognition of context
+6. Fix the problem that OC may reference old attributes
+7. Fix the problem that there may be too large deviation in image modification
+8. Optimization may show info.plist warning prompt
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
