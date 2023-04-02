@@ -9,9 +9,10 @@ By chance, I ran into the iOS [vest bag business](https://www.yuque.com/docs/sha
 # Prompt
 In order to let everyone get started quickly and compare the effects of confusion, a new test project [**confuse_test**](https://github.com/520coding/confuse/tree/master/confuse_test) was created. If you encounter problems during actual use, welcome to extend the test project. Please indicate the bug details in the project, and there will be rewards.
 <a name="sbrhD"></a>
-#### Test engineering description:
+### Test engineering description:
 > [confuse_test](https://github.com/520coding/confuse/tree/master/confuse_test): Contains oc, c++, swift and some third-party use cases to quickly verify the overall effect  
 > [confuse_test_oc](https://github.com/520coding/confuse/tree/master/confuse_test_oc): only contains oc, which is convenient to verify the effect of each function  
+> [confuse_test_oc_fast](https://github.com/520coding/confuse/tree/master/confuse_test_oc_fast): only contains oc, which is convenient to quickly verify the effect of some functions  
 > [confuse_test_swift](https://github.com/520coding/confuse/tree/master/confuse_test_swift): only contains swift, the code comes from[ Apple's official example code](https://docs.swift.org/swift-book/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0), which is convenient to verify the effect of each function  
 
 The source code can be modified arbitrarily to verify the actual effect. It is recommended to use different tools to confuse the above test projects or third-party open source library projects to compare the effects.
@@ -228,16 +229,12 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.6.6 (2023.03.19)
+### v6.6.7 (2023.04.01)
 
-1. Enhance OC[Rename Property], add support for Protobuf
-2. Fix OC [Insert Attribute] to avoid excessive modification of the address of the instance variable
-3. Strengthen OC [rename global variables], support defining global variables in separate .h
-4. Fix OC[modification method], it is possible to assign values to coons formal parameters, and optimize the modification of the init initialization method
-5. Optimize [Rename Image] to improve the recognition of context
-6. Fix the problem that OC may reference old attributes
-7. Fix the problem that there may be too large deviation in image modification
-8. Optimization may show info.plist warning prompt
+1. Optimize OC[insert attribute]<br />a. Support custom structure and typedef types in classification<br />b. Repair individual closures still have strong reference problems
+2. Optimize OC [rename class], handle Protobuf
+3. Fix single-step confusion, it is possible to refer to old attributes
+4. Newly added test project confuse_test_oc_fast, quick effect test for some functions
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

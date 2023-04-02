@@ -12,6 +12,7 @@
 #### 测试工程说明：
 > [confuse_test](https://github.com/520coding/confuse/tree/master/confuse_test)：包含oc、c++、swift及一些第三方用例，快速验证整体效果  
 > [confuse_test_oc](https://github.com/520coding/confuse/tree/master/confuse_test_oc)：只包含oc，方便验证每个功能的效果  
+> [confuse_test_oc_fast](https://github.com/520coding/confuse/tree/master/confuse_test_oc_fast)：只包含oc，方便快速验证部分功能的效果  
 > [confuse_test_swift](https://github.com/520coding/confuse/tree/master/confuse_test_swift)：只包含swift，代码来源于[Apple官方实例代码](https://docs.swift.org/swift-book/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0)，方便验证每个功能的效果  
 
 可任意修改源码来验证实际效果，建议用不同工具混淆以上测试工程或者第三方开源库项目，对比效果。
@@ -226,17 +227,15 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#averageHue=%239a6a2a&height=540&id=Ai791&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="mBu35"></a>
-### v6.6.6（2023.03.19）
+<a name="hU3Dk"></a>
+### v6.6.7（2023.04.01）
 
-1. 强化OC[重命名属性]，新增对Protobuf的支持
-2. 修复OC[插入属性]，避免对实例变量取地址的过度修改
-3. 强化OC[重命名全局变量]，支持在单独.h定义全局变量
-4. 修复OC[修改方法]，有可能对coons形参赋值问题，以及init初始化方法修改的优化
-5. 优化[重命名图片]，提高对语境的识别
-6. 修复OC有可能引用旧属性的问题
-7. 修复图片修改有可能偏差过大问题
-8. 优化有可能出现info.plist警告提示
+1. 优化OC[插入属性]
+   1. 在分类中支持自定义结构体和typedef类型
+   2. 修复个别闭包仍然出现强引用问题
+2. 优化OC[重命名类]，对Protobuf处理
+3. 修复单步混淆，有可能引用旧属性问题
+4. 新增测试工程confuse_test_oc_fast，对部分功能的快速效果测试
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
