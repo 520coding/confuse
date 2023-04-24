@@ -228,14 +228,15 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
 <a name="hU3Dk"></a>
-### v6.6.7（2023.04.01）
+### v6.6.8（2023.04.25）
 
-1. 优化OC[插入属性]
-   1. 在分类中支持自定义结构体和typedef类型
-   2. 修复个别闭包仍然出现强引用问题
-2. 优化OC[重命名类]，对Protobuf处理
-3. 修复单步混淆，有可能引用旧属性问题
-4. 新增测试工程confuse_test_oc_fast，对部分功能的快速效果测试
+1. 优化OC[修改方法]，支持额外参数个数动态变化
+2. 优化OC[重命名方法]，@selector命名有可能导致后缀重复问题
+3. 优化Swift的编译，手动模式兼容新版xcode
+4. 优化Swift[插入属性]，提高兼容性
+5. 修复Swift[重命名方法]，参数标签调用没有同步更新问题
+6. 修复Swift[插入方法]，支持方法隐式return的情况
+7. 优化Swift[修改方法]，个别var变量类型误改为let
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

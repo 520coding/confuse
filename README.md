@@ -1,5 +1,5 @@
 <a name="tMJSz"></a>
-# ![](https://cdn.nlark.com/yuque/0/2020/png/213807/1606304234500-46a10b02-f83d-4996-99fc-ce092241ea7c.png#averageHue=%23e9c2bf&from=paste&height=200&id=v0ghq&originHeight=200&originWidth=200&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=&width=200)
+# ![china-2.png](https://cdn.nlark.com/yuque/0/2023/png/213807/1682377811568-62430f6e-2085-4044-b2c0-f372851ef03c.png#averageHue=%23eac4c2&clientId=u7a05b3c8-bd4d-4&from=paste&height=50&id=u3b8a15b3&name=china-2.png&originHeight=100&originWidth=100&originalType=binary&ratio=2&rotation=0&showTitle=false&size=10497&status=done&style=none&taskId=u04a94635-1d8b-40b7-98eb-efe61c6e631&title=&width=50)
 <a name="beqYw"></a>
 ### English | [中文](/README_ZH.md)
 <a name="wNymF"></a>
@@ -229,12 +229,15 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.6.7 (2023.04.01)
+### v6.6.8 (2023.04.25)
 
-1. Optimize OC[insert attribute]<br />a. Support custom structure and typedef types in classification<br />b. Repair individual closures still have strong reference problems
-2. Optimize OC [rename class], handle Protobuf
-3. Fix single-step confusion, it is possible to refer to old attributes
-4. Newly added test project confuse_test_oc_fast, quick effect test for some functions
+1. Optimize OC [modification method], support dynamic changes in the number of additional parameters
+2. Optimize OC [rename method], @selector  naming may cause suffix duplication 
+3. Optimize the compilation of Swift, and the manual mode is compatible with the new version of xcode
+4. Optimize Swift [insert property] to improve compatibility
+5. Fix Swift [rename method], the parameter label call is not updated synchronously
+6. Fix Swift [insert method], support method implicit return
+7. Optimize Swift [modification method], some var variable types are mistakenly changed to let
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
