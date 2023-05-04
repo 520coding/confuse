@@ -1,5 +1,5 @@
 <a name="54fa66eaba498942a1604ffa591838ac"></a>
-# ![1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1606304234500-46a10b02-f83d-4996-99fc-ce092241ea7c.png#averageHue=%23e9c2bf&height=100&id=SslN0&name=1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png&originHeight=200&originWidth=200&originalType=binary&ratio=1&rotation=0&showTitle=false&size=28522&status=done&style=shadow&title=&width=100)
+# ![1593768128247-016fe60b-8853-48fb-8b76-f9f702b83db5.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1606304234500-46a10b02-f83d-4996-99fc-ce092241ea7c.png#averageHue=%23e9c2bf&height=100&id=SslN0&originHeight=200&originWidth=200&originalType=binary&ratio=1&rotation=0&showTitle=false&size=28522&status=done&style=shadow&title=&width=100)
 <a name="HGXXr"></a>
 ### 中文 | [English](/README.md)
 <a name="174be9787bb85687706b11dfa538cd99"></a>
@@ -224,19 +224,19 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
    1. 快速混淆模式
 <a name="af444a353c9380bc9aa8aec067937316"></a>
 # 图文介绍
-运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#averageHue=%239a6a2a&height=540&id=Ai791&name=image.png&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
+运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#averageHue=%239a6a2a&height=540&id=Ai791&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="hU3Dk"></a>
-### v6.6.8（2023.04.25）
+<a name="uf4dt"></a>
+### v6.6.9（2023.05.04）
 
-1. 优化OC[修改方法]，支持额外参数个数动态变化
-2. 优化OC[重命名方法]，@selector命名有可能导致后缀重复问题
-3. 优化Swift的编译，手动模式兼容新版xcode
-4. 优化Swift[插入属性]，提高兼容性
-5. 修复Swift[重命名方法]，参数标签调用没有同步更新问题
-6. 修复Swift[插入方法]，支持方法隐式return的情况
-7. 优化Swift[修改方法]，个别var变量类型误改为let
+1. 优化Swift模版，修复个别语法不严谨问题
+2. 强化Swift[修改布局]，支持算术优先级
+3. 优化Swift[插入局部变量]，提高兼容性
+4. 强化Swift[修改局部变量]，支持可选绑定引用
+5. 优化Swift[文件插入]，避免Int类型枚举的错误引用，支持可选绑定引用
+6. 优化OC[文件插入]，个别出现frame局部变量重名问题
+7. 优化OC[插入属性]，分类中个别情况重复插入问题
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

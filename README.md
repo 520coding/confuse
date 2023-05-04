@@ -1,5 +1,5 @@
 <a name="tMJSz"></a>
-# ![china-2.png](https://cdn.nlark.com/yuque/0/2023/png/213807/1682377811568-62430f6e-2085-4044-b2c0-f372851ef03c.png#averageHue=%23eac4c2&clientId=u7a05b3c8-bd4d-4&from=paste&height=50&id=u3b8a15b3&name=china-2.png&originHeight=100&originWidth=100&originalType=binary&ratio=2&rotation=0&showTitle=false&size=10497&status=done&style=none&taskId=u04a94635-1d8b-40b7-98eb-efe61c6e631&title=&width=50)
+# ![china-2.png](https://cdn.nlark.com/yuque/0/2023/png/213807/1682377811568-62430f6e-2085-4044-b2c0-f372851ef03c.png#averageHue=%23eac4c2&clientId=u7a05b3c8-bd4d-4&from=paste&height=50&id=u3b8a15b3&originHeight=100&originWidth=100&originalType=binary&ratio=2&rotation=0&showTitle=false&size=10497&status=done&style=none&taskId=u04a94635-1d8b-40b7-98eb-efe61c6e631&title=&width=50)
 <a name="beqYw"></a>
 ### English | [中文](/README_ZH.md)
 <a name="wNymF"></a>
@@ -225,19 +225,19 @@ Update iterations will be carried out in the following order
    1. Fast obfuscation mode
 <a name="af444a353c9380bc9aa8aec067937316"></a>
 # Graphic introduction
-Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8) in detail before use<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/213807/1623167266244-4978d5ed-0b2c-42b5-80c4-1b44e4ff7f96.png#averageHue=%233a9b1d&clientId=u4ef53c93-4376-4&errorMessage=unknown%20error&from=paste&height=877&id=ufbdd65fd&name=image.png&originHeight=1754&originWidth=2532&originalType=binary&ratio=2&rotation=0&showTitle=false&size=443560&status=error&style=none&taskId=ue83d9a90-392f-4558-9b46-f06320d2c45&title=&width=1266)
+Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8) in detail before use<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/213807/1623167266244-4978d5ed-0b2c-42b5-80c4-1b44e4ff7f96.png#averageHue=%233a9b1d&clientId=u4ef53c93-4376-4&errorMessage=unknown%20error&from=paste&height=877&id=ufbdd65fd&originHeight=1754&originWidth=2532&originalType=binary&ratio=2&rotation=0&showTitle=false&size=443560&status=error&style=none&taskId=ue83d9a90-392f-4558-9b46-f06320d2c45&title=&width=1266)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.6.8 (2023.04.25)
+### v6.6.9 (2023.05.04)
 
-1. Optimize OC [modification method], support dynamic changes in the number of additional parameters
-2. Optimize OC [rename method], @selector  naming may cause suffix duplication 
-3. Optimize the compilation of Swift, and the manual mode is compatible with the new version of xcode
-4. Optimize Swift [insert property] to improve compatibility
-5. Fix Swift [rename method], the parameter label call is not updated synchronously
-6. Fix Swift [insert method], support method implicit return
-7. Optimize Swift [modification method], some var variable types are mistakenly changed to let
+1. Optimize the Swift template and fix some imprecise grammar problems
+2. Enhance Swift[modify layout], support arithmetic priority
+3. Optimize Swift[insert local variables] to improve compatibility
+4. Enhance Swift[modify local variables], support optional binding reference
+5. Optimize Swift[File Insert], avoid incorrect references to Int type enumerations, and support optional binding references
+6. Optimize OC [file insertion], and the problem of duplicate name of frame local variable occurs in some cases
+7. Optimize OC [Insert Attributes], the problem of repeated insertion in individual cases in the classification
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
