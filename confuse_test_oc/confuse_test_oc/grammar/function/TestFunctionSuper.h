@@ -13,10 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol TestFunctionSuper <NSObject, Base>
 
-@property (nonatomic, strong) NSString *sp1;
+@property (nonatomic, strong) NSString *delegate;
 
-+ (void)sfunc;
-- (void)sfunc;
++ (void)reloadData;
+- (void)reloadData;
 
 @end
 
@@ -27,16 +27,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) NSInteger *count;
 
 + (void)init;
-+ (void)func;
-- (void)func;
-+ (void)func1;
-- (void)func1;
++ (void)sizeToFit;
+- (void)sizeToFit;
++ (void)layoutIfNeeded;
+- (void)layoutIfNeeded;
 
 @end
 
 @interface TestFunctionSuper(YJS)
 
-- (void)category_func_1;
+- (void)reloadSectionIndexTitles;
 
 @end
 

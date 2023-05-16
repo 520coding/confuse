@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TestFunctionView : UIView
 
+@property (assign, nonatomic, getter=isAutomaticallyChangeAlpha) BOOL automaticallyChangeAlpha;
+
 @end
 
 @interface TestFunctionButton : UIView

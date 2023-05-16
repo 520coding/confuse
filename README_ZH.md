@@ -227,16 +227,17 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#averageHue=%239a6a2a&height=540&id=Ai791&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="uf4dt"></a>
-### v6.6.9（2023.05.04）
+<a name="pXXOJ"></a>
+### v6.7.0（2023.05.17）
 
-1. 优化Swift模版，修复个别语法不严谨问题
-2. 强化Swift[修改布局]，支持算术优先级
-3. 优化Swift[插入局部变量]，提高兼容性
-4. 强化Swift[修改局部变量]，支持可选绑定引用
-5. 优化Swift[文件插入]，避免Int类型枚举的错误引用，支持可选绑定引用
-6. 优化OC[文件插入]，个别出现frame局部变量重名问题
-7. 优化OC[插入属性]，分类中个别情况重复插入问题
+1. 优化日志，提示编码或者异常路径问题
+2. 强化OC[重命名类]，新增‘关联文件’选项
+3. 优化OC[重命名属性]，修复子类YYModel自定义映射没有引用父类的问题
+4. 强化OC[修改方法]
+   1. 新增‘实参引用百分比’控制
+   2. 修复个别返回值丢失问题
+   3. 有可能出现形参命名冲突问题
+5. 修复上个版本对Swift方法处理，有可能错误引入return问题
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

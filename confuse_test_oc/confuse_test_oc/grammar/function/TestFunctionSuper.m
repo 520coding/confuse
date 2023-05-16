@@ -11,37 +11,43 @@
 #import <WebKit/WebKit.h>
 #import "TestFunctionView.h"
 
+@interface TestFunctionSuper ()
+
+@property (nonatomic, strong) NSString *delegate;
+
+@end
+
 @implementation TestFunctionSuper
 
 + (void)init {
 }
 
-+ (void)func {
++ (void)sizeToFit {
 }
 
-- (void)func {
+- (void)sizeToFit {
 }
 
-+ (void)func1 {
++ (void)layoutIfNeeded {
 }
 
-- (void)func1 {
-    [self category_func_1];
+- (void)layoutIfNeeded {
+    [self reloadSectionIndexTitles];
 }
 
-- (NSString *)test1 {
+- (NSString *)layoutSubviews {
     return self.title;
 }
 
-- (NSInteger)test2 {
+- (NSInteger)setNeedsLayout {
     return self.section;
 }
 
-- (NSDictionary *)func:(NSDictionary *)f1 f2:(NSString * (^)(NSString *name, int count))name {
+- (NSDictionary *)sizeToFit:(NSDictionary *)f1 view:(NSString * (^)(NSString *name, int count))name {
     return [NSMutableDictionary dictionaryWithDictionary:f1];
 }
 
-- (NSString * (^)(NSString *name, int count))func:(NSString *)name {
+- (NSString * (^)(NSString *name, int count))sizeToFit:(NSString *)name {
     return ^NSString *(NSString *name1, int count2) {
                return @"";
     };
@@ -88,7 +94,7 @@
 
 @implementation TestFunctionSuper (YJS)
 
-- (void)category_func_1 {
+- (void)reloadSectionIndexTitles {
 }
 
 @end

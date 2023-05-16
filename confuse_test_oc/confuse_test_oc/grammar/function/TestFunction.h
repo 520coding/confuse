@@ -14,27 +14,27 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TestFunction : TestFunctionSuper<TestFunctionSuper>
 
-@property (nonatomic, strong) NSString *p1;
-@property (nonatomic, strong) NSString *p2;
-@property (nonatomic, strong) NSString *sp1;
+@property (nonatomic, strong) NSString *tag;
+@property (nonatomic, strong) NSString *layer;
+@property (nonatomic, strong) NSString *delegate;
 
-- (void)f1;
-- (void)f1:(NSString *)f1;
-- (void)func1:(NSString *)name;
+- (void)sizeThatFits;
+- (void)sizeThatFits:(NSString *)size;
+- (void)layoutIfNeeded:(NSString *)na1me;
 
 @end
 
 @interface TestFunction1 : NSObject
 
 + (void)init; // 测试同方法不同类
-+ (void)func;
-- (void)func;
++ (void)addSubview;
+- (void)addSubview;
 
 @end
 
 @interface TestFunction2 : UIViewController
 
-- (void)f1:(NSString *)f1;
+- (void)sizeThatFits:(NSString *)view;
 
 @end
 

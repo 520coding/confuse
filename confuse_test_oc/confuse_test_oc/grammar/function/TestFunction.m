@@ -16,67 +16,67 @@
 @implementation TestFunction
 
 - (void)begin {
-    NSStringFromSelector(@selector(setP1:));
-    NSSelectorFromString(@"setP1:");
-    NSSelectorFromString([NSString stringWithFormat:@"%@", @"setP1:"]);
-    NSStringFromSelector(@selector(func1:));
-    NSSelectorFromString(@"func1:");
-    NSSelectorFromString([NSString stringWithFormat:@"%@", @"func1:"]);
-    NSStringFromSelector(@selector(f1:));// 测试所有相关的方法名（类方法、实例方法）统一改
-    NSSelectorFromString(@"f1:");
-    NSSelectorFromString([NSString stringWithFormat:@"%@", @"setSp2:"]);
-    NSStringFromSelector(@selector(func1));
+    NSStringFromSelector(@selector(setTag:));
+    NSSelectorFromString(@"setTag:");
+    NSSelectorFromString([NSString stringWithFormat:@"%@", @"setTag:"]);
+    NSStringFromSelector(@selector(layoutIfNeeded:));
+    NSSelectorFromString(@"layoutIfNeeded:");
+    NSSelectorFromString([NSString stringWithFormat:@"%@", @"layoutIfNeeded:"]);
+    NSStringFromSelector(@selector(sizeThatFits:));// 测试所有相关的方法名（类方法、实例方法）统一改
+    NSSelectorFromString(@"sizeThatFits:");
+    NSSelectorFromString([NSString stringWithFormat:@"%@", @"setFrame2:"]);
+    NSStringFromSelector(@selector(layoutIfNeeded));
 
-    [self setP1:@"_sp1"];
+    [self setTag:@"_tag"];
     [TestFunction init];
-    [TestFunction func];
-    [self sfunc];
-    [[[TestFunction alloc] init] func1:[[[TestFunction alloc] init] p2]];
+    [TestFunction sizeToFit];
+    [self reloadData];
+    [[[TestFunction alloc] init] layoutIfNeeded:[[[TestFunction alloc] init] layer]];
 }
 
-- (void)setSp1:(NSString *)sp1 {
+- (void)setDelegate:(NSString *)delegate {
 }
 
-- (void)setP1:(NSString *)p1 {
+- (void)setTag:(NSString *)tag {
 }
 
-- (NSString *)p2 {
-    return @"_1";
+- (NSString *)layer {
+    return @"layer";
 }
 
 + (void)init {
     [super init];
 }
 
-+ (void)func {
-    [super func];
++ (void)sizeToFit {
+    [super sizeToFit];
 }
 
-- (void)func {
-    [super func];
+- (void)sizeToFit {
+    [super sizeToFit];
 }
 
-+ (void)func1 {
-    [super func1];
++ (void)layoutIfNeeded {
+    [super layoutIfNeeded];
 }
 
-- (void)func1 {
-    [super func1];
+- (void)layoutIfNeeded {
+    [super layoutIfNeeded];
 }
 
-- (void)f1 {
+- (void)sizeThatFits {
 }
 
-- (void)f1:(NSString *)f1 {
+- (void)sizeThatFits:(NSString *)size {
 }
 
-- (void)func1:(NSString *)name {
+- (void)layoutIfNeeded:(NSString *)name {
 }
 
-- (void)sfunc {
+- (void)reloadData {
 }
 
-+ (void)sfunc {
++ (void)reloadData {
 }
 
 @end
@@ -87,7 +87,7 @@
     self = [super init];
     if (self) {
         [TestFunction init];
-        [self func];
+        [self addSubview];
     }
     return self;
 }
@@ -95,10 +95,10 @@
 + (void)init {
 }
 
-+ (void)func {
++ (void)addSubview {
 }
 
-- (void)func {
+- (void)addSubview {
 }
 
 @end
@@ -108,18 +108,18 @@
 - (void)viewDidLoad {
 }
 
-- (void)f1:(NSString *)f1 {
+- (void)sizeThatFits:(NSString *)view {
 }
 
-- (NSString *)f1:(NSString *)f1 f2:(int)f2 {
+- (NSString *)sizeThatFits:(NSString *)size size:(int)count {
     return @"_2";
 }
 
-- (NSArray<NSString *> *)f3:(NSString *)f1 {
+- (NSArray<NSString *> *)addSubview:(NSString *)view {
     return @[];
 }
 
-- (NSArray<NSString *> *)f4 {
+- (NSArray<NSString *> *)didMoveToWindow {
     if (YES) {
         return nil;
     } else {
@@ -128,22 +128,22 @@
     return @[];
 }
 
-- (NSString * (^)(NSString *))f5_1:(NSString *)f1 {
+- (NSString * (^)(NSString *))center:(NSString *)view {
     return nil;
 }
 
-- (NSString * (^)(NSString *name1))f5_2:(NSString * (^)(NSString *name2))f1 f2:(int)f2 {
+- (NSString * (^)(NSString *name1))left:(NSString * (^)(NSString *name2))view right:(int)f2 {
     return NULL;
 }
 
-- (NSString * (^)(NSString *))f5_3:(NSString *)f1 {
+- (NSString * (^)(NSString *))left:(NSString *)view {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         return;
     });
     return nil;
 }
 
-- (NSString * (^)(NSString *name1))f5_4:(NSString * (^)(NSString *name2))f1 f2:(int)f2 {
+- (NSString * (^)(NSString *name1))left:(NSString * (^)(NSString *name2))view bottom:(int)f2 {
     id _block = ^int (NSString *name, int count) {
         return 54;
     };
@@ -151,49 +151,49 @@
     return NULL;
 }
 
-- (NSString * (^)(NSString *name, int count))f6:(NSString *)f1 {
+- (NSString * (^)(NSString *name, int count))top:(NSString *)view {
     return ^NSString *(NSString *name1, int count2) {
                return @"";
     };
 }
 
-- (UIView *)f7_1:(NSString *)f1 {
+- (UIView *)background:(NSString *)view {
     return [[UILabel alloc] init];
 }
 
-- (UIView *)f7_2:(NSArray *)f1 {
+- (UIView *)placeholder:(NSArray *)view {
     return (UIView *)[[NSArray alloc] init];
 }
 
-- (UIView *)f8_1:(NSMutableArray *)f1 {
+- (UIView *)borderRectForBounds:(NSMutableArray *)view {
     return (UIView *)[[NSArray alloc] init];
 }
 
-- (UIView *)f8_2:(NSDictionary *)f1 {
+- (UIView *)textRectForBounds:(NSDictionary *)view {
     return (UIView *)[[NSArray alloc] init];
 }
 
-- (UIView *)f8_3:(NSMutableDictionary *)f1 f2:(NSMutableArray<NSDictionary *> *)f2 {
+- (UIView *)insertSubview:(NSMutableDictionary *)view belowSubview:(NSMutableArray<NSDictionary *> *)f2 {
     return (UIView *)[[NSArray alloc] init];
 }
 
-- (UIView *)f9:(int)f1 f3:(float)f3 f4:(double)f4 f5:(long)f5 f6:(NSInteger)f6 f7:(CGFloat)f7 f8:(short)f8 f9:(BOOL)f9 f10:(Boolean)f10 {
+- (UIView *)insertSubview:(int)view atIndex:(float)f3 f4:(double)f4 f5:(long)f5 f6:(NSInteger)f6 f7:(CGFloat)f7 f8:(short)f8 f9:(BOOL)f9 f10:(Boolean)f10 {
     return (UIView *)[[NSArray alloc] init];
 }
 
-- (UIView *)f9:(int *)f1 f3:(float **)f3 {
+- (UIView *)insertSubview:(int *)view aboveSubview:(float **)f3 {
     return (UIView *)[[NSArray alloc] init];
 }
 
-- (NSDictionary *)f10:(NSDictionary *)f1 f2:(NSDictionary *)f2 {
-    return [NSMutableDictionary dictionaryWithDictionary:f1];
+- (NSDictionary *)scale:(NSDictionary *)view view:(NSDictionary *)f2 {
+    return [NSMutableDictionary dictionaryWithDictionary:view];
 }
 
-- (NSArray *)f11:(NSMutableArray *)f1 f2:(NSArray *)f2 {
+- (NSArray *)mainScreen:(NSMutableArray *)view view:(NSArray *)f2 {
     return [NSMutableArray arrayWithArray:f2];
 }
 
-- (void)f12:(UISwitch *)f1 {
+- (void)currentMode:(UISwitch *)view {
 }
 
 + (void)loadImageFinished:(UIImage *)image
@@ -208,33 +208,39 @@
 
 @end
 
+@interface TestFunction3 ()
+
+@property (nonatomic, strong) NSString *delegate;
+
+@end
+
 @implementation TestFunction3
 
 + (void)init {
     [super init];
 }
 
-+ (void)func {
-    [super func];
++ (void)sizeToFit {
+    [super sizeToFit];
 }
 
-- (void)func {
-    [super func];
+- (void)sizeToFit {
+    [super sizeToFit];
 }
 
 @end
 
 @implementation TestFunction4
 
-- (void)setSp1:(NSString *)sp1 {
+- (void)setDelegate:(NSString *)sp1 {
     
 }
 
-- (void)sfunc {
+- (void)reloadData {
     
 }
 
-+ (void)sfunc {
++ (void)reloadData {
     
 }
 
@@ -242,7 +248,7 @@
     
 }
 
-@synthesize sp1;
+@synthesize delegate;
 
 @end
 

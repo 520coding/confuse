@@ -18,6 +18,11 @@
 }
 */
 
+- (BOOL)isAutoChangeAlpha
+{
+    return self.isAutomaticallyChangeAlpha;
+}
+
 @end
 
 @implementation TestFunctionButton

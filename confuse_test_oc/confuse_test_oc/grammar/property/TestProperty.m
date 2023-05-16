@@ -10,137 +10,137 @@
 
 @interface TestProperty ()
 {
-    int _p3;
+    int _count;
 }
-- (NSString *)p6;
+- (NSString *)rightView;
 
 @end
 
 @implementation TestProperty
 
 - (void)begin {
-    _p1 = @"_1";
-    _p2 = @"_2";
-    _p3 = 3;
-    __p4 = [NSMutableArray array];
-    self.sp1 = @"_s1";
-    self.sp2 = @"_s2";
+    _editing = @"_editing";
+    _title = @"_2";
+    _count = 3;
+    __text = [NSMutableArray array];
+    self.delegate = @"_s1";
+    self.bounces = @"_s2";
 }
 
 - (void)testKvcKvo {
     NSLog(@"以下代码混淆后记得手动修复，或者注释，否则运行会报错。");
     NSLog(@"原因：属性混淆只保证编译层面准确性，运行时错误（kvc、kvo属性混淆暂不考虑），需要用户依据工具《预检查结果》自行调整");
-    [self valueForKey:@"p1"];
+    [self valueForKey:@"editing"];
     NSDictionary *dic = @{
-        @"p1": @{
+        @"editing": @{
             @"key2": @{
                 @"key3": @"lisi002"
             }
         }
     };
-    [dic valueForKeyPath:@"p1.key2.key3"];
-    [self valueForKey:@"p1"];
-    [self setValue:@"_setValue1" forKey:@"p1"];
-    [self setValue:@"_setValue2" forKeyPath:@"_p4"];
+    [dic valueForKeyPath:@"editing.key2.key3"];
+    [self valueForKey:@"editing"];
+    [self setValue:@"_setValue1" forKey:@"editing"];
+    [self setValue:@"_setValue2" forKeyPath:@"_text"];
 }
 
-- (void)setP1:(NSString *)p1 {
-    _p1 = @"_5";
+- (void)setEditing:(NSString *)editing {
+    _editing = @"_count";
 }
 
-- (NSString *)p2 {
-    return @"_p2";
+- (NSString *)title {
+    return @"_title";
 }
 
-- (void)setP3:(int)p3 {
-    _p3 = p3;
+- (void)setCount:(int)count {
+    _count = count;
 }
 
-- (int)p3 {
+- (int)count {
     return 3;
 }
 
-- (void)set_p4:(NSMutableArray *)_p4 {
-    __p4 = _p4;
-    _p2 = self.p1;
-    _p2 = [self p1];
-    self.p1 = @"_6";
-    [self setP1:@"_7"];
-    _p5 = self.p5;
-    [self setP5:_p5];
-//    self.p5 = _p5; // self.p5 编译通过，但是xcode跳转还是get方法，这种情况混淆bug暂时不处理
-    [self setP5:self.p5];
-    [self setP5:[self p5]];
-    [self setP6:self.p6];
-    [self setP6:[self p6]];
-    _p6 = self.p7;
-    _p6 = [self p7];
-    self.p9 = _p9;
-    [self updateP9:[self hasP9]];
-    self.p10 = _p10;
-    [self updateP10:[self hasP10]];
+- (void)set_text:(NSMutableArray *)_text {
+    __text = _text;
+    _title = self.name;
+    _title = [self name];
+    self.name = @"_leftView";
+    [self setName:@"_7"];
+    _leftView = self.leftView;
+    [self setLeftView:_leftView];
+//    self.leftView = _p5; // self.leftView 编译通过，但是xcode跳转还是get方法，这种情况混淆bug暂时不处理
+    [self setLeftView:self.leftView];
+    [self setLeftView:[self leftView]];
+    [self setRightView:self.rightView];
+    [self setRightView:[self rightView]];
+    _rightView = self.zoomBouncing;
+    _rightView = [self zoomBouncing];
+    self.background = _background;
+    [self updateBackground:[self hasBackground]];
+    self.disabledBackground = _disabledBackground;
+    [self updateDisabledBackground:[self hasDisabledBackground]];
 }
 
-- (void)setP5:(NSString *)p5 {
-    _p5 = @"_8";
+- (void)setLeftView:(NSString *)leftView {
+    _leftView = @"_8";
 }
 
-- (NSString *)p5 {
-    return @"_p5";
+- (NSString *)leftView {
+    return @"_leftView";
 }
 
-- (void)setP6:(NSString *)p6 {
-    _p6 = @"_9";
+- (void)setRightView:(NSString *)rightView {
+    _rightView = @"_9";
 }
 
-- (NSString *)p6 {
-    return @"_p6";
+- (NSString *)rightView {
+    return @"_rightView";
 }
 
-- (NSString *)p7 {
-    return @"_p6";
+- (NSString *)zoomBouncing {
+    return @"_rightView";
 }
 
-- (void)setSp2:(NSString *)sp2 {
-    self.sp1 = sp2;
+- (void)setBounces:(NSString *)bounces {
+    self.delegate = bounces;
 }
 
-- (void)setSp3:(NSString *)sp3 {
-    self.sp2 = sp3;
+- (void)setDragging:(NSString *)dragging {
+    self.bounces = dragging;
 }
 
-- (NSString *)sp3 {
+- (NSString *)dragging {
     return @"_10";
 }
 
-- (void)setBp1:(void (^)(void))bp1 {
+- (void)setAttributedText:(void (^)(void))attributedText {
 }
 
-- (void)setBp2:(NSString *_Nonnull (^)(NSString *_Nonnull))bp2 {
+- (void)setFont:(NSString *_Nonnull (^)(NSString *_Nonnull))font {
 }
 
-- (void)setBp3:(NSString *_Nonnull (^)(NSString *_Nonnull))bp3 {
+- (void)setTextAlignment:(NSString *_Nonnull (^)(NSString *_Nonnull))textAlignment {
 }
 
-- (void)setBp4:(NSString *_Nonnull (^)(NSString *_Nonnull, NSString *_Nonnull))bp4 {
+- (void)setBorderStyle:(NSString *_Nonnull (^)(NSString *_Nonnull, NSString *_Nonnull))borderStyle {
 }
 
-- (void)setBp5:(NSArray<NSString *> *_Nonnull (^)(NSString *_Nonnull, NSString *_Nonnull))bp5 {
+- (void)setPlaceholder:(NSArray<NSString *> *_Nonnull (^)(NSString *_Nonnull, NSString *_Nonnull))placeholder {
 }
 
-- (void)setTbp:(Block1)tbp {
+- (void)setTextColor:(Block1)textColor {
 }
 
-- (void)setP8_1:(NSString *)p8_1 {
+- (void)setAttributedPlaceholder:(NSString *)attributedPlaceholder {
 }
 
-- (void)setP8_2:(NSString *)p8_2 {
+- (void)setClearsOnBeginEditing:(NSString *)clearsOnBeginEditing {
 }
 
-- (void)setId_p7:(id)id_p7 {
+- (void)setZooming:(id)zooming {
 }
 
-- (NSString *)hasP10 {
+- (NSString *)hasDisabledBackground {
     return @"_11";
 }
 
@@ -157,10 +157,10 @@
 }
 
 - (NSString *)help {
-    return self.hasP10;
+    return self.hasDisabledBackground;
 }
 
-@synthesize sp2;
+@synthesize bounces;
 
 @end
 
@@ -174,12 +174,12 @@
 @implementation TestProperty1
 
 - (void)begin {
-    _p1 = @"_11";
+    _editing = @"_11";
     self.text = @"_12";
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey, id> *)change context:(void *)context {
-    if ([keyPath isEqualToString:@"p1"]) {
+    if ([keyPath isEqualToString:@"editing"]) {
     }
 }
 
@@ -188,27 +188,27 @@
 }
 
 - (NSString *)text {
-    return @"_1test";
+    return @"_test";
 }
 
-- (void)setP1:(NSString *)p1 {
-    _p1 = @"_25";
+- (void)setEditing:(NSString *)p1 {
+    _editing = @"_25";
 }
 
-- (void)setSp1:(NSString *)sp1 {
+- (void)setDelegate:(NSString *)sp1 {
 }
 
-- (void)setSp2:(NSString *)sp2 {
+- (void)setBounces:(NSString *)sp2 {
 }
 
-- (NSString *)sp2 {
+- (NSString *)bounces {
     return @"_26";
 }
 
-- (void)setSp3:(NSString *)sp3 {
+- (void)setDragging:(NSString *)sp3 {
 }
 
-- (NSString *)sp3 {
+- (NSString *)dragging {
     return @"_27";
 }
 
@@ -220,45 +220,45 @@
 {
     self = [super init];
     if (self) {
-        NSStringFromSelector(@selector(setP21:));
-        NSSelectorFromString(@"setP21:");
-        NSSelectorFromString([NSString stringWithFormat:@"%@", @"setP21:"]);
-        NSStringFromSelector(@selector(setSp1:));
-        NSSelectorFromString(@"setSp1:");
-        NSSelectorFromString([NSString stringWithFormat:@"%@", @"setSp1:"]);
+        NSStringFromSelector(@selector(setDecelerating:));
+        NSSelectorFromString(@"setDecelerating:");
+        NSSelectorFromString([NSString stringWithFormat:@"%@", @"setDecelerating:"]);
+        NSStringFromSelector(@selector(setFrame:));
+        NSSelectorFromString(@"setFrame:");
+        NSSelectorFromString([NSString stringWithFormat:@"%@", @"setFrame:"]);
     }
     return self;
 }
 
-- (void)setP21:(NSString *)p21 {
+- (void)setDecelerating:(NSString *)setDecelerating {
 }
 
-+ (void)setP21:(NSString *)p21 {
++ (void)setDecelerating:(NSString *)setDecelerating {
 }
 
-- (void)setP22:(NSString *)p22 {
+- (void)setDragging:(NSString *)dragging {
 }
 
-- (void)setSp1:(NSObject *)sp1 {
+- (void)setDelegate:(NSObject *)delegate {
 }
 
-- (void)setSp2:(NSString *)sp2 {
+- (void)setBounces:(NSString *)sp2 {
 }
 
 @end
 
 @implementation TestProperty3
 
-- (void)setSp1:(NSObject *)sp1 {
-    [super setSp1:sp1];
+- (void)setDelegate:(NSObject *)delegate {
+    [super setDelegate:delegate];
 }
 
-- (void)setSp2:(NSString *)sp2 {
-    [super setSp2:sp2];
+- (void)setBounces:(NSString *)bounces {
+    [super setBounces:bounces];
 }
 
-- (void)setSp3:(NSString *)sp3 {
-    [super setSp3:sp3];
+- (void)setDragging:(NSString *)dragging {
+    [super setDragging:dragging];
 }
 
 - (void)setMore:(NSObject *)more {

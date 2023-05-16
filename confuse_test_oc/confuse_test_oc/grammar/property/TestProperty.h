@@ -16,34 +16,34 @@ typedef NSArray<NSString *> *_Nullable (^Block1)(NSString *name, NSString *title
 
 @interface TestProperty : TestPropertySuper<TestPropertySuper, UITableViewDelegate>
 {
-    NSString *_p5;
-    NSString *_p6;
-    NSString *_p7;
+    NSString *_leftView;
+    NSString *_rightView;
+    NSString *_inputView;
 }
 
-@property (nonatomic, strong) NSString *p1;
-@property (nonatomic, strong) NSString *p2;
-@property (nonatomic, assign) int p3;
-@property (nonatomic, strong) NSMutableArray *_p4;
-@property (nonatomic, strong) NSString *sp3;
-@property (nonatomic, strong) void (^ bp1)(void);
-@property (nonatomic, strong) NSString * (^ bp2)(NSString *);
-@property (nonatomic, strong) NSString * (^ bp3)(NSString *name);
-@property (nonatomic, strong) NSString * (^ bp4)(NSString *name, NSString *title);
-@property (nonatomic, strong) NSArray<NSString *> * (^ bp5)(NSString *name, NSString *title);
-@property (nonatomic, strong) Block1 tbp;
-@property (nonatomic, strong) id id_p7;
-@property (nonatomic, strong) NSString *p8_1, *p8_2;
-@property (nonatomic, strong, getter = hasP9, setter = updateP9:) NSString *p9;
-@property (nonatomic, strong, getter = hasP10, setter = updateP10:) NSString *p10;
+@property (nonatomic, strong) NSString *editing;
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, assign) int count;
+@property (nonatomic, strong) NSMutableArray *_text;
+@property (nonatomic, strong) NSString *rowHeight;
+@property (nonatomic, strong) void (^ attributedText)(void);
+@property (nonatomic, strong) NSString * (^ font)(NSString *);
+@property (nonatomic, strong) NSString * (^ textAlignment)(NSString *name);
+@property (nonatomic, strong) NSString * (^ borderStyle)(NSString *name, NSString *title);
+@property (nonatomic, strong) NSArray<NSString *> * (^ placeholder)(NSString *name, NSString *title);
+@property (nonatomic, strong) Block1 textColor;
+@property (nonatomic, strong) id zooming;
+@property (nonatomic, strong) NSString *attributedPlaceholder, *clearsOnBeginEditing;
+@property (nonatomic, strong, getter = hasBackground, setter = updateBackground:) NSString *background;
+@property (nonatomic, strong, getter = hasDisabledBackground, setter = updateDisabledBackground:) NSString *disabledBackground;
 @property (nonatomic, strong) NSArray *dataSource;
 @property (nonatomic, strong) UIView *view;
 @property (nonatomic, assign) Boolean isRight;
 @property (nonatomic, strong) NSString *help;
 
 
-- (void)setP5:(NSString *)p5;
-- (NSString *)p5;
+- (void)setLeftView:(NSString *)leftView;
+- (NSString *)leftView;
 
 - (void)testKvcKvo;
 
@@ -51,17 +51,17 @@ typedef NSArray<NSString *> *_Nullable (^Block1)(NSString *name, NSString *title
 
 @interface TestProperty1 : UILabel<TestPropertySuper>
 
-@property (nonatomic, strong) NSString *p1;
-@property (nonatomic, strong) NSString *p11;
-@property (nonatomic, strong) NSString *sp1;
+@property (nonatomic, strong) NSString *editing;
+@property (nonatomic, strong) NSString *contentSize;
+@property (nonatomic, strong) NSString *delegate;
 
 @end
 
 @interface TestProperty2 : NSObject
 
-@property (nonatomic, strong) NSString *p21;
-@property (nonatomic, strong) NSObject *sp1;
-@property (nonatomic, strong) NSString *sp2;
+@property (nonatomic, strong) NSString *decelerating;
+@property (nonatomic, strong) NSObject *delegate;
+@property (nonatomic, strong) NSString *bounces;
 
 @end
 

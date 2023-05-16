@@ -229,15 +229,13 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.6.9 (2023.05.04)
+### v6.7.0 (2023.05.17)
 
-1. Optimize the Swift template and fix some imprecise grammar problems
-2. Enhance Swift[modify layout], support arithmetic priority
-3. Optimize Swift[insert local variables] to improve compatibility
-4. Enhance Swift[modify local variables], support optional binding reference
-5. Optimize Swift[File Insert], avoid incorrect references to Int type enumerations, and support optional binding references
-6. Optimize OC [file insertion], and the problem of duplicate name of frame local variable occurs in some cases
-7. Optimize OC [Insert Attributes], the problem of repeated insertion in individual cases in the classification
+1. Optimize the log to prompt encoding or abnormal path problems
+2. Enhance OC [Rename Class], add the option of 'associated file'
+3. Optimize OC [rename attribute], fix the problem that the subclass YYModel custom mapping does not refer to the parent class
+4. Strengthen OC [Modification method]<br />a. Added the control of "Actual Reference Percentage"<br />b. Fix the problem of missing individual return values<br />c. There may be a formal parameter naming conflict
+5. Fix the handling of Swift methods in the previous version, which may introduce return problems by mistake
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

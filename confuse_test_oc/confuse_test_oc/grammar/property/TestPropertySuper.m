@@ -78,18 +78,18 @@
 
 @implementation NSObject (TestPropertySuper)
 
-- (void)setSp2:(NSString *)sp2 {
+- (void)setBounces:(NSString *)sp2 {
 }
 
-- (NSString *)sp2 {
+- (NSString *)bounces {
     return @"_1";
 }
 
-- (void)setSp3:(NSString *)sp3 {
+- (void)setDragging:(NSString *)sp3 {
 }
 
-- (NSString *)sp3 {
-    return @"_sp3";
+- (NSString *)dragging {
+    return @"_dragging";
 }
 
 - (void)begin {
