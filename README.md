@@ -231,10 +231,14 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.8.0 (2023.06.17)
+### v6.8.1 (2023.07.02)
 
-1. Added [Modify sks], which supports SpriteKit node name replacement and the 'runtime splicing' mode similar to renaming pictures
-2. Fix the problem of mistakenly changing the Pods proxy protocol for the first time when Swift is fully selected
+1. Optimize Swift [insert local variables] to expand the scope of adaptation
+2. Optimize Swift [modify local variables], compatible with metaclasses
+3. Optimize Swift [rename attribute], fix the problem that the CodingKeys enumeration reference has not been modified
+4. Fix Swift [rename method], the problem that the parameter label is omitted when the method name is called as a function parameter
+5. Fix Swift [insert method], adapt to Self type
+6. Fix Swift [Modify method], the parameter label contains the keyword where recognition error problem
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
