@@ -231,14 +231,14 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.8.1 (2023.07.02)
+### v6.8.2 (2023.07.23)
 
-1. Optimize Swift [insert local variables] to expand the scope of adaptation
-2. Optimize Swift [modify local variables], compatible with metaclasses
-3. Optimize Swift [rename attribute], fix the problem that the CodingKeys enumeration reference has not been modified
-4. Fix Swift [rename method], the problem that the parameter label is omitted when the method name is called as a function parameter
-5. Fix Swift [insert method], adapt to Self type
-6. Fix Swift [Modify method], the parameter label contains the keyword where recognition error problem
+1. Optimize and modify the picture, add the option of "picture pixel output" for easy debugging
+2. Optimize the renaming of pictures in Swift, and transplant to the hybrid mode
+3. Optimize the Swift insertion method, and the return tail contains comments
+4. Optimize the environment check, add a prompt that the string is too long, and optimize the environment variable reading rules
+5. Optimize the adaptation of Swift to the new version of Xcode
+6. Optimize the configuration to avoid the lagging of individual operations
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
