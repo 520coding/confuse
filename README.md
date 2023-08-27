@@ -231,11 +231,13 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.9.0 (2023.08.13)
+### v6.9.1 (2023.08.27)
 
-1. Add Swift protobuf confusion
-2. Optimize the info.plist encoding error message of the bundle
-3. Strengthen the environment inspection, support the inspection of xib and storyboard
+1. Optimize and modify the project, adapt to multiple targets, and the names contain each other, etc.
+2. Rename the class, actively avoid additional inserted files in the new mode
+3. Fix the small probability of NSArray being called NSMutableArray imprecisely
+4. Optimize multi-line special comment problem
+5. Part of the log output is adapted to Chinese
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
