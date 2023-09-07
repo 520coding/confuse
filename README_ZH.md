@@ -165,6 +165,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 
 1. [重命名全局方法]，自动识别系统方法
    1. 可设置‘参数标签’，支持隐藏参数标签和尾随闭包用法
+   2. 可设置‘前缀’
 2. [重命名图片]，智能名词替换，自动处理二进制sks文件，自动纠正图片名和xcassets文件夹名不对应的情况
    1. 可设置‘运行拼接名称’，用于运行时通过字符串拼接生成的图片名
    2. 可设置‘指定忽略长度’，图片名长度小于指定长度为危险名称，将忽略
@@ -229,14 +230,14 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#averageHue=%239a6a2a&height=540&id=Ai791&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="TOu2k"></a>
-### v6.9.1（2023.08.27）
+<a name="y93yn"></a>
+### v6.9.2（2023.09.03）
 
-1. 优化修改工程，适配多target，且名称相互包含等情况
-2. 重命名类，新模式下主动避开额外插入的文件
-3. 修复小概率出现NSArray当成NSMutableArray不严谨调用
-4. 优化多行特殊注释问题
-5. 部分日志输出适配中文
+1. 优化OC[修改字符串]，支持Unicode编码
+2. 优化[修改文件属性]，避免sks改完打不开问题
+3. 优化[重命名类]，支持sks的同步修改
+4. 优化Swift[重命名全局方法]，避免小概率重名bug，新增‘前缀’设置
+5. 修复OC[插入文件]，有可能导致Model缺少导入UIKit问题
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
