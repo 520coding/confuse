@@ -232,13 +232,15 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.9.2 (2023.09.03)
+### v6.9.3 (2023.09.17)
 
-1. Optimize OC[modify string], support Unicode encoding
-2. Optimize [modify file attributes] to avoid the problem that sks cannot be opened after modification
-3. Optimize [rename class], support synchronous modification of sks
-4. Optimize Swift [rename global method] to avoid bugs with small probability of duplication, and add 'prefix' setting
-5. Fix OC [insert file], it may cause the problem that Model lacks import UIKit
+1. Adapt OC to iOS16.4
+2. Strengthen environment checks and add checks on OC instance variables
+3. Optimize OC templates to avoid errors and individual warning issues in Objective-C++ compilation mode
+4. Modify the file to expand the scope and include ignored paths
+5. Optimize and modify strings, support custom variable name suffixes and suffixes
+6. Optimize the renaming class and support the modification of sks file names with the same name.
+7. Optimize UI interaction
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
