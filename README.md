@@ -232,15 +232,15 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.9.3 (2023.09.17)
+### v6.9.4 (2023.09.26)
 
-1. Adapt OC to iOS16.4
-2. Strengthen environment checks and add checks on OC instance variables
-3. Optimize OC templates to avoid errors and individual warning issues in Objective-C++ compilation mode
-4. Modify the file to expand the scope and include ignored paths
-5. Optimize and modify strings, support custom variable name suffixes and suffixes
-6. Optimize the renaming class and support the modification of sks file names with the same name.
-7. Optimize UI interaction
+1. Fixed the problem of incorrect modification of Swift's protobuf and incorrect modification of certain system properties or methods in mixed compilation mode.
+2. Fix Swift [modification method], [@autoclosure ](/autoclosure ) syntax error 
+3. Fixed Swift [Insert local variables] and some issues with insufficient syntax
+4. Strengthen environment inspection to check attributes
+5. Optimize [rename global variables], support custom variable name suffixes and suffixes
+6. Optimize [Modify Project] to avoid redundant warning prompts
+7. Optimize protocol matching of inserted templates, file path case issues and UI interaction
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
