@@ -189,7 +189,9 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
    1. 可设置‘参数标签’，支持隐藏参数标签和尾随闭包用法
    2. 识别继承链嵌套类型，支持（class、struct、enum）的静态方法和实例方法，及可选链等
 9. [插入方法]，封装原方法的返回值并利用上下文调用额外关联方法，告别“垃圾代码”
-10. [修改方法]，利用重载技术修改函数原型并调用修改形参，支持交换参数
+   1. 支持‘替换闭包’，提取方法体中的闭包内容并替换
+10. [修改方法]，利用重载技术修改函数原型并调用修改形参
+    1. 支持‘交换参数’，随机交换参数位置，主要用于多参方法
 11. [重命名全局变量]，智能名词替换
 12. [修改字体]，对项目中使用的字体随机微调
 13. [修改颜色]，对项目中UI控件颜色随机偏移
@@ -230,14 +232,12 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#averageHue=%239a6a2a&height=540&id=Ai791&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="DVRNZ"></a>
-### v6.9.5（2023.10.06）
+<a name="pcSw3"></a>
+### v6.9.6（2023.10.22）
 
-1. 强化Swift修改方法，新增‘交换参数’
-2. 优化Swift对组件化工程的适配
-3. 优化黑名单中文件名正则过滤
-4. 优化模版中对selector处理
-5. 修复OC重命名，类方法@selector个别修改不同步问题
+1. 强化Swift[插入方法]，新增‘替换闭包’，提取方法体中的闭包内容并替换
+2. 优化OC[修改方法]，参数引用时去掉self改为下划线
+3. 修复OC[重命名方法]，init前缀特殊情况失效问题
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

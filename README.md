@@ -190,7 +190,9 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
    1. Can set 'parameter label', support hidden parameter label and trailing closure usage
    2. Identification of inheritance chain nested types, support for (class, struct, enum) static methods and instance methods, and optional chains, etc.
 9. [Insert method], encapsulate the return value of the original method and use the context to call additional associated methods, saying goodbye to "garbage code"
+   1. Supports 'replacement closure', extract the closure content in the method body and replace it
 10. [Modification method], use overloading technology to modify the function prototype and call the modified parameter，support exchange parameters
+    1. Supports 'exchange parameters', randomly exchanging parameter positions, mainly used for multi-parameter methods
 11. [Rename global variables], smart noun substitution
 12. [Modify font] , randomly fine-tune the font used in the project, and identify macros
 13. [Modify color], randomly shift the color of UI controls in the project
@@ -232,13 +234,11 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.9.5 (2023.10.06)
+### v6.9.6 (2023.10.22)
 
-1. Strengthen the Swift modification method and add ‘exchange parameters’
-2. Optimize Swift’s adaptation to component-based engineering
-3. Optimize the regular filtering of file names in the blacklist
-4. Optimize selector processing in templates
-5. Fixed OC renaming and class method @selector  individual modification out of sync issues 
+1. Strengthen Swift [insert method], add ‘replacement closure’, extract the closure content in the method body and replace it
+2. Optimize OC [modification method], remove self and replace it with underline when referencing parameters.
+3. Fixed the problem of OC [renaming method] and init prefix failure in special circumstances
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
