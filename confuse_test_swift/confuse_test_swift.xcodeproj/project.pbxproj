@@ -14,6 +14,7 @@
 		712E816628D0C1D1003BAC76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712E816528D0C1D1003BAC76 /* Assets.xcassets */; };
 		712E816928D0C1D1003BAC76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712E816728D0C1D1003BAC76 /* LaunchScreen.storyboard */; };
 		716AFE2B294D6FBA00E342CB /* TestSnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716AFE2A294D6FBA00E342CB /* TestSnapKit.swift */; };
+		71A0A20D2AF6562800AED7AF /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A0A20C2AF6562800AED7AF /* Tool.swift */; };
 		71B26E8228D13E2B0080ED54 /* SwiftProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B26E7528D13E2A0080ED54 /* SwiftProperty.swift */; };
 		71B26E8328D13E2B0080ED54 /* SwiftClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B26E7628D13E2A0080ED54 /* SwiftClosure.swift */; };
 		71B26E8428D13E2B0080ED54 /* SwiftInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B26E7728D13E2A0080ED54 /* SwiftInitialization.swift */; };
@@ -83,6 +84,7 @@
 		712E816828D0C1D1003BAC76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		712E816A28D0C1D1003BAC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		716AFE2A294D6FBA00E342CB /* TestSnapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSnapKit.swift; sourceTree = "<group>"; };
+		71A0A20C2AF6562800AED7AF /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		71B26E7528D13E2A0080ED54 /* SwiftProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftProperty.swift; sourceTree = "<group>"; };
 		71B26E7628D13E2A0080ED54 /* SwiftClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftClosure.swift; sourceTree = "<group>"; };
 		71B26E7728D13E2A0080ED54 /* SwiftInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftInitialization.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 		71B26E7328D13D850080ED54 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				71A0A20C2AF6562800AED7AF /* Tool.swift */,
 				71B26E8F28D141250080ED54 /* layout */,
 				71B26E9328D141250080ED54 /* source */,
 			);
@@ -505,6 +508,7 @@
 				71B26E9728D141250080ED54 /* FrameViewController.swift in Sources */,
 				71B26E8528D13E2B0080ED54 /* SwiftSelector.swift in Sources */,
 				71B26E8928D13E2B0080ED54 /* SwiftEnum.swift in Sources */,
+				71A0A20D2AF6562800AED7AF /* Tool.swift in Sources */,
 				71C3CCB7293F310600CCD930 /* SwiftLottieModel.swift in Sources */,
 				71B26E8628D13E2B0080ED54 /* SwiftFunction.swift in Sources */,
 				71B26E9828D141250080ED54 /* LayoutViewController.swift in Sources */,

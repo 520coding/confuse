@@ -189,25 +189,25 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
 8. [Rename method], the basic functions are renamed similar to other tools, without too much description, advantages: 
    1. Can set 'parameter label', support hidden parameter label and trailing closure usage
    2. Identification of inheritance chain nested types, support for (class, struct, enum) static methods and instance methods, and optional chains, etc.
-9. [Insert method], encapsulate the return value of the original method and use the context to call additional associated methods, saying goodbye to "garbage code"
-   1. Supports 'replacement closure', extract the closure content in the method body and replace it
-10. [Modification method], use overloading technology to modify the function prototype and call the modified parameter，support exchange parameters
+9. [Modify closure], extract the closure content in the method body, encapsulate it into a method and call it
+10. [Insert method], encapsulate the return value of the original method and use the context to call additional associated methods, saying goodbye to "garbage code"
+11. [Modification method], use overloading technology to modify the function prototype and call the modified parameter，support exchange parameters
     1. Supports 'exchange parameters', randomly exchanging parameter positions, mainly used for multi-parameter methods
-11. [Rename global variables], smart noun substitution
-12. [Modify font] , randomly fine-tune the font used in the project, and identify macros
-13. [Modify color], randomly shift the color of UI controls in the project
-14. [UI layout offset], support Frame, SnapKit, common layout fine-tuning
-15. [Insert local variable], split single-line compound calls, change the execution order
-16. [Modify local variable], simulate manual encapsulation call, variable name association type (support nesting), advantages:
+12. [Rename global variables], smart noun substitution
+13. [Modify font] , randomly fine-tune the font used in the project, and identify macros
+14. [Modify color], randomly shift the color of UI controls in the project
+15. [UI layout offset], support Frame, SnapKit, common layout fine-tuning
+16. [Insert local variable], split single-line compound calls, change the execution order
+17. [Modify local variable], simulate manual encapsulation call, variable name association type (support nesting), advantages:
     1. The value of the local variable remains unchanged during operation. For details, see the summary table of supported types.
     2. Can be executed multiple times, the index x2 increases
-17. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
+18. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
     1. Set the'minimum length' filter
     2. You can also set the "effective number" to use together
-18. [Modify xib, storyboard], automatically insert the view, and modify the internal structure properties
-19. [Insert file], close to actual development (combined with network, storage, MVC, xib, etc., to ensure that the code has high relevance and practical significance), and strengthen contextual relevance. Can set 'file name prefix', set 'Target import' in the same way as OC
-20. [Insert text], generate common text files such as json, txt, plist, etc., and automatically high-related calls in the project (introduction of attributes, initialization, automatic destruction, etc.). Note: (under the project root path, the folder "other_xxx_text" will be generated, and the generated files will be automatically imported)
-21. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class|struct|enum|protocol
+19. [Modify xib, storyboard], automatically insert the view, and modify the internal structure properties
+20. [Insert file], close to actual development (combined with network, storage, MVC, xib, etc., to ensure that the code has high relevance and practical significance), and strengthen contextual relevance. Can set 'file name prefix', set 'Target import' in the same way as OC
+21. [Insert text], generate common text files such as json, txt, plist, etc., and automatically high-related calls in the project (introduction of attributes, initialization, automatic destruction, etc.). Note: (under the project root path, the folder "other_xxx_text" will be generated, and the generated files will be automatically imported)
+22. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class|struct|enum|protocol
     1. Can be set to'rename files with the same name'
     2. 'Prefix' can be set
 > Note: At present, the Swift and OC mixed project, the OC calling Swift part will not be processed for the time being, and will be optimized in the future.
@@ -234,11 +234,16 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v6.9.6 (2023.10.22)
+### v7.0.0 (2023.11.06)
 
-1. Strengthen Swift [insert method], add ‘replacement closure’, extract the closure content in the method body and replace it
-2. Optimize OC [modification method], remove self and replace it with underline when referencing parameters.
-3. Fixed the problem of OC [renaming method] and init prefix failure in special circumstances
+1. Add Swift [Modify Closure] and remove the replacement closure of Swift insertion method
+2. Optimize Swift [rename class], the problem of old mode typealias being mistakenly changed
+3. Repair Swift [Insert Method], return recognition problem is not rigorous
+4. Fixed the problem of missing type declaration in Swift [insert local variables] when expanding individual collection types.
+5. Optimize Swift [modify method], do not change method name in parameter exchange mode
+6. Optimize OC [modification method], reference parameters
+7. Update OC [insert file], template macros
+8. Optimize the effective way of sensitive words
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

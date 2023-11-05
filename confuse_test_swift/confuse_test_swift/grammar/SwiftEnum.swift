@@ -33,6 +33,25 @@ enum ArithmeticExpression {
     indirect case multiplication(ArithmeticExpression, ArithmeticExpression)
 }
 
+// MARK: - GiftElement
+
+struct GiftModel: Codable {
+    var code: String?
+    var name: String?
+    var coinPrice: Int?
+    var sortNo: Int?
+    var iconName: String {
+        return "gift_\(code ?? "")"
+    }
+
+    enum CodingKeys: String, CodingKey {
+        case code
+        case name
+        case coinPrice
+        case sortNo
+    }
+}
+
 class SwiftEnum: UIViewController, SwiftBaseProtocol {
     var directionToHead = CompassPoint.west
     let somePlanet = Planet.earth
