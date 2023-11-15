@@ -234,16 +234,14 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v7.0.0 (2023.11.06)
+### v7.0.1 (2023.11.16)
 
-1. Add Swift [Modify Closure] and remove the replacement closure of Swift insertion method
-2. Optimize Swift [rename class], the problem of old mode typealias being mistakenly changed
-3. Repair Swift [Insert Method], return recognition problem is not rigorous
-4. Fixed the problem of missing type declaration in Swift [insert local variables] when expanding individual collection types.
-5. Optimize Swift [modify method], do not change method name in parameter exchange mode
-6. Optimize OC [modification method], reference parameters
-7. Update OC [insert file], template macros
-8. Optimize the effective way of sensitive words
+1. Optimize Swift [modify closure], adapt to generic types, etc.
+2. Fix Swift [Insert Picture], lack of self in the closure and invalid insertion call by row
+3. Fix Swift [rename method] and comply with the third-party OC protocol method to make individual errors.
+4. Fixed the problem of missing the throws keyword in Swift [modification method] when throwing alone has no return value.
+5. Optimize Swift [Insert local variables], there may be a problem with missing type declarations
+6. Optimize the problem that some suffix names are too long
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
