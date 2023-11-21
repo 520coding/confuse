@@ -201,13 +201,14 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
 17. [Modify local variable], simulate manual encapsulation call, variable name association type (support nesting), advantages:
     1. The value of the local variable remains unchanged during operation. For details, see the summary table of supported types.
     2. Can be executed multiple times, the index x2 increases
-18. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
+18. [Rename multi-language], support custom method multi-language processing
+19. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
     1. Set the'minimum length' filter
     2. You can also set the "effective number" to use together
-19. [Modify xib, storyboard], automatically insert the view, and modify the internal structure properties
-20. [Insert file], close to actual development (combined with network, storage, MVC, xib, etc., to ensure that the code has high relevance and practical significance), and strengthen contextual relevance. Can set 'file name prefix', set 'Target import' in the same way as OC
-21. [Insert text], generate common text files such as json, txt, plist, etc., and automatically high-related calls in the project (introduction of attributes, initialization, automatic destruction, etc.). Note: (under the project root path, the folder "other_xxx_text" will be generated, and the generated files will be automatically imported)
-22. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class|struct|enum|protocol
+20. [Modify xib, storyboard], automatically insert the view, and modify the internal structure properties
+21. [Insert file], close to actual development (combined with network, storage, MVC, xib, etc., to ensure that the code has high relevance and practical significance), and strengthen contextual relevance. Can set 'file name prefix', set 'Target import' in the same way as OC
+22. [Insert text], generate common text files such as json, txt, plist, etc., and automatically high-related calls in the project (introduction of attributes, initialization, automatic destruction, etc.). Note: (under the project root path, the folder "other_xxx_text" will be generated, and the generated files will be automatically imported)
+23. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class|struct|enum|protocol
     1. Can be set to'rename files with the same name'
     2. 'Prefix' can be set
 > Note: At present, the Swift and OC mixed project, the OC calling Swift part will not be processed for the time being, and will be optimized in the future.
@@ -234,14 +235,11 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v7.0.1 (2023.11.16)
+### v7.1.0 (2023.11.20)
 
-1. Optimize Swift [modify closure], adapt to generic types, etc.
-2. Fix Swift [Insert Picture], lack of self in the closure and invalid insertion call by row
-3. Fix Swift [rename method] and comply with the third-party OC protocol method to make individual errors.
-4. Fixed the problem of missing the throws keyword in Swift [modification method] when throwing alone has no return value.
-5. Optimize Swift [Insert local variables], there may be a problem with missing type declarations
-6. Optimize the problem that some suffix names are too long
+1. Added Swift [rename multi-language] to support custom methods
+2. Optimize Swift [modify closure] and improve compatibility
+3. Fixed OC [Rename Multi-Language], grammatical error at the end of escape characters in strings
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

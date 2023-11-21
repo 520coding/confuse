@@ -200,13 +200,14 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 17. [修改局部变量]，模拟人工封装调用，变量名关联类型（支持嵌套），优势：
     1. 局部变量值运行时保持不变，详情见[支持类型汇总表](https://520coding.yuque.com/docs/share/cd70e83b-4ab4-40e5-b719-70f214e869c8)
     2. 可多次执行，指数x2递增
-18. [修改字符串]，识别单行、多行、字符串插值、及扩展字符串，改后由加密和拆分字符组等多种方式自由组合，并保留原有字符的注释，方便检查
+18. [重命名多语言]，支持自定义方法多语言处理
+19. [修改字符串]，识别单行、多行、字符串插值、及扩展字符串，改后由加密和拆分字符组等多种方式自由组合，并保留原有字符的注释，方便检查
     1. 设置‘最少长度’过滤
     2. 也可设置‘有效个数’搭配使用
-19. [修改xib、storyboard]，自动插入视图，并修改内部结构属性
-20. [插入文件]，接近实际开发（结合网络、存储、MVC、xib等，保证代码具有高关联度和实际意义），强化上下文关联。可设置‘文件名前缀’，设置‘**Target**导入’方式和OC相同
-21. [插入文本]，生成json、txt、plist等常用文本文件，项目中自动高关联调用（引入属性、初始化、自动销毁等）。**注意：**(在项目根路径下，会生成"**other_xxx_text**"的文件夹，生成的文件会**自动导入**）
-22. [重命名类]，类名不限制（例如：my、My），识别嵌套类型及typealias，支持class、struct、enum、protocol
+20. [修改xib、storyboard]，自动插入视图，并修改内部结构属性
+21. [插入文件]，接近实际开发（结合网络、存储、MVC、xib等，保证代码具有高关联度和实际意义），强化上下文关联。可设置‘文件名前缀’，设置‘**Target**导入’方式和OC相同
+22. [插入文本]，生成json、txt、plist等常用文本文件，项目中自动高关联调用（引入属性、初始化、自动销毁等）。**注意：**(在项目根路径下，会生成"**other_xxx_text**"的文件夹，生成的文件会**自动导入**）
+23. [重命名类]，类名不限制（例如：my、My），识别嵌套类型及typealias，支持class、struct、enum、protocol
     1. 可设置‘重命名同名文件’
     2. 可设置‘前缀’
 > 注意：目前Swift和OC混编项目，OC调用Swift部分暂不处理，后续将优化。
@@ -232,15 +233,12 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#averageHue=%239a6a2a&height=540&id=Ai791&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="XLIQu"></a>
-### v7.0.1（2023.11.16）
+<a name="Smy0Q"></a>
+### v7.1.0（2023.11.20）
 
-1. 优化Swift[修改闭包]，适配泛型类型等
-2. 修复Swift[插入图片]，闭包中缺少self以及按行插入调用失效问题
-3. 修复Swift[重命名方法]，遵守第三方OC协议方法个别误改问题
-4. 修复Swift[修改方法]，单独throws无返回值的方式漏掉throws关键字问题
-5. 优化Swift[插入局部变量]，有可能类型声明缺失问题
-6. 优化个别后缀名称过长问题
+1. 新增Swift[重命名多语言]，支持自定义方法
+2. 优化Swift[修改闭包]，提高兼容性
+3. 修复OC[重命名多语言]，strings中转义字符结尾的语法错误
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
