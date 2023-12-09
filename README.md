@@ -95,7 +95,10 @@ The following functions are supported:
 9. [Modify item], no need to delete Cocoapods
    1. Can be set to'modify uuid', completely refurbished
    2. Customize the name of the'modify target', and the associated information will be updated synchronously
-10. Automatic source code backup
+10. [File comparison], compare the file modification percentage before and after obfuscatio
+    1. ‘Reference path’, customize the original project
+    2. ‘Maximum limit’, skip the comparison if it exceeds the limit
+11. Automatic source code backup
 <a name="279a46203c9fe475b30ffab43dad6dba"></a>
 ### Objective-C
 
@@ -194,6 +197,7 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
 10. [Insert method], encapsulate the return value of the original method and use the context to call additional associated methods, saying goodbye to "garbage code"
 11. [Modification method], use overloading technology to modify the function prototype and call the modified parameter，support exchange parameters
     1. Supports 'exchange parameters', randomly exchanging parameter positions, mainly used for multi-parameter methods
+    2. ‘Dynamic dispatch’, changing the method calling method
 12. [Rename global variables], smart noun substitution
 13. [Modify font] , randomly fine-tune the font used in the project, and identify macros
 14. [Modify color], randomly shift the color of UI controls in the project
@@ -236,15 +240,15 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v7.1.1 (2023.11.30)
+### v7.1.2 (2023.12.09)
 
-1. Strengthen OC [modification method] and add ‘exchange parameters’
-2. Fix OC[] insertion attribute, special situation position
-3. Optimize Swift [rename multi-language], support customization of multiple methods, and adjust the execution order
-4. Fixed Swift [Modify Closure], parameter declaration may have the same name problem
-5. Fixed Swift [modification method], the default extension method may be modified inconsistently when exchanging parameters.
-6. Optimize and modify the problem of excessive offset of individual colors.
-7. Remove the [antivirus] function
+1. Strengthen Swift [modification method] and add the ‘dynamic dispatch’ function
+2. Strengthen [File Comparison] and support customization of 'reference path' and file 'maximum limit'
+3. Fix OC [modify layout], syntax error may be reported in Frame mode
+4. Fix OC [Insert picture], single line if may have unreasonable syntax problems
+5. Fixed the problem of [macro expansion] and accidental deletion of special comments of import.
+6. Optimize debug mode and support retention of define multi-line comments
+7. Optimize the template to avoid the small probability of grammatical errors.
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

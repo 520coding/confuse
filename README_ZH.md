@@ -95,7 +95,10 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 9. [修改项目]，无需删除Cocoapods
    1. 可设置‘修改uuid’，彻底翻新
    2. 自定义‘修改target’名称，相关联信息同步更新
-10. 自动备份源码
+10. [文件对比]，对比混淆前后文件修改百分比
+    1. ‘参考路径’，自定义设置原始项目
+    2. ‘最大限制’，超过部分跳过对比
+11. 自动备份源码
 <a name="279a46203c9fe475b30ffab43dad6dba"></a>
 ### Objective-C
 
@@ -193,6 +196,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 10. [插入方法]，封装原方法的返回值并利用上下文调用额外关联方法，告别“垃圾代码”
 11. [修改方法]，利用重载技术修改函数原型并调用修改形参
     1. 支持‘交换参数’，随机交换参数位置，主要用于多参方法
+    2. ‘动态派发’，改变方法调用方式
 12. [重命名全局变量]，智能名词替换
 13. [修改字体]，对项目中使用的字体随机微调
 14. [修改颜色]，对项目中UI控件颜色随机偏移
@@ -234,16 +238,16 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#averageHue=%239a6a2a&height=540&id=Ai791&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="YZnaX"></a>
-### v7.1.1（2023.11.30）
+<a name="K2qn3"></a>
+### v7.1.2（2023.12.09）
 
-1. 强化OC[修改方法]，新增‘交换参数’
-2. 修复OC[]插入属性，特殊情况位置
-3. 优化Swift[重命名多语言]，支持自定义多个方法，调整执行顺序
-4. 修复Swift[修改闭包]，参数声明有可能重名问题
-5. 修复Swift[修改方法]，交换参数时默认扩展方法有可能修改不一致问题
-6. 优化修改颜色个别偏移过大问题
-7. 移除[杀病毒]功能
+1. 强化Swift[修改方法]，新增‘动态派发’功能
+2. 强化[文件对比]，支持自定义‘参考路径’和文件‘最大限制’
+3. 修复OC[修改布局]，Frame模式下有可能语法报错问题
+4. 修复OC[插入图片]，单行if可能存在语法不合理问题
+5. 修复[宏展开]，import的特殊注释误删问题
+6. 优化debug模式，对define多行注释支持保留
+7. 优化模版，避免小概率出现语法错误
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
