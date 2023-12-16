@@ -119,30 +119,31 @@ The following functions are supported:
    3. Can be executed multiple times, the index x2 increases
 5. [Rename method], similar to Xcode's Rename function , advantages:
    1. Syntax-related, identification of types, inheritance relationships, support for **multi-parameter modification, confusion of method names, class names (including inheritance chains) and type associations** , automatic identification of system methods
-6. [Insert method], insert and call context-related methods, bid farewell to "garbage code", advantages:
+6. [Modify closure], extract the closure content in the method body, encapsulate it into a method and call it
+7. [Insert method], insert and call context-related methods, bid farewell to "garbage code", advantages:
    1. According to the return value type of the method, create the corresponding method in the category. At the same time , the return value of the original method is encapsulated and use (local variables, attributes, formal parameters) called.
    2. Can be executed multiple times, the index x2 increases
-7. [Modification method], simulating manual package call, advantages:
+8. [Modification method], simulating manual package call, advantages:
    1. **Split the call** to the original method **and adjust** it **locally according to the parameter type (support inheritance)** . For details, see the [summary table of supported parameter types.](https://www.yuque.com/docs/share/315b72d9-28f9-4fa6-bf20-c40d94f2253a?translate=en)
    2. Supports 'exchange parameters', randomly exchanging parameter positions, mainly used for multi-parameter methods
    3. Can be executed multiple times, the index x2 increases
-8. [Rename global variables], smart noun substitution
-9. [Modify global variables], replace global variable names, **convert global variables into global functions** , and confuse string variable values
-10. [Insert local variable], single-line compound call becomes simple multi-line call, change the execution order
-11. [Modify local variable], simulate manual encapsulation call, variable name association type, advantages:
+9. [Rename global variables], smart noun substitution
+10. [Modify global variables], replace global variable names, **convert global variables into global functions** , and confuse string variable values
+11. [Insert local variable], single-line compound call becomes simple multi-line call, change the execution order
+12. [Modify local variable], simulate manual encapsulation call, variable name association type, advantages:
     1. Local variable values remain unchanged during operation, see the [summary table of supported types for](https://www.yuque.com/docs/share/90444065-4f4e-49c8-9e1a-5bd3d3b4f84d?translate=en) details
     2. Can be executed multiple times, the index x2 increases
-12. [Rename multilingual], using a system of direct or indirect methods **NSLocalizedString** , **NSLocalizedStringFromTable** multilingual modified，[The custom packaging methods require manual processing](https://520coding.yuque.com/docs/share/de45751a-c629-4737-84ad-251fb2502123?translate=en)
-13. [Modify string], support arbitrary string, encryption processing (hard code -> memory), the original string is kept in the comment for easy inspection
+13. [Rename multilingual], using a system of direct or indirect methods **NSLocalizedString** , **NSLocalizedStringFromTable** multilingual modified，[The custom packaging methods require manual processing](https://520coding.yuque.com/docs/share/de45751a-c629-4737-84ad-251fb2502123?translate=en)
+14. [Modify string], support arbitrary string, encryption processing (hard code -> memory), the original string is kept in the comment for easy inspection
     1. Set the'minimum length' filter
     2. You can also set the " effective number" to use together
-14. [Modify xib, storyboard], automatically insert the view, and modify the internal structure properties
-15. [Modify font] , randomly fine-tune the font used in the project, and identify macros
-16. [Modify color], randomly shift the color of the UI controls in the project, and identify the macro
-17. [UI layout offset], support Frame, Masonry, SDAutoLayout common layout fine-tuning
-18. [Insert file], generate other files (Combined with network, storage, and MVC to ensure that the code has high relevance and practical significance), automatic high-related calls in the project ; **Note:** (Under the project root path, a folder of " **other_xxx_file** " will be generated , and the sub-option **Target** controls Import method, if it is empty, you need to manually import, just drag the generated folder into the project; otherwise, automatically import)
-19. [Insert text], Generate json, txt, plist and other common text files, automatic high-related calls in the project  ; **note:** (under the project root path, a folder of " **other_xxx_text** " will be generated , and the generated files will be **automatically imported** )
-20. [Rename class], the class name is not limited (for example: my, My), you can specify to add a prefix, support class and category name|struct|protocol，advantages:
+15. [Modify xib, storyboard], automatically insert the view, and modify the internal structure properties
+16. [Modify font] , randomly fine-tune the font used in the project, and identify macros
+17. [Modify color], randomly shift the color of the UI controls in the project, and identify the macro
+18. [UI layout offset], support Frame, Masonry, SDAutoLayout common layout fine-tuning
+19. [Insert file], generate other files (Combined with network, storage, and MVC to ensure that the code has high relevance and practical significance), automatic high-related calls in the project ; **Note:** (Under the project root path, a folder of " **other_xxx_file** " will be generated , and the sub-option **Target** controls Import method, if it is empty, you need to manually import, just drag the generated folder into the project; otherwise, automatically import)
+20. [Insert text], Generate json, txt, plist and other common text files, automatic high-related calls in the project  ; **note:** (under the project root path, a folder of " **other_xxx_text** " will be generated , and the generated files will be **automatically imported** )
+21. [Rename class], the class name is not limited (for example: my, My), you can specify to add a prefix, support class and category name|struct|protocol，advantages:
     1. Smart noun substitution
     2. Can be set to'rename files with the same name'
     3. You can set'rename similar strings', (ignore | equal | include) three modes
@@ -240,15 +241,14 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v7.1.2 (2023.12.09)
+### v7.2.0 (2023.12.16)
 
-1. Strengthen Swift [modification method] and add the ‘dynamic dispatch’ function
-2. Strengthen [File Comparison] and support customization of 'reference path' and file 'maximum limit'
-3. Fix OC [modify layout], syntax error may be reported in Frame mode
-4. Fix OC [Insert picture], single line if may have unreasonable syntax problems
-5. Fixed the problem of [macro expansion] and accidental deletion of special comments of import.
-6. Optimize debug mode and support retention of define multi-line comments
-7. Optimize the template to avoid the small probability of grammatical errors.
+1. Add OC [Modify Closure], extract the closure content in the method body and replace it
+2. Optimize OC [insertion method], regarding %ld printing problem
+3. Optimize OC [modify layout], some unreasonable offset issues in Masonry
+4. Optimize Swift optional type judgment rules
+5. Optimize [insert text] and support multi-language settings
+6. Optimize naming details and UI interaction;
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
