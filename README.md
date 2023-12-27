@@ -241,14 +241,13 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="ckOtE"></a>
-### v7.2.0 (2023.12.16)
+### v7.2.1 (2023.12.27)
 
-1. Add OC [Modify Closure], extract the closure content in the method body and replace it
-2. Optimize OC [insertion method], regarding %ld printing problem
-3. Optimize OC [modify layout], some unreasonable offset issues in Masonry
-4. Optimize Swift optional type judgment rules
-5. Optimize [insert text] and support multi-language settings
-6. Optimize naming details and UI interaction;
+1. Optimize OC [modify closure] to adapt to more situations
+2. Fix OC [rename class], protobuf may have the same name problem
+3. Repair OC [modification method], when exchanging parameters, the closure intersection problem and the parameter with nullable problem
+4. Fixed the problem of OC [renaming attributes] and [@synthesize ](/synthesize ) being written in multiple lines and missing changes. 
+5. Add 20% new OC basic templates
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
