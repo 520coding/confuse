@@ -242,11 +242,14 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="zUjQF"></a>
-### v7.3.1（2024.01.10）
+### v7.3.2 (2024.01.22)
 
-1. Adapt to Xcode15.1<br />a. Fix OC global variable recognition error<br />b. Remove horizontal tabs from the template
-2. Swift [insert method]，fix the issue of incorrect referencing of nested type attributes
-3. Add 15% Swift basic template
+1. Adapt to Swift system library iOS17.2
+2. Fix Swift [insert local variable], implicit CGFloat conversion and ternary expression array conversion issues
+3. Optimize the issue where the priority of Swift’s layout snap exceeds 1000
+4. Fixed the problem that the string modified by Swift may have the same name as the global variable
+5. Fixed incorrect syntax for OC insertion attributes and structure attribute assignment operations
+6. Optimize basic templates and references to avoid if conditions that are too long
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
