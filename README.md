@@ -241,15 +241,12 @@ Update iterations will be carried out in the following order
 Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8) in detail before use<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/213807/1623167266244-4978d5ed-0b2c-42b5-80c4-1b44e4ff7f96.png#averageHue=%233a9b1d&clientId=u4ef53c93-4376-4&errorMessage=unknown%20error&from=paste&height=877&id=ufbdd65fd&originHeight=1754&originWidth=2532&originalType=binary&ratio=2&rotation=0&showTitle=false&size=443560&status=error&style=none&taskId=ue83d9a90-392f-4558-9b46-f06320d2c45&title=&width=1266)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
-<a name="zUjQF"></a>
-### v7.3.2 (2024.01.22)
+<a name="L8Epu"></a>
+### v7.3.3 (2024.02.06)
 
-1. Adapt to Swift system library iOS17.2
-2. Fix Swift [insert local variable], implicit CGFloat conversion and ternary expression array conversion issues
-3. Optimize the issue where the priority of Swift’s layout snap exceeds 1000
-4. Fixed the problem that the string modified by Swift may have the same name as the global variable
-5. Fixed incorrect syntax for OC insertion attributes and structure attribute assignment operations
-6. Optimize basic templates and references to avoid if conditions that are too long
+1. Optimize the handling of if that is too long and increase initialization references
+2. Optimize illegal file path prompts, such as extreme cases of backspace characters
+3. Fix OC [modifying local variables] and incorrect modification of function pointers
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
