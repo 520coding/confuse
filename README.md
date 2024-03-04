@@ -242,11 +242,16 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="L8Epu"></a>
-### v7.3.3 (2024.02.06)
+### v7.3.4 (2024.03.03)
 
-1. Optimize the handling of if that is too long and increase initialization references
-2. Optimize illegal file path prompts, such as extreme cases of backspace characters
-3. Fix OC [modifying local variables] and incorrect modification of function pointers
+1. Optimize OC [Rename Class], the category name is the same as the existing class name and cannot be modified.
+2. Optimize OC [renaming attributes and methods], because [@selector ](/selector ) may cause duplicate name problems 
+3. Fixed the unreasonable problem of inserting code before super init in OC[insert picture]
+4. Optimize OC [insertion method] and handle [@throw ](/throw ) 
+5. Fix Swift [modification method], inout call missing & symbol
+6. Fixed the insertion misalignment problem of Swift [Insert Picture] and CGRect line break writing.
+7. Add 15% new OC basic module version
+8. Fix syntax error in if condition expansion
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
