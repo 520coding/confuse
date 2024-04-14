@@ -243,13 +243,12 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="L8Epu"></a>
-### v7.4.1 (2024.03.25)
+### v7.4.2 (2024.04.14)
 
-1. Adapt to Xcode15.3
-2. Strengthen OC [modify control flow] and expand the scope of modification
-3. Add 15% of OC basic templates
-4. Fixed the problem of Swift [renaming properties and methods] and the obfuscation time of individual files being too long.
-5. Optimize log output
+1. Strengthen OC [modify control flow] and support object references
+2. Added 20% new OC basic modification template
+3. Adapt to OC system library iOS17.4
+4. Optimize Xcode project file modification
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
