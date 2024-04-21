@@ -243,12 +243,12 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="L8Epu"></a>
-### v7.4.2 (2024.04.14)
+### v7.4.3 (2024.04.21)
 
-1. Strengthen OC [modify control flow] and support object references
-2. Added 20% new OC basic modification template
-3. Adapt to OC system library iOS17.4
-4. Optimize Xcode project file modification
+1. Fix the issue of misplaced calling order of individual templates after expanding if too long
+2. Optimize the control of the number of renamed words
+3. Add 30% Swift basic template
+4. Fix Swift [modifying string], which may cause inconsistent execution order after concatenation
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
