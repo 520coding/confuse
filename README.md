@@ -243,12 +243,14 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="L8Epu"></a>
-### v7.4.3 (2024.04.21)
+### v7.4.4 (2024.04.29)
 
-1. Fix the issue of misplaced calling order of individual templates after expanding if too long
-2. Optimize the control of the number of renamed words
-3. Add 30% Swift basic template
-4. Fix Swift [modifying string], which may cause inconsistent execution order after concatenation
+1. Fix OC [Modify Control Flow, individual syntax errors.
+2. Fix OC [Rename global method], extern error change problem
+3. Fix OC [Rename Picture], associated file options, and special names cannot be modified.
+4. Fix OC [modify closure], __strong duplication problem
+5. Fix the problem of duplicate name of isValue when expanding if
+6. Added 35% of Swift basic modification templates
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
