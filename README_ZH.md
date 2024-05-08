@@ -241,15 +241,12 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#averageHue=%239a6a2a&height=540&id=Ai791&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="LFu4W"></a>
-### v7.4.4（2024.04.29）
+<a name="XFWnf"></a>
+### v7.4.5（2024.05.08）
 
-1. 修复OC[修改控制流]，个别语法错误问题
-2. 修复OC[重命名全局方法]，extern误改问题
-3. 修复OC[重命名图片]，关联文件选项，特殊名称无法修改问题
-4. 修复OC[修改闭包]，__strong重复问题
-5. 修复if展开可能出现isValue重名问题
-6. 新增Swift基础修改模版35%
+1. 优化OC模版的NSLog输出
+2. 优化对比信息
+3. 新增单词命名其他自定义处理
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
