@@ -243,11 +243,13 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="L8Epu"></a>
-### v7.4.5 (2024.05.08)
+### v7.4.6 (2024.05.15)
 
-1. Optimize NSLog output of OC template
-2. Optimize comparison information
-3. Added word naming and other custom processing
+1. Optimize the print output of Swift templates
+2. Optimize OC [duplicate name method], lack of @property  non-standard set method processing 
+3. Repair OC [Insert Attribute], the attribute in the extension is referenced in the classification, and the definition is missing due to confusion.
+4. Optimize ipa whitelist settings
+5. Fix the problem that the APP may be stuck for a long time when starting.
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
