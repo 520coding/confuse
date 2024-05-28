@@ -146,7 +146,8 @@ The following functions are supported:
 21. [UI layout offset], support Frame, Masonry, SDAutoLayout common layout fine-tuning
 22. [Insert file], generate other files (Combined with network, storage, and MVC to ensure that the code has high relevance and practical significance), automatic high-related calls in the project ; **Note:** (Under the project root path, a folder of " **other_xxx_file** " will be generated , and the sub-option **Target** controls Import method, if it is empty, you need to manually import, just drag the generated folder into the project; otherwise, automatically import)
 23. [Insert text], Generate json, txt, plist and other common text files, automatic high-related calls in the project  ; **note:** (under the project root path, a folder of " **other_xxx_text** " will be generated , and the generated files will be **automatically imported** )
-24. [Rename class], the class name is not limited (for example: my, My), you can specify to add a prefix, support class and category name|struct|protocol，advantages:
+24. [Modify Class], modify the order of member variables, attributes, method declarations and definitions
+25. [Rename class], the class name is not limited (for example: my, My), you can specify to add a prefix, support class and category name|struct|protocol，advantages:
     1. Smart noun substitution
     2. Can be set to'rename files with the same name'
     3. You can set'rename similar strings', (ignore | equal | include) three modes
@@ -244,11 +245,11 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="L8Epu"></a>
-### v7.5.0 (2024.05.22)
+### v7.6.0 (2024.05.27) hot update
 
-1. Added OC [rename member variables] to support synthesisize and arrow syntax recognition
-2. Optimize environment pre-check, add method name calling and special macro recognition for id type
-3. Added APP hot update function
+1. Add OC [Modify Class], modify the order of member variables, attributes, method declarations and definitions
+2. Optimize OC [rename method] and remove the environment check and prompt for missing [@property ](/property ) non-standard set method 
+3. Optimize return processing of single-line if and complex expansion issues
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
