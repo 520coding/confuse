@@ -247,13 +247,10 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="L8Epu"></a>
-### v7.7.0 (2024.06.11) hot update
+### v7.7.1 (2024.06.18) hot update
 
-1. Added OC [Merge Method], interspersed merge code, and changed the function stack structure
-2. Fixed OC [Modify Control Flow], when the percentage setting is less than 100%, the error problem occurs
-3. Fixed OC [Modify Class], attribute method cross definition, and confusion after checking "Annotation Mode"
-4. Added [Close Output], annotated NSLog, print and other debugging statements
-5. Optimized basic code templates
+1. Strengthen OC [merge method], expand supported types
+2. Expand basic code templates
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
