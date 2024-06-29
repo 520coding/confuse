@@ -247,10 +247,12 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="L8Epu"></a>
-### v7.7.1 (2024.06.18) hot update
+### v7.7.2 (2024.06.29) Hot Update
 
-1. Strengthen OC [merge method], expand supported types
-2. Expand basic code templates
+1. Fix OC [Modify Control Flow], error handling of NSAssert and conditional statement line breaks
+2. Enhance Swift [Rename Attribute], support SmartCodable and custom mapping completion
+3. Optimize Swift [Modify String], short string confusion and less changes
+4. Template Bool is no longer expanded by default, reducing the amount of code
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
