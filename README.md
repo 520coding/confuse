@@ -248,13 +248,12 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="L8Epu"></a>
-### v7.8.0 (2024.07.05) Hot Update
+### v7.8.1 (2024.07.15) Hot Update
 
-1. Added OC [Split Method], split method body, can be split multiple times
-2. Optimized OC [Merge Method], adapted closure and avoided direct assignment to self
-3. Optimized [Modify Project], compatible with different uuid formats
-4. Restored the #include processing of [Macro Expansion]
-5. Added pre-check of Swift [Rename Method]
+1. Fix OC [Modify Control Flow], which may accidentally modify the actual logic
+2. Fix OC [Rename Method], @selector inheritance reference omission
+3. Optimize OC [Split Method], the processing of single-interest methods
+4. Optimize Swift [Insert Local Variable], optimize the processing of dictionary Any type
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
