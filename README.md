@@ -202,26 +202,27 @@ Adapt to Swift5.3, the SPM package management project has not yet been tested
    1. Can set 'parameter label', support hidden parameter label and trailing closure usage
    2. Identification of inheritance chain nested types, support for (class, struct, enum) static methods and instance methods, and optional chains, etc.
 9. [Modify closure], extract the closure content in the method body, encapsulate it into a method and call it
-10. [Insert method], encapsulate the return value of the original method and use the context to call additional associated methods, saying goodbye to "garbage code"
-11. [Modification method], use overloading technology to modify the function prototype and call the modified parameter，support exchange parameters
+10. [Split method], split the method body, disrupt the function stack structure, and can be split multiple times
+11. [Insert method], encapsulate the return value of the original method and use the context to call additional associated methods, saying goodbye to "garbage code"
+12. [Modification method], use overloading technology to modify the function prototype and call the modified parameter，support exchange parameters
     1. Supports 'exchange parameters', randomly exchanging parameter positions, mainly used for multi-parameter methods
     2. ‘Dynamic dispatch’, changing the method calling method
-12. [Rename global variables], smart noun substitution
-13. [Modify font] , randomly fine-tune the font used in the project, and identify macros
-14. [Modify color], randomly shift the color of UI controls in the project
-15. [UI layout offset], support Frame, SnapKit, common layout fine-tuning
-16. [Insert local variable], split single-line compound calls, change the execution order
-17. [Modify local variable], simulate manual encapsulation call, variable name association type (support nesting), advantages:
+13. [Rename global variables], smart noun substitution
+14. [Modify font] , randomly fine-tune the font used in the project, and identify macros
+15. [Modify color], randomly shift the color of UI controls in the project
+16. [UI layout offset], support Frame, SnapKit, common layout fine-tuning
+17. [Insert local variable], split single-line compound calls, change the execution order
+18. [Modify local variable], simulate manual encapsulation call, variable name association type (support nesting), advantages:
     1. The value of the local variable remains unchanged during operation. For details, see the summary table of supported types.
     2. Can be executed multiple times, the index x2 increases
-18. [Rename multi-language], support custom method multi-language processing
-19. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
+19. [Rename multi-language], support custom method multi-language processing
+20. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
     1. Set the'minimum length' filter
     2. You can also set the "effective number" to use together
-20. [Modify xib, storyboard], automatically insert the view, and modify the internal structure properties
-21. [Insert file], close to actual development (combined with network, storage, MVC, xib, etc., to ensure that the code has high relevance and practical significance), and strengthen contextual relevance. Can set 'file name prefix', set 'Target import' in the same way as OC
-22. [Insert text], generate common text files such as json, txt, plist, etc., and automatically high-related calls in the project (introduction of attributes, initialization, automatic destruction, etc.). Note: (under the project root path, the folder "other_xxx_text" will be generated, and the generated files will be automatically imported)
-23. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class|struct|enum|protocol
+21. [Modify xib, storyboard], automatically insert the view, and modify the internal structure properties
+22. [Insert file], close to actual development (combined with network, storage, MVC, xib, etc., to ensure that the code has high relevance and practical significance), and strengthen contextual relevance. Can set 'file name prefix', set 'Target import' in the same way as OC
+23. [Insert text], generate common text files such as json, txt, plist, etc., and automatically high-related calls in the project (introduction of attributes, initialization, automatic destruction, etc.). Note: (under the project root path, the folder "other_xxx_text" will be generated, and the generated files will be automatically imported)
+24. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class|struct|enum|protocol
     1. Can be set to'rename files with the same name'
     2. 'Prefix' can be set
 > Note: At present, the Swift and OC mixed project, the OC calling Swift part will not be processed for the time being, and will be optimized in the future.
@@ -248,12 +249,12 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="L8Epu"></a>
-### v7.8.1 (2024.07.15) Hot Update
+### v7.9.0 (2024.07.24) hot update
 
-1. Fix OC [Modify Control Flow], which may accidentally modify the actual logic
-2. Fix OC [Rename Method], @selector inheritance reference omission
-3. Optimize OC [Split Method], the processing of single-interest methods
-4. Optimize Swift [Insert Local Variable], optimize the processing of dictionary Any type
+1. Added Swift [split method] to split the method body, which can be split multiple times
+2. Fixed the problem in Swift [modify string] that the string in the case statement may be missed.
+3. Added Swift [modify string], pre-check
+4. Fix the incorrect use of sizeThatFits in OC templates
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
