@@ -247,13 +247,14 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#averageHue=%239a6a2a&height=540&id=Ai791&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<a name="zUYbE"></a>
-### v7.9.0（2024.07.24）热更新
+<a name="qxuPp"></a>
+### v7.9.1（2024.08.03）热更新
 
-1. 新增Swift[拆分方法]，拆分方法体，可多次拆分
-2. 修复Swift[修改字符串]，case语句中的字符串有可能漏改问题
-3. 新增Swift[修改字符串]，预检查
-4. 修复OC模版中sizeThatFits错误使用问题
+1. 修复Swift[重命名方法]，个别协议方法无改问题
+2. 优化OC[拆分方法]，__typeof适配问题
+3. 优化关闭输出
+4. 修复Xcode15.3版本下，混淆有可能出现异常问题
+5. 修复扫描C++有可能出现的问题
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

@@ -249,12 +249,13 @@ Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.c
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
 <a name="L8Epu"></a>
-### v7.9.0 (2024.07.24) hot update
+### v7.9.1 (2024.08.03) Hot Update
 
-1. Added Swift [split method] to split the method body, which can be split multiple times
-2. Fixed the problem in Swift [modify string] that the string in the case statement may be missed.
-3. Added Swift [modify string], pre-check
-4. Fix the incorrect use of sizeThatFits in OC templates
+1. Fixed Swift [rename method], some protocol methods are not changed
+2. Optimized OC [split method], __typeof adaptation problem
+3. Optimized shutdown output
+4. Fixed the problem that confusion may occur under Xcode15.3
+5. Fixed the problem that may occur when scanning C++
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
