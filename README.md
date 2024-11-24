@@ -174,7 +174,7 @@ The following functions are supported:
 This part of the function is integrated into C++ and supports cocos2dx automatic filtering
 <a name="47038e8338f9e18ef9eaba0ea5effb80"></a>
 ### Swift
-Adapt to Swift5.3, the SPM package management project has not yet been tested
+Adapt to Swift5.5, the SPM package management project has not yet been tested
 
 1. [Modify control flow], replace logical operations and optional binding in if conditional statements with equivalent
 2. [Rename global method] to automatically identify system methods
@@ -249,14 +249,11 @@ Update iterations will be carried out in the following order
 Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8) in detail before use<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/213807/1623167266244-4978d5ed-0b2c-42b5-80c4-1b44e4ff7f96.png#averageHue=%233a9b1d&clientId=u4ef53c93-4376-4&errorMessage=unknown%20error&from=paste&height=877&id=ufbdd65fd&originHeight=1754&originWidth=2532&originalType=binary&ratio=2&rotation=0&showTitle=false&size=443560&status=error&style=none&taskId=ue83d9a90-392f-4558-9b46-f06320d2c45&title=&width=1266)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
-<h3 id="L8Epu">v8.0.3 (2024.11.10) hot update</h3>
+<h3 id="L8Epu">v8.0.4 (2024.11.23) hot update</h3>
 
-1. Fix OC [Modify Control Flow], the referenced external attribute nil causes runtime problems
-2. Fix Swift [modify control flow], if brackets and generic problems
-3. Fixed the problem of Swift [Insert Local Variable], incorrect interception of parameter labels, and cross-line declaration of local variables.
-4. Optimize Swift privacy return processing and remove UITextSearching type references
-5. Optimize compilation and parsing speed
-6. Optimize closing output
+1. Adapt to Swift5.5 concurrency syntax
+2. Optimize template partial replacement rules
+3. Optimize the shutdown output of OC
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

@@ -173,7 +173,7 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 该部分功能整合至C++中，支持cocos2dx自动过滤
 <a name="47038e8338f9e18ef9eaba0ea5effb80"></a>
 ### Swift
-适配Swift5.3，SPM包管理项目暂未测试
+适配Swift5.5，SPM包管理项目暂未测试
 
 1. [修改控制流]，if条件语句中的逻辑运算和可选绑定进行等价替换
 2. [重命名全局方法]，自动识别系统方法
@@ -248,14 +248,11 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#averageHue=%239a6a2a&height=540&id=Ai791&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<h3 id="clUN5">v8.0.3（2024.11.10）热更新</h3>
+<h3 id="INHAC">v8.0.4（2024.11.23）热更新</h3>
 
-1. 修复OC[修改控制流]，引用的外部属性nil引起运行时问题
-2. 修复Swift[修改控制流]，if的括号和泛型问题
-3. 修复Swift[插入局部变量]，错误截取参数标签，跨行声明局部变量问题
-4. 优化Swift隐私return处理，移除UITextSearching类型引用
-5. 优化编译解析速度
-6. 优化关闭输出
+1. 适配Swift5.5并发语法
+2. 优化模版部分替换规则
+3. 优化OC的关闭输出
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
