@@ -248,13 +248,14 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#averageHue=%239a6a2a&height=540&id=Ai791&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<h3 id="INHAC">v8.0.9（2025.04.20）热更新</h3>
+<h3 id="INHAC">v8.0.9（2025.05.17）热更新</h3>
 
-1. 优化OC[修改控制流]，适配typedef闭包，增加懒加载过滤
-2. 优化OC[重命名多语言]，支持只修改key
-3. 优化Swift[修改字符串]，对\"的处理
-4. 新增[重命名图片]，前缀自定义选项
-5. 扩充敏感词
+1. 强化OC[重命名属性]，新增对WCDB的支持
+2. 优化OC[重命名类]，避免出现单个Block名称
+3. 修复OC[重命名属性和方法]，系统分类改名后有可能和子类同名的问题
+4. 优化OC[修改控制流]，适配在.mm文件中Bool类型转换问题
+5. 优化OC[修改闭包]，替换的时候还原__strong引用
+6. 强化OC[重命名图片]，新增前缀设置
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
