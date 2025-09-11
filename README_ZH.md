@@ -249,11 +249,12 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#averageHue=%239a6a2a&height=540&id=Ai791&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<h3 id="INHAC">v8.1.9（2025.09.02）热更新</h3>
+<h3 id="INHAC">v8.2.0（2025.09.11）热更新</h3>
 
-1. 强化Swift[插入方法]，新增策略模式
-2. 优化Swift[修改字符串]，减少范围
-3. 优化OC[插入方法]，避免__weak和__strong被分割
+1. 新增OC[替换方法]，替换方法调用
+2. 优化OC[插入方法]，readonly和属性赋值优化
+3. 修复OC[修改局部变量]，typeof类型问题
+4. 优化OC基础模板
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
