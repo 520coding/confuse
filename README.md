@@ -206,7 +206,7 @@ Adapt to Swift5.5, the SPM package management project has not yet been tested
 10. [Modify closure], extract the closure content in the method body, encapsulate it into a method and call it
 11. [Split method], split the method body, disrupt the function stack structure, and can be split multiple times
 12. [Insert method], encapsulate the return value of the original method and use the context to call additional associated methods, saying goodbye to "garbage code"
-13. [Modification method], use overloading technology to modify the function prototype and call the modified parameter，support exchange parameters
+13. [Modify method], use overloading technology to modify the function prototype and call the modified parameter，support exchange parameters
     1. Supports 'exchange parameters', randomly exchanging parameter positions, mainly used for multi-parameter methods
     2. ‘Dynamic dispatch’, changing the method calling method
 14. [Rename global variables], smart noun substitution
@@ -250,15 +250,12 @@ Update iterations will be carried out in the following order
 Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8) in detail before use<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/213807/1623167266244-4978d5ed-0b2c-42b5-80c4-1b44e4ff7f96.png#averageHue=%233a9b1d&clientId=u4ef53c93-4376-4&errorMessage=unknown%20error&from=paste&height=877&id=ufbdd65fd&originHeight=1754&originWidth=2532&originalType=binary&ratio=2&rotation=0&showTitle=false&size=443560&status=error&style=none&taskId=ue83d9a90-392f-4558-9b46-f06320d2c45&title=&width=1266)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
-<h3 id="L8Epu">v8.2.2 (October 19, 2025) Hotfix</h3>
+<h3 id="L8Epu">v8.2.3 (2025.11.24) Hotfix</h3>
 
-1. Added Swift [Replace Method] and method call replacement
-2. Fixed issues with Swift [Modify Closure] and MainActor
-3. Updated Swift basic templates
-4. Optimized Objective-C [Replace Method], filtered stringWithFormat, and added a blacklist filter for method calls
-5. Optimized Objective-C [Modify Control Flow] and fixed issues with empty string default values
-6. Updated Objective-C Depend suffixes
-7. Optimized word references for reference projects
+1. Enhance OC [modify control flow], add encapsulation for property references and stringWithFormat
+2. Fix the missing generic issue in the collection type property reference of self for Swift [insert method]
+3. Optimize Swift code formatting while preserving unused method parameters
+4. Optimize word reference issues during renaming
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
