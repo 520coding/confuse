@@ -124,34 +124,35 @@ The following functions are supported:
 8. [Rename method], similar to Xcode's Rename function , advantages:
    1. Syntax-related, identification of types, inheritance relationships, support for **multi-parameter modification, confusion of method names, class names (including inheritance chains) and type associations** , automatic identification of system methods
 9. [Modify closure], extract the closure content in the method body, encapsulate it into a method and call it
-10. [Split method], split the method body, disrupt the function stack structure, can be split multiple times
-11. [Insert method], insert and call context-related methods, bid farewell to "garbage code", advantages:
+10. [Extract Method], extracting part of the method body code and encapsulating it into a method.
+11. [Split method], split the method body, disrupt the function stack structure, can be split multiple times
+12. [Insert method], insert and call context-related methods, bid farewell to "garbage code", advantages:
     1. According to the return value type of the method, create the corresponding method in the category. At the same time , the return value of the original method is encapsulated and use (local variables, attributes, formal parameters) called.
     2. Can be executed multiple times, the index x2 increases
-12. [Insert control flow] to change the code execution order
-13. [Merge method], interspersed merge code, and changed the function stack structure
-14. [Modify method], simulating manual package call, advantages:
+13. [Insert control flow] to change the code execution order
+14. [Merge method], interspersed merge code, and changed the function stack structure
+15. [Modify method], simulating manual package call, advantages:
     1. **Split the call** to the original method **and adjust** it **locally according to the parameter type (support inheritance)** . For details, see the [summary table of supported parameter types.](https://www.yuque.com/docs/share/315b72d9-28f9-4fa6-bf20-c40d94f2253a?translate=en)
     2. Supports 'exchange parameters', randomly exchanging parameter positions, mainly used for multi-parameter methods
     3. Can be executed multiple times, the index x2 increases
-15. [Rename global variables], smart noun substitution
-16. [Modify global variables], replace global variable names, **convert global variables into global functions** , and confuse string variable values
-17. [Insert local variable], single-line compound call becomes simple multi-line call, change the execution order
-18. [Modify local variable], simulate manual encapsulation call, variable name association type, advantages:
+16. [Rename global variables], smart noun substitution
+17. [Modify global variables], replace global variable names, **convert global variables into global functions** , and confuse string variable values
+18. [Insert local variable], single-line compound call becomes simple multi-line call, change the execution order
+19. [Modify local variable], simulate manual encapsulation call, variable name association type, advantages:
     1. Local variable values remain unchanged during operation, see the [summary table of supported types for](https://www.yuque.com/docs/share/90444065-4f4e-49c8-9e1a-5bd3d3b4f84d?translate=en) details
     2. Can be executed multiple times, the index x2 increases
-19. [Rename multilingual], using a system of direct or indirect methods **NSLocalizedString** , **NSLocalizedStringFromTable** multilingual modified，[The custom packaging methods require manual processing](https://520coding.yuque.com/docs/share/de45751a-c629-4737-84ad-251fb2502123?translate=en)
-20. [Modify string], support arbitrary string, encryption processing (hard code -> memory), the original string is kept in the comment for easy inspection
+20. [Rename multilingual], using a system of direct or indirect methods **NSLocalizedString** , **NSLocalizedStringFromTable** multilingual modified，[The custom packaging methods require manual processing](https://520coding.yuque.com/docs/share/de45751a-c629-4737-84ad-251fb2502123?translate=en)
+21. [Modify string], support arbitrary string, encryption processing (hard code -> memory), the original string is kept in the comment for easy inspection
     1. Set the'minimum length' filter
     2. You can also set the " effective number" to use together
-21. [Modify xib, storyboard], automatically insert the view, and modify the internal structure properties
-22. [Modify font] , randomly fine-tune the font used in the project, and identify macros
-23. [Modify color], randomly shift the color of the UI controls in the project, and identify the macro
-24. [UI layout offset], support Frame, Masonry, SDAutoLayout common layout fine-tuning
-25. [Insert file], generate other files (Combined with network, storage, and MVC to ensure that the code has high relevance and practical significance), automatic high-related calls in the project ; **Note:** (Under the project root path, a folder of " **other_xxx_file** " will be generated , and the sub-option **Target** controls Import method, if it is empty, you need to manually import, just drag the generated folder into the project; otherwise, automatically import)
-26. [Insert text], Generate json, txt, plist and other common text files, automatic high-related calls in the project  ; **note:** (under the project root path, a folder of " **other_xxx_text** " will be generated , and the generated files will be **automatically imported** )
-27. [Modify Class], modify the order of member variables, attributes, method declarations and definitions
-28. [Rename class], the class name is not limited (for example: my, My), you can specify to add a prefix, support class and category name|struct|protocol，advantages:
+22. [Modify xib, storyboard], automatically insert the view, and modify the internal structure properties
+23. [Modify font] , randomly fine-tune the font used in the project, and identify macros
+24. [Modify color], randomly shift the color of the UI controls in the project, and identify the macro
+25. [UI layout offset], support Frame, Masonry, SDAutoLayout common layout fine-tuning
+26. [Insert file], generate other files (Combined with network, storage, and MVC to ensure that the code has high relevance and practical significance), automatic high-related calls in the project ; **Note:** (Under the project root path, a folder of " **other_xxx_file** " will be generated , and the sub-option **Target** controls Import method, if it is empty, you need to manually import, just drag the generated folder into the project; otherwise, automatically import)
+27. [Insert text], Generate json, txt, plist and other common text files, automatic high-related calls in the project  ; **note:** (under the project root path, a folder of " **other_xxx_text** " will be generated , and the generated files will be **automatically imported** )
+28. [Modify Class], modify the order of member variables, attributes, method declarations and definitions
+29. [Rename class], the class name is not limited (for example: my, My), you can specify to add a prefix, support class and category name|struct|protocol，advantages:
     1. Smart noun substitution
     2. Can be set to'rename files with the same name'
     3. You can set'rename similar strings', (ignore | equal | include) three modes
@@ -250,14 +251,13 @@ Update iterations will be carried out in the following order
 Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8) in detail before use<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/213807/1623167266244-4978d5ed-0b2c-42b5-80c4-1b44e4ff7f96.png#averageHue=%233a9b1d&clientId=u4ef53c93-4376-4&errorMessage=unknown%20error&from=paste&height=877&id=ufbdd65fd&originHeight=1754&originWidth=2532&originalType=binary&ratio=2&rotation=0&showTitle=false&size=443560&status=error&style=none&taskId=ue83d9a90-392f-4558-9b46-f06320d2c45&title=&width=1266)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
-<h3 id="L8Epu">v8.2.4 (2026.01.21) Hotfix</h3>
+<h3 id="L8Epu">v8.3.0 (2026.02.12) Hot Update</h3>
 
-1. Fixed an issue with the addition of comments at the end of relational operators in Swift [method splitting]
-2. Optimized multi-line issues in Swift [inserting local variables]
-3. Fixed an issue with class properties using @propertyWrapper in Swift [property renaming]
-4. Optimized Swift [property renaming] to support SmartCodableX
-5. Optimized Objective-C [class renaming] to avoid similar names
-6. Fixed a potential infinite loop issue after Objective-C obfuscation
+1. Added Objective-C [Extract Method], extracting part of the method body code and encapsulating it into a method.
+2. Optimized Objective-C [Split Method], no longer generating extra local variables when there are no parameter references.
+3. Fixed the issue of missing parameter labels in optional methods in Swift [Rename Method].
+4. Optimized Swift [Insert Method], handling special return cases.
+5. Optimized Swift [Rename Property], adding support for Ignore SmartCodable.
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
