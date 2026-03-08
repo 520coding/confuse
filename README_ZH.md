@@ -251,11 +251,10 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/213807/1607931800015-f60e682f-6ef3-4c5a-bfc5-4c88222bb1a7.png#averageHue=%239a6a2a&height=540&id=Ai791&originHeight=1080&originWidth=1920&originalType=binary&ratio=1&rotation=0&showTitle=false&size=489209&status=done&style=none&title=&width=960)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<h3 id="INHAC">v8.3.1（2026.02.26）热更新</h3>
+<h3 id="INHAC">v8.3.2（2026.03.08）热更新</h3>
 
-1. 新增Swift[修改属性]，支持lazy属性的修改
-2. 优化Swift插入局部变量，多行多参问题
-3. 修复Swift个别类型解析出错问题
+1. 新增Swift[加密字符串]，字符串集中加密
+2. 优化OC[加密字符串]，扩充变化
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
