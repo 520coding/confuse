@@ -206,27 +206,28 @@ Adapt to Swift5.5, the SPM package management project has not yet been tested
    2. Identification of inheritance chain nested types, support for (class, struct, enum) static methods and instance methods, and optional chains, etc.
 10. [Modify Property], supporting modifications to lazy properties
 11. [Modify closure], extract the closure content in the method body, encapsulate it into a method and call it
-12. [Split method], split the method body, disrupt the function stack structure, and can be split multiple times
-13. [Insert method], encapsulate the return value of the original method and use the context to call additional associated methods, saying goodbye to "garbage code"
-14. [Modify method], use overloading technology to modify the function prototype and call the modified parameter，support exchange parameters
+12. [Extract Method], extracting part of the method body code and encapsulating it into a method. 
+13. [Split method], split the method body, disrupt the function stack structure, and can be split multiple times
+14. [Insert method], encapsulate the return value of the original method and use the context to call additional associated methods, saying goodbye to "garbage code"
+15. [Modify method], use overloading technology to modify the function prototype and call the modified parameter，support exchange parameters
     1. Supports 'exchange parameters', randomly exchanging parameter positions, mainly used for multi-parameter methods
     2. ‘Dynamic dispatch’, changing the method calling method
-15. [Rename global variables], smart noun substitution
-16. [Modify font] , randomly fine-tune the font used in the project, and identify macros
-17. [Modify color], randomly shift the color of UI controls in the project
-18. [UI layout offset], support Frame, SnapKit, common layout fine-tuning
-19. [Insert local variable], split single-line compound calls, change the execution order
-20. [Modify local variable], simulate manual encapsulation call, variable name association type (support nesting), advantages:
+16. [Rename global variables], smart noun substitution
+17. [Modify font] , randomly fine-tune the font used in the project, and identify macros
+18. [Modify color], randomly shift the color of UI controls in the project
+19. [UI layout offset], support Frame, SnapKit, common layout fine-tuning
+20. [Insert local variable], split single-line compound calls, change the execution order
+21. [Modify local variable], simulate manual encapsulation call, variable name association type (support nesting), advantages:
     1. The value of the local variable remains unchanged during operation. For details, see the summary table of supported types.
     2. Can be executed multiple times, the index x2 increases
-21. [Rename multi-language], support custom method multi-language processing
-22. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
+22. [Rename multi-language], support custom method multi-language processing
+23. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
     1. Set the'minimum length' filter
     2. You can also set the "effective number" to use together
-23. [Modify xib, storyboard], automatically insert the view, and modify the internal structure properties
-24. [Insert file], close to actual development (combined with network, storage, MVC, xib, etc., to ensure that the code has high relevance and practical significance), and strengthen contextual relevance. Can set 'file name prefix', set 'Target import' in the same way as OC
-25. [Insert text], generate common text files such as json, txt, plist, etc., and automatically high-related calls in the project (introduction of attributes, initialization, automatic destruction, etc.). Note: (under the project root path, the folder "other_xxx_text" will be generated, and the generated files will be automatically imported)
-26. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class|struct|enum|protocol
+24. [Modify xib, storyboard], automatically insert the view, and modify the internal structure properties
+25. [Insert file], close to actual development (combined with network, storage, MVC, xib, etc., to ensure that the code has high relevance and practical significance), and strengthen contextual relevance. Can set 'file name prefix', set 'Target import' in the same way as OC
+26. [Insert text], generate common text files such as json, txt, plist, etc., and automatically high-related calls in the project (introduction of attributes, initialization, automatic destruction, etc.). Note: (under the project root path, the folder "other_xxx_text" will be generated, and the generated files will be automatically imported)
+27. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class|struct|enum|protocol
     1. Can be set to'rename files with the same name'
     2. 'Prefix' can be set
 > Note: At present, the Swift and OC mixed project, the OC calling Swift part will not be processed for the time being, and will be optimized in the future.
@@ -252,10 +253,10 @@ Update iterations will be carried out in the following order
 Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8) in detail before use<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/213807/1623167266244-4978d5ed-0b2c-42b5-80c4-1b44e4ff7f96.png#averageHue=%233a9b1d&clientId=u4ef53c93-4376-4&errorMessage=unknown%20error&from=paste&height=877&id=ufbdd65fd&originHeight=1754&originWidth=2532&originalType=binary&ratio=2&rotation=0&showTitle=false&size=443560&status=error&style=none&taskId=ue83d9a90-392f-4558-9b46-f06320d2c45&title=&width=1266)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
-<h3 id="L8Epu">v8.3.2 (2026.03.08) Hot Update</h3>
+<h3 id="L8Epu">v8.3.3 (2026.03.17) Hot Update</h3>
 
-1. Added Swift [encrypted string], centralized string encryption
-2. Optimize OC[encrypted string] and expand variations
+1. Added Swift [Extract Method], extracting part of the method body code and encapsulating it into a method.
+2. Optimized Swift [Split Method], no longer generating extra local variables when there are no parameter references. 
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
