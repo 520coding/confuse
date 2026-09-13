@@ -267,19 +267,16 @@ Update iterations will be carried out in the following order
 Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8) in detail before use<br />![screenshot](docs/images/screenshot-en.png)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
-<h3 id="L8Epu">v8.4.3 (2026.09.07) Hotfix</h3>
+<h3 id="L8Epu">v8.4.4 (2026.09.13) Hotfix</h3>
 
-1. Added version compatibility checks; injected code now automatically supplements `@available` checks based on the project's minimum supported system version.
-2. Enhanced Objective-C [Insert Method] and [Modify Method] operations by constructing call chains using actual dynamic properties/methods existing within the project.
-3. Fixed Objective-C [Rename Method] issues where renaming was incomplete or methods could not be found at runtime in certain cases.
-4. Enhanced Objective-C [Split Method] logic; split points now better align with standard refactoring practices, with improved selection of split points and minimum segment lengths.
-5. Enhanced Swift [Modify Method], [Split Method], and [Extract Method] operations, making modifications more diverse and logical.
-6. Enhanced Swift [Replace Method] by removing redundant dead code layers for more streamlined changes.
-7. Fixed [Insert Image] issues where premature triggering of page lazy-loading caused display anomalies.
-8. Fixed [Rename Enum] issues where `CodingKeys` case names were incorrectly modified, causing a mismatch with stored property names previously aligned via `property.rename`.
-9. Optimized IPA path parsing to support more build output formats and fixed issues where loose files were incorrectly identified.
-10. Optimized string obfuscation naming strategies and fixed an infinite loop issue occurring in specific scenarios.
-11. Fixed compilation failures in mixed-language projects caused by specific coding patterns involving structs, closures, extension properties, cross-class read-only properties, etc.
+1. Strengthen OC [Modification Method], with more diverse anchor syntax (nil chain / numerical arithmetic / bare direct measurement hybrid)
+2. Enhance OC [Replacement Method], add support for void return values
+3. Added a new glue macro pre-check to scan for statement expression macros and suggest encapsulation as class methods, reducing macro zone mismodification
+4. Optimize OC[encrypted string], add environment pre-check before encryption, and improve stability of skip criteria for scenarios like global/static
+5. Fix issues such as host statement corruption, incomplete attribute injection, and incorrect local variable sampling caused by macro expansion/nested conditional compilation
+6. Fix [Split Scope], property synthesis/global numbers/.mm linking/access control migration/insert images, etc. compilation failures
+7. Optimize injection code, correct non-equivalent anchors and dead branch local quantities
+8. Fix the pollution of persistent global names in historical reuse
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
