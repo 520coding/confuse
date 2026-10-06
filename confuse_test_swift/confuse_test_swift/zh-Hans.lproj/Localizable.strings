@@ -1,0 +1,34 @@
+/*
+  Localizable.strings
+  confuse_test_swift
+*/
+
+"tab.categories" = "分类";
+"tab.favorites" = "收藏";
+
+"categories.title" = "分类";
+
+"search.placeholder" = "搜索菜谱";
+"list.empty" = "没有找到菜谱";
+
+"favorites.empty" = "还没有收藏。\n点菜谱上的星星即可保存到这里。";
+
+"detail.ingredients" = "配料";
+"detail.instructions" = "做法";
+
+"error.title" = "出错了";
+"action.ok" = "好";
+
+"detail.video" = "视频";
+"detail.watchVideo" = "在 YouTube 观看";
+
+"action.remove" = "移除";
+
+"sort.title" = "排序与筛选";
+"sort.relevance" = "默认顺序";
+"sort.nameAsc" = "名称 A→Z";
+"sort.nameDesc" = "名称 Z→A";
+"filter.favoritesOnly" = "只看收藏";
+"filter.showAll" = "显示全部";
+"action.cancel" = "取消";
+"share.ingredients" = "配料：";

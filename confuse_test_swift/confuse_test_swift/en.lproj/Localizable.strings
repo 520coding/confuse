@@ -1,0 +1,34 @@
+/*
+  Localizable.strings
+  confuse_test_swift
+*/
+
+"tab.categories" = "Categories";
+"tab.favorites" = "Favorites";
+
+"categories.title" = "Categories";
+
+"search.placeholder" = "Search meals";
+"list.empty" = "No meals found";
+
+"favorites.empty" = "No favorites yet.\nTap the star on a meal to save it here.";
+
+"detail.ingredients" = "Ingredients";
+"detail.instructions" = "Instructions";
+
+"error.title" = "Something went wrong";
+"action.ok" = "OK";
+
+"detail.video" = "Video";
+"detail.watchVideo" = "Watch on YouTube";
+
+"action.remove" = "Remove";
+
+"sort.title" = "Sort & Filter";
+"sort.relevance" = "Default order";
+"sort.nameAsc" = "Name A–Z";
+"sort.nameDesc" = "Name Z–A";
+"filter.favoritesOnly" = "Favorites only";
+"filter.showAll" = "Show all";
+"action.cancel" = "Cancel";
+"share.ingredients" = "Ingredients:";
