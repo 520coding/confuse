@@ -17,10 +17,9 @@
 By chance, I ran into the iOS [vest bag business](https://www.yuque.com/docs/share/7e70244c-5dea-4035-b634-65cc082097da?translate=en) . I also used other tools on the market in the early stage, but the actual effect was not ideal. After a lot of practice, a full-featured [obfuscation tool has been developed](https://github.com/520coding/confuse) . The tool have been packaged into a Mac application which support multiple programming languages, such as OC, C++, Swift. More functions are still being packaged, so stay tuned.
 <a name="ixxhF"></a>
 # Prompt
-In order to let everyone get started quickly and compare the effects of confusion, a new test project [**confuse_test**](https://github.com/520coding/confuse/tree/master/confuse_test) was created. If you encounter problems during actual use, welcome to extend the test project. Please indicate the bug details in the project, and there will be rewards.
+In order to let everyone get started quickly and compare the effects of confusion, several test projects were created. If you encounter problems during actual use, welcome to extend the test project. Please indicate the bug details in the project, and there will be rewards.
 <a name="sbrhD"></a>
 ### Test engineering description:
-> [confuse_test](https://github.com/520coding/confuse/tree/master/confuse_test): Contains oc, c++, swift and some third-party use cases to quickly verify the overall effect  
 > [confuse_test_oc](https://github.com/520coding/confuse/tree/master/confuse_test_oc): only contains oc, which is convenient to verify the effect of each function  
 > [confuse_test_oc_fast](https://github.com/520coding/confuse/tree/master/confuse_test_oc_fast): only contains oc, which is convenient to quickly verify the effect of some functions  
 > [confuse_test_swift](https://github.com/520coding/confuse/tree/master/confuse_test_swift): only contains swift, the code comes from[ Apple's official example code](https://docs.swift.org/swift-book/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0), which is convenient to verify the effect of each function  

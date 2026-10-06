@@ -17,10 +17,9 @@
 机缘巧合偶遇iOS[马甲包业务](https://www.yuque.com/docs/share/7e70244c-5dea-4035-b634-65cc082097da?#《马甲包简介》)，前期也使用过目前市面上其他得工具，实际效果不太理想。经过大量实践，开发出一款功能齐全的[混淆工具](https://github.com/520coding/confuse)。工具的主要功能OC、C++、Swift已封装成Mac应用，其他功能还在封装中，敬请期待。
 <a name="9716a56c8b2aa1819920e42731952b21"></a>
 # 提示
-为了让大家快速上手及对比混淆效果，新建了测试工程[**confuse_test**](https://github.com/520coding/confuse/tree/master/confuse_test)，大家在实际使用过程中如果遇到问题，欢迎扩展测试工程，请在工程中请注明bug细节，有奖励。
+为了让大家快速上手及对比混淆效果，新建了若干测试工程，大家在实际使用过程中如果遇到问题，欢迎扩展测试工程，请在工程中请注明bug细节，有奖励。
 <a name="zrzA4"></a>
 #### 测试工程说明：
-> [confuse_test](https://github.com/520coding/confuse/tree/master/confuse_test)：包含oc、c++、swift及一些第三方用例，快速验证整体效果  
 > [confuse_test_oc](https://github.com/520coding/confuse/tree/master/confuse_test_oc)：只包含oc，方便验证每个功能的效果  
 > [confuse_test_oc_fast](https://github.com/520coding/confuse/tree/master/confuse_test_oc_fast)：只包含oc，方便快速验证部分功能的效果  
 > [confuse_test_swift](https://github.com/520coding/confuse/tree/master/confuse_test_swift)：只包含swift，代码来源于[Apple官方实例代码](https://docs.swift.org/swift-book/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0)，方便验证每个功能的效果  
