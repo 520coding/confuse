@@ -1,11 +1,9 @@
-platform :ios, '10.0'
+platform :ios, '13.0'
 inhibit_all_warnings!
+
 target 'confuse_test_oc' do
-
-pod 'Masonry'
-pod 'YYModel'
-pod 'YYCategories'
-pod 'MJExtension'
-pod 'SDAutoLayout'
-
+  # 布局
+  pod 'Masonry'
+  # 模型解析
+  pod 'YYModel'
 end

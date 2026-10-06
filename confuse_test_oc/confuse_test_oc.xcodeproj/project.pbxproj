@@ -7,79 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01894CA7A7EE182C001041FB /* TestFunctionXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6DE4537ACFEF02D892B7D7E /* TestFunctionXibViewController.xib */; };
-		043E43278A313D1B8D548900 /* number3.png in Resources */ = {isa = PBXBuildFile; fileRef = 20924A17972C9F1857D9E873 /* number3.png */; };
-		0F824A79B15CDB48C3FDD7FA /* TestPropertyOther_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = E326427DBCF3FC2F52336BE0 /* TestPropertyOther_VC.m */; };
-		28914183B33466A33D4F43D6 /* TestPropertyXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3F6416B9F840D6BBC302AB1 /* TestPropertyXibView.xib */; };
-		2AD84171845B4DB0C8C5C1FE /* TestXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE724411B737D7C524909ED7 /* TestXibViewController.xib */; };
-		2C8045A693FAD2EEBD5E273B /* TestClassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 858D4BE29DFF284184F01E37 /* TestClassCell.m */; };
-		2FA14BC18914A72A33DDC14B /* TestImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45874AEF97DA4736F1968960 /* TestImageViewController.m */; };
-		308446D8B5B76867357B4A6B /* TestPropertyXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 580B49CEBA1F214843D8BD5F /* TestPropertyXibViewController.m */; };
+		06A91B17D7EDAC651EED9A51 /* YQFeedDetailViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 946E1FF633A7272E646F4833 /* YQFeedDetailViewController.h */; };
+		085207B946CE34CA2E4AA222 /* YQProfileViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 71AB3939B0832C9F204F7BBD /* YQProfileViewController.h */; };
+		0E7F7BCD6C1BEDEEF669F8A6 /* UIButton+YQBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = E99D70AF4382B8E254758975 /* UIButton+YQBadge.m */; };
+		10112458665513356316EFDB /* YQTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = D3F3D5F4E3CB0A8BCAD64A02 /* YQTabBarController.h */; };
+		14D7C78141EB03510AADF34B /* YQDiscoverItem.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A7BF2F2B26ABCC5A929492 /* YQDiscoverItem.h */; };
+		1B5E57912FB9FFF64C0EAF76 /* UIColor+YQHex.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B12EAF3A97FBAE71B9C50C /* UIColor+YQHex.h */; };
+		24C5ECCE9FB1393705F3BA7D /* YQLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A1EA192AA57F49C72A34D524 /* YQLoginViewController.h */; };
+		27773D6EA28B1278FFB48508 /* YQFeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E83F41AD2BCAE415AC2896 /* YQFeedDetailViewController.m */; };
+		30B4BAA2698F5E26B66DDCA6 /* YQProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 463F2909991C1CD3217A966C /* YQProfileViewController.m */; };
 		3156422FAAFF13ACF0932F45 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F014F7D85F55C7F45210E3F /* Localizable.strings */; };
-		321B45EB96640F4B13DE4D6B /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA74BCBA0C0E5FEE79B7C3B /* ColorViewController.m */; };
-		335442FE84F092C9B4567ECA /* Lee Sin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9E6F4A06B3849980254E9820 /* Lee Sin.jpg */; };
-		395341BC83C6E5DA89115554 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E2416887DB140945283348 /* MBProgressHUD.m */; };
-		3DAA4BB1A1C37617319AC323 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2354F008D7C48031FBA670B /* ViewController.m */; };
-		415946A1851F48DB1D054D02 /* TestGlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = BF584E2D9878DEFE7CC84CAC /* TestGlobalVariable.m */; };
-		48E545189842ADBCD416D5AE /* TestLayoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 984E4F78BDF254E19843956B /* TestLayoutTableViewController.m */; };
-		49AA434CAD6D5E6D40810EE6 /* 加.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCC4EC2BD5A561FED9E7BA9 /* 加.png */; };
-		4C2D4E8BB836C1D1F7F6711E /* TestPropertyXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DD7449EB45735DBDABE0B4B /* TestPropertyXibViewController.xib */; };
-		4D9C41EB8E7EC66FD35B45E3 /* MBHudDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C64D7889AB229F5C5653F4 /* MBHudDemoViewController.m */; };
-		506C42EF8EFE85B1738E2773 /* TestXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF14EAE8640A366B1220399 /* TestXibView.xib */; };
-		515A44E1886BDB8784A763C5 /* TestMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A347CDB70BA722814F6F33 /* TestMacro.m */; };
-		51AA44648EF440187F6662E6 /* 锤石.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA4065BD37B15811BA7CB2 /* 锤石.png */; };
-		52844786A676C95DC870788C /* discard.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61394BFF863E11839DB7668D /* discard.xcassets */; };
-		54304386B544D7C9EB7218F9 /* TestFunctionSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF40D1959AEA4ADEDA818E /* TestFunctionSuper.m */; };
-		5A6A4BAFBB7F0D9E15C33516 /* TestOtherMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F4078BEE0E7FFEFCFC02C /* TestOtherMacro.m */; };
+		324A5FDC229024D24825875F /* YQUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 27D9D10B183497187D41D940 /* YQUser.h */; };
+		348B406B67FD90E8F6D30B52 /* YQFeedListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EA2F71005EA4A96718AA888 /* YQFeedListViewController.h */; };
+		37409F0F93544A5389E2C043 /* YQDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EF68C78CE57A0C7962446D /* YQDiscoverViewController.m */; };
+		3AC2F0823D8D95153A39816B /* UIView+YQFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CE92DFB8A0B7ECA8BEA277 /* UIView+YQFrame.m */; };
+		42328361D02DA759AC3DE81D /* YQDiscoverViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C82973EDFF06237F1FE215BD /* YQDiscoverViewController.h */; };
+		4291797D09DCE108C84F7E18 /* YQLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508DC48E4A03514E0C783575 /* YQLoginViewController.m */; };
+		4CCE134B1D523B3BFC2E462F /* YQFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DB6D30458BA5B08FDF921A /* YQFeedCell.m */; };
+		52AF2032FD0D3352D6B4CFCB /* YQAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = F786DA1A6939E567575AD7AA /* YQAPIClient.h */; };
+		5B2A551C21E82C179292AABE /* YQDiscoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C4223AB563A02D7C53B636 /* YQDiscoverCell.m */; };
+		5F5227788841ECF273468A06 /* YQSimpleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60690D64FC6DEC617026928 /* YQSimpleListViewController.m */; };
+		60E32816BA4CC36B32E1181E /* YQDiscoverCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FCB44F5F3950168D667E15B /* YQDiscoverCell.h */; };
 		61984131BE61A6CE24690448 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D56542D1973E5124DB52D3CE /* main.m */; };
-		6576491F9BC003936E440694 /* TestFunctionOtherTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4329430EA993546DEB497B00 /* TestFunctionOtherTemplate.m */; };
-		675149B8837928F2AE8C1345 /* TestMasonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F44E59879F294118658D3 /* TestMasonry.m */; };
-		702940BDA98C0BD83C400DCB /* TestLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A824EAD92B69F0193E76C50 /* TestLayoutViewController.m */; };
-		710345C1873C57EC3BF7D251 /* TestXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6E4DA7B668D9714C6E6E21 /* TestXibView.m */; };
-		71973A0128D35F9C00DD75C3 /* OtherTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71973A0028D35F9C00DD75C3 /* OtherTableViewController.m */; };
-		72964A4F93071FC42B9EF8CE /* TestImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57614B849EB749C1A7AFF5E9 /* TestImageModel.m */; };
-		76D24FC1AAD9296C55ED5C6D /* TestSuperGlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = A7844E939F40C0C4B43E64AC /* TestSuperGlobalVariable.m */; };
-		85EA4BC8935CE6517B6FEA07 /* SCOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B1456EB4A293567FAF6C00 /* SCOrder.m */; };
-		860A461CB3E653E74947C888 /* TestLocalizableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5746A09E182B272818C5CC /* TestLocalizableViewController.m */; };
-		89F84A9FB1A4C5C2ECD68448 /* User_M.m in Sources */ = {isa = PBXBuildFile; fileRef = E1204B9DBB369E0993FB8C59 /* User_M.m */; };
-		8FC4405EBAE404DCD0FCE2F9 /* TestClassCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B0241C9B855217B7C66A0C1 /* TestClassCell.xib */; };
-		8FE44570A9DAD94941D60300 /* number2.png in Resources */ = {isa = PBXBuildFile; fileRef = 477747E8AC6220795B79F03A /* number2.png */; };
-		9DAC4EDE936C477F224364E9 /* TestDiscardSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = B46F4800BCB560F332C5F10C /* TestDiscardSuper.m */; };
-		9F564DC7AE36708976F087C4 /* TestPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524D450E9DB0F9309462B27F /* TestPropertyViewController.m */; };
-		A2DF48BA902DC5186C4AFBF9 /* Base.m in Sources */ = {isa = PBXBuildFile; fileRef = D56543DE98386FFD364CBFEB /* Base.m */; };
-		A71A443DAD125B6F25571861 /* TestSuperMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = A13E49059D0B7110FDF7E518 /* TestSuperMacro.m */; };
-		A96B4F9A82065A156460BFF2 /* TestLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AE4645876DD1144CB3F1F4 /* TestLayoutCell.m */; };
+		638DBBD68778FAA82BD379E9 /* NSString+YQAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F4489230C9DD1B455B5D7A95 /* NSString+YQAdd.m */; };
+		66A8E4E9F7AB56DA933C09B1 /* YQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99FD990A6804FD490B99EA2 /* YQTabBarController.m */; };
+		66BC4D3530AC5AC9D0A0770F /* YQMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = B8E91B6A1E856BB9B184555B /* YQMacros.h */; };
+		67118E3803182504DB847BA4 /* YQFeedCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B472BDB8A4693CE25CDD2BC9 /* YQFeedCell.h */; };
+		6C4B1ED3C3263F4DCFC12198 /* NSString+YQAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 28BBF380450A998A17B79321 /* NSString+YQAdd.h */; };
+		706154F865CFD7C1BD2D719C /* YQProfileHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C65FA3110AC1F5143F4261D /* YQProfileHeaderView.h */; };
+		74490E7EC10145C20E86C16F /* YQUserSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA274F6591737FF963A995B /* YQUserSession.m */; };
+		83870EAE7801EF283978B097 /* YQScanViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 48EF4949B1C94A3661B451AE /* YQScanViewController.h */; };
+		865580EE51B53B97FAA34E4C /* UIColor+YQHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DD286A7DEB019D4517B341 /* UIColor+YQHex.m */; };
+		8EAA8DF0F98ED707FB2B0B59 /* YQScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE34293B9C79C73021BDC93 /* YQScanViewController.m */; };
+		96D23206ADFE37A500851D1D /* YQSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D34764672C354BEC96BC52 /* YQSettingItem.m */; };
+		99AB542F17B134874CFE970C /* YQFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3A266C2B08D729FD6E48AB /* YQFeedItem.m */; };
+		9A3499599E6F4A8248E7732E /* YQUserSession.h in Headers */ = {isa = PBXBuildFile; fileRef = E7C52212FBA7F8AB081DC155 /* YQUserSession.h */; };
+		9D09E230F1A111B8919EA510 /* YQConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 525DD5F525392D203AEF5F12 /* YQConst.m */; };
+		A0A1680FD0DB276519CD7483 /* YQAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E61B772F9B47069A32A9FD /* YQAPIClient.m */; };
+		A8CB9E9CAF19E156F56CAAA5 /* YQFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E11E57B8EBF96DC39CDAE4 /* YQFeedCell.xib */; };
+		A966BBA3A19C04AF877AED7A /* YQBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D583D9EF380B7FF036D3C3D0 /* YQBaseViewController.h */; };
 		AACF48C38C1B820B233E12AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA35498DB95EE8BD0AF17BA0 /* LaunchScreen.storyboard */; };
+		ACF03D4CC8D91959C1AA0D31 /* YQUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B8541DBE6F2834CFD97B0ADE /* YQUser.m */; };
 		AD0648499D050DC5006AF929 /* confuse_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00D492B8C84439AB2FBC82F /* confuse_sdk.framework */; };
-		AEAC41558C7FFECB84504C9D /* FontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D9431D963FF76D85FD4582 /* FontViewController.m */; };
-		B1AB4F89B977BFEC6C6F306B /* File.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8421459B8A41EAFA22FBD3E1 /* File.strings */; };
-		B1AD4EDCBAD48EBC163FE8A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26C45BEBFE7EFFB721167B7 /* Main.storyboard */; };
-		B2AF4710853D8EE32D23A8E5 /* SCSelectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 732D4CF0B050087D37746444 /* SCSelectModel.m */; };
-		B3E34B57B1A34B4C4E8912D4 /* 减.png in Resources */ = {isa = PBXBuildFile; fileRef = D28B401699B053EDC6B37419 /* 减.png */; };
-		B77E4C44A9512B12241B23B5 /* TestOtherGlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 091D49E389FC06E25654B7AD /* TestOtherGlobalVariable.m */; };
-		C1BC470885008AA17FD37D2A /* TestLocalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E974AF5BF26C2B9586CFA21 /* TestLocalVariable.m */; };
+		B6BC0CB8FF2D6C5D18C454F6 /* YQDiscoverItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AC485F37C9A97CC8897700 /* YQDiscoverItem.m */; };
+		BCAD5F4EB7ED79A479E55A32 /* YQFeedListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE705C072CB875B8363910D2 /* YQFeedListViewController.m */; };
 		C5E84D3FA41DB8892D744F4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4246D2BDFDA02EC249B118 /* Assets.xcassets */; };
 		C7FF492CAB9DD54170F00FF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 112742E8AD6CAA69E5E57EAD /* AppDelegate.m */; };
-		C8F34CFEAF55F7D5DD98E4EB /* Dog_M.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A74553AF49CEC30D8C9702 /* Dog_M.m */; };
-		D0AA44F9A9EA56EB2BCE3E96 /* TestClassController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DFF4FA992F8D2D1A436024A /* TestClassController.xib */; };
-		D2B648608A6FBBBF346CF80A /* TestFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8949A5AE31EF14B275B651 /* TestFunction.m */; };
-		D42942F29A05F629AEB94618 /* number1.png in Resources */ = {isa = PBXBuildFile; fileRef = 51B24B668FD9EB468FC046D0 /* number1.png */; };
-		D4AC4715BAED81C92507F617 /* TestFunctionXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E24BDA8E2E94927CFA32BC /* TestFunctionXibViewController.m */; };
+		CD1F5483228FB4F6A42C2F1D /* YQConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 431C4053C7412682DEFCD0C5 /* YQConst.h */; };
+		CF5EABD983853829BEB1F92D /* YQFeedItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4A1954CAF47EE639482D7D /* YQFeedItem.h */; };
 		D9DA4073B28372314A439D94 /* confuse_sdk.h in Headers */ = {isa = PBXBuildFile; fileRef = C2FD4F2D813CCBD05C8018FF /* confuse_sdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD7B4DDC8A61208BFE427F54 /* TestFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C316433687EB197B9B9D2059 /* TestFunctionViewController.m */; };
+		DBFE03BD2DC8287439126412 /* YQEntryDetailViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EE9811B8AC1239BDED380B1 /* YQEntryDetailViewController.h */; };
+		DE36C9CC2224C873F96324C3 /* YQBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 828862BB336366056FE244E7 /* YQBaseViewController.m */; };
 		E1D646EC89D77436FF46B769 /* confuse_sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E00D492B8C84439AB2FBC82F /* confuse_sdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E4A9449EB439299D590BF383 /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 53964B27AC8F197E548C0376 /* UserInfoModel.m */; };
-		E64F491A9D612EB9F5DB17EF /* TestFunctionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0E4FBEB883350AD18BDDB7 /* TestFunctionView.m */; };
-		E6984A26832AC5CB65564CBE /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B9F4D4A8FE9999A613A6FC9 /* image.xcassets */; };
-		ED3348D194315E9CE58DD3DF /* TestClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9D49C1BFB4FA46B79FC309 /* TestClassController.m */; };
-		EE8B49719B778FE64C425A63 /* TestXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFC4828ACF1E6CC9CD9AD03 /* TestXibViewController.m */; };
-		F0994C0597EA41840D430EAF /* TestProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDE4AB4A6EE8FBFFF11A013 /* TestProperty.m */; };
-		F5D743E6903E2587C690B500 /* yjs.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F8F40B7AF9FEEF4C6E6F7CB /* yjs.png */; };
-		F69F48D1A69F727C51DA0AA1 /* TestLocalVariableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F834BC88BE9C68B842AE926 /* TestLocalVariableTableViewController.m */; };
-		F91748189D673A7507FD0FD6 /* TestGlobalVariableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02824A9F9FE8A48AD591A53B /* TestGlobalVariableTableViewController.m */; };
+		E64B384B4E971F8642954026 /* YQProfileHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA757484907B5B3EC9EF3D13 /* YQProfileHeaderView.m */; };
+		E9EBBCA203B003A4622C8AA1 /* YQSettingItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A21F776D4BD0B725F10D341 /* YQSettingItem.h */; };
+		EF5DD3A1F0B7636625BF2ABA /* UIButton+YQBadge.h in Headers */ = {isa = PBXBuildFile; fileRef = FC6ED4781D5CF0B1C4D3F18D /* UIButton+YQBadge.h */; };
+		EFE8A6B4C16DD03D53543EC1 /* YQEntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E70C99A1F01B549F62BBC826 /* YQEntryDetailViewController.m */; };
+		F2F5544F407A48EDDE912718 /* YQSimpleListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D5F424ED9DEA57217F6FB5 /* YQSimpleListViewController.h */; };
 		FAF9499DA932BEBEC4FD0D5C /* libPods-confuse_test_oc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCA4DD5B934389DC841031E /* libPods-confuse_test_oc.a */; };
-		FD254E5C99EE2293A9ECDA90 /* TestFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D964DD9932BAE30ECDBED67 /* TestFrame.m */; };
-		FE4948408CC1CA560DDD1E22 /* TestPropertySuper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD040029C397EB41DE9EF33 /* TestPropertySuper.m */; };
+		FD43D9AB103A7A8A88E22D37 /* UIView+YQFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = AC514F2FA53211A05DD07557 /* UIView+YQFrame.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,131 +93,71 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0224494FB0639C66847B4E5A /* TestOtherGlobalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestOtherGlobalVariable.h; sourceTree = "<group>"; };
-		02824A9F9FE8A48AD591A53B /* TestGlobalVariableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGlobalVariableTableViewController.m; sourceTree = "<group>"; };
-		03F54C85A300A3D83745E22F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		069B4999B2DDD45C94B1D4F5 /* TestFunctionSuper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFunctionSuper.h; sourceTree = "<group>"; };
-		091D49E389FC06E25654B7AD /* TestOtherGlobalVariable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOtherGlobalVariable.m; sourceTree = "<group>"; };
-		0AC34D848BDDA7B9B3CE3A5C /* Dog_M.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog_M.h; sourceTree = "<group>"; };
-		0DCF4C4DB3BC83C13DFC02EC /* TestSuperMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSuperMacro.h; sourceTree = "<group>"; };
-		0F834BC88BE9C68B842AE926 /* TestLocalVariableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLocalVariableTableViewController.m; sourceTree = "<group>"; };
+		0CE34293B9C79C73021BDC93 /* YQScanViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQScanViewController.m; sourceTree = "<group>"; };
 		112742E8AD6CAA69E5E57EAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		11A74553AF49CEC30D8C9702 /* Dog_M.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog_M.m; sourceTree = "<group>"; };
-		14B1456EB4A293567FAF6C00 /* SCOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCOrder.m; sourceTree = "<group>"; };
-		14E24BDA8E2E94927CFA32BC /* TestFunctionXibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFunctionXibViewController.m; sourceTree = "<group>"; };
 		171F46149C548D1AF23B03E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1B364FAF9498B055DE3DC08E /* TestFunctionXibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFunctionXibViewController.h; sourceTree = "<group>"; };
-		1C2242FBA37EAE6CBA6E2C5D /* TestClassCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestClassCell.h; sourceTree = "<group>"; };
+		1A4A1954CAF47EE639482D7D /* YQFeedItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQFeedItem.h; sourceTree = "<group>"; };
 		1CCA4DD5B934389DC841031E /* libPods-confuse_test_oc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-confuse_test_oc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		20924A17972C9F1857D9E873 /* number3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number3.png; sourceTree = "<group>"; };
-		20ED4D17A44F5C843102B5D4 /* MBHudDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBHudDemoViewController.h; sourceTree = "<group>"; };
-		24BA43898FD600DBB1892F43 /* TestGlobalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestGlobalVariable.h; sourceTree = "<group>"; };
-		25924976BF1FC9504F55A3ED /* SCSelectModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSelectModel.h; sourceTree = "<group>"; };
+		1EA2F71005EA4A96718AA888 /* YQFeedListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQFeedListViewController.h; sourceTree = "<group>"; };
+		27D9D10B183497187D41D940 /* YQUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQUser.h; sourceTree = "<group>"; };
 		28A3456F994DA3EF9B8797D5 /* confuse_test_oc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = confuse_test_oc.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		29AE4645876DD1144CB3F1F4 /* TestLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLayoutCell.m; sourceTree = "<group>"; };
-		2ACD433DA0446D3DB1D131EA /* UserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoModel.h; sourceTree = "<group>"; };
-		2CF14EAE8640A366B1220399 /* TestXibView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestXibView.xib; sourceTree = "<group>"; };
-		2DDE49FDA3B2436C6619F40B /* TestFunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFunctionViewController.h; sourceTree = "<group>"; };
-		2E974AF5BF26C2B9586CFA21 /* TestLocalVariable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLocalVariable.m; sourceTree = "<group>"; };
-		2F8F40B7AF9FEEF4C6E6F7CB /* yjs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yjs.png; sourceTree = "<group>"; };
-		2FDA4065BD37B15811BA7CB2 /* 锤石.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "锤石.png"; sourceTree = "<group>"; };
+		28BBF380450A998A17B79321 /* NSString+YQAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+YQAdd.h"; sourceTree = "<group>"; };
+		34E11E57B8EBF96DC39CDAE4 /* YQFeedCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YQFeedCell.xib; sourceTree = "<group>"; };
 		35154924A3B3F3F33173DF90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		3B774342B9A4E9EE1348B66D /* FontViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontViewController.h; sourceTree = "<group>"; };
-		3BDF40D1959AEA4ADEDA818E /* TestFunctionSuper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFunctionSuper.m; sourceTree = "<group>"; };
-		3CDE4AB4A6EE8FBFFF11A013 /* TestProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestProperty.m; sourceTree = "<group>"; };
-		3EF74799AA62816583C41A90 /* SCOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCOrder.h; sourceTree = "<group>"; };
-		4329430EA993546DEB497B00 /* TestFunctionOtherTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFunctionOtherTemplate.m; sourceTree = "<group>"; };
-		448E4937B6C30655EB723747 /* TestGlobalVariableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestGlobalVariableTableViewController.h; sourceTree = "<group>"; };
-		45874AEF97DA4736F1968960 /* TestImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestImageViewController.m; sourceTree = "<group>"; };
-		477747E8AC6220795B79F03A /* number2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number2.png; sourceTree = "<group>"; };
-		4B0241C9B855217B7C66A0C1 /* TestClassCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestClassCell.xib; sourceTree = "<group>"; };
-		4B9D49C1BFB4FA46B79FC309 /* TestClassController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClassController.m; sourceTree = "<group>"; };
-		4FDD4ADE862CA1F9CF9400E7 /* TestFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFrame.h; sourceTree = "<group>"; };
-		51B24B668FD9EB468FC046D0 /* number1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number1.png; sourceTree = "<group>"; };
-		524D450E9DB0F9309462B27F /* TestPropertyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPropertyViewController.m; sourceTree = "<group>"; };
-		53894C2EA9789B5D933834AF /* TestPropertyXibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPropertyXibViewController.h; sourceTree = "<group>"; };
-		53964B27AC8F197E548C0376 /* UserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
-		571947BBB350CD914A15176B /* TestImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestImageViewController.h; sourceTree = "<group>"; };
-		57614B849EB749C1A7AFF5E9 /* TestImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestImageModel.m; sourceTree = "<group>"; };
-		580B49CEBA1F214843D8BD5F /* TestPropertyXibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPropertyXibViewController.m; sourceTree = "<group>"; };
-		5A8949A5AE31EF14B275B651 /* TestFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFunction.m; sourceTree = "<group>"; };
-		5B5F4078BEE0E7FFEFCFC02C /* TestOtherMacro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOtherMacro.m; sourceTree = "<group>"; };
-		5D9C4D31B284CB30CD9501C4 /* TestSuperGlobalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSuperGlobalVariable.h; sourceTree = "<group>"; };
-		5DB9451F968A3AFB6E839730 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5FA74BCBA0C0E5FEE79B7C3B /* ColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
-		60C64D7889AB229F5C5653F4 /* MBHudDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBHudDemoViewController.m; sourceTree = "<group>"; };
-		61394BFF863E11839DB7668D /* discard.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = discard.xcassets; sourceTree = "<group>"; };
+		37CE92DFB8A0B7ECA8BEA277 /* UIView+YQFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+YQFrame.m"; sourceTree = "<group>"; };
+		3FA274F6591737FF963A995B /* YQUserSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQUserSession.m; sourceTree = "<group>"; };
+		40DB6D30458BA5B08FDF921A /* YQFeedCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQFeedCell.m; sourceTree = "<group>"; };
+		431C4053C7412682DEFCD0C5 /* YQConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQConst.h; sourceTree = "<group>"; };
+		44D34764672C354BEC96BC52 /* YQSettingItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQSettingItem.m; sourceTree = "<group>"; };
+		463F2909991C1CD3217A966C /* YQProfileViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQProfileViewController.m; sourceTree = "<group>"; };
+		48EF4949B1C94A3661B451AE /* YQScanViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQScanViewController.h; sourceTree = "<group>"; };
+		48EF68C78CE57A0C7962446D /* YQDiscoverViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQDiscoverViewController.m; sourceTree = "<group>"; };
+		4EE9811B8AC1239BDED380B1 /* YQEntryDetailViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQEntryDetailViewController.h; sourceTree = "<group>"; };
+		508DC48E4A03514E0C783575 /* YQLoginViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQLoginViewController.m; sourceTree = "<group>"; };
+		525DD5F525392D203AEF5F12 /* YQConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQConst.m; sourceTree = "<group>"; };
+		54DD286A7DEB019D4517B341 /* UIColor+YQHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YQHex.m"; sourceTree = "<group>"; };
+		5C65FA3110AC1F5143F4261D /* YQProfileHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQProfileHeaderView.h; sourceTree = "<group>"; };
+		62E61B772F9B47069A32A9FD /* YQAPIClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQAPIClient.m; sourceTree = "<group>"; };
 		660E41A8867A3093F60D4C4B /* confuse_test_oc.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = confuse_test_oc.pch; sourceTree = "<group>"; };
-		6887444298BADA57E18BBC61 /* TestXibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestXibViewController.h; sourceTree = "<group>"; };
-		6B9F4D4A8FE9999A613A6FC9 /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
-		719739FF28D35F9C00DD75C3 /* OtherTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherTableViewController.h; sourceTree = "<group>"; };
-		71973A0028D35F9C00DD75C3 /* OtherTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherTableViewController.m; sourceTree = "<group>"; };
-		732D4CF0B050087D37746444 /* SCSelectModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSelectModel.m; sourceTree = "<group>"; };
+		71AB3939B0832C9F204F7BBD /* YQProfileViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQProfileViewController.h; sourceTree = "<group>"; };
 		78D144F9AFD25D0B8AF58683 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		7CFC4828ACF1E6CC9CD9AD03 /* TestXibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestXibViewController.m; sourceTree = "<group>"; };
-		7DFC43039F7B2FEE06FE785E /* TestMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMacro.h; sourceTree = "<group>"; };
-		7DFF4FA992F8D2D1A436024A /* TestClassController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestClassController.xib; sourceTree = "<group>"; };
 		7F584BDCBB9A35199D643F10 /* Pods-confuse_test_oc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-confuse_test_oc.release.xcconfig"; path = "Target Support Files/Pods-confuse_test_oc/Pods-confuse_test_oc.release.xcconfig"; sourceTree = "<group>"; };
-		858D4BE29DFF284184F01E37 /* TestClassCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestClassCell.m; sourceTree = "<group>"; };
-		881F44E59879F294118658D3 /* TestMasonry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMasonry.m; sourceTree = "<group>"; };
-		8D964DD9932BAE30ECDBED67 /* TestFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFrame.m; sourceTree = "<group>"; };
-		8DD040029C397EB41DE9EF33 /* TestPropertySuper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPropertySuper.m; sourceTree = "<group>"; };
-		8DD7449EB45735DBDABE0B4B /* TestPropertyXibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestPropertyXibViewController.xib; sourceTree = "<group>"; };
-		919B498F9E9B6D44A9182F58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		92A347CDB70BA722814F6F33 /* TestMacro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMacro.m; sourceTree = "<group>"; };
-		979D478EAEB316563F966D40 /* TestLocalizableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLocalizableViewController.h; sourceTree = "<group>"; };
-		984E4F78BDF254E19843956B /* TestLayoutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLayoutTableViewController.m; sourceTree = "<group>"; };
-		989041B789F720DBBCCADBBA /* ColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
-		9A824EAD92B69F0193E76C50 /* TestLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLayoutViewController.m; sourceTree = "<group>"; };
-		9B6E4DA7B668D9714C6E6E21 /* TestXibView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestXibView.m; sourceTree = "<group>"; };
-		9E6F4A06B3849980254E9820 /* Lee Sin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lee Sin.jpg"; sourceTree = "<group>"; };
-		9EE84747814D095AA6CABF1D /* TestClassController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClassController.h; sourceTree = "<group>"; };
-		9F9B49E2B787DABC90FC82B6 /* TestLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLayoutCell.h; sourceTree = "<group>"; };
-		A13E49059D0B7110FDF7E518 /* TestSuperMacro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSuperMacro.m; sourceTree = "<group>"; };
-		A2AF48A69B58F94E5AB1BAB5 /* TestMasonry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMasonry.h; sourceTree = "<group>"; };
-		A3FD4F6AB0687FA1C26140EE /* TestImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestImageModel.h; sourceTree = "<group>"; };
-		A50B4985A7026151674AFD68 /* TestFunctionOtherTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFunctionOtherTemplate.h; sourceTree = "<group>"; };
-		A62F4CF69D8B776A8C79BEE0 /* TestOtherMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestOtherMacro.h; sourceTree = "<group>"; };
-		A6504A0989B208F10DAA679E /* User_M.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User_M.h; sourceTree = "<group>"; };
-		A7844E939F40C0C4B43E64AC /* TestSuperGlobalVariable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSuperGlobalVariable.m; sourceTree = "<group>"; };
-		A79B43DB8F4C45CE0D46D317 /* TestProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestProperty.h; sourceTree = "<group>"; };
-		AA0547E39E1183E47C49743B /* TestPropertyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPropertyViewController.h; sourceTree = "<group>"; };
-		ABCC4EC2BD5A561FED9E7BA9 /* 加.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "加.png"; sourceTree = "<group>"; };
-		AD4142339D9D31394E3ACB80 /* TestPropertyOther_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPropertyOther_VC.h; sourceTree = "<group>"; };
-		B46F4800BCB560F332C5F10C /* TestDiscardSuper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDiscardSuper.m; sourceTree = "<group>"; };
-		B4E34925BD9EBE3B9AEBD26E /* TestPropertySuper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPropertySuper.h; sourceTree = "<group>"; };
-		B64C451F85CD4A88C3ECB73C /* TestLayoutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLayoutTableViewController.h; sourceTree = "<group>"; };
-		BC33404F9193EB6BFEF8704D /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
-		BF584E2D9878DEFE7CC84CAC /* TestGlobalVariable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGlobalVariable.m; sourceTree = "<group>"; };
+		828862BB336366056FE244E7 /* YQBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQBaseViewController.m; sourceTree = "<group>"; };
+		8FCB44F5F3950168D667E15B /* YQDiscoverCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQDiscoverCell.h; sourceTree = "<group>"; };
+		946E1FF633A7272E646F4833 /* YQFeedDetailViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQFeedDetailViewController.h; sourceTree = "<group>"; };
+		95B12EAF3A97FBAE71B9C50C /* UIColor+YQHex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+YQHex.h"; sourceTree = "<group>"; };
+		9A21F776D4BD0B725F10D341 /* YQSettingItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQSettingItem.h; sourceTree = "<group>"; };
+		A1A7BF2F2B26ABCC5A929492 /* YQDiscoverItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQDiscoverItem.h; sourceTree = "<group>"; };
+		A1EA192AA57F49C72A34D524 /* YQLoginViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQLoginViewController.h; sourceTree = "<group>"; };
+		AC514F2FA53211A05DD07557 /* UIView+YQFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+YQFrame.h"; sourceTree = "<group>"; };
+		B472BDB8A4693CE25CDD2BC9 /* YQFeedCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQFeedCell.h; sourceTree = "<group>"; };
+		B60690D64FC6DEC617026928 /* YQSimpleListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQSimpleListViewController.m; sourceTree = "<group>"; };
+		B8541DBE6F2834CFD97B0ADE /* YQUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQUser.m; sourceTree = "<group>"; };
+		B8E91B6A1E856BB9B184555B /* YQMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQMacros.h; sourceTree = "<group>"; };
+		BA3A266C2B08D729FD6E48AB /* YQFeedItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQFeedItem.m; sourceTree = "<group>"; };
+		BE705C072CB875B8363910D2 /* YQFeedListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQFeedListViewController.m; sourceTree = "<group>"; };
 		C2FD4F2D813CCBD05C8018FF /* confuse_sdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = confuse_sdk.h; sourceTree = "<group>"; };
-		C316433687EB197B9B9D2059 /* TestFunctionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFunctionViewController.m; sourceTree = "<group>"; };
-		C3AE4064BA1998F66620DF56 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/File.strings"; sourceTree = "<group>"; };
-		C5924075B8A73A65D6D38797 /* TestXibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestXibView.h; sourceTree = "<group>"; };
-		C63F455192352DE7AB2C4568 /* TestFunctionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFunctionView.h; sourceTree = "<group>"; };
-		C6DE4537ACFEF02D892B7D7E /* TestFunctionXibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestFunctionXibViewController.xib; sourceTree = "<group>"; };
-		CC5746A09E182B272818C5CC /* TestLocalizableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLocalizableViewController.m; sourceTree = "<group>"; };
+		C5E83F41AD2BCAE415AC2896 /* YQFeedDetailViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQFeedDetailViewController.m; sourceTree = "<group>"; };
+		C7C4223AB563A02D7C53B636 /* YQDiscoverCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQDiscoverCell.m; sourceTree = "<group>"; };
+		C82973EDFF06237F1FE215BD /* YQDiscoverViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQDiscoverViewController.h; sourceTree = "<group>"; };
 		CF4246D2BDFDA02EC249B118 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D1E2416887DB140945283348 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		D2354F008D7C48031FBA670B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D28B401699B053EDC6B37419 /* 减.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "减.png"; sourceTree = "<group>"; };
+		D1D5F424ED9DEA57217F6FB5 /* YQSimpleListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQSimpleListViewController.h; sourceTree = "<group>"; };
+		D3F3D5F4E3CB0A8BCAD64A02 /* YQTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQTabBarController.h; sourceTree = "<group>"; };
 		D56542D1973E5124DB52D3CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D56543DE98386FFD364CBFEB /* Base.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Base.m; sourceTree = "<group>"; };
-		DE724411B737D7C524909ED7 /* TestXibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestXibViewController.xib; sourceTree = "<group>"; };
-		DFCD41D3A509AE09664DDFA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/File.strings; sourceTree = "<group>"; };
+		D583D9EF380B7FF036D3C3D0 /* YQBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQBaseViewController.h; sourceTree = "<group>"; };
+		DA757484907B5B3EC9EF3D13 /* YQProfileHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQProfileHeaderView.m; sourceTree = "<group>"; };
 		E00D492B8C84439AB2FBC82F /* confuse_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = confuse_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1204B9DBB369E0993FB8C59 /* User_M.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User_M.m; sourceTree = "<group>"; };
-		E15543B58006B3CA44ADF351 /* TestLocalVariableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLocalVariableTableViewController.h; sourceTree = "<group>"; };
-		E326427DBCF3FC2F52336BE0 /* TestPropertyOther_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPropertyOther_VC.m; sourceTree = "<group>"; };
-		E4D9431D963FF76D85FD4582 /* FontViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontViewController.m; sourceTree = "<group>"; };
-		E6E343A4B521CD3284951DD7 /* TestLocalVariable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLocalVariable.h; sourceTree = "<group>"; };
-		EF0E4FBEB883350AD18BDDB7 /* TestFunctionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFunctionView.m; sourceTree = "<group>"; };
+		E70C99A1F01B549F62BBC826 /* YQEntryDetailViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQEntryDetailViewController.m; sourceTree = "<group>"; };
+		E7C52212FBA7F8AB081DC155 /* YQUserSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQUserSession.h; sourceTree = "<group>"; };
+		E99D70AF4382B8E254758975 /* UIButton+YQBadge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YQBadge.m"; sourceTree = "<group>"; };
+		E99FD990A6804FD490B99EA2 /* YQTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQTabBarController.m; sourceTree = "<group>"; };
 		F0DE4F51B430C8D7EFEA883F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1224F8194B93E9AB999BFD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2614B6B9409F851749B857B /* TestDiscardSuper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDiscardSuper.h; sourceTree = "<group>"; };
-		F3F6416B9F840D6BBC302AB1 /* TestPropertyXibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestPropertyXibView.xib; sourceTree = "<group>"; };
-		F51641CC8FFD00739CDE7902 /* TestLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLayoutViewController.h; sourceTree = "<group>"; };
+		F2AC485F37C9A97CC8897700 /* YQDiscoverItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YQDiscoverItem.m; sourceTree = "<group>"; };
+		F4489230C9DD1B455B5D7A95 /* NSString+YQAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+YQAdd.m"; sourceTree = "<group>"; };
+		F786DA1A6939E567575AD7AA /* YQAPIClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YQAPIClient.h; sourceTree = "<group>"; };
 		FBB740B98D29C7DEE91C6B29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE0347B78C38873D43556861 /* TestFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFunction.h; sourceTree = "<group>"; };
+		FC6ED4781D5CF0B1C4D3F18D /* UIButton+YQBadge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+YQBadge.h"; sourceTree = "<group>"; };
 		FE6943A4BFF1A9F18A964099 /* Pods-confuse_test_oc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-confuse_test_oc.debug.xcconfig"; path = "Target Support Files/Pods-confuse_test_oc/Pods-confuse_test_oc.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -255,41 +181,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		084442C09DC9393850508D2B /* localizable */ = {
+		1CA8E38C9690F053543D4DC1 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				979D478EAEB316563F966D40 /* TestLocalizableViewController.h */,
-				CC5746A09E182B272818C5CC /* TestLocalizableViewController.m */,
+				95B12EAF3A97FBAE71B9C50C /* UIColor+YQHex.h */,
+				54DD286A7DEB019D4517B341 /* UIColor+YQHex.m */,
+				AC514F2FA53211A05DD07557 /* UIView+YQFrame.h */,
+				37CE92DFB8A0B7ECA8BEA277 /* UIView+YQFrame.m */,
+				28BBF380450A998A17B79321 /* NSString+YQAdd.h */,
+				F4489230C9DD1B455B5D7A95 /* NSString+YQAdd.m */,
+				FC6ED4781D5CF0B1C4D3F18D /* UIButton+YQBadge.h */,
+				E99D70AF4382B8E254758975 /* UIButton+YQBadge.m */,
 			);
-			path = localizable;
-			sourceTree = "<group>";
-		};
-		08A4448BBAC9DD29CB4DF886 /* layout */ = {
-			isa = PBXGroup;
-			children = (
-				679D4A46A44B965062E3DD84 /* SDAutoLayout */,
-				14364770ACE76B49DF83288D /* masonry */,
-				28554ED8B1553C8888B95DEF /* frame */,
-			);
-			path = layout;
-			sourceTree = "<group>";
-		};
-		14364770ACE76B49DF83288D /* masonry */ = {
-			isa = PBXGroup;
-			children = (
-				A2AF48A69B58F94E5AB1BAB5 /* TestMasonry.h */,
-				881F44E59879F294118658D3 /* TestMasonry.m */,
-			);
-			path = masonry;
-			sourceTree = "<group>";
-		};
-		28554ED8B1553C8888B95DEF /* frame */ = {
-			isa = PBXGroup;
-			children = (
-				4FDD4ADE862CA1F9CF9400E7 /* TestFrame.h */,
-				8D964DD9932BAE30ECDBED67 /* TestFrame.m */,
-			);
-			path = frame;
+			name = Category;
+			path = Category;
 			sourceTree = "<group>";
 		};
 		2D8546D7AF0B4411B18847EB /* Pods */ = {
@@ -301,152 +206,57 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		3C674050A177A8025C33DFCE /* property */ = {
+		3AD64831759CA622A20F1BCE /* Discover */ = {
 			isa = PBXGroup;
 			children = (
-				A79B43DB8F4C45CE0D46D317 /* TestProperty.h */,
-				3CDE4AB4A6EE8FBFFF11A013 /* TestProperty.m */,
-				B4E34925BD9EBE3B9AEBD26E /* TestPropertySuper.h */,
-				8DD040029C397EB41DE9EF33 /* TestPropertySuper.m */,
-				AA0547E39E1183E47C49743B /* TestPropertyViewController.h */,
-				524D450E9DB0F9309462B27F /* TestPropertyViewController.m */,
-				AD4142339D9D31394E3ACB80 /* TestPropertyOther_VC.h */,
-				E326427DBCF3FC2F52336BE0 /* TestPropertyOther_VC.m */,
-				53894C2EA9789B5D933834AF /* TestPropertyXibViewController.h */,
-				580B49CEBA1F214843D8BD5F /* TestPropertyXibViewController.m */,
-				8DD7449EB45735DBDABE0B4B /* TestPropertyXibViewController.xib */,
-				F3F6416B9F840D6BBC302AB1 /* TestPropertyXibView.xib */,
+				8FCB44F5F3950168D667E15B /* YQDiscoverCell.h */,
+				C7C4223AB563A02D7C53B636 /* YQDiscoverCell.m */,
+				C82973EDFF06237F1FE215BD /* YQDiscoverViewController.h */,
+				48EF68C78CE57A0C7962446D /* YQDiscoverViewController.m */,
+				4EE9811B8AC1239BDED380B1 /* YQEntryDetailViewController.h */,
+				E70C99A1F01B549F62BBC826 /* YQEntryDetailViewController.m */,
+				D1D5F424ED9DEA57217F6FB5 /* YQSimpleListViewController.h */,
+				B60690D64FC6DEC617026928 /* YQSimpleListViewController.m */,
+				48EF4949B1C94A3661B451AE /* YQScanViewController.h */,
+				0CE34293B9C79C73021BDC93 /* YQScanViewController.m */,
 			);
-			path = property;
+			name = Discover;
+			path = Discover;
 			sourceTree = "<group>";
 		};
-		3DD740CEB2D7371945E0E6C4 /* variable */ = {
+		83A25DE59655B81433E509AC /* Session */ = {
 			isa = PBXGroup;
 			children = (
-				9B494580AED4F757DEB530F3 /* local */,
-				B1EC4573B0CDF187E4EB8598 /* global */,
+				E7C52212FBA7F8AB081DC155 /* YQUserSession.h */,
+				3FA274F6591737FF963A995B /* YQUserSession.m */,
 			);
-			path = variable;
+			name = Session;
+			path = Session;
 			sourceTree = "<group>";
 		};
-		593449F2805BCB39DE55D7C6 /* base */ = {
+		841CEA9BEB88EFAB276B2DAD /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				BC33404F9193EB6BFEF8704D /* Base.h */,
-				D56543DE98386FFD364CBFEB /* Base.m */,
+				F786DA1A6939E567575AD7AA /* YQAPIClient.h */,
+				62E61B772F9B47069A32A9FD /* YQAPIClient.m */,
 			);
-			path = base;
+			name = Network;
+			path = Network;
 			sourceTree = "<group>";
 		};
-		679D4A46A44B965062E3DD84 /* SDAutoLayout */ = {
+		89DAB6E92BACBA0C836C6E2F /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				F51641CC8FFD00739CDE7902 /* TestLayoutViewController.h */,
-				9A824EAD92B69F0193E76C50 /* TestLayoutViewController.m */,
-				B64C451F85CD4A88C3ECB73C /* TestLayoutTableViewController.h */,
-				984E4F78BDF254E19843956B /* TestLayoutTableViewController.m */,
-				9F9B49E2B787DABC90FC82B6 /* TestLayoutCell.h */,
-				29AE4645876DD1144CB3F1F4 /* TestLayoutCell.m */,
+				B8E91B6A1E856BB9B184555B /* YQMacros.h */,
+				431C4053C7412682DEFCD0C5 /* YQConst.h */,
+				525DD5F525392D203AEF5F12 /* YQConst.m */,
+				D583D9EF380B7FF036D3C3D0 /* YQBaseViewController.h */,
+				828862BB336366056FE244E7 /* YQBaseViewController.m */,
+				D3F3D5F4E3CB0A8BCAD64A02 /* YQTabBarController.h */,
+				E99FD990A6804FD490B99EA2 /* YQTabBarController.m */,
 			);
-			path = SDAutoLayout;
-			sourceTree = "<group>";
-		};
-		719739FC28D35D5600DD75C3 /* grammar */ = {
-			isa = PBXGroup;
-			children = (
-				9B4741C8A5CED344680BD9B6 /* class */,
-				73DE45D084645705C9EACDA7 /* xib */,
-				996F4EC9B5EFC50BC4EAB6B4 /* macro */,
-				72A9407E8B98E5EA2E921D6D /* Model */,
-				3C674050A177A8025C33DFCE /* property */,
-				86BB4EE4A3C561B31F1F57A2 /* function */,
-				3DD740CEB2D7371945E0E6C4 /* variable */,
-			);
-			path = grammar;
-			sourceTree = "<group>";
-		};
-		719739FD28D35D5E00DD75C3 /* other */ = {
-			isa = PBXGroup;
-			children = (
-				719739FF28D35F9C00DD75C3 /* OtherTableViewController.h */,
-				71973A0028D35F9C00DD75C3 /* OtherTableViewController.m */,
-				3B774342B9A4E9EE1348B66D /* FontViewController.h */,
-				E4D9431D963FF76D85FD4582 /* FontViewController.m */,
-				989041B789F720DBBCCADBBA /* ColorViewController.h */,
-				5FA74BCBA0C0E5FEE79B7C3B /* ColorViewController.m */,
-				08A4448BBAC9DD29CB4DF886 /* layout */,
-				74DF41E086EB2D1565D2263D /* source */,
-				76544DEEB72B5A281DA742F7 /* third */,
-				084442C09DC9393850508D2B /* localizable */,
-			);
-			path = other;
-			sourceTree = "<group>";
-		};
-		72A9407E8B98E5EA2E921D6D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				2ACD433DA0446D3DB1D131EA /* UserInfoModel.h */,
-				53964B27AC8F197E548C0376 /* UserInfoModel.m */,
-				25924976BF1FC9504F55A3ED /* SCSelectModel.h */,
-				732D4CF0B050087D37746444 /* SCSelectModel.m */,
-				3EF74799AA62816583C41A90 /* SCOrder.h */,
-				14B1456EB4A293567FAF6C00 /* SCOrder.m */,
-				A6504A0989B208F10DAA679E /* User_M.h */,
-				E1204B9DBB369E0993FB8C59 /* User_M.m */,
-				0AC34D848BDDA7B9B3CE3A5C /* Dog_M.h */,
-				11A74553AF49CEC30D8C9702 /* Dog_M.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		73DE45D084645705C9EACDA7 /* xib */ = {
-			isa = PBXGroup;
-			children = (
-				6887444298BADA57E18BBC61 /* TestXibViewController.h */,
-				7CFC4828ACF1E6CC9CD9AD03 /* TestXibViewController.m */,
-				DE724411B737D7C524909ED7 /* TestXibViewController.xib */,
-				C5924075B8A73A65D6D38797 /* TestXibView.h */,
-				9B6E4DA7B668D9714C6E6E21 /* TestXibView.m */,
-				2CF14EAE8640A366B1220399 /* TestXibView.xib */,
-			);
-			path = xib;
-			sourceTree = "<group>";
-		};
-		74DF41E086EB2D1565D2263D /* source */ = {
-			isa = PBXGroup;
-			children = (
-				BC3D48F492C7423F33BC7062 /* image */,
-			);
-			path = source;
-			sourceTree = "<group>";
-		};
-		76544DEEB72B5A281DA742F7 /* third */ = {
-			isa = PBXGroup;
-			children = (
-				20ED4D17A44F5C843102B5D4 /* MBHudDemoViewController.h */,
-				60C64D7889AB229F5C5653F4 /* MBHudDemoViewController.m */,
-			);
-			path = third;
-			sourceTree = "<group>";
-		};
-		86BB4EE4A3C561B31F1F57A2 /* function */ = {
-			isa = PBXGroup;
-			children = (
-				C63F455192352DE7AB2C4568 /* TestFunctionView.h */,
-				EF0E4FBEB883350AD18BDDB7 /* TestFunctionView.m */,
-				FE0347B78C38873D43556861 /* TestFunction.h */,
-				5A8949A5AE31EF14B275B651 /* TestFunction.m */,
-				069B4999B2DDD45C94B1D4F5 /* TestFunctionSuper.h */,
-				3BDF40D1959AEA4ADEDA818E /* TestFunctionSuper.m */,
-				2DDE49FDA3B2436C6619F40B /* TestFunctionViewController.h */,
-				C316433687EB197B9B9D2059 /* TestFunctionViewController.m */,
-				A50B4985A7026151674AFD68 /* TestFunctionOtherTemplate.h */,
-				4329430EA993546DEB497B00 /* TestFunctionOtherTemplate.m */,
-				1B364FAF9498B055DE3DC08E /* TestFunctionXibViewController.h */,
-				14E24BDA8E2E94927CFA32BC /* TestFunctionXibViewController.m */,
-				C6DE4537ACFEF02D892B7D7E /* TestFunctionXibViewController.xib */,
-			);
-			path = function;
+			name = Common;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		8FA041D089A61F355BC87855 /* confuse_sdk */ = {
@@ -467,41 +277,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		996F4EC9B5EFC50BC4EAB6B4 /* macro */ = {
+		979874BDE2F1A0F49E43704B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7DFC43039F7B2FEE06FE785E /* TestMacro.h */,
-				92A347CDB70BA722814F6F33 /* TestMacro.m */,
-				0DCF4C4DB3BC83C13DFC02EC /* TestSuperMacro.h */,
-				A13E49059D0B7110FDF7E518 /* TestSuperMacro.m */,
-				A62F4CF69D8B776A8C79BEE0 /* TestOtherMacro.h */,
-				5B5F4078BEE0E7FFEFCFC02C /* TestOtherMacro.m */,
+				1A4A1954CAF47EE639482D7D /* YQFeedItem.h */,
+				BA3A266C2B08D729FD6E48AB /* YQFeedItem.m */,
+				27D9D10B183497187D41D940 /* YQUser.h */,
+				B8541DBE6F2834CFD97B0ADE /* YQUser.m */,
+				9A21F776D4BD0B725F10D341 /* YQSettingItem.h */,
+				44D34764672C354BEC96BC52 /* YQSettingItem.m */,
+				A1A7BF2F2B26ABCC5A929492 /* YQDiscoverItem.h */,
+				F2AC485F37C9A97CC8897700 /* YQDiscoverItem.m */,
 			);
-			path = macro;
-			sourceTree = "<group>";
-		};
-		9B4741C8A5CED344680BD9B6 /* class */ = {
-			isa = PBXGroup;
-			children = (
-				1C2242FBA37EAE6CBA6E2C5D /* TestClassCell.h */,
-				858D4BE29DFF284184F01E37 /* TestClassCell.m */,
-				4B0241C9B855217B7C66A0C1 /* TestClassCell.xib */,
-				9EE84747814D095AA6CABF1D /* TestClassController.h */,
-				4B9D49C1BFB4FA46B79FC309 /* TestClassController.m */,
-				7DFF4FA992F8D2D1A436024A /* TestClassController.xib */,
-			);
-			path = class;
-			sourceTree = "<group>";
-		};
-		9B494580AED4F757DEB530F3 /* local */ = {
-			isa = PBXGroup;
-			children = (
-				E6E343A4B521CD3284951DD7 /* TestLocalVariable.h */,
-				2E974AF5BF26C2B9586CFA21 /* TestLocalVariable.m */,
-				E15543B58006B3CA44ADF351 /* TestLocalVariableTableViewController.h */,
-				0F834BC88BE9C68B842AE926 /* TestLocalVariableTableViewController.m */,
-			);
-			path = local;
+			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9DD94B1FBC65EDD32793F809 /* Frameworks */ = {
@@ -515,7 +304,6 @@
 		A00243479D11B62FDD3E21F5 = {
 			isa = PBXGroup;
 			children = (
-				8421459B8A41EAFA22FBD3E1 /* File.strings */,
 				5F014F7D85F55C7F45210E3F /* Localizable.strings */,
 				CBFE498687760D7EB6953FB8 /* confuse_test_oc */,
 				8FA041D089A61F355BC87855 /* confuse_sdk */,
@@ -525,77 +313,101 @@
 			);
 			sourceTree = "<group>";
 		};
-		B1EC4573B0CDF187E4EB8598 /* global */ = {
+		AE33DA40C947559CE36D5A5C /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				24BA43898FD600DBB1892F43 /* TestGlobalVariable.h */,
-				BF584E2D9878DEFE7CC84CAC /* TestGlobalVariable.m */,
-				5D9C4D31B284CB30CD9501C4 /* TestSuperGlobalVariable.h */,
-				A7844E939F40C0C4B43E64AC /* TestSuperGlobalVariable.m */,
-				0224494FB0639C66847B4E5A /* TestOtherGlobalVariable.h */,
-				091D49E389FC06E25654B7AD /* TestOtherGlobalVariable.m */,
-				448E4937B6C30655EB723747 /* TestGlobalVariableTableViewController.h */,
-				02824A9F9FE8A48AD591A53B /* TestGlobalVariableTableViewController.m */,
+				1EA2F71005EA4A96718AA888 /* YQFeedListViewController.h */,
+				BE705C072CB875B8363910D2 /* YQFeedListViewController.m */,
+				946E1FF633A7272E646F4833 /* YQFeedDetailViewController.h */,
+				C5E83F41AD2BCAE415AC2896 /* YQFeedDetailViewController.m */,
+				B472BDB8A4693CE25CDD2BC9 /* YQFeedCell.h */,
+				40DB6D30458BA5B08FDF921A /* YQFeedCell.m */,
+				34E11E57B8EBF96DC39CDAE4 /* YQFeedCell.xib */,
 			);
-			path = global;
+			name = Feed;
+			path = Feed;
 			sourceTree = "<group>";
 		};
-		BC3D48F492C7423F33BC7062 /* image */ = {
+		AEACCD6957157B5845DFC503 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				ABCC4EC2BD5A561FED9E7BA9 /* 加.png */,
-				D28B401699B053EDC6B37419 /* 减.png */,
-				51B24B668FD9EB468FC046D0 /* number1.png */,
-				477747E8AC6220795B79F03A /* number2.png */,
-				20924A17972C9F1857D9E873 /* number3.png */,
-				6B9F4D4A8FE9999A613A6FC9 /* image.xcassets */,
-				2FDA4065BD37B15811BA7CB2 /* 锤石.png */,
-				9E6F4A06B3849980254E9820 /* Lee Sin.jpg */,
-				571947BBB350CD914A15176B /* TestImageViewController.h */,
-				45874AEF97DA4736F1968960 /* TestImageViewController.m */,
-				A3FD4F6AB0687FA1C26140EE /* TestImageModel.h */,
-				57614B849EB749C1A7AFF5E9 /* TestImageModel.m */,
+				A1EA192AA57F49C72A34D524 /* YQLoginViewController.h */,
+				508DC48E4A03514E0C783575 /* YQLoginViewController.m */,
 			);
-			path = image;
+			name = Login;
+			path = Login;
 			sourceTree = "<group>";
 		};
 		CBFE498687760D7EB6953FB8 /* confuse_test_oc */ = {
 			isa = PBXGroup;
 			children = (
-				593449F2805BCB39DE55D7C6 /* base */,
-				719739FC28D35D5600DD75C3 /* grammar */,
-				719739FD28D35D5E00DD75C3 /* other */,
-				DA10404FA4B7BCB65764957C /* ThirdPart */,
 				660E41A8867A3093F60D4C4B /* confuse_test_oc.pch */,
 				171F46149C548D1AF23B03E8 /* AppDelegate.h */,
 				112742E8AD6CAA69E5E57EAD /* AppDelegate.m */,
-				5DB9451F968A3AFB6E839730 /* ViewController.h */,
-				D2354F008D7C48031FBA670B /* ViewController.m */,
 				CF4246D2BDFDA02EC249B118 /* Assets.xcassets */,
-				E26C45BEBFE7EFFB721167B7 /* Main.storyboard */,
 				FA35498DB95EE8BD0AF17BA0 /* LaunchScreen.storyboard */,
 				FBB740B98D29C7DEE91C6B29 /* Info.plist */,
 				D56542D1973E5124DB52D3CE /* main.m */,
+				89DAB6E92BACBA0C836C6E2F /* Common */,
+				1CA8E38C9690F053543D4DC1 /* Category */,
+				841CEA9BEB88EFAB276B2DAD /* Network */,
+				979874BDE2F1A0F49E43704B /* Model */,
+				83A25DE59655B81433E509AC /* Session */,
+				AEACCD6957157B5845DFC503 /* Login */,
+				AE33DA40C947559CE36D5A5C /* Feed */,
+				F51D1112EA3742483BD92D1F /* Profile */,
+				3AD64831759CA622A20F1BCE /* Discover */,
 			);
 			path = confuse_test_oc;
 			sourceTree = "<group>";
 		};
-		DA10404FA4B7BCB65764957C /* ThirdPart */ = {
+		F51D1112EA3742483BD92D1F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				2F8F40B7AF9FEEF4C6E6F7CB /* yjs.png */,
-				F2614B6B9409F851749B857B /* TestDiscardSuper.h */,
-				B46F4800BCB560F332C5F10C /* TestDiscardSuper.m */,
-				03F54C85A300A3D83745E22F /* MBProgressHUD.h */,
-				D1E2416887DB140945283348 /* MBProgressHUD.m */,
-				61394BFF863E11839DB7668D /* discard.xcassets */,
+				5C65FA3110AC1F5143F4261D /* YQProfileHeaderView.h */,
+				DA757484907B5B3EC9EF3D13 /* YQProfileHeaderView.m */,
+				71AB3939B0832C9F204F7BBD /* YQProfileViewController.h */,
+				463F2909991C1CD3217A966C /* YQProfileViewController.m */,
 			);
-			path = ThirdPart;
+			name = Profile;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4C903D5F6FB951763A0A0A3A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BC4D3530AC5AC9D0A0770F /* YQMacros.h in Headers */,
+				CD1F5483228FB4F6A42C2F1D /* YQConst.h in Headers */,
+				A966BBA3A19C04AF877AED7A /* YQBaseViewController.h in Headers */,
+				1B5E57912FB9FFF64C0EAF76 /* UIColor+YQHex.h in Headers */,
+				FD43D9AB103A7A8A88E22D37 /* UIView+YQFrame.h in Headers */,
+				6C4B1ED3C3263F4DCFC12198 /* NSString+YQAdd.h in Headers */,
+				EF5DD3A1F0B7636625BF2ABA /* UIButton+YQBadge.h in Headers */,
+				52AF2032FD0D3352D6B4CFCB /* YQAPIClient.h in Headers */,
+				CF5EABD983853829BEB1F92D /* YQFeedItem.h in Headers */,
+				324A5FDC229024D24825875F /* YQUser.h in Headers */,
+				9A3499599E6F4A8248E7732E /* YQUserSession.h in Headers */,
+				24C5ECCE9FB1393705F3BA7D /* YQLoginViewController.h in Headers */,
+				348B406B67FD90E8F6D30B52 /* YQFeedListViewController.h in Headers */,
+				06A91B17D7EDAC651EED9A51 /* YQFeedDetailViewController.h in Headers */,
+				67118E3803182504DB847BA4 /* YQFeedCell.h in Headers */,
+				10112458665513356316EFDB /* YQTabBarController.h in Headers */,
+				E9EBBCA203B003A4622C8AA1 /* YQSettingItem.h in Headers */,
+				706154F865CFD7C1BD2D719C /* YQProfileHeaderView.h in Headers */,
+				085207B946CE34CA2E4AA222 /* YQProfileViewController.h in Headers */,
+				60E32816BA4CC36B32E1181E /* YQDiscoverCell.h in Headers */,
+				42328361D02DA759AC3DE81D /* YQDiscoverViewController.h in Headers */,
+				14D7C78141EB03510AADF34B /* YQDiscoverItem.h in Headers */,
+				DBFE03BD2DC8287439126412 /* YQEntryDetailViewController.h in Headers */,
+				F2F5544F407A48EDDE912718 /* YQSimpleListViewController.h in Headers */,
+				83870EAE7801EF283978B097 /* YQScanViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BA64E0597A486EE03CC8E0A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -616,6 +428,7 @@
 				E6644109837EC7494F90CEAA /* Frameworks */,
 				444447A1965B15BE5957F804 /* Resources */,
 				5CCC4C69BCE1E9AA09E1C534 /* Embed Frameworks */,
+				4C903D5F6FB951763A0A0A3A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -695,28 +508,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5D743E6903E2587C690B500 /* yjs.png in Resources */,
-				D0AA44F9A9EA56EB2BCE3E96 /* TestClassController.xib in Resources */,
-				D42942F29A05F629AEB94618 /* number1.png in Resources */,
-				B1AB4F89B977BFEC6C6F306B /* File.strings in Resources */,
-				49AA434CAD6D5E6D40810EE6 /* 加.png in Resources */,
-				506C42EF8EFE85B1738E2773 /* TestXibView.xib in Resources */,
 				AACF48C38C1B820B233E12AD /* LaunchScreen.storyboard in Resources */,
 				C5E84D3FA41DB8892D744F4F /* Assets.xcassets in Resources */,
-				2AD84171845B4DB0C8C5C1FE /* TestXibViewController.xib in Resources */,
-				8FC4405EBAE404DCD0FCE2F9 /* TestClassCell.xib in Resources */,
-				B1AD4EDCBAD48EBC163FE8A4 /* Main.storyboard in Resources */,
-				B3E34B57B1A34B4C4E8912D4 /* 减.png in Resources */,
 				3156422FAAFF13ACF0932F45 /* Localizable.strings in Resources */,
-				E6984A26832AC5CB65564CBE /* image.xcassets in Resources */,
-				043E43278A313D1B8D548900 /* number3.png in Resources */,
-				51AA44648EF440187F6662E6 /* 锤石.png in Resources */,
-				8FE44570A9DAD94941D60300 /* number2.png in Resources */,
-				52844786A676C95DC870788C /* discard.xcassets in Resources */,
-				4C2D4E8BB836C1D1F7F6711E /* TestPropertyXibViewController.xib in Resources */,
-				28914183B33466A33D4F43D6 /* TestPropertyXibView.xib in Resources */,
-				335442FE84F092C9B4567ECA /* Lee Sin.jpg in Resources */,
-				01894CA7A7EE182C001041FB /* TestFunctionXibViewController.xib in Resources */,
+				A8CB9E9CAF19E156F56CAAA5 /* YQFeedCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,53 +554,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD254E5C99EE2293A9ECDA90 /* TestFrame.m in Sources */,
-				48E545189842ADBCD416D5AE /* TestLayoutTableViewController.m in Sources */,
-				76D24FC1AAD9296C55ED5C6D /* TestSuperGlobalVariable.m in Sources */,
-				3DAA4BB1A1C37617319AC323 /* ViewController.m in Sources */,
-				308446D8B5B76867357B4A6B /* TestPropertyXibViewController.m in Sources */,
 				C7FF492CAB9DD54170F00FF6 /* AppDelegate.m in Sources */,
-				A71A443DAD125B6F25571861 /* TestSuperMacro.m in Sources */,
-				FE4948408CC1CA560DDD1E22 /* TestPropertySuper.m in Sources */,
-				9DAC4EDE936C477F224364E9 /* TestDiscardSuper.m in Sources */,
-				9F564DC7AE36708976F087C4 /* TestPropertyViewController.m in Sources */,
 				61984131BE61A6CE24690448 /* main.m in Sources */,
-				B77E4C44A9512B12241B23B5 /* TestOtherGlobalVariable.m in Sources */,
-				321B45EB96640F4B13DE4D6B /* ColorViewController.m in Sources */,
-				515A44E1886BDB8784A763C5 /* TestMacro.m in Sources */,
-				710345C1873C57EC3BF7D251 /* TestXibView.m in Sources */,
-				C1BC470885008AA17FD37D2A /* TestLocalVariable.m in Sources */,
-				DD7B4DDC8A61208BFE427F54 /* TestFunctionViewController.m in Sources */,
-				0F824A79B15CDB48C3FDD7FA /* TestPropertyOther_VC.m in Sources */,
-				415946A1851F48DB1D054D02 /* TestGlobalVariable.m in Sources */,
-				2C8045A693FAD2EEBD5E273B /* TestClassCell.m in Sources */,
-				89F84A9FB1A4C5C2ECD68448 /* User_M.m in Sources */,
-				860A461CB3E653E74947C888 /* TestLocalizableViewController.m in Sources */,
-				54304386B544D7C9EB7218F9 /* TestFunctionSuper.m in Sources */,
-				2FA14BC18914A72A33DDC14B /* TestImageViewController.m in Sources */,
-				71973A0128D35F9C00DD75C3 /* OtherTableViewController.m in Sources */,
-				E64F491A9D612EB9F5DB17EF /* TestFunctionView.m in Sources */,
-				ED3348D194315E9CE58DD3DF /* TestClassController.m in Sources */,
-				E4A9449EB439299D590BF383 /* UserInfoModel.m in Sources */,
-				4D9C41EB8E7EC66FD35B45E3 /* MBHudDemoViewController.m in Sources */,
-				A96B4F9A82065A156460BFF2 /* TestLayoutCell.m in Sources */,
-				C8F34CFEAF55F7D5DD98E4EB /* Dog_M.m in Sources */,
-				72964A4F93071FC42B9EF8CE /* TestImageModel.m in Sources */,
-				5A6A4BAFBB7F0D9E15C33516 /* TestOtherMacro.m in Sources */,
-				EE8B49719B778FE64C425A63 /* TestXibViewController.m in Sources */,
-				395341BC83C6E5DA89115554 /* MBProgressHUD.m in Sources */,
-				B2AF4710853D8EE32D23A8E5 /* SCSelectModel.m in Sources */,
-				675149B8837928F2AE8C1345 /* TestMasonry.m in Sources */,
-				85EA4BC8935CE6517B6FEA07 /* SCOrder.m in Sources */,
-				F0994C0597EA41840D430EAF /* TestProperty.m in Sources */,
-				F69F48D1A69F727C51DA0AA1 /* TestLocalVariableTableViewController.m in Sources */,
-				6576491F9BC003936E440694 /* TestFunctionOtherTemplate.m in Sources */,
-				702940BDA98C0BD83C400DCB /* TestLayoutViewController.m in Sources */,
-				F91748189D673A7507FD0FD6 /* TestGlobalVariableTableViewController.m in Sources */,
-				A2DF48BA902DC5186C4AFBF9 /* Base.m in Sources */,
-				AEAC41558C7FFECB84504C9D /* FontViewController.m in Sources */,
-				D4AC4715BAED81C92507F617 /* TestFunctionXibViewController.m in Sources */,
-				D2B648608A6FBBBF346CF80A /* TestFunction.m in Sources */,
+				9D09E230F1A111B8919EA510 /* YQConst.m in Sources */,
+				DE36C9CC2224C873F96324C3 /* YQBaseViewController.m in Sources */,
+				865580EE51B53B97FAA34E4C /* UIColor+YQHex.m in Sources */,
+				3AC2F0823D8D95153A39816B /* UIView+YQFrame.m in Sources */,
+				638DBBD68778FAA82BD379E9 /* NSString+YQAdd.m in Sources */,
+				0E7F7BCD6C1BEDEEF669F8A6 /* UIButton+YQBadge.m in Sources */,
+				A0A1680FD0DB276519CD7483 /* YQAPIClient.m in Sources */,
+				99AB542F17B134874CFE970C /* YQFeedItem.m in Sources */,
+				ACF03D4CC8D91959C1AA0D31 /* YQUser.m in Sources */,
+				74490E7EC10145C20E86C16F /* YQUserSession.m in Sources */,
+				4291797D09DCE108C84F7E18 /* YQLoginViewController.m in Sources */,
+				BCAD5F4EB7ED79A479E55A32 /* YQFeedListViewController.m in Sources */,
+				27773D6EA28B1278FFB48508 /* YQFeedDetailViewController.m in Sources */,
+				4CCE134B1D523B3BFC2E462F /* YQFeedCell.m in Sources */,
+				66A8E4E9F7AB56DA933C09B1 /* YQTabBarController.m in Sources */,
+				96D23206ADFE37A500851D1D /* YQSettingItem.m in Sources */,
+				E64B384B4E971F8642954026 /* YQProfileHeaderView.m in Sources */,
+				30B4BAA2698F5E26B66DDCA6 /* YQProfileViewController.m in Sources */,
+				5B2A551C21E82C179292AABE /* YQDiscoverCell.m in Sources */,
+				37409F0F93544A5389E2C043 /* YQDiscoverViewController.m in Sources */,
+				B6BC0CB8FF2D6C5D18C454F6 /* YQDiscoverItem.m in Sources */,
+				EFE8A6B4C16DD03D53543EC1 /* YQEntryDetailViewController.m in Sources */,
+				5F5227788841ECF273468A06 /* YQSimpleListViewController.m in Sources */,
+				8EAA8DF0F98ED707FB2B0B59 /* YQScanViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,23 +601,6 @@
 				78D144F9AFD25D0B8AF58683 /* zh-Hans */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		8421459B8A41EAFA22FBD3E1 /* File.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C3AE4064BA1998F66620DF56 /* zh-Hans */,
-				DFCD41D3A509AE09664DDFA4 /* en */,
-			);
-			name = File.strings;
-			sourceTree = "<group>";
-		};
-		E26C45BEBFE7EFFB721167B7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				919B498F9E9B6D44A9182F58 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		FA35498DB95EE8BD0AF17BA0 /* LaunchScreen.storyboard */ = {
@@ -869,7 +626,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = confuse_sdk/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -897,7 +654,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = confuse_sdk/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -926,40 +683,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = confuse_test_oc/confuse_test_oc.pch;
 				INFOPLIST_FILE = confuse_test_oc/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 6.4.2;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-l\"MJExtension\"",
-					"-l\"Masonry\"",
-					"-l\"SDAutoLayout\"",
-					"-l\"YYCategories\"",
-					"-l\"YYModel\"",
-					"-l\"z\"",
-					"-framework",
-					"\"Accelerate\"",
-					"-framework",
-					"\"CoreFoundation\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreImage\"",
-					"-framework",
-					"\"CoreText\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"ImageIO\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"UIKit\"",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-test-oc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1017,7 +747,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1079,7 +809,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1100,40 +830,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = confuse_test_oc/confuse_test_oc.pch;
 				INFOPLIST_FILE = confuse_test_oc/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 6.4.2;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-l\"MJExtension\"",
-					"-l\"Masonry\"",
-					"-l\"SDAutoLayout\"",
-					"-l\"YYCategories\"",
-					"-l\"YYModel\"",
-					"-l\"z\"",
-					"-framework",
-					"\"Accelerate\"",
-					"-framework",
-					"\"CoreFoundation\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreImage\"",
-					"-framework",
-					"\"CoreText\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"ImageIO\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"UIKit\"",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-test-oc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

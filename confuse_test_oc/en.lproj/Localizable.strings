@@ -1,9 +1,67 @@
-/* 
-  Localizable.strings
-  confuse_test_oc
+/* Yiqi Reader —— English */
 
-  Created by ymac on 29/12/2020.
-  Copyright © 2020 coding520. All rights reserved.
-*/
-"key" = "what is this?";
-"master" = "Are you my master?";
+"login_title"       = "Sign In";
+"login_username"    = "Username";
+"login_password"    = "Password";
+"login_button"      = "Sign In";
+"login_empty_tip"   = "Username and password are required";
+
+"feed_title"        = "For You";
+"feed_load_failed"  = "Load failed, pull to retry";
+"feed_faved"        = "Favorited";
+"feed_unfaved"      = "Unfavorited";
+
+"detail_title"      = "Detail";
+"detail_favorite"   = "Favorite";
+"detail_favorited"  = "Favorited";
+
+/* Tab */
+"tab_feed"          = "For You";
+"tab_other"         = "Other";
+"tab_mine"          = "Mine";
+
+/* Mine */
+"mine_guest"        = "Not signed in";
+"mine_favorites"    = "Favorites";
+"mine_history"      = "History";
+"mine_general"      = "General";
+"mine_about"        = "About";
+"mine_clear_cache"  = "Clear Cache";
+"mine_logout"       = "Sign Out";
+"mine_cache_cleared" = "Cache cleared";
+
+/* Other */
+"other_scan"        = "Scan";
+"other_notice"      = "Messages";
+"other_rank"        = "Ranking";
+"other_topic"       = "Topics";
+"other_service"     = "Support";
+"other_invite"      = "Invite";
+"other_history"     = "History";
+"other_more"        = "More";
+
+/* Common */
+"common_coming_soon" = "Coming soon";
+
+/* Pagination / detail */
+"feed_no_more"        = "No more";
+"detail_stats_fmt"    = "%ld reads · %ld likes · %ld comments";
+
+/* Other entries - detail */
+"other_scan_desc"     = "Aim at a QR code to scan. Placeholder in this demo.";
+"other_notice_desc"   = "System and interaction messages show here.";
+"other_rank_desc"     = "Content ranked by popularity.";
+"other_topic_desc"    = "Related content grouped into topics.";
+"other_service_desc"  = "Have a problem? Contact online support.";
+"other_invite_desc"   = "Share your invite code with friends for rewards.";
+"other_history_desc"  = "Your recently viewed content appears here.";
+"other_more_desc"     = "More features are on the way.";
+"other_copy_code"     = "Copy Code";
+"other_code_copied"   = "Invite code copied";
+"other_try_now"       = "Try Now";
+
+/* Other sub-pages */
+"scan_hint"="Place the QR code inside the frame to scan"; "other_copy"="Copy"; "other_copied"="Copied"; "other_copy_wechat"="Copy WeChat ID";
+
+/* About */
+"about_slogan"="confuse · iOS code obfuscator"; "about_copy_link"="Copy Link"; "common_ok"="OK";

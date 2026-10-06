@@ -1,10 +1,67 @@
-/* 
-  Localizable.strings
-  confuse_test_oc
+/* 一起读 App —— 中文文案 */
 
-  Created by ymac on 29/12/2020.
-  Copyright © 2020 coding520. All rights reserved.
-*/
-"key" = "什么鬼?";
-"master" = "你是我的?";
-"crazy" = "你神经病啊";
+"login_title"       = "登录";
+"login_username"    = "请输入用户名";
+"login_password"    = "请输入密码";
+"login_button"      = "登 录";
+"login_empty_tip"   = "用户名和密码不能为空";
+
+"feed_title"        = "推荐";
+"feed_load_failed"  = "加载失败，请下拉重试";
+"feed_faved"        = "已收藏";
+"feed_unfaved"      = "已取消收藏";
+
+"detail_title"      = "详情";
+"detail_favorite"   = "收藏";
+"detail_favorited"  = "已收藏";
+
+/* Tab */
+"tab_feed"          = "推荐";
+"tab_other"         = "其他";
+"tab_mine"          = "我的";
+
+/* 我的 */
+"mine_guest"        = "未登录";
+"mine_favorites"    = "我的收藏";
+"mine_history"      = "浏览历史";
+"mine_general"      = "通用设置";
+"mine_about"        = "关于我们";
+"mine_clear_cache"  = "清除缓存";
+"mine_logout"       = "退出登录";
+"mine_cache_cleared" = "缓存已清除";
+
+/* 其他 */
+"other_scan"        = "扫一扫";
+"other_notice"      = "消息";
+"other_rank"        = "排行榜";
+"other_topic"       = "专题";
+"other_service"     = "客服";
+"other_invite"      = "邀请有礼";
+"other_history"     = "历史";
+"other_more"        = "更多";
+
+/* 通用 */
+"common_coming_soon" = "功能开发中";
+
+/* 分页 / 详情补充 */
+"feed_no_more"        = "没有更多了";
+"detail_stats_fmt"    = "阅读 %ld · 赞 %ld · 评论 %ld";
+
+/* 其他入口 - 详情 */
+"other_scan_desc"     = "对准二维码即可快速识别，Demo 中为占位功能。";
+"other_notice_desc"   = "这里会展示系统与互动消息。";
+"other_rank_desc"     = "按热度排序的内容榜单。";
+"other_topic_desc"    = "把相关内容聚合成专题合集。";
+"other_service_desc"  = "遇到问题？联系在线客服获取帮助。";
+"other_invite_desc"   = "把邀请码分享给好友，双方都有奖励。";
+"other_history_desc"  = "你最近浏览过的内容会出现在这里。";
+"other_more_desc"     = "更多功能正在路上。";
+"other_copy_code"     = "复制邀请码";
+"other_code_copied"   = "邀请码已复制";
+"other_try_now"       = "立即体验";
+
+/* 其他二级页 */
+"scan_hint"="将二维码放入框中，即可自动扫描"; "other_copy"="复制"; "other_copied"="已复制"; "other_copy_wechat"="复制微信号";
+
+/* 关于 */
+"about_slogan"="confuse · iOS 代码混淆工具"; "about_copy_link"="复制链接"; "common_ok"="确定";
