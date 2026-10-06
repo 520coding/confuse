@@ -268,17 +268,23 @@ Update iterations will be carried out in the following order
 Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8) in detail before use<br />![screenshot](docs/images/screenshot-en.png)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
-<h3 id="L8Epu">v8.4.5 (2026.09.19) Hotfix</h3>
+<h3 id="L8Epu">v8.5.0 (2026.10.07)</h3>
 
-1. Added [Rename Folder], randomizing resource-directory leaf names. Code folders are not included.
-2. Optimized [Rename Class]: category names use anchored replacement to avoid rewriting system method names; reference replacement is a single pass and faster; file-name references that start with a digit or contain spaces or special characters are now rewritten, avoiding file not found.
-3. Fixed OC [Rename Property] half-renaming class properties, causing unrecognized selector at runtime.
-4. Fixed OC [Modify Global Variable] missing static const in constant-only headers, and skipping macro-declared extern that does not match, avoiding redefinition.
-5. Fixed OC [Extract Method] missing a forward declaration when written in a category, so an extracted method name that collides with a system method failed type checking.
-6. Fixed an infinite loop in the OC [Insert Method] forwarder, and fixed injected code being broken by a later rename.
-7. Fixed C++ [Modify String] gluing a char-array type to the variable name and failing to compile.
-8. Optimized repeat obfuscation for OC/C++, skipping syntax re-parse when the analysis cache hits.
-9. Strengthened Swift code-modify templates, covering more system types.
+1. Optimized syntax-analysis caching and parallel parsing; large projects obfuscate faster. When adapting a project, repeating the same feature reuses the scan cache and saves time.
+2. Fixed Swift [Modify Method, Replace Method]: caption-gate members avoid host method names; variadic forwarder helpers declare array parameters; dead-branch locals no longer collide across segments; dependency imports and Self / argument-label typing corrected.
+3. Fixed Swift [Insert Control Flow]: continuation detection skips comment lines; if-flattening no longer rewrites ifs inside multiline strings.
+4. Fixed Swift [Insert Local Variable, Modify Closure]: generic call arguments, operator-led continuations, and type-context loss; if-let bindings are not typed from the else branch; captures use the nearest binding visible to the closure.
+5. Fixed OC [Extract Method, Modify Closure]: helper names collide-check bare and single-arg forms; C-array locals demote to element pointers as parameters; weak-self in macro arguments and @strongify danger zones handled correctly.
+6. Fixed OC [Modify Layout]: frame offsets apply only to layout numeric ops, not && / || or comparisons.
+7. Fixed OC/C++ [Encrypt String] colliding with the system C namespace (e.g. index()).
+8. Fixed several C++ [Rename Class, Modify Method, Insert Property] compile failures.
+9. Fixed [Insert Image] falling back to a system font when the font list is empty, so random text images are not all discarded.
+10. Added per-message "Don't show again" for system messages.
+11. Optimized lag when selecting the project root path.
+12. Scheme configuration defaults to the scheme currently selected in Xcode.
+13. Optimized obfuscation-log reading (incremental cursor) and fixed warning/error color mis-tagging.
+14. Raised the minimum system requirement to macOS 11.0.
+15. Fixed falsely reporting unknown error 15 when stopping obfuscation; environment-check failures surface clearer reasons.
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
