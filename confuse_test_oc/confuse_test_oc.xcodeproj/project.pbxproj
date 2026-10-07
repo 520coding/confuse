@@ -193,7 +193,6 @@
 				FC6ED4781D5CF0B1C4D3F18D /* UIButton+YQBadge.h */,
 				E99D70AF4382B8E254758975 /* UIButton+YQBadge.m */,
 			);
-			name = Category;
 			path = Category;
 			sourceTree = "<group>";
 		};
@@ -220,7 +219,6 @@
 				48EF4949B1C94A3661B451AE /* YQScanViewController.h */,
 				0CE34293B9C79C73021BDC93 /* YQScanViewController.m */,
 			);
-			name = Discover;
 			path = Discover;
 			sourceTree = "<group>";
 		};
@@ -230,7 +228,6 @@
 				E7C52212FBA7F8AB081DC155 /* YQUserSession.h */,
 				3FA274F6591737FF963A995B /* YQUserSession.m */,
 			);
-			name = Session;
 			path = Session;
 			sourceTree = "<group>";
 		};
@@ -240,7 +237,6 @@
 				F786DA1A6939E567575AD7AA /* YQAPIClient.h */,
 				62E61B772F9B47069A32A9FD /* YQAPIClient.m */,
 			);
-			name = Network;
 			path = Network;
 			sourceTree = "<group>";
 		};
@@ -255,7 +251,6 @@
 				D3F3D5F4E3CB0A8BCAD64A02 /* YQTabBarController.h */,
 				E99FD990A6804FD490B99EA2 /* YQTabBarController.m */,
 			);
-			name = Common;
 			path = Common;
 			sourceTree = "<group>";
 		};
@@ -289,7 +284,6 @@
 				A1A7BF2F2B26ABCC5A929492 /* YQDiscoverItem.h */,
 				F2AC485F37C9A97CC8897700 /* YQDiscoverItem.m */,
 			);
-			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -324,7 +318,6 @@
 				40DB6D30458BA5B08FDF921A /* YQFeedCell.m */,
 				34E11E57B8EBF96DC39CDAE4 /* YQFeedCell.xib */,
 			);
-			name = Feed;
 			path = Feed;
 			sourceTree = "<group>";
 		};
@@ -334,7 +327,6 @@
 				A1EA192AA57F49C72A34D524 /* YQLoginViewController.h */,
 				508DC48E4A03514E0C783575 /* YQLoginViewController.m */,
 			);
-			name = Login;
 			path = Login;
 			sourceTree = "<group>";
 		};
@@ -369,7 +361,6 @@
 				71AB3939B0832C9F204F7BBD /* YQProfileViewController.h */,
 				463F2909991C1CD3217A966C /* YQProfileViewController.m */,
 			);
-			name = Profile;
 			path = Profile;
 			sourceTree = "<group>";
 		};
@@ -632,7 +623,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.4.2;
+				MARKETING_VERSION = 8.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-sdk";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -660,7 +651,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.4.2;
+				MARKETING_VERSION = 8.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-sdk";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -688,7 +679,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.4.2;
+				MARKETING_VERSION = 8.5.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-test-oc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -835,7 +826,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.4.2;
+				MARKETING_VERSION = 8.5.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yjs.confuse-test-oc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
