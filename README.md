@@ -270,15 +270,19 @@ Update iterations will be carried out in the following order
 Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8) in detail before use<br />![screenshot](docs/images/screenshot-en.png)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
-<h3 id="L8Epu">v8.5.1 (2026.10.15) Hotfix</h3>
+<h3 id="L8Epu">v8.5.2 (2026.11.01) Hotfix</h3>
 
-1. Added OC [Encrypt Image]: encrypts images referenced by imageNamed: / imageWithContentsOfFile:.
-2. Enhanced OC [Modify Control Flow]: injects durable property carriers; reentrancy-safe when the same carrier is written more than once.
-3. Fixed OC/Swift [Modify Method] "Exchange Parameters": fail-closed eligibility so enabling exchange no longer breaks at runtime or fails to compile.
-4. Fixed OC [Rename Property, Rename Method, Rename Global Variable, Rename Member Variable]: references inside Masonry macros are rewritten, avoiding half-renames.
-5. Fixed OC [Modify Closure]: correctly captures weak locals that are only visible after macro expansion.
-6. Fixed OC [Split Scope]: injected weak-of-self uses a random name to avoid colliding with common YQWeakSelf-style macros.
-7. Fixed project scanning / blacklist: -Swift.h headers from the project's own xcframeworks no longer poison the blacklist and cause exposed classes to be skipped.
+1. Enhanced OC [Merge Method]: long methods add segments by statement count and pick mutually exclusive control-flow families by shape; expanded collection/tool corpora.
+2. Fixed OC/Swift [Modify Control Flow]: avoid evaluating multi-branch conditions before the guard; the same condition chain no longer shares one durable property carrier.
+3. Fixed OC [Insert Control Flow, Modify Control Flow]: insert points follow structure and restore block-body injection; incomplete if ranges synthesize returns from the body return type; selected project category properties get their imports.
+4. Fixed OC [Modify Local Variable]: splitting no longer hoists brace-less for-in loop bodies outside the statement/loop.
+5. Fixed OC [Extract Method, Split Method, Split Scope, Modify Method, Modify Closure]: improved handling of chunks that involve _cmd; distinguish outer variables from __block locals captured by a block.
+6. Fixed OC [Rename Property, Rename Method]: @selector / NSSelectorFromString that collide with system/Pod declarations stay unchanged and are preflighted; synthesized set-selector literals follow property renames; subclasses that only override a getter no longer rewrite self.prop to the parent's private _prop.
+7. Fixed OC/Swift [Rename Class]: nib/storyboard name strings keep the old class name when the file is not renamed or under legacy rename; precheck flags classes loaded via NSStringFromClass.
+8. Fixed OC [Rename Global Variable, Modify Global Variable]: file-level statics with the same name but different values map by declaration identity and are no longer swapped.
+9. Fixed OC [Insert Method, Replace Method, Modify Method]: injected method names avoid ObjC method families; improved recognition of system-type headers.
+10. Optimized smart naming: detect and reject bad names.
+11. Fixed project scanning PCH issues; strip UTF-8 BOM from source files during preprocessing.
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>

@@ -269,15 +269,19 @@ confuse是一款[混淆工具](https://github.com/520coding/confuse)，尽可能
 运行APP效果图，使用前请详细阅读[工具使用教程](https://www.yuque.com/docs/share/edd2603f-d09d-4795-ae71-b42419b99446?#《confuse使用说明》)<br />![screenshot](docs/images/screenshot-zh.png)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # 更新日志
-<h3 id="INHAC">v8.5.1（2026.10.15）热更新</h3>
+<h3 id="INHAC">v8.5.2（2026.11.01）热更新</h3>
 
-1. 新增OC[加密图片]，加密 imageNamed: / imageWithContentsOfFile: 引用的图片
-2. 强化OC[修改控制流]，插入可持久的属性载体；同一载体多次写入时重入安全
-3. 修复OC/Swift[修改方法]「交换参数」，加 fail-closed 资格闸，开启交换不再运行时断或编不过
-4. 修复OC[重命名属性、重命名方法、重命名全局变量、重命名成员变量]，Masonry 宏参数内的引用也会改名，避免改一半
-5. 修复OC[修改闭包]，正确捕获宏展开后才可见的 weak 局部量
-6. 修复OC[拆分作用域]，注入的 weak-of-self 用随机名，避免与常见 YQWeakSelf 类宏撞名
-7. 修复工程扫描/黑名单，工程自建 xcframework 的 -Swift.h 不再毒化黑名单导致暴露类漏改
+1. 强化OC[合并方法]，长方法按语句数加段、按控制流形状抽互斥结构族；扩集合/工具语料
+2. 修复OC/Swift[修改控制流]，避免多分支条件提前到守卫前求值；同一条件链不再共用一个承载属性
+3. 修复OC[插入控制流、修改控制流]，插入点按结构判定并恢复块体注入；包进 if 后走不完的区间按体返回型补 return；选用工程分类属性时补 import
+4. 修复OC[修改局部变量]，拆行不再把无花括号 for-in 循环体提到语句/循环外
+5. 修复OC[提取方法、拆分方法、拆分作用域、修改方法、修改闭包]，优化含 _cmd 的切块；区分外层变量量与被 block 捕获的 __block 局部变量
+6. 修复OC[重命名属性、重命名方法]，@selector / NSSelectorFromString 与系统/Pod 同名时整名不改并由环境检查提前报出；纯合成属性的 set 选择子字面量随属性改名；子类只覆写 getter 时不再把 self.prop 换成父类私有 _prop
+7. 修复OC/Swift[重命名类]，文件不改名或旧模式改名时 nib/storyboard 名字串留旧名；预检查标出按 NSStringFromClass 加载 nib 的类
+8. 修复OC[重命名全局变量、修改全局变量]，同名不同值的文件级 static 按声明身份建映射不再互换
+9. 修复OC[插入方法、替换方法、修改方法]，注入方法名避开 ObjC 方法族；优化系统类型头文件识别
+10. 优化智能命名，识别错误命名
+11. 修复工程扫描PCH问题；源文件 UTF-8 BOM 预处理剥离
 
 [查看更多历史更新记录](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?#《confuse更新说明》)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
