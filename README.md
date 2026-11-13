@@ -159,7 +159,6 @@ The following functions are supported:
 22. [Rename multilingual], using a system of direct or indirect methods **NSLocalizedString** , **NSLocalizedStringFromTable** multilingual modified，[The custom packaging methods require manual processing](https://520coding.yuque.com/docs/share/de45751a-c629-4737-84ad-251fb2502123?translate=en)
 23. [Modify string], support arbitrary string, encryption processing (hard code -> memory), the original string is kept in the comment for easy inspection
     1. Set the'minimum length' filter
-    2. You can also set the " effective number" to use together
 24. [Modify xib, storyboard], automatically insert the view, and modify the internal structure property
 25. [Modify font] , randomly fine-tune the font used in the project, and identify macros
 26. [Modify color], randomly shift the color of the UI controls in the project, and identify the macro
@@ -169,9 +168,9 @@ The following functions are supported:
 30. [Modify Class], modify the order of member variables, properties, method declarations and definitions
 31. [Rename class], the class name is not limited (for example: my, My), you can specify to add a prefix, support class and category name|struct|protocol，advantages:
     1. Smart noun substitution
-    2. Can be set to'rename files with the same name'
-    3. You can set'rename similar strings', (ignore | equal | include) three modes
-    4. Added 'correct non-standard dot grammar', calling for non-standard dot grammar (methods are called as properties)
+    2. Same-named files (including xib) always follow class rename
+    3. Similar strings that equal or contain the class name are rewritten together
+    4. New mode automatically corrects non-standard dot grammar (methods called as properties)
 <a name="015937695b202fc108bd5bc9b3283082"></a>
 ### C++
 
@@ -181,11 +180,10 @@ The following functions are supported:
 4. [Modification method], use overloading technology to modify the function prototype and call the modified parameter
 5. [Modify string], support arbitrary string, encryption processing (hard code -> memory), the original string is kept in the comment for easy inspection
    1. Set the'minimum length' filter
-   2. You can also set the " effective number" to use together
 6. [Rename class], support template and other types
    1. Can switch the old mode
    2. Prefix setting
-   3. Can be set to'rename files with the same name'
+   3. Same-named files always follow class rename
 <a name="ea78561d0c1d5c21d3e2c93d960472e5"></a>
 ### Cocos2d-x
 This part of the function is integrated into C++ and supports cocos2dx automatic filtering
@@ -240,12 +238,11 @@ Adapt to Swift5.5, the SPM package management project has not yet been tested
 24. [Rename multi-language], support custom method multi-language processing
 25. [Modify string], recognize single-line, multi-line, string interpolation, and extended string. After the modification, it can be freely combined by a variety of methods such as encryption and split character groups, and the comments of the original characters are reserved for easy inspection
     1. Set the'minimum length' filter
-    2. You can also set the "effective number" to use together
 26. [Modify xib, storyboard], automatically insert the view, and modify the internal structure property
 27. [Insert file], close to actual development (combined with network, storage, MVC, xib, etc., to ensure that the code has high relevance and practical significance), and strengthen contextual relevance. Can set 'file name prefix', set 'Target import' in the same way as OC
 28. [Insert text], generate common text files such as json, txt, plist, etc., and automatically high-related calls in the project (introduction of property, initialization, automatic destruction, etc.). Note: (under the project root path, the folder "other_xxx_text" will be generated, and the generated files will be automatically imported)
 29. [Rename class], the class name is not limited (for example: my, My), identify nested types and typealias, support class|struct|enum|protocol
-    1. Can be set to'rename files with the same name'
+    1. Same-named files (including xib) always follow class rename
     2. 'Prefix' can be set
 > Note: At present, the Swift and OC mixed project, the OC calling Swift part will not be processed for the time being, and will be optimized in the future.
 
@@ -270,19 +267,17 @@ Update iterations will be carried out in the following order
 Run the APP rendering, please read the [tool usage tutorial](https://www.yuque.com/docs/share/cd0968ac-9c7e-415f-9e7c-1460b85e80e8) in detail before use<br />![screenshot](docs/images/screenshot-en.png)
 <a name="c318fa67bf88d5d842cee03115743b4b"></a>
 # Update log
-<h3 id="L8Epu">v8.5.2 (2026.11.01) Hotfix</h3>
+<h3 id="M2Q7R">v8.5.3 (2026.11.12) Hotfix</h3>
 
-1. Enhanced OC [Merge Method]: long methods add segments by statement count and pick mutually exclusive control-flow families by shape; expanded collection/tool corpora.
-2. Fixed OC/Swift [Modify Control Flow]: avoid evaluating multi-branch conditions before the guard; the same condition chain no longer shares one durable property carrier.
-3. Fixed OC [Insert Control Flow, Modify Control Flow]: insert points follow structure and restore block-body injection; incomplete if ranges synthesize returns from the body return type; selected project category properties get their imports.
-4. Fixed OC [Modify Local Variable]: splitting no longer hoists brace-less for-in loop bodies outside the statement/loop.
-5. Fixed OC [Extract Method, Split Method, Split Scope, Modify Method, Modify Closure]: improved handling of chunks that involve _cmd; distinguish outer variables from __block locals captured by a block.
-6. Fixed OC [Rename Property, Rename Method]: @selector / NSSelectorFromString that collide with system/Pod declarations stay unchanged and are preflighted; synthesized set-selector literals follow property renames; subclasses that only override a getter no longer rewrite self.prop to the parent's private _prop.
-7. Fixed OC/Swift [Rename Class]: nib/storyboard name strings keep the old class name when the file is not renamed or under legacy rename; precheck flags classes loaded via NSStringFromClass.
-8. Fixed OC [Rename Global Variable, Modify Global Variable]: file-level statics with the same name but different values map by declaration identity and are no longer swapped.
-9. Fixed OC [Insert Method, Replace Method, Modify Method]: injected method names avoid ObjC method families; improved recognition of system-type headers.
-10. Optimized smart naming: detect and reject bad names.
-11. Fixed project scanning PCH issues; strip UTF-8 BOM from source files during preprocessing.
+1. Enhanced Swift [Modify Closure]: outer variables are no longer wrongly promoted to members; writes use inout; cleared many compile failures around weak / async / throws / $N parameters and nested captures.
+2. Enhanced OC [Modify Closure]: weak captures are no longer extracted into a strongly capturing host; stabilized __block / typeof / same-name local shadowing and class-method invoke.
+3. Enhanced OC/Swift [Rename Class]: same-named files (including xib) always follow class rename; simplified configuration options.
+4. Enhanced mixed-language bridging: synthesized headers preserve parameter/return types and enum/struct fidelity.
+5. Enhanced OC [Modify Method] argument exchange: selectors swap atomically and keywords move with slots; KVC / dynamically assembled names and methods whose argument evaluation order would change keep the whole name unchanged.
+6. Fixed Swift [Modify Control Flow, Insert File, Insert Text]: if/switch expressions and implicit returns are no longer rewritten as statements; #if variant indexes are merged so rename no longer misses #else / device branches.
+7. Optimized smart naming: synonym shape and inflection are more stable; characteristic and sensitive words use the reference-project substitute pool.
+8. Fixed [Rename Folder]: added support for Xcode 16 synchronized folder projects; pbxproj / Run Script paths follow renames.
+9. Fixed OC [Extract Method, Split Method, Split Scope]: goto and its label are no longer split across two methods; generic T / .mm lambda no longer corrupt helper signatures.
 
 [View more historical update records](https://www.yuque.com/docs/share/39f2f60e-b6a8-443b-b005-b9364fb79b95?translate=en)
 <a name="41b9f638a3e62c9449ec872644258c8d"></a>
